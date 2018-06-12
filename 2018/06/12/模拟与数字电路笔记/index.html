@@ -16,10 +16,10 @@
   
   
   
-    <meta name="description" content="一、项目框架
-二、模块开发1.无线收发与上传模块配置：通过STM32配置Lora模块通过Arduino配置esp8266模块通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器方案修改：Lora通信增加校验    Lora数据接收应答    光伏控制器简制  ...">
+    <meta name="description" content="（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行 Google 或 百度）一、基础知识
+二、模拟电路部分1.半导体器件">
   
-  <title>气象站 [ DIDA LAB ]</title>
+  <title>模拟与数字电路笔记 [ DIDA LAB ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -38,22 +38,13 @@
 <body>
 <div class="side-navigate hide-area">
   
-    <div class="item prev">
-      <a href="/2018/06/12/模拟与数字电路笔记/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        模拟与数字电路笔记
-      </div>
-    </div>
-  
   
     <div class="item next">
-      <a href="/2018/06/08/hello-world/">
+      <a href="/2018/06/09/气象站/">
         <div class="item-icon"></div>
       </a>
       <div class="item-title">
-        Hello World
+        气象站
       </div>
     </div>
   
@@ -121,9 +112,9 @@
       
       
   <article id="post">
-    <h1>气象站</h1>
+    <h1>模拟与数字电路笔记</h1>
     <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2018-06-09</span>
+      <span id = "post-title-date">Created at 2018-06-12</span>
       
         <span id = "post-title-updated">Updated at 2018-06-12</span>
       
@@ -133,7 +124,7 @@
       
         
         
-        <a href="/categories/Projects/">Projects</a>
+        <a href="/categories/Study-Notes/">Study Notes</a>
       
       </span>
       
@@ -144,47 +135,44 @@
       
         
         
-        <a href="/tags/嵌入式/">嵌入式</a>
+        <a href="/tags/Notes/">Notes</a>
       
         
           /
         
         
-        <a href="/tags/物联网/">物联网</a>
+        <a href="/tags/MindMap/">MindMap</a>
       
         
           /
         
         
-        <a href="/tags/微信小程序/">微信小程序</a>
+        <a href="/tags/模拟与数字电路/">模拟与数字电路</a>
       
       </span>
       
     </p>
     
-    <h2 id="一、项目框架"><a href="#一、项目框架" class="headerlink" title="一、项目框架"></a>一、项目框架</h2><p><img src="气象站.jpg" alt="气象站项目框架"></p>
-<h2 id="二、模块开发"><a href="#二、模块开发" class="headerlink" title="二、模块开发"></a>二、模块开发</h2><h3 id="1-无线收发与上传模块"><a href="#1-无线收发与上传模块" class="headerlink" title="1.无线收发与上传模块"></a>1.无线收发与上传模块</h3><h4 id="配置：通过STM32配置Lora模块"><a href="#配置：通过STM32配置Lora模块" class="headerlink" title="配置：通过STM32配置Lora模块"></a>配置：通过STM32配置Lora模块</h4><h4 id="通过Arduino配置esp8266模块"><a href="#通过Arduino配置esp8266模块" class="headerlink" title="通过Arduino配置esp8266模块"></a>通过Arduino配置esp8266模块</h4><h4 id="通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据"><a href="#通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据" class="headerlink" title="通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据"></a>通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据</h4><h4 id="通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器"><a href="#通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器" class="headerlink" title="通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器"></a>通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器</h4><h4 id="方案修改：Lora通信增加校验-Lora数据接收应答-光伏控制器简制-取消数据加密-取消微信小程序改为Web并提供建设气象站的完整流程与数据接口-增加esp8266数据上传加密-增加地图显示"><a href="#方案修改：Lora通信增加校验-Lora数据接收应答-光伏控制器简制-取消数据加密-取消微信小程序改为Web并提供建设气象站的完整流程与数据接口-增加esp8266数据上传加密-增加地图显示" class="headerlink" title="方案修改：Lora通信增加校验    Lora数据接收应答    光伏控制器简制    取消数据加密    取消微信小程序改为Web并提供建设气象站的完整流程与数据接口    增加esp8266数据上传加密    增加地图显示"></a>方案修改：Lora通信增加校验    Lora数据接收应答    光伏控制器简制    取消数据加密    取消微信小程序改为Web并提供建设气象站的完整流程与数据接口    增加esp8266数据上传加密    增加地图显示</h4><p>​    </p>
-
+    <h6 id="（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行-Google-或-百度）"><a href="#（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行-Google-或-百度）" class="headerlink" title="（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行 Google 或 百度）"></a>（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行 Google 或 百度）</h6><h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><p><img src="基础知识.png" alt="基础知识"></p>
+<h2 id="二、模拟电路部分"><a href="#二、模拟电路部分" class="headerlink" title="二、模拟电路部分"></a>二、模拟电路部分</h2><h3 id="1-半导体器件"><a href="#1-半导体器件" class="headerlink" title="1.半导体器件"></a>1.半导体器件</h3>
   </article>
   <div class="random-toc-area">
   <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
   <div class="random-toc">
     <h2>Table of Content</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、项目框架"><span class="toc-text">一、项目框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、模块开发"><span class="toc-text">二、模块开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-无线收发与上传模块"><span class="toc-text">1.无线收发与上传模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#配置：通过STM32配置Lora模块"><span class="toc-text">配置：通过STM32配置Lora模块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过Arduino配置esp8266模块"><span class="toc-text">通过Arduino配置esp8266模块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据"><span class="toc-text">通信流程：由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器"><span class="toc-text">通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方案修改：Lora通信增加校验-Lora数据接收应答-光伏控制器简制-取消数据加密-取消微信小程序改为Web并提供建设气象站的完整流程与数据接口-增加esp8266数据上传加密-增加地图显示"><span class="toc-text">方案修改：Lora通信增加校验    Lora数据接收应答    光伏控制器简制    取消数据加密    取消微信小程序改为Web并提供建设气象站的完整流程与数据接口    增加esp8266数据上传加密    增加地图显示</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行-Google-或-百度）"><span class="toc-text">（注：此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行 Google 或 百度）</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、基础知识"><span class="toc-text">一、基础知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、模拟电路部分"><span class="toc-text">二、模拟电路部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-半导体器件"><span class="toc-text">1.半导体器件</span></a>
   </div>
 </div>
 
   
 <nav id="pagination">
   
-    <a href="/2018/06/12/模拟与数字电路笔记/" class="prev">&larr; Prev post 模拟与数字电路笔记</a>
-  
 
   
 
   
-    <a href="/2018/06/08/hello-world/" class="next">Next post Hello World &rarr;</a>
+    <a href="/2018/06/09/气象站/" class="next">Next post 气象站 &rarr;</a>
   
 </nav>
 
