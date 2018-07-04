@@ -20,7 +20,7 @@
   
     <meta name="description" content="As a young man, prepare and rule.">
   
-  <title>Tag: notes [ DIDA LAB ]</title>
+  <title>Tag: Notes [ DIDA LAB ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -104,7 +104,47 @@
       
       
   <div id="tag">
-    <h1>notes</h1>
+    <h1>Notes</h1>
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
     
       
       
@@ -114,23 +154,25 @@
       
         
       
+        
+      
       
       <div class="post-title-item">
   
-  <a href="/2018/06/17/Flipped_Week1/">
+  <a href="/2018/06/12/模拟与数字电路笔记/">
   
-    Flipped (Week 1)
+    模拟与数字电路笔记
   
   </a>
   <p class="page-title-sub">
-    <span id = "post-title-date">6-17</span>
+    <span id = "post-title-date">6-12</span>
     
     <span id = "post-title-categories">Category
     
     
       
       
-      <a href="/categories/English/">English</a>
+      <a href="/categories/Study-Notes/">Study Notes</a>
     
     </span>
     
@@ -141,13 +183,19 @@
     
       
       
-      <a href="/tags/notes/">notes</a>
+      <a href="/tags/Notes/">Notes</a>
     
       
         /
       
       
-      <a href="/tags/vocabulary/">vocabulary</a>
+      <a href="/tags/MindMap/">MindMap</a>
+    
+      
+        /
+      
+      
+      <a href="/tags/模拟与数字电路/">模拟与数字电路</a>
     
     </span>
     
@@ -165,12 +213,6 @@
       
         
       
-      
-    
-      
-      
-        
-      
         
       
       
@@ -178,47 +220,64 @@
       
       
         
+          
+        
+      
+        
+      
+        
       
       
+      <div class="post-title-item">
+  
+  <a href="/2018/06/13/线性代数与解析几何笔记/">
+  
+    线性代数与解析几何笔记
+  
+  </a>
+  <p class="page-title-sub">
+    <span id = "post-title-date">6-13</span>
+    
+    <span id = "post-title-categories">Category
+    
     
       
       
-        
-      
-      
+      <a href="/categories/Study-Notes/">Study Notes</a>
+    
+    </span>
+    
+    
+    <span id = "post-title-tags">
+    Tag
+    
     
       
       
-        
+      <a href="/tags/Notes/">Notes</a>
+    
+      
+        /
+      
+      
+      <a href="/tags/MindMap/">MindMap</a>
+    
+      
+        /
+      
+      
+      <a href="/tags/线代/">线代</a>
+    
+    </span>
+    
+    
+      <br>
       
       
     
-      
-      
-        
-      
-        
-      
-        
-      
-      
-    
-      
-      
-        
-      
-        
-      
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
+  </p>
+  
+</div>
       
     
   </div>
@@ -346,46 +405,6 @@ var turnoffBackgroundImage = false;
 var backgroundColor = "34495E";
 
 $(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
-    }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
-</script>
-</body>
-</html>
-
-
   prevEffect: 'none',
   nextEffect: 'none',
   helpers: {
