@@ -2,8 +2,6 @@
 
 
 
-  
-
 
 
 
@@ -18,9 +16,18 @@
   
   
   
-    <meta name="description" content="As a young man, prepare and rule.">
+    <meta name="description" content="项目框架
+模块开发无线收发与上传模块配置通过STM32配置Lora模块
+通过Arduino配置esp8266模块
+通信流程由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据
+通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器
+方案修改Lora通信增加校验
+Lora数据接收应答
+光伏控制器简制
+取消数据加密
+取消微信小...">
   
-  <title>Category: 嵌入式 [ DIDA LAB ]</title>
+  <title>气象站 [ DIDA LAB ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -39,6 +46,24 @@
 <body>
 <div class="side-navigate hide-area">
   
+    <div class="item prev">
+      <a href="/2018/07/05/线性代数与解析几何笔记/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        线性代数与解析几何笔记
+      </div>
+    </div>
+  
+  
+    <div class="item next">
+      <a href="/2018/07/05/模拟与数字电路笔记/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        模拟与数字电路笔记
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -78,7 +103,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/categories">Categories</a>
             
@@ -103,210 +128,82 @@
     <div id="content-inner">
       
       
-  <article id="page">
-    
+  <article id="post">
+    <h1>气象站</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2018-07-05</span>
       
-    
+        <span id = "post-title-updated">Updated at 2018-06-29</span>
       
-        <h1 class="center-title">
-          Category
-          
-        </h1>
       
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    <ul class="category-list">
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/English/">English</a>
-        
-          <span class="category-list-count">2</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a class="active" href="/categories/嵌入式/">嵌入式</a>
-        
-          <span class="category-list-count">2</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Begin/">Begin</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Study-Notes/">Study Notes</a>
-        
-          <span class="category-list-count">2</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Projects/">Projects</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Programming-Language/">Programming Language</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-    </ul>
-    
+      <span id = "post-title-categories">Category
       
       
         
+        
+        <a href="/categories/Projects/">Projects</a>
+      
+      </span>
       
       
-    
+      <span id = "post-title-tags">
+      Tag
       
       
         
-          
         
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/05/JLINK_STLINK/">
-  
-    STM32 J-LINK与ST-LINK 引脚定义
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-5</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/嵌入式/">嵌入式</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/STM32/">STM32</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
-    
-      
+        <a href="/tags/嵌入式/">嵌入式</a>
       
         
-      
-      
-    
-      
-      
+          /
         
-      
-      
-    
-      
-      
         
-          
-        
+        <a href="/tags/物联网/">物联网</a>
       
+      </span>
       
-      <div class="post-title-item">
-  
-  <a href="/2018/07/05/STM32之库开发/">
-  
-    STM32之库开发
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-5</span>
+    </p>
     
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/嵌入式/">嵌入式</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/STM32/">STM32</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
+    <h1 id="项目框架"><a href="#项目框架" class="headerlink" title="项目框架"></a>项目框架</h1><p><img src="气象站.jpg" alt="气象站项目框架"></p>
+<h1 id="模块开发"><a href="#模块开发" class="headerlink" title="模块开发"></a>模块开发</h1><h2 id="无线收发与上传模块"><a href="#无线收发与上传模块" class="headerlink" title="无线收发与上传模块"></a>无线收发与上传模块</h2><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>通过STM32配置Lora模块</p>
+<p>通过Arduino配置esp8266模块</p>
+<h3 id="通信流程"><a href="#通信流程" class="headerlink" title="通信流程"></a>通信流程</h3><p>由PC通过USART1向STM32发送数据，再转发至USART3由Lora（发送）模块发送数据</p>
+<p>通过Lora（接收）模块接收数据，再通过串口发送至esp8266，最后上传至服务器</p>
+<h3 id="方案修改"><a href="#方案修改" class="headerlink" title="方案修改"></a>方案修改</h3><p>Lora通信增加校验</p>
+<p>Lora数据接收应答</p>
+<p>光伏控制器简制</p>
+<p>取消数据加密</p>
+<p>取消微信小程序改为Web并提供建设气象站的完整流程与数据接口</p>
+<p>增加esp8266数据上传加密</p>
+<p>增加地图显示</p>
+
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目框架"><span class="toc-text">项目框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#模块开发"><span class="toc-text">模块开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#无线收发与上传模块"><span class="toc-text">无线收发与上传模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通信流程"><span class="toc-text">通信流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方案修改"><span class="toc-text">方案修改</span></a></li></ol></li></ol></li></ol>
+  </div>
+</div>
 
   
+<nav id="pagination">
+  
+    <a href="/2018/07/05/线性代数与解析几何笔记/" class="prev">&larr; Prev post 线性代数与解析几何笔记</a>
+  
+
+  
+
+  
+    <a href="/2018/07/05/模拟与数字电路笔记/" class="next">Next post 模拟与数字电路笔记 &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
 
       
       
@@ -424,6 +321,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "34495E";
