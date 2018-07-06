@@ -1,8 +1,6 @@
 
 
 
-  
-
 
 
 
@@ -18,9 +16,9 @@
   
   
   
-    <meta name="description" content="As a young man, prepare and rule.">
+    <meta name="description" content="之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 githu...">
   
-  <title>Tag: MindMap [ DIDA LAB ]</title>
+  <title>github pages 出现 “the CNAME is already taken” 的解决办法 [ DIDA LAB ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -39,6 +37,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2018/07/05/线性代数与解析几何笔记/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        线性代数与解析几何笔记
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -71,7 +78,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/tags">Tags</a>
             
@@ -103,194 +110,75 @@
     <div id="content-inner">
       
       
-  <div id="tag">
-    <h1>MindMap</h1>
-    
+  <article id="post">
+    <h1>github pages 出现 “the CNAME is already taken” 的解决办法</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2018-07-06</span>
+      
+        <span id = "post-title-updated">Updated at 2018-07-06</span>
+      
+      
+      <span id = "post-title-categories">Category
       
       
         
-      
         
+        <a href="/categories/github/">github</a>
+      
+      </span>
       
       
-    
-      
-      
-        
-      
-      
-    
+      <span id = "post-title-tags">
+      Tag
       
       
         
+        
+        <a href="/tags/blog/">blog</a>
       
         
-      
-      
-    
-      
-      
+          /
         
-      
         
+        <a href="/tags/domain/">domain</a>
       
+      </span>
       
+    </p>
     
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/05/模拟与数字电路笔记/">
-  
-    模拟与数字电路笔记
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-5</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/Study-Notes/">Study Notes</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/Notes/">Notes</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/MindMap/">MindMap</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/模拟与数字电路/">模拟与数字电路</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
-    
-      
-      
-        
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/05/线性代数与解析几何笔记/">
-  
-    线性代数与解析几何笔记
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-5</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/Study-Notes/">Study Notes</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/Notes/">Notes</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/MindMap/">MindMap</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/线代/">线代</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
+    <p>之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 <strong>“the CNAME is already taken”</strong> 。</p>
+<p>然后在网上到处搜索包括看官方的文档也没找到靠谱的解决方案。最后不得已请求 <a href="https://github.com/contact" target="_blank" rel="noopener">github support</a> ，然后收到了github support 的回复（泪牛满面 〒▽〒）：<br><img src="0.png" alt=""><br>大致上的意思是需要新增一个TXT的DNS解析记录，让github support 进行验证再释放绑定的域名。</p>
+<p>然后回复邮件告诉对方已经完成操作。</p>
+<p>最后就收到了已经释放域名的邮件。</p>
+<p>重新解析域名到github pages。</p>
+<p>稍等一会后，就会发现又可以访问了（再次泪牛满面 〒▽〒）。<br>但是这个时候还不能设定为https传输，需要稍等一会就可以了。</p>
+<p>PS: 邮件的回复需要等一段时间，我大概等两个邮件的回复用了一天吧。</p>
+
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
     
   </div>
+</div>
 
   
+<nav id="pagination">
+  
+
+  
+
+  
+    <a href="/2018/07/05/线性代数与解析几何笔记/" class="next">Next post 线性代数与解析几何笔记 &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
 
       
       
@@ -408,6 +296,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "34495E";
