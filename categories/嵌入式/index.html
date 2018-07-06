@@ -108,12 +108,12 @@
       
     
       
-    
-      
         <h1 class="center-title">
           Category
           
         </h1>
+      
+    
       
     
       
@@ -135,14 +135,14 @@
       
         <li class="category-list-item">
         
-          <a href="/categories/English/">English</a>
+          <a class="active" href="/categories/嵌入式/">嵌入式</a>
         
           <span class="category-list-count">2</span>
         </li>
       
         <li class="category-list-item">
         
-          <a class="active" href="/categories/嵌入式/">嵌入式</a>
+          <a href="/categories/English/">English</a>
         
           <span class="category-list-count">2</span>
         </li>
@@ -176,12 +176,6 @@
         </li>
       
     </ul>
-    
-      
-      
-        
-      
-      
     
       
       
@@ -234,6 +228,12 @@
   </p>
   
 </div>
+      
+    
+      
+      
+        
+      
       
     
       
@@ -392,6 +392,19 @@ if(window && window.location && window.location.host) {
 var isTriggerAnalytics = !( true && isIgnoreHost );
 
 </script>
+
+  <script>
+if(isTriggerAnalytics) {
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?<script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?5c2fd77db34c77c44215b94264d80aa8"; var s = document.getElementsByTagName("script")[0];  s.parentNode.insertBefore(hm, s); })(); </script>";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
+</script>
+
 
 
   <script>
