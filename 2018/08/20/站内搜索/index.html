@@ -16,9 +16,22 @@
   
   
   
-    <meta name="description" content="之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 githu...">
+    <meta name="description" content="前言随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。
+而第三方站内搜索的插件有：
+
+google自定义搜索（免费的标准版貌似有广告而且要科学上网）
+
+百度站内搜索（貌似不支持https并且只显示收录的页面）
+
+swiftype站内搜索（我的选择）
+
+
+swiftype网站配置
+首先注册swiftype账号并登录，也可直接使用google账号登录
+
+然后选择CREATE A NE...">
   
-  <title>github pages 出现 “the CNAME is already taken” 的解决办法 [ DIDA LAB ]</title>
+  <title>Hexo博客 站内搜索 配置 (swiftype) [ DIDA LAB ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -37,22 +50,13 @@
 <body>
 <div class="side-navigate hide-area">
   
-    <div class="item prev">
-      <a href="/2018/07/06/BaiduTongji/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        hexo博客 百度统计 配置
-      </div>
-    </div>
-  
   
     <div class="item next">
-      <a href="/2018/07/05/线性代数与解析几何笔记/">
+      <a href="/2018/07/21/Flipped_Week4/">
         <div class="item-icon"></div>
       </a>
       <div class="item-title">
-        线性代数与解析几何笔记
+        Flipped (Week4)
       </div>
     </div>
   
@@ -120,11 +124,11 @@
       
       
   <article id="post">
-    <h1>github pages 出现 “the CNAME is already taken” 的解决办法</h1>
+    <h1>Hexo博客 站内搜索 配置 (swiftype)</h1>
     <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2018-07-06</span>
+      <span id = "post-title-date">Created at 2018-08-20</span>
       
-        <span id = "post-title-updated">Updated at 2018-08-20</span>
+        <span id = "post-title-updated">Updated at 2018-08-22</span>
       
       
       <span id = "post-title-categories">Category
@@ -143,25 +147,85 @@
       
         
         
-        <a href="/tags/Github/">Github</a>
+        <a href="/tags/Hexo/">Hexo</a>
       
         
           /
         
         
-        <a href="/tags/Domain/">Domain</a>
+        <a href="/tags/教程/">教程</a>
+      
+        
+          /
+        
+        
+        <a href="/tags/swiftype/">swiftype</a>
       
       </span>
       
     </p>
     
-    <p>之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 <strong>“the CNAME is already taken”</strong> 。</p>
-<p>然后在网上到处搜索包括看官方的文档也没找到靠谱的解决方案。最后不得已请求 <a href="https://github.com/contact" target="_blank" rel="noopener">github support</a> ，然后收到了github support 的回复（泪牛满面 〒▽〒）：<br><img src="0.png" alt=""><br>大致上的意思是需要新增一个TXT的DNS解析记录，让github support 进行验证再释放绑定的域名。</p>
-<p>然后回复邮件告诉对方已经完成操作。</p>
-<p>最后就收到了已经释放域名的邮件。</p>
-<p>重新解析域名到github pages。</p>
-<p>稍等一会后，就会发现又可以访问了（再次泪牛满面 〒▽〒）。<br>但是这个时候还不能设定为https传输，需要稍等一会就可以了。</p>
-<p>PS: 邮件的回复需要等一段时间，我大概等两个邮件的回复用了一天吧。</p>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。</p>
+<p>而第三方站内搜索的插件有：</p>
+<ul>
+<li><p>google自定义搜索（免费的标准版貌似有广告而且要科学上网）</p>
+</li>
+<li><p>百度站内搜索（貌似不支持https并且只显示收录的页面）</p>
+</li>
+<li><p>swiftype站内搜索（我的选择）</p>
+</li>
+</ul>
+<h1 id="swiftype网站配置"><a href="#swiftype网站配置" class="headerlink" title="swiftype网站配置"></a>swiftype网站配置</h1><ul>
+<li><p>首先注册swiftype账号并登录，也可直接使用google账号登录</p>
+</li>
+<li><p>然后选择<code>CREATE A NEW ENGINE</code>,再进行填入网址等一系列操作,设置默认就好</p>
+</li>
+<li><p>得到左边为各项设置的搜索引擎界面</p>
+</li>
+</ul>
+<div align="center"><img src="swiftype_left.png" alt="搜索引擎界面左边"></div>
+
+<ul>
+<li>点击<code>install search</code>，进入<code>安装代码</code>界面,并将这段代码复制</li>
+</ul>
+<div align="center"><img src="install_code.jpg" alt="安装代码"></div>
+
+<ul>
+<li>点击<code>change configuration</code>，可以看到左边有设置选项</li>
+</ul>
+<div align="center"><img src="configuration.png" alt="设置选项"></div>
+
+<ul>
+<li>特别注意，<code>search field</code>选项</li>
+</ul>
+<blockquote>
+<p>如果博客本身就有搜索框，那么修改搜索框的<code>class</code>为<code>st-default-search-input</code>就好了<br>但是如果没有，则可以自行添加搜索框，并修改<code>class</code>；或者选择swiftype提供的搜索框即可<br>由于我的博客（random主题）本身没有搜索框，所以直接选择了swiftype提供的搜索框</p>
+</blockquote>
+<div align="center"><img src="search_box.png" alt="显示效果"></div>
+
+<ul>
+<li><p>同时，可以在左侧的设置选项中<code>查看搜索统计情况</code>、<code>预览搜索结果</code>、<code>设置搜索权重</code>、<code>添加域名</code>、<code>查看抓取的页面</code>等</p>
+</li>
+<li><p><code>注意：</code>swiftype的爬虫抓取页面需要一定的时间，所以可能需要等一会</p>
+</li>
+<li><p>到此为止，swiftype网站的配置就完成了</p>
+</li>
+</ul>
+<h1 id="博客的配置"><a href="#博客的配置" class="headerlink" title="博客的配置"></a>博客的配置</h1><ul>
+<li>打开博客主题的配置文件<code>_config.yml</code>，在最后添加</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># swiftype站内搜索</span></span><br><span class="line">swift_search:</span><br><span class="line">enable: true</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>打开博客主题的<code>layout</code>文件夹，在其中找到<code>footer.swig</code>文件（或者其他以footer命名的文件），把之前复制的脚本代码粘贴到其中</p>
+</li>
+<li><p>注意：要放在<code>body标签</code>中</p>
+</li>
+<li><p>至此，博客站内搜索的工作就做完了，然后重新将博客deploy即可</p>
+</li>
+<li><p>搜索效果</p>
+</li>
+</ul>
+<div align="center"><img src="search_results.png" alt="搜索效果"></div>
 
     
       <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
@@ -172,20 +236,18 @@
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
   <div class="random-toc">
     <h2>Table of Content</h2>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#swiftype网站配置"><span class="toc-text">swiftype网站配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客的配置"><span class="toc-text">博客的配置</span></a></li></ol>
   </div>
 </div>
 
   
 <nav id="pagination">
   
-    <a href="/2018/07/06/BaiduTongji/" class="prev">&larr; Prev post hexo博客 百度统计 配置</a>
-  
 
   
 
   
-    <a href="/2018/07/05/线性代数与解析几何笔记/" class="next">Next post 线性代数与解析几何笔记 &rarr;</a>
+    <a href="/2018/07/21/Flipped_Week4/" class="next">Next post Flipped (Week4) &rarr;</a>
   
 </nav>
 
