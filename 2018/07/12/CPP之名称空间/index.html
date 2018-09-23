@@ -1,168 +1,149 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   
-  <meta name="author" content="DiDong">
+  <title>C++之名称空间 | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="C++" />
   
   
   
   
-    <meta name="description" content="传统的C++名称空间一些术语
+  <meta name="description" content="传统的C++名称空间一些术语  声明区域 潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。">
+<meta name="keywords" content="C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++之名称空间">
+<meta property="og:url" content="https://didongdongdi.github.io/2018/07/12/CPP之名称空间/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="传统的C++名称空间一些术语  声明区域 潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-09-23T05:17:53.068Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C++之名称空间">
+<meta name="twitter:description" content="传统的C++名称空间一些术语  声明区域 潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。">
+  
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
 
-声明区域
-潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
-C++关于全局变量和局部变量的规则定义了一种名称空间层次。每个声明区域都可以声明名称，这些名称独立于在其他声明区域中声明的...">
-  
-  <title>C++之名称空间 [ DIDA LAB ]</title>
-  
-    <link rel="alternate" href="/atom.xml" title="DIDA LAB">
-  
-  
-    <link rel="shortcut icon" href="/favicon.ico">
-  
-  
-  <link rel="stylesheet" href="/css/random.css">
-<link rel="stylesheet" href="/css/vegas.min.css">
-<link rel="stylesheet" href="/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/css/plyr.css">
-  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
 </head>
 
-<body>
-<div class="side-navigate hide-area">
-  
-    <div class="item prev">
-      <a href="/2018/07/21/Flipped_Week4/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        Flipped (Week4)
-      </div>
-    </div>
-  
-  
-    <div class="item next">
-      <a href="/2018/07/12/Flipped_Week3/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        Flipped (Week3)
-      </div>
-    </div>
-  
-</div>
-<div id="outer-container" class="hide-area">
-<div id="container">
-  <div id="menu-outer" class="slide-down">
-    <div id="menu-inner">
-      <div id="brand">
-        
-        <a onClick="openUserCard()">
-          <img id="avatar" src="/avatar.jpg"/>
-          <div id="homelink">DIDA LAB</div>
-        </a>
-      </div>
-      <div id="menu-list">
-        <ul>
-        
-        
-          
-            <li>
-          
-            <a href="/">Home</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/archives">Archives</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/tags">Tags</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/categories">Categories</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/about">About</a>
-            
-          </li>
-        
-        </ul>
-      </div>
-      <div id="show-menu">
-        <button>Menu</button>
-      </div>
-    </div>
-  </div>
 
-  <div id="content-outer">
-    <div id="content-inner">
-      
-      
-  <article id="post">
-    <h1>C++之名称空间</h1>
-    <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2018-07-12</span>
-      
-        <span id = "post-title-updated">Updated at 2018-08-20</span>
-      
-      
-      <span id = "post-title-categories">Category
-      
-      
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
         
-        
-        <a href="/categories/Programming-Language/">Programming Language</a>
-      
-      </span>
-      
-      
-      <span id = "post-title-tags">
-      Tag
-      
-      
-        
-        
-        <a href="/tags/C/">C++</a>
-      
-      </span>
-      
-    </p>
+          <section id="main" style="float:none;"><article id="post-CPP之名称空间" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h1 id="传统的C-名称空间"><a href="#传统的C-名称空间" class="headerlink" title="传统的C++名称空间"></a>传统的C++名称空间</h1><h2 id="一些术语"><a href="#一些术语" class="headerlink" title="一些术语"></a>一些术语</h2><blockquote>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      C++之名称空间
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/07/12/CPP之名称空间/" class="article-date">
+	  <time datetime="2018-07-12T11:28:36.165Z" itemprop="datePublished">July 12, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Programming-Language/">Programming Language</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="传统的C-名称空间"><a href="#传统的C-名称空间" class="headerlink" title="传统的C++名称空间"></a>传统的C++名称空间</h1><h2 id="一些术语"><a href="#一些术语" class="headerlink" title="一些术语"></a>一些术语</h2><blockquote>
 <ul>
 <li>声明区域</li>
 <li>潜在作用域<br>变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。</li>
 </ul>
 </blockquote>
+<a id="more"></a>
 <p>C++关于全局变量和局部变量的规则定义了一种名称空间层次。每个声明区域都可以声明名称，这些名称独立于在其他声明区域中声明的名称。在一个函数中声明的局部变量不会与在另一个函数中声明的局部变量发生冲突。</p>
 <hr>
 <h1 id="新的名称空间的特性"><a href="#新的名称空间的特性" class="headerlink" title="新的名称空间的特性"></a>新的名称空间的特性</h1><p>C++新增了这样一种功能，即<strong>通过定义一种新的声明区域来创建命名的名称空间</strong>，这样做的目的之一是提供一个声明名称的区域。</p>
@@ -260,245 +241,213 @@ C++关于全局变量和局部变量的规则定义了一种名称空间层次�
 <p>注意：使用名称空间的主旨使简化大型编程项目的管理工作。</p>
 <p>本文地址 <a href="https://didongdongdi.github.io/2018/07/12/CPP之名称空间/">https://didongdongdi.github.io/2018/07/12/CPP之名称空间/</a> </p>
 
-    
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
-    
-  </article>
-  <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
-  <div class="random-toc">
-    <h2>Table of Content</h2>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#传统的C-名称空间"><span class="toc-text">传统的C++名称空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一些术语"><span class="toc-text">一些术语</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新的名称空间的特性"><span class="toc-text">新的名称空间的特性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#特性"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#using声明和using编译指令"><span class="toc-text">using声明和using编译指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#using声明"><span class="toc-text">using声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#using编译指令"><span class="toc-text">using编译指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#using编译指令和using声明之比较"><span class="toc-text">using编译指令和using声明之比较</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用using编译指令导入一个名称空间中所有的名称"><span class="toc-text">使用using编译指令导入一个名称空间中所有的名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用多个using声明"><span class="toc-text">使用多个using声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#名称空间的其他特性"><span class="toc-text">名称空间的其他特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#将名称空间声明进行嵌套"><span class="toc-text">将名称空间声明进行嵌套</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#将using编译指令用于myth名称空间的情况"><span class="toc-text">将using编译指令用于myth名称空间的情况</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可以给名称空间创建别名"><span class="toc-text">可以给名称空间创建别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#未命名的名称空间"><span class="toc-text">未命名的名称空间</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#名称空间及其前途"><span class="toc-text">名称空间及其前途</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#指导原则"><span class="toc-text">指导原则</span></a></li></ol></li></ol>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Programming-Language/">Programming Language</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
   </div>
-</div>
-
   
-<nav id="pagination">
+    
+<nav id="article-nav">
   
-    <a href="/2018/07/21/Flipped_Week4/" class="prev">&larr; Prev post Flipped (Week4)</a>
+    <a href="/2018/07/21/Flipped_Week4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Flipped (Week4)
+        
+      </div>
+    </a>
   
-
   
-
-  
-    <a href="/2018/07/12/Flipped_Week3/" class="next">Next post Flipped (Week3) &rarr;</a>
+    <a href="/2018/07/12/Flipped_Week3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Flipped (Week3)</div>
+    </a>
   
 </nav>
 
-  <!-- JiaThis Button BEGIN -->
-
-<!-- JiaThis Button END -->
-
   
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
+</article>
 
+<!-- Table of Contents -->
 
-      
-      
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#传统的C-名称空间"><span class="nav-number">1.</span> <span class="nav-text">传统的C++名称空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些术语"><span class="nav-number">1.1.</span> <span class="nav-text">一些术语</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的名称空间的特性"><span class="nav-number">2.</span> <span class="nav-text">新的名称空间的特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特性"><span class="nav-number">2.1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#using声明和using编译指令"><span class="nav-number">2.2.</span> <span class="nav-text">using声明和using编译指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#using声明"><span class="nav-number">2.2.1.</span> <span class="nav-text">using声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#using编译指令"><span class="nav-number">2.2.2.</span> <span class="nav-text">using编译指令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#using编译指令和using声明之比较"><span class="nav-number">2.3.</span> <span class="nav-text">using编译指令和using声明之比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用using编译指令导入一个名称空间中所有的名称"><span class="nav-number">2.3.1.</span> <span class="nav-text">使用using编译指令导入一个名称空间中所有的名称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用多个using声明"><span class="nav-number">2.3.2.</span> <span class="nav-text">使用多个using声明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#名称空间的其他特性"><span class="nav-number">2.4.</span> <span class="nav-text">名称空间的其他特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将名称空间声明进行嵌套"><span class="nav-number">2.4.1.</span> <span class="nav-text">将名称空间声明进行嵌套</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#将using编译指令用于myth名称空间的情况"><span class="nav-number">2.4.1.1.</span> <span class="nav-text">将using编译指令用于myth名称空间的情况</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可以给名称空间创建别名"><span class="nav-number">2.4.2.</span> <span class="nav-text">可以给名称空间创建别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#未命名的名称空间"><span class="nav-number">2.4.3.</span> <span class="nav-text">未命名的名称空间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#名称空间及其前途"><span class="nav-number">3.</span> <span class="nav-text">名称空间及其前途</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指导原则"><span class="nav-number">3.1.</span> <span class="nav-text">指导原则</span></a></li></ol></li></ol>
+    
     </div>
-  </div>
+  </aside>
 
-  <div id="bottom-outer">
-    <div id="bottom-inner">
-      Site by DiDong using
-      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
-      <br>
-      
+
+</section>
+        
+      </div>
+
     </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
   </div>
-</div>
-
-</div>
+</footer>
 
 
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="/avatar.jpg">
-    <p id="description">As a young man, prepare and rule.</p>
-    <ul class="social-icon">
-  
-  
-    <li>
-      <a href="https://github.com/DiDongDongDi">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.zhihu.com/people/wang-yu-87-29-89/activities">
-        
-          <i class="icon iconfont zhihu">&#xe60b;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.linkedin.com/feed/">
-        
-          <i class="icon iconfont linkedin">&#xe601;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="\atom.xml">
-        
-          <i class="icon iconfont rss">&#xe60e;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-  </div>
-</div>
-
+<!-- min height -->
 
 <script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
 
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 
-var isTriggerAnalytics = !( true && isIgnoreHost );
 
+    <!-- headerblur min height -->
+    
+    
 </script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
 
-  <script>
-if(isTriggerAnalytics) {
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?5c2fd77db34c77c44215b94264d80aa8";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
-</script>
+<!-- mathjax config similar to math.stackexchange -->
 
-
-
-  <script>
-if(isTriggerAnalytics) {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-120518210-1', 'auto');
-  ga('send', 'pageview');
-}
-
-</script>
-
-
-
-  
-  
-    <script src="/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/js/vegas.min.js"></script>
-  
-    <script src="/js/random.js"></script>
-  
-    <script src="/js/highlight.pack.js"></script>
-  
-    <script src="/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/js/plyr.js"></script>
-  
-
-<script>
-
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":60};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-  turnoffBackgroundImage = true;
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
     }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+  });
 </script>
 
-<script color="256,256,256" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  <script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
-

@@ -1,168 +1,149 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   
-  <meta name="author" content="DiDong">
+  <title>the Classification of Programming Language | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  
-  
-  
-    <meta name="description" content="计算机语言分类低级语言
-高级语言
-专用语言
-脚本语言 
-对数据类型的要求强类型语言—-强调数据类型 
-弱类型语音—-忽略数据类型 
-具体介绍低级语言机器语言、汇编语言和符号语言
-注意：汇编语言源程序必须经过汇编，生成目标文件，然后执行 
-高级语言BASIC（True basic、Qbasic、Virtual Basic）、C、C++、PASCAL、FORTRAN、智能化语言（LISP、Pro...">
-  
-  <title>the Classification of Programming Language [ DIDA LAB ]</title>
-  
-    <link rel="alternate" href="/atom.xml" title="DIDA LAB">
+  <meta name="keywords" content="Classification" />
   
   
-    <link rel="shortcut icon" href="/favicon.ico">
   
   
-  <link rel="stylesheet" href="/css/random.css">
-<link rel="stylesheet" href="/css/vegas.min.css">
-<link rel="stylesheet" href="/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/css/plyr.css">
+  <meta name="description" content="计算机语言分类低级语言 高级语言 专用语言 脚本语言">
+<meta name="keywords" content="Classification">
+<meta property="og:type" content="article">
+<meta property="og:title" content="the Classification of Programming Language">
+<meta property="og:url" content="https://didongdongdi.github.io/2018/07/05/the Classification of Programming Language/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="计算机语言分类低级语言 高级语言 专用语言 脚本语言">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://didongdongdi.github.io/2018/07/05/the%20Classification%20of%20Programming%20Language/the%20Classification%20of%20Programming%20Language.jpg">
+<meta property="og:updated_time" content="2018-09-23T05:19:44.193Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="the Classification of Programming Language">
+<meta name="twitter:description" content="计算机语言分类低级语言 高级语言 专用语言 脚本语言">
+<meta name="twitter:image" content="https://didongdongdi.github.io/2018/07/05/the%20Classification%20of%20Programming%20Language/the%20Classification%20of%20Programming%20Language.jpg">
   
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
 </head>
 
-<body>
-<div class="side-navigate hide-area">
-  
-    <div class="item prev">
-      <a href="/2018/07/05/模拟与数字电路笔记/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        模拟与数字电路笔记
-      </div>
-    </div>
-  
-  
-    <div class="item next">
-      <a href="/2018/07/05/STM32之库开发/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        STM32之库开发
-      </div>
-    </div>
-  
-</div>
-<div id="outer-container" class="hide-area">
-<div id="container">
-  <div id="menu-outer" class="slide-down">
-    <div id="menu-inner">
-      <div id="brand">
-        
-        <a onClick="openUserCard()">
-          <img id="avatar" src="/avatar.jpg"/>
-          <div id="homelink">DIDA LAB</div>
-        </a>
-      </div>
-      <div id="menu-list">
-        <ul>
-        
-        
-          
-            <li>
-          
-            <a href="/">Home</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/archives">Archives</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/tags">Tags</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/categories">Categories</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/about">About</a>
-            
-          </li>
-        
-        </ul>
-      </div>
-      <div id="show-menu">
-        <button>Menu</button>
-      </div>
-    </div>
-  </div>
 
-  <div id="content-outer">
-    <div id="content-inner">
-      
-      
-  <article id="post">
-    <h1>the Classification of Programming Language</h1>
-    <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2018-07-05</span>
-      
-        <span id = "post-title-updated">Updated at 2018-06-29</span>
-      
-      
-      <span id = "post-title-categories">Category
-      
-      
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
         
-        
-        <a href="/categories/Programming-Language/">Programming Language</a>
-      
-      </span>
-      
-      
-      <span id = "post-title-tags">
-      Tag
-      
-      
-        
-        
-        <a href="/tags/Classification/">Classification</a>
-      
-      </span>
-      
-    </p>
+          <section id="main" style="float:none;"><article id="post-the Classification of Programming Language" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h1 id="计算机语言分类"><a href="#计算机语言分类" class="headerlink" title="计算机语言分类"></a>计算机语言分类</h1><p>低级语言</p>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      the Classification of Programming Language
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/07/05/the Classification of Programming Language/" class="article-date">
+	  <time datetime="2018-07-05T11:32:20.613Z" itemprop="datePublished">July 5, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Programming-Language/">Programming Language</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="计算机语言分类"><a href="#计算机语言分类" class="headerlink" title="计算机语言分类"></a>计算机语言分类</h1><p>低级语言</p>
 <p>高级语言</p>
 <p>专用语言</p>
 <p>脚本语言 </p>
+<a id="more"></a>
 <h1 id="对数据类型的要求"><a href="#对数据类型的要求" class="headerlink" title="对数据类型的要求"></a>对数据类型的要求</h1><p>强类型语言—-强调数据类型 </p>
 <p>弱类型语音—-忽略数据类型 </p>
 <h1 id="具体介绍"><a href="#具体介绍" class="headerlink" title="具体介绍"></a>具体介绍</h1><h3 id="低级语言"><a href="#低级语言" class="headerlink" title="低级语言"></a>低级语言</h3><p>机器语言、汇编语言和符号语言</p>
@@ -189,245 +170,213 @@
 <p><img src="the Classification of Programming Language.jpg" alt="the Classification of Programming Language"></p>
 <p>本文地址 <a href="https://didongdongdi.github.io/2018/07/05/the Classification of Programming Language/">https://didongdongdi.github.io/2018/07/05/the Classification of Programming Language/</a> </p>
 
-    
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
-    
-  </article>
-  <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
-  <div class="random-toc">
-    <h2>Table of Content</h2>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机语言分类"><span class="toc-text">计算机语言分类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#对数据类型的要求"><span class="toc-text">对数据类型的要求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体介绍"><span class="toc-text">具体介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#低级语言"><span class="toc-text">低级语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#高级语言"><span class="toc-text">高级语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#专用语言"><span class="toc-text">专用语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本语言"><span class="toc-text">脚本语言</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机高级语言"><span class="toc-text">计算机高级语言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#编译型语言"><span class="toc-text">编译型语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解释型语言"><span class="toc-text">解释型语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#混合型"><span class="toc-text">混合型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本语言-1"><span class="toc-text">脚本语言</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新兴编程语言"><span class="toc-text">新兴编程语言</span></a></li></ol>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Programming-Language/">Programming Language</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Classification/">Classification</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
   </div>
-</div>
-
   
-<nav id="pagination">
+    
+<nav id="article-nav">
   
-    <a href="/2018/07/05/模拟与数字电路笔记/" class="prev">&larr; Prev post 模拟与数字电路笔记</a>
+    <a href="/2018/07/05/模拟与数字电路笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          模拟与数字电路笔记
+        
+      </div>
+    </a>
   
-
   
-
-  
-    <a href="/2018/07/05/STM32之库开发/" class="next">Next post STM32之库开发 &rarr;</a>
+    <a href="/2018/07/05/STM32之库开发/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">STM32之库开发</div>
+    </a>
   
 </nav>
 
-  <!-- JiaThis Button BEGIN -->
-
-<!-- JiaThis Button END -->
-
   
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
+</article>
 
+<!-- Table of Contents -->
 
-      
-      
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机语言分类"><span class="nav-number">1.</span> <span class="nav-text">计算机语言分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对数据类型的要求"><span class="nav-number">2.</span> <span class="nav-text">对数据类型的要求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#具体介绍"><span class="nav-number">3.</span> <span class="nav-text">具体介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#低级语言"><span class="nav-number">3.0.1.</span> <span class="nav-text">低级语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级语言"><span class="nav-number">3.0.2.</span> <span class="nav-text">高级语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#专用语言"><span class="nav-number">3.0.3.</span> <span class="nav-text">专用语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本语言"><span class="nav-number">3.0.4.</span> <span class="nav-text">脚本语言</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机高级语言"><span class="nav-number">4.</span> <span class="nav-text">计算机高级语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编译型语言"><span class="nav-number">4.0.1.</span> <span class="nav-text">编译型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释型语言"><span class="nav-number">4.0.2.</span> <span class="nav-text">解释型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#混合型"><span class="nav-number">4.0.3.</span> <span class="nav-text">混合型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本语言-1"><span class="nav-number">4.0.4.</span> <span class="nav-text">脚本语言</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新兴编程语言"><span class="nav-number">5.</span> <span class="nav-text">新兴编程语言</span></a></li></ol>
+    
     </div>
-  </div>
+  </aside>
 
-  <div id="bottom-outer">
-    <div id="bottom-inner">
-      Site by DiDong using
-      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
-      <br>
-      
+
+</section>
+        
+      </div>
+
     </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
   </div>
-</div>
-
-</div>
+</footer>
 
 
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="/avatar.jpg">
-    <p id="description">As a young man, prepare and rule.</p>
-    <ul class="social-icon">
-  
-  
-    <li>
-      <a href="https://github.com/DiDongDongDi">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.zhihu.com/people/wang-yu-87-29-89/activities">
-        
-          <i class="icon iconfont zhihu">&#xe60b;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.linkedin.com/feed/">
-        
-          <i class="icon iconfont linkedin">&#xe601;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="\atom.xml">
-        
-          <i class="icon iconfont rss">&#xe60e;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-  </div>
-</div>
-
+<!-- min height -->
 
 <script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
 
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 
-var isTriggerAnalytics = !( true && isIgnoreHost );
 
+    <!-- headerblur min height -->
+    
+    
 </script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
 
-  <script>
-if(isTriggerAnalytics) {
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?5c2fd77db34c77c44215b94264d80aa8";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
-</script>
+<!-- mathjax config similar to math.stackexchange -->
 
-
-
-  <script>
-if(isTriggerAnalytics) {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-120518210-1', 'auto');
-  ga('send', 'pageview');
-}
-
-</script>
-
-
-
-  
-  
-    <script src="/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/js/vegas.min.js"></script>
-  
-    <script src="/js/random.js"></script>
-  
-    <script src="/js/highlight.pack.js"></script>
-  
-    <script src="/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/js/plyr.js"></script>
-  
-
-<script>
-
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":60};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-  turnoffBackgroundImage = true;
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
     }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+  });
 </script>
 
-<script color="256,256,256" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  <script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
-

@@ -1,568 +1,488 @@
-
-
-
-
-  
-
-
-
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   
-  <meta name="author" content="DiDong">
-  
-  
+  <title>Category: 模拟与数字电路 | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
-    <meta name="description" content="As a young man, prepare and rule.">
-  
-  <title>Category: 模拟与数字电路 [ DIDA LAB ]</title>
-  
-    <link rel="alternate" href="/atom.xml" title="DIDA LAB">
   
   
-    <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="description" content="As a young man, prepare and rule.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DIDA LAB">
+<meta property="og:url" content="https://didongdongdi.github.io/categories/模拟与数字电路/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="As a young man, prepare and rule.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DIDA LAB">
+<meta name="twitter:description" content="As a young man, prepare and rule.">
   
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
   
-  <link rel="stylesheet" href="/css/random.css">
-<link rel="stylesheet" href="/css/vegas.min.css">
-<link rel="stylesheet" href="/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/css/plyr.css">
+  <link rel="icon" href="/css/images/favicon.ico">
   
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
 </head>
 
-<body>
-<div class="side-navigate hide-area">
+
+
+  <body>
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main">
   
   
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+
+      <a href="/2018/07/05/模拟与数字电路笔记/" class="archive-article-date">
+		  <time datetime="2018-07-05T11:32:20.622Z" itemprop="datePublished">Jul 05, 2018</time>
+	  </a>
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/2018/07/05/模拟与数字电路笔记/">模拟与数字电路笔记</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
+
+</section>
+          <aside id="sidebar">
+  
+    <div style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 72%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="Search">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
 </div>
-<div id="outer-container" class="hide-area">
-<div id="container">
-  <div id="menu-outer" class="slide-down">
-    <div id="menu-inner">
-      <div id="brand">
-        
-        <a onClick="openUserCard()">
-          <img id="avatar" src="/avatar.jpg"/>
-          <div id="homelink">DIDA LAB</div>
-        </a>
-      </div>
-      <div id="menu-list">
-        <ul>
-        
-        
-          
-            <li>
-          
-            <a href="/">Home</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/archives">Archives</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/tags">Tags</a>
-            
-          </li>
-        
-          
-            <li class="active">
-          
-            <a href="/categories">Categories</a>
-            
-          </li>
-        
-          
-            <li>
-          
-            <a href="/about">About</a>
-            
-          </li>
-        
-        </ul>
-      </div>
-      <div id="show-menu">
-        <button>Menu</button>
-      </div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">social</h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	
+   			<li><a href="https://github.com/DiDongDongDi" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="https://www.zhihu.com/people/wang-yu-87-29-89/activities" title="ZhiHu"><i class="fa fa-zhihu" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="http://www.linkedin.com/feed/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="\atom.xml" title="Rss"><i class="fa fa-rss" aria-hidden="true"></i></a></li> 
+
+   		
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
     </div>
   </div>
 
-  <div id="content-outer">
-    <div id="content-inner">
-      
-      
-  <article id="page">
+
+  
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <h1 class="center-title">
-          Category
-          
-        </h1>
-      
-    
-      
-    
-      
-    
-    <ul class="category-list">
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Blog/">Blog</a>
-        
-          <span class="category-list-count">4</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Problem/">Problem</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Programming-Language/">Programming Language</a>
-        
-          <span class="category-list-count">2</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/English/">English</a>
-        
-          <span class="category-list-count">5</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Git/">Git</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/嵌入式/">嵌入式</a>
-        
-          <span class="category-list-count">2</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Qt5/">Qt5</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a class="active" href="/categories/模拟与数字电路/">模拟与数字电路</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/Projects/">Projects</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
-        <li class="category-list-item">
-        
-          <a href="/categories/线代/">线代</a>
-        
-          <span class="category-list-count">1</span>
-        </li>
-      
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>Recent Posts</a></li>
     </ul>
-    
-      
-      
+    <div class="widget">
+      <ul>
         
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/05/模拟与数字电路笔记/">
-  
-    模拟与数字电路笔记
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-5</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/模拟与数字电路/">模拟与数字电路</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/Notes/">Notes</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/MindMap/">MindMap</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-      
-      
-        
-      
-      
-    
-  </article>
+          <li class="clearfix">
 
-  
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
 
-      
-      
+              <h6 style="margin: 0;"><a href="/2018/09/06/Capital/">CentOS7登录 之 &#34;Sorry,that doesn&#39;t work.Please try again.&#34;</a></h6>
+              <span>September 6, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="/2018/08/29/GitConmand/" title=""><img width="50" height="50" src="http://static.simpledesktops.com/uploads/desktops/2018/07/29/night.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/08/29/GitConmand/">GitCommand</a></h6>
+              <span>August 29, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/08/20/评论功能/">Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</a></h6>
+              <span>August 20, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/08/20/站内搜索/">Hexo博客 站内搜索 配置 (swiftype)</a></h6>
+              <span>August 20, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/07/21/Flipped_Week4/">Flipped (Week4)</a></h6>
+              <span>July 21, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/07/12/CPP之名称空间/">C++之名称空间</a></h6>
+              <span>July 12, 2018</span>
+            </div>
+
+          </li>
+        
+      </ul>
     </div>
   </div>
 
-  <div id="bottom-outer">
-    <div id="bottom-inner">
-      Site by DiDong using
-      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
-      <br>
-      
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
-</div>
-
-</div>
 
 
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="/avatar.jpg">
-    <p id="description">As a young man, prepare and rule.</p>
-    <ul class="social-icon">
   
-  
-    <li>
-      <a href="https://github.com/DiDongDongDi">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.zhihu.com/people/wang-yu-87-29-89/activities">
-        
-          <i class="icon iconfont zhihu">&#xe60b;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.linkedin.com/feed/">
-        
-          <i class="icon iconfont linkedin">&#xe601;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="\atom.xml">
-        
-          <i class="icon iconfont rss">&#xe60e;</i>
-        
-      </a>
-    </li>
-  
-</ul>
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
+    </div>
   </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 14px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 12px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Novel/" style="font-size: 16px;">Novel</a> <a href="/tags/STM32/" style="font-size: 12px;">STM32</a> <a href="/tags/Vocabulary/" style="font-size: 18px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 10px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 14px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">15</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
 </div>
 
+<!-- mathjax config similar to math.stackexchange -->
 
-<script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
-
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
-
-var isTriggerAnalytics = !( true && isIgnoreHost );
-
-</script>
-
-  <script>
-if(isTriggerAnalytics) {
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?5c2fd77db34c77c44215b94264d80aa8";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
-</script>
-
-
-
-  <script>
-if(isTriggerAnalytics) {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-120518210-1', 'auto');
-  ga('send', 'pageview');
-}
-
-</script>
-
-
-
-  
-  
-    <script src="/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/js/vegas.min.js"></script>
-  
-    <script src="/js/random.js"></script>
-  
-    <script src="/js/highlight.pack.js"></script>
-  
-    <script src="/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/js/plyr.js"></script>
-  
-
-<script>
-
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":60};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
     }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+  });
 </script>
 
-<script color="256,256,256" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  <script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
-

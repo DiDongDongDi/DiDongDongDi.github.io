@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>DIDA LAB</title>
   
-  
+  <subtitle>DiDong&#39;s Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
@@ -50,7 +50,7 @@
     <link href="https://didongdongdi.github.io/2018/08/29/GitConmand/"/>
     <id>https://didongdongdi.github.io/2018/08/29/GitConmand/</id>
     <published>2018-08-29T07:48:58.485Z</published>
-    <updated>2018-08-29T07:52:53.587Z</updated>
+    <updated>2018-09-23T06:04:28.163Z</updated>
     
     <summary type="html">
     
@@ -77,17 +77,13 @@
     <link href="https://didongdongdi.github.io/2018/08/20/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
     <id>https://didongdongdi.github.io/2018/08/20/评论功能/</id>
     <published>2018-08-20T08:51:42.731Z</published>
-    <updated>2018-08-22T16:11:26.782Z</updated>
+    <updated>2018-09-23T05:16:38.956Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;作为一个完整的博客，评论功能自然是必不可少的。&lt;/p&gt;
+&lt;p&gt;而可供选择的第三方评论系统有很多，但不是被墙（如Disqus）就是停止服务（如友言、网易云跟帖），或者需要域名备案（如畅言）。&lt;/p&gt;
+&lt;p&gt;所以只能把目光投向一款来自韩国的评论系统——来必力(livere)。&lt;/p&gt;
     
     </summary>
     
@@ -107,17 +103,12 @@
     <link href="https://didongdongdi.github.io/2018/08/20/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/"/>
     <id>https://didongdongdi.github.io/2018/08/20/站内搜索/</id>
     <published>2018-08-20T07:25:47.166Z</published>
-    <updated>2018-08-22T04:39:02.394Z</updated>
+    <updated>2018-09-23T05:20:17.886Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。&lt;/p&gt;
+&lt;p&gt;而第三方站内搜索的插件有：&lt;/p&gt;
     
     </summary>
     
@@ -137,17 +128,14 @@
     <link href="https://didongdongdi.github.io/2018/07/21/Flipped_Week4/"/>
     <id>https://didongdongdi.github.io/2018/07/21/Flipped_Week4/</id>
     <published>2018-07-21T15:10:33.145Z</published>
-    <updated>2018-08-20T11:09:55.166Z</updated>
+    <updated>2018-09-23T05:18:49.512Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;2018-07-20-p16&quot;&gt;&lt;a href=&quot;#2018-07-20-p16&quot; class=&quot;headerlink&quot; title=&quot;2018-07-20-p16&quot;&gt;&lt;/a&gt;2018-07-20-p16&lt;/h1&gt;&lt;p&gt;1, hay 
-        
-      
+      &lt;h1 id=&quot;2018-07-20-p16&quot;&gt;&lt;a href=&quot;#2018-07-20-p16&quot; class=&quot;headerlink&quot; title=&quot;2018-07-20-p16&quot;&gt;&lt;/a&gt;2018-07-20-p16&lt;/h1&gt;&lt;p&gt;1, hay  [heɪ]&lt;/p&gt;
+&lt;p&gt;n. 干草&lt;/p&gt;
+&lt;p&gt;vt. 把晒干&lt;/p&gt;
+&lt;p&gt;vi. 割草晒干&lt;/p&gt;
     
     </summary>
     
@@ -167,17 +155,16 @@
     <link href="https://didongdongdi.github.io/2018/07/12/CPP%E4%B9%8B%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4/"/>
     <id>https://didongdongdi.github.io/2018/07/12/CPP之名称空间/</id>
     <published>2018-07-12T11:28:36.165Z</published>
-    <updated>2018-08-20T11:08:52.754Z</updated>
+    <updated>2018-09-23T05:17:53.068Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;传统的C-名称空间&quot;&gt;&lt;a href=&quot;#传统的C-名称空间&quot; class=&quot;headerlink&quot; title=&quot;传统的C++名称空间&quot;&gt;&lt;/a&gt;传统的C++名称空间&lt;/h1&gt;&lt;h2 id=&quot;一些术语&quot;&gt;&lt;a href=&quot;#一些术语&quot;
-        
-      
+      &lt;h1 id=&quot;传统的C-名称空间&quot;&gt;&lt;a href=&quot;#传统的C-名称空间&quot; class=&quot;headerlink&quot; title=&quot;传统的C++名称空间&quot;&gt;&lt;/a&gt;传统的C++名称空间&lt;/h1&gt;&lt;h2 id=&quot;一些术语&quot;&gt;&lt;a href=&quot;#一些术语&quot; class=&quot;headerlink&quot; title=&quot;一些术语&quot;&gt;&lt;/a&gt;一些术语&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;声明区域&lt;/li&gt;
+&lt;li&gt;潜在作用域&lt;br&gt;变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -193,17 +180,14 @@
     <link href="https://didongdongdi.github.io/2018/07/12/Flipped_Week3/"/>
     <id>https://didongdongdi.github.io/2018/07/12/Flipped_Week3/</id>
     <published>2018-07-12T11:12:44.448Z</published>
-    <updated>2018-08-20T11:09:39.350Z</updated>
+    <updated>2018-09-23T05:18:40.001Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;2018-07-11-p14&quot;&gt;&lt;a href=&quot;#2018-07-11-p14&quot; class=&quot;headerlink&quot; title=&quot;2018-07-11-p14&quot;&gt;&lt;/a&gt;2018-07-11-p14&lt;/h1&gt;&lt;p&gt;1, stalk 
-        
-      
+      &lt;h1 id=&quot;2018-07-11-p14&quot;&gt;&lt;a href=&quot;#2018-07-11-p14&quot; class=&quot;headerlink&quot; title=&quot;2018-07-11-p14&quot;&gt;&lt;/a&gt;2018-07-11-p14&lt;/h1&gt;&lt;p&gt;1, stalk  [stɔːk]&lt;/p&gt;
+&lt;p&gt;n. （植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步&lt;/p&gt;
+&lt;p&gt;vt. 追踪，潜近；高视阔步&lt;/p&gt;
+&lt;p&gt;vi. 高视阔步地走；潜近，偷偷接近&lt;/p&gt;
     
     </summary>
     
@@ -223,17 +207,11 @@
     <link href="https://didongdongdi.github.io/2018/07/11/Flipped_Week2/"/>
     <id>https://didongdongdi.github.io/2018/07/11/Flipped_Week2/</id>
     <published>2018-07-11T14:28:01.577Z</published>
-    <updated>2018-08-20T11:09:28.338Z</updated>
+    <updated>2018-09-23T05:18:30.341Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;2018-06-29-p9&quot;&gt;&lt;a href=&quot;#2018-06-29-p9&quot; class=&quot;headerlink&quot; title=&quot;2018-06-29-p9&quot;&gt;&lt;/a&gt;2018-06-29-p9&lt;/h1&gt;&lt;p&gt;humming // n. 哼唱 adj.
-        
-      
+      &lt;h1 id=&quot;2018-06-29-p9&quot;&gt;&lt;a href=&quot;#2018-06-29-p9&quot; class=&quot;headerlink&quot; title=&quot;2018-06-29-p9&quot;&gt;&lt;/a&gt;2018-06-29-p9&lt;/h1&gt;&lt;p&gt;humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)&lt;br&gt;ninny //傻子&lt;br&gt;whiny //烦躁的；爱抱怨的&lt;br&gt;
     
     </summary>
     
@@ -306,17 +284,11 @@
     <link href="https://didongdongdi.github.io/2018/07/06/CNAME/"/>
     <id>https://didongdongdi.github.io/2018/07/06/CNAME/</id>
     <published>2018-07-06T02:46:05.849Z</published>
-    <updated>2018-08-20T11:08:33.540Z</updated>
+    <updated>2018-09-23T05:17:28.078Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain
-        
-      
+      &lt;p&gt;之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 &lt;strong&gt;“the CNAME is already taken”&lt;/strong&gt; 。&lt;/p&gt;
     
     </summary>
     
@@ -334,17 +306,11 @@
     <link href="https://didongdongdi.github.io/2018/07/05/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E7%AC%94%E8%AE%B0/"/>
     <id>https://didongdongdi.github.io/2018/07/05/线性代数与解析几何笔记/</id>
     <published>2018-07-05T11:32:20.636Z</published>
-    <updated>2018-08-20T11:13:39.920Z</updated>
+    <updated>2018-09-23T05:20:28.156Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习&lt;a
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习&lt;a href=&quot;https://space.bilibili.com/88461692/#/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;B站 3Blue1Brown 线性代数的本质 系列视频&lt;/a&gt;(我从中受益匪浅)。相信你在听了他的课程后会对线性代数有着更深一层次的理解。&lt;/p&gt;
     
     </summary>
     
@@ -362,18 +328,11 @@
     <link href="https://didongdongdi.github.io/2018/07/05/%E6%B0%94%E8%B1%A1%E7%AB%99/"/>
     <id>https://didongdongdi.github.io/2018/07/05/气象站/</id>
     <published>2018-07-05T11:32:20.629Z</published>
-    <updated>2018-08-20T11:12:41.304Z</updated>
+    <updated>2018-09-23T05:20:06.161Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;项目框架&quot;&gt;&lt;a href=&quot;#项目框架&quot; class=&quot;headerlink&quot; title=&quot;项目框架&quot;&gt;&lt;/a&gt;项目框架&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;气象站.jpg&quot; alt=&quot;气象站项目框架&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文地址 &lt;a
-        
-      
+      &lt;h1 id=&quot;项目框架&quot;&gt;&lt;a href=&quot;#项目框架&quot; class=&quot;headerlink&quot; title=&quot;项目框架&quot;&gt;&lt;/a&gt;项目框架&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;气象站.jpg&quot; alt=&quot;气象站项目框架&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -391,18 +350,11 @@
     <link href="https://didongdongdi.github.io/2018/07/05/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E7%AC%94%E8%AE%B0/"/>
     <id>https://didongdongdi.github.io/2018/07/05/模拟与数字电路笔记/</id>
     <published>2018-07-05T11:32:20.622Z</published>
-    <updated>2018-08-20T11:11:26.554Z</updated>
+    <updated>2018-09-23T05:19:56.340Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;基础知识.png&quot; alt=&quot;基础知识&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;模拟电路部分&quot;&gt;&lt;a
-        
-      
+      &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;基础知识.png&quot; alt=&quot;基础知识&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -420,21 +372,14 @@
     <link href="https://didongdongdi.github.io/2018/07/05/the%20Classification%20of%20Programming%20Language/"/>
     <id>https://didongdongdi.github.io/2018/07/05/the Classification of Programming Language/</id>
     <published>2018-07-05T11:32:20.613Z</published>
-    <updated>2018-06-29T13:29:17.200Z</updated>
+    <updated>2018-09-23T05:19:44.193Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;计算机语言分类&quot;&gt;&lt;a href=&quot;#计算机语言分类&quot; class=&quot;headerlink&quot; title=&quot;计算机语言分类&quot;&gt;&lt;/a&gt;计算机语言分类&lt;/h1&gt;&lt;p&gt;低级语言&lt;/p&gt;
+      &lt;h1 id=&quot;计算机语言分类&quot;&gt;&lt;a href=&quot;#计算机语言分类&quot; class=&quot;headerlink&quot; title=&quot;计算机语言分类&quot;&gt;&lt;/a&gt;计算机语言分类&lt;/h1&gt;&lt;p&gt;低级语言&lt;/p&gt;
 &lt;p&gt;高级语言&lt;/p&gt;
 &lt;p&gt;专用语言&lt;/p&gt;
 &lt;p&gt;脚本语言 &lt;/p&gt;
-&lt;h1
-        
-      
     
     </summary>
     
@@ -450,17 +395,16 @@
     <link href="https://didongdongdi.github.io/2018/07/05/STM32%E4%B9%8B%E5%BA%93%E5%BC%80%E5%8F%91/"/>
     <id>https://didongdongdi.github.io/2018/07/05/STM32之库开发/</id>
     <published>2018-07-05T11:32:20.605Z</published>
-    <updated>2018-06-30T11:20:52.477Z</updated>
+    <updated>2018-09-23T05:19:27.072Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;STM32-Embedded-Software&quot;&gt;&lt;a href=&quot;#STM32-Embedded-Software&quot; class=&quot;headerlink&quot; title=&quot;STM32 Embedded Software&quot;&gt;&lt;/a&gt;STM32 Embedded
-        
-      
+      &lt;h1 id=&quot;STM32-Embedded-Software&quot;&gt;&lt;a href=&quot;#STM32-Embedded-Software&quot; class=&quot;headerlink&quot; title=&quot;STM32 Embedded Software&quot;&gt;&lt;/a&gt;STM32 Embedded Software&lt;/h1&gt;&lt;p&gt;到目前为止STM32的开发库有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标准外设库（STD库）&lt;/li&gt;
+&lt;li&gt;HAL库&lt;/li&gt;
+&lt;li&gt;LL库（ST最近才添加，随HAL源码包一起提供，目前支持的芯片也偏少）&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -476,18 +420,14 @@
     <link href="https://didongdongdi.github.io/2018/07/05/Mixed/"/>
     <id>https://didongdongdi.github.io/2018/07/05/Mixed/</id>
     <published>2018-07-05T11:32:20.598Z</published>
-    <updated>2018-08-20T11:10:48.701Z</updated>
+    <updated>2018-09-23T05:19:17.009Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;#2018-06-16&lt;/p&gt;
-&lt;h2 id=&quot;Independence-Day&quot;&gt;&lt;a href=&quot;#Independence-Day&quot; class=&quot;headerlink&quot; title=&quot;Independence Day&quot;&gt;&lt;/a&gt;Independence
-        
-      
+      &lt;p&gt;#2018-06-16&lt;/p&gt;
+&lt;h2 id=&quot;Independence-Day&quot;&gt;&lt;a href=&quot;#Independence-Day&quot; class=&quot;headerlink&quot; title=&quot;Independence Day&quot;&gt;&lt;/a&gt;Independence Day&lt;/h2&gt;&lt;p&gt;aerial // 空中的；航空的&lt;/p&gt;
+&lt;p&gt;petty //小的；琐碎的&lt;/p&gt;
+&lt;p&gt;fate //n.命运 v.注定&lt;/p&gt;
     
     </summary>
     
@@ -507,19 +447,11 @@
     <link href="https://didongdongdi.github.io/2018/07/05/JLINK_STLINK/"/>
     <id>https://didongdongdi.github.io/2018/07/05/JLINK_STLINK/</id>
     <published>2018-07-05T11:32:20.590Z</published>
-    <updated>2018-06-29T14:35:52.459Z</updated>
+    <updated>2018-09-23T05:41:20.797Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;JTAG.jpg&quot; alt=&quot;JTAG&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;SWG.jpg&quot; alt=&quot;SWG&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;本文地址 &lt;a
-        
-      
+      &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;JTAG.jpg&quot; alt=&quot;JTAG&quot;&gt;&lt;/div&gt;
     
     </summary>
     
@@ -535,17 +467,13 @@
     <link href="https://didongdongdi.github.io/2018/07/05/Flipped_Week1/"/>
     <id>https://didongdongdi.github.io/2018/07/05/Flipped_Week1/</id>
     <published>2018-07-05T11:32:20.576Z</published>
-    <updated>2018-08-20T11:09:18.878Z</updated>
+    <updated>2018-09-23T05:18:10.508Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;2018-06-01-p2&quot;&gt;&lt;a href=&quot;#2018-06-01-p2&quot; class=&quot;headerlink&quot; title=&quot;2018-06-01-p2&quot;&gt;&lt;/a&gt;2018-06-01-p2&lt;/h1&gt;&lt;p&gt;flip over
-        
-      
+      &lt;h1 id=&quot;2018-06-01-p2&quot;&gt;&lt;a href=&quot;#2018-06-01-p2&quot; class=&quot;headerlink&quot; title=&quot;2018-06-01-p2&quot;&gt;&lt;/a&gt;2018-06-01-p2&lt;/h1&gt;&lt;p&gt;flip over //翻页&lt;/p&gt;
+&lt;p&gt;gutsy girl //勇敢的女孩&lt;/p&gt;
+&lt;p&gt;delightful //可爱的；讨人喜欢的；令人愉快的&lt;/p&gt;
     
     </summary>
     
