@@ -3,11 +3,57 @@
   
     
     <entry>
-      <title>the Summary of Intercultural Communication</title>
-      <link href="/2018/09/24/Intercultral%20Communication/"/>
-      <url>/2018/09/24/Intercultral%20Communication/</url>
+      <title>电路原理图设计原则</title>
+      <link href="/2018/10/05/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+      <url>/2018/10/05/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
       
-        <content type="html"><![CDATA[<h1 id="Interpersonal-amp-intercultural-communicaiton-skills"><a href="#Interpersonal-amp-intercultural-communicaiton-skills" class="headerlink" title="Interpersonal &amp; intercultural communicaiton skills"></a>Interpersonal &amp; intercultural communicaiton skills</h1><h2 id="INTERPERSONAL-SKILLS"><a href="#INTERPERSONAL-SKILLS" class="headerlink" title="INTERPERSONAL SKILLS"></a>INTERPERSONAL SKILLS</h2><ul><li>Communication Skills</li><li>Emotional Intelligence</li><li>Confilict Resolution and Mediation Skills</li><li>Tema-Working, Groups and Meetings</li><li>Decision-Making and Problem-Solving</li><li>Negotiation and Persuasion Skills</li></ul><a id="more"></a><h2 id="What-is-Interpersonal-Communication"><a href="#What-is-Interpersonal-Communication" class="headerlink" title="What is Interpersonal Communication"></a>What is Interpersonal Communication</h2><blockquote><p>Definition: the <code>process</code> by which people <code>exchange</code> <code>information, feelings, and meaning</code> through verbal and non-verbal messages: it is face-to-face communication.</p></blockquote><blockquote><p>Truth:<br>1.how it is said<br>2.non-verbal messages(4): voice, facial expressions, gestures and body language.</p></blockquote><blockquote><p>Q: How an observer receive messages from a person without speech? (6 points)<br>A: posture, facial expression, and dress to form an impression of the other’s role,emotional state, personality and/or intentions.</p></blockquote><h2 id="Elements-of-Interpersonal-Communication-3C-MNF"><a href="#Elements-of-Interpersonal-Communication-3C-MNF" class="headerlink" title="Elements of Interpersonal Communication (3C MNF)"></a>Elements of Interpersonal Communication (3C MNF)</h2><h3 id="Context"><a href="#Context" class="headerlink" title="Context"></a>Context</h3><blockquote><ul><li>where</li><li>roles</li><li>responsibilities</li><li>relative status</li><li>emotional climate</li><li>expectaions</li></ul></blockquote><h3 id="Communicators"><a href="#Communicators" class="headerlink" title="Communicators"></a>Communicators</h3><blockquote><ul><li>one-way process</li><li>two-way processes (feedback)</li></ul></blockquote><h3 id="Message"><a href="#Message" class="headerlink" title="Message"></a>Message</h3><blockquote><ul><li>verbal</li><li>non-verbal (such as facial expressions, tone of voice, gestures and body language) (can reveal more about <code>emotional attitudes</code> which may underlie the content of speech)</li></ul></blockquote><h3 id="Channel"><a href="#Channel" class="headerlink" title="Channel"></a>Channel</h3><blockquote><p>Definition: the phycical means by which the message is transferred from one person to another.</p></blockquote><h3 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h3><blockquote><p>Consists:</p><ul><li>messages the receiver returns</li><li>receiver’s reaction</li></ul></blockquote><blockquote><p>Type:</p><ul><li>direct verbal statements</li><li>subtle facial expressions</li><li>changes in posture</li></ul></blockquote><p>Note: The receiver may also respond to the <code>unintentional</code> message as well as the <code>intentional</code> message.</p><h3 id="Noise"><a href="#Noise" class="headerlink" title="Noise"></a>Noise</h3><blockquote><p>Definition: anything that distorts the message</p></blockquote><blockquote><p>Examples:</p><ul><li>sound</li><li>complicated jargon</li><li>inappropriate body language</li><li>inattention</li><li>disinterest</li><li>cultural differences</li></ul></blockquote><h2 id="Uses-of-Interpersonal-Communication"><a href="#Uses-of-Interpersonal-Communication" class="headerlink" title="Uses of Interpersonal Communication"></a>Uses of Interpersonal Communication</h2><ul><li>information ( –&gt; and &lt;– )</li><li>attitudes and behavior</li><li>contacts and relationships</li><li>world and experiences</li><li>needs</li><li>emotional support ( –&gt; and &lt;– )</li><li>decisions and problems</li><li>behavior</li><li>power</li></ul><p>本文地址 <a href="https://didongdongdi.github.io/2018/09/24/Intercultral Communication/">https://didongdongdi.github.io/2018/09/24/Intercultral Communication/</a> </p>]]></content>
+        <content type="html"><![CDATA[<blockquote><ol><li>先规划放置好元件，尽可能使后面连线简单，且能看出逻辑。</li><li>数量大且简单的连线尽可能短且集中，先连。</li><li>数量小且复杂的连线可能较为长且分散，后连。</li><li>连线完成后进行调整优化，使得连线整齐，利用好每一块地方，使得总体占用的面积最小。（如果空间实在不足，可调整图纸大小）</li></ol></blockquote><a id="more"></a><p><img src="example.jpg" alt="示例"></p><p>本文地址 <a href="https://didongdongdi.github.io/2018/10/05/电路原理图设计原则/">https://didongdongdi.github.io/2018/10/05/电路原理图设计原则/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 嵌入式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 嵌入式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>C++ 与 哲学</title>
+      <link href="/2018/09/28/C++%20%E4%B8%8E%20%E5%93%B2%E5%AD%A6/"/>
+      <url>/2018/09/28/C++%20%E4%B8%8E%20%E5%93%B2%E5%AD%A6/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>以下只是我个人对C++语言的一些理解，只是为了更好地学习和使用C++，如有描述不当处，还请指出。</p></blockquote><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>很多的科幻大片中都有虚拟世界的存在，好比是现实世界的映射或是更近一步的提升，如黑客帝国中的<code>matrix</code>,又如神盾局特工中的<code>framework</code>，等等。</p><p>而这些虚拟世界无一不是建立在一行一行代码的基础上的。</p><a id="more"></a><p>C++作为一门面向对象的语言，是为了更好地描述这个世界，从而能够打造出与现实世界几乎相同的世界，甚至是超越现实的世界。</p><p>而要描述一个世界则离不开哲学。</p><h1 id="世界的基本组成"><a href="#世界的基本组成" class="headerlink" title="世界的基本组成"></a>世界的基本组成</h1><p>在这里，我们认为现实世界由三种最基本的事物构成的，即：<code>物质、能量和信息</code>。</p><p>而在虚拟世界中，一切的物质和能量都是由现实世界所提供的。真正存在于虚拟世界中的是信息。</p><h1 id="世界到C-的映射"><a href="#世界到C-的映射" class="headerlink" title="世界到C++的映射"></a>世界到C++的映射</h1><h2 id="物质-数据类型"><a href="#物质-数据类型" class="headerlink" title="物质 == 数据类型"></a>物质 == 数据类型</h2><h3 id="基本的"><a href="#基本的" class="headerlink" title="基本的"></a>基本的</h3><p>夸克、电子、场…… == int、short、char、char、long、unsigned、double、float、bool……</p><h3 id="扩展的"><a href="#扩展的" class="headerlink" title="扩展的"></a>扩展的</h3><p>各种各样的元素 == struct</p><h3 id="其它的"><a href="#其它的" class="headerlink" title="其它的"></a>其它的</h3><ul><li>变量 == 载体</li><li>常量 == 限定的变量（const）</li><li>#define（字符替换）</li></ul><h2 id="信息-函数"><a href="#信息-函数" class="headerlink" title="信息 == 函数"></a>信息 == 函数</h2><p>函数使得各种类型的数据有序地进行交互。</p><h2 id="能量"><a href="#能量" class="headerlink" title="能量"></a>能量</h2><p>能量从外界摄取，就像是点下了运行的按钮。</p><h2 id="对象实例与抽象类"><a href="#对象实例与抽象类" class="headerlink" title="对象实例与抽象类"></a>对象实例与抽象类</h2><p>现实世界中的信息和物质影射到C++语言中变为函数和变量。</p><p>而在C++语言中：</p><ul><li>具体事物 == 对象实例</li><li>一类事物 == 抽象类</li></ul><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>每个人对同一事物的类的定义可能有所不同，因为一方面每个人的收敛思维和抽象能力不同，从而导致抽象的层次不同；另一方面，在不同的应用场景之下，抽象层次也不尽相同。</p><p>所以，对对象实例的抽象，即抽象类的形成应该视具体情况而定。</p><p>本文地址 <a href="https://didongdongdi.github.io/2018/09/28/C++ 与 哲学/">https://didongdongdi.github.io/2018/09/28/C++ 与 哲学/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Programming Language </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>the Summary of Intercultural Communication (3)</title>
+      <link href="/2018/09/24/Intercultural-Communication-3/"/>
+      <url>/2018/09/24/Intercultural-Communication-3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Interpersonal-amp-intercultural-communication-skills"><a href="#Interpersonal-amp-intercultural-communication-skills" class="headerlink" title="Interpersonal &amp; intercultural communication skills"></a>Interpersonal &amp; intercultural communication skills</h1><h2 id="INTERPERSONAL-SKILLS-6-POINTS"><a href="#INTERPERSONAL-SKILLS-6-POINTS" class="headerlink" title="INTERPERSONAL SKILLS (6 POINTS)"></a>INTERPERSONAL SKILLS (6 POINTS)</h2><ul><li>Communication Skills</li><li>Emotional Intelligence</li><li>Conflict Resolution and Mediation Skills</li><li>Team-Working, Groups and Meetings</li><li>Decision-Making and Problem-Solving</li><li>Negotiation and Persuasion Skills</li></ul><a id="more"></a><h2 id="What-is-Interpersonal-Communication"><a href="#What-is-Interpersonal-Communication" class="headerlink" title="What is Interpersonal Communication"></a>What is Interpersonal Communication</h2><blockquote><p>Definition: the <code>process</code> by which people <code>exchange</code> <code>information, feelings, and meaning</code> through verbal and non-verbal messages: it is face-to-face communication.</p></blockquote><blockquote><p>Truth:<br>1.how it is said<br>2.non-verbal messages: voice, facial expressions, gestures and body language.</p></blockquote><blockquote><p>Q: How an observer receive messages from a person without speech? (6 points)<br>A: posture, facial expression, and dress to form an impression of the other’s role,emotional state, personality and/or intentions.</p></blockquote><h2 id="Elements-of-Interpersonal-Communication-3C-MNF"><a href="#Elements-of-Interpersonal-Communication-3C-MNF" class="headerlink" title="Elements of Interpersonal Communication (3C+MNF)"></a>Elements of Interpersonal Communication (3C+MNF)</h2><h3 id="Context"><a href="#Context" class="headerlink" title="Context"></a>Context</h3><blockquote><ul><li>where</li><li>roles</li><li>responsibilities</li><li>relative status</li><li>emotional climate</li><li>expectaions</li></ul></blockquote><h3 id="Communicators"><a href="#Communicators" class="headerlink" title="Communicators"></a>Communicators</h3><blockquote><ul><li>one-way process</li><li>two-way processes (feedback)</li></ul></blockquote><h3 id="Message"><a href="#Message" class="headerlink" title="Message"></a>Message</h3><blockquote><ul><li>verbal</li><li>non-verbal (such as facial expressions, tone of voice, gestures and body language) (can reveal more about <code>emotional attitudes</code> which may underlie the content of speech)</li></ul></blockquote><h3 id="Channel"><a href="#Channel" class="headerlink" title="Channel"></a>Channel</h3><blockquote><p>Definition: the phycical means by which the message is transferred from one person to another</p></blockquote><h3 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h3><blockquote><p>Consists:</p><ul><li>messages the receiver returns</li><li>receiver’s reaction</li></ul></blockquote><blockquote><p>Type:</p><ul><li>direct verbal statements</li><li>subtle facial expressions</li><li>changes in posture</li></ul></blockquote><p>Note: The receiver may also respond to the <code>unintentional</code> message as well as the <code>intentional</code> message.</p><h3 id="Noise"><a href="#Noise" class="headerlink" title="Noise"></a>Noise</h3><blockquote><p>Definition: anything that distorts the message</p></blockquote><blockquote><p>Examples:</p><ul><li>sound</li><li>complicated jargon</li><li>inappropriate body language</li><li>inattention</li><li>disinterest</li><li>cultural differences</li></ul></blockquote><h2 id="Uses-of-Interpersonal-Communication"><a href="#Uses-of-Interpersonal-Communication" class="headerlink" title="Uses of Interpersonal Communication"></a>Uses of Interpersonal Communication</h2><ul><li>information ( –&gt; and &lt;– )</li><li>attitudes and behavior</li><li>contacts and relationships</li><li>world and experiences</li><li>needs</li><li>emotional support ( –&gt; and &lt;– )</li><li>decisions and problems</li><li>behavior</li><li>power</li></ul><p>本文地址 <a href="https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/">https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/</a> </p>]]></content>
       
       
       <categories>
@@ -504,6 +550,15 @@
   
     
     <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>Everyone has the first.</p>]]></content>
+      
+    </entry>
+    
+    <entry>
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -518,15 +573,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p>Everyone has the first.</p>]]></content>
       
     </entry>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-09-26T15:56:08.897Z</updated>
+  <updated>2018-10-05T16:14:26.861Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -17,19 +17,70 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>the Summary of Intercultural Communication</title>
-    <link href="https://didongdongdi.github.io/2018/09/24/Intercultral%20Communication/"/>
-    <id>https://didongdongdi.github.io/2018/09/24/Intercultral Communication/</id>
-    <published>2018-09-24T15:32:00.000Z</published>
-    <updated>2018-09-26T15:56:08.897Z</updated>
+    <title>电路原理图设计原则</title>
+    <link href="https://didongdongdi.github.io/2018/10/05/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+    <id>https://didongdongdi.github.io/2018/10/05/电路原理图设计原则/</id>
+    <published>2018-10-05T15:54:00.000Z</published>
+    <updated>2018-10-05T16:14:26.861Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Interpersonal-amp-intercultural-communicaiton-skills&quot;&gt;&lt;a href=&quot;#Interpersonal-amp-intercultural-communicaiton-skills&quot; class=&quot;headerlink&quot; title=&quot;Interpersonal &amp;amp; intercultural communicaiton skills&quot;&gt;&lt;/a&gt;Interpersonal &amp;amp; intercultural communicaiton skills&lt;/h1&gt;&lt;h2 id=&quot;INTERPERSONAL-SKILLS&quot;&gt;&lt;a href=&quot;#INTERPERSONAL-SKILLS&quot; class=&quot;headerlink&quot; title=&quot;INTERPERSONAL SKILLS&quot;&gt;&lt;/a&gt;INTERPERSONAL SKILLS&lt;/h2&gt;&lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;先规划放置好元件，尽可能使后面连线简单，且能看出逻辑。&lt;/li&gt;
+&lt;li&gt;数量大且简单的连线尽可能短且集中，先连。&lt;/li&gt;
+&lt;li&gt;数量小且复杂的连线可能较为长且分散，后连。&lt;/li&gt;
+&lt;li&gt;连线完成后进行调整优化，使得连线整齐，利用好每一块地方，使得总体占用的面积最小。（如果空间实在不足，可调整图纸大小）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+    
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 与 哲学</title>
+    <link href="https://didongdongdi.github.io/2018/09/28/C++%20%E4%B8%8E%20%E5%93%B2%E5%AD%A6/"/>
+    <id>https://didongdongdi.github.io/2018/09/28/C++ 与 哲学/</id>
+    <published>2018-09-28T02:04:00.000Z</published>
+    <updated>2018-09-28T06:35:51.707Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;以下只是我个人对C++语言的一些理解，只是为了更好地学习和使用C++，如有描述不当处，还请指出。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;很多的科幻大片中都有虚拟世界的存在，好比是现实世界的映射或是更近一步的提升，如黑客帝国中的&lt;code&gt;matrix&lt;/code&gt;,又如神盾局特工中的&lt;code&gt;framework&lt;/code&gt;，等等。&lt;/p&gt;
+&lt;p&gt;而这些虚拟世界无一不是建立在一行一行代码的基础上的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
+    
+    
+      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (3)</title>
+    <link href="https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/"/>
+    <id>https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/</id>
+    <published>2018-09-24T15:32:00.000Z</published>
+    <updated>2018-09-27T04:33:42.126Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Interpersonal-amp-intercultural-communication-skills&quot;&gt;&lt;a href=&quot;#Interpersonal-amp-intercultural-communication-skills&quot; class=&quot;headerlink&quot; title=&quot;Interpersonal &amp;amp; intercultural communication skills&quot;&gt;&lt;/a&gt;Interpersonal &amp;amp; intercultural communication skills&lt;/h1&gt;&lt;h2 id=&quot;INTERPERSONAL-SKILLS-6-POINTS&quot;&gt;&lt;a href=&quot;#INTERPERSONAL-SKILLS-6-POINTS&quot; class=&quot;headerlink&quot; title=&quot;INTERPERSONAL SKILLS (6 POINTS)&quot;&gt;&lt;/a&gt;INTERPERSONAL SKILLS (6 POINTS)&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Communication Skills&lt;/li&gt;
 &lt;li&gt;Emotional Intelligence&lt;/li&gt;
-&lt;li&gt;Confilict Resolution and Mediation Skills&lt;/li&gt;
-&lt;li&gt;Tema-Working, Groups and Meetings&lt;/li&gt;
+&lt;li&gt;Conflict Resolution and Mediation Skills&lt;/li&gt;
+&lt;li&gt;Team-Working, Groups and Meetings&lt;/li&gt;
 &lt;li&gt;Decision-Making and Problem-Solving&lt;/li&gt;
 &lt;li&gt;Negotiation and Persuasion Skills&lt;/li&gt;
 &lt;/ul&gt;
@@ -466,52 +517,6 @@
       <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
     
       <category term="Mixed" scheme="https://didongdongdi.github.io/tags/Mixed/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>STM32 J-LINK与ST-LINK 引脚定义</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/JLINK_STLINK/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/JLINK_STLINK/</id>
-    <published>2018-07-05T11:32:20.590Z</published>
-    <updated>2018-09-23T05:41:20.797Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;JTAG.jpg&quot; alt=&quot;JTAG&quot;&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flipped (Week 1)</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/Flipped_Week1/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/Flipped_Week1/</id>
-    <published>2018-07-05T11:32:20.576Z</published>
-    <updated>2018-09-23T05:18:10.508Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;2018-06-01-p2&quot;&gt;&lt;a href=&quot;#2018-06-01-p2&quot; class=&quot;headerlink&quot; title=&quot;2018-06-01-p2&quot;&gt;&lt;/a&gt;2018-06-01-p2&lt;/h1&gt;&lt;p&gt;flip over //翻页&lt;/p&gt;
-&lt;p&gt;gutsy girl //勇敢的女孩&lt;/p&gt;
-&lt;p&gt;delightful //可爱的；讨人喜欢的；令人愉快的&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
-    
-      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
     
   </entry>
   
