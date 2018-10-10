@@ -44,6 +44,26 @@
   </entry>
   
   <entry>
+    <title>the Summary of Intercultural Communication (1)</title>
+    <link href="https://didongdongdi.github.io/2018/09/28/Intercultural-Communication-1/"/>
+    <id>https://didongdongdi.github.io/2018/09/28/Intercultural-Communication-1/</id>
+    <published>2018-09-28T06:55:00.000Z</published>
+    <updated>2018-10-10T08:10:31.430Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;How-to-make-a-power-point-presentation&quot;&gt;&lt;a href=&quot;#How-to-make-a-power-point-presentation&quot; class=&quot;headerlink&quot; title=&quot;How to make a power-point presentation&quot;&gt;&lt;/a&gt;How to make a power-point presentation&lt;/h1&gt;&lt;h2 id=&quot;Top-Tips-for-Effectivve-presentations&quot;&gt;&lt;a href=&quot;#Top-Tips-for-Effectivve-presentations&quot; class=&quot;headerlink&quot; title=&quot;Top Tips for Effectivve presentations&quot;&gt;&lt;/a&gt;Top Tips for Effectivve presentations&lt;/h2&gt;&lt;h3 id=&quot;Passion-and-Connect&quot;&gt;&lt;a href=&quot;#Passion-and-Connect&quot; class=&quot;headerlink&quot; title=&quot;Passion and Connect&quot;&gt;&lt;/a&gt;Passion and Connect&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++ 与 哲学</title>
     <link href="https://didongdongdi.github.io/2018/09/28/C++%20%E4%B8%8E%20%E5%93%B2%E5%AD%A6/"/>
     <id>https://didongdongdi.github.io/2018/09/28/C++ 与 哲学/</id>
@@ -64,6 +84,28 @@
     
     
       <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (4)</title>
+    <link href="https://didongdongdi.github.io/2018/09/27/Intercultural-Communication-4/"/>
+    <id>https://didongdongdi.github.io/2018/09/27/Intercultural-Communication-4/</id>
+    <published>2018-09-27T04:25:00.000Z</published>
+    <updated>2018-10-10T17:02:08.060Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Intercultural-communication-skills&quot;&gt;&lt;a href=&quot;#Intercultural-communication-skills&quot; class=&quot;headerlink&quot; title=&quot;Intercultural communication skills&quot;&gt;&lt;/a&gt;Intercultural communication skills&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Q: What &lt;code&gt;abilities&lt;/code&gt; employers look for from employees about intercultural skills?&lt;br&gt;A: Understand people from different cultural backgrounds, build trust, demonstrate respect, and speak other languages.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
     
   </entry>
   
@@ -417,9 +459,9 @@
       <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
     
     
-      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
-    
       <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
   </entry>
   
@@ -465,58 +507,6 @@
     
     
       <category term="Classification" scheme="https://didongdongdi.github.io/tags/Classification/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>STM32之库开发</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/STM32%E4%B9%8B%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/STM32之库开发/</id>
-    <published>2018-07-05T11:32:20.605Z</published>
-    <updated>2018-09-23T05:19:27.072Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;STM32-Embedded-Software&quot;&gt;&lt;a href=&quot;#STM32-Embedded-Software&quot; class=&quot;headerlink&quot; title=&quot;STM32 Embedded Software&quot;&gt;&lt;/a&gt;STM32 Embedded Software&lt;/h1&gt;&lt;p&gt;到目前为止STM32的开发库有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标准外设库（STD库）&lt;/li&gt;
-&lt;li&gt;HAL库&lt;/li&gt;
-&lt;li&gt;LL库（ST最近才添加，随HAL源码包一起提供，目前支持的芯片也偏少）&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>English Mixed</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/Mixed/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/Mixed/</id>
-    <published>2018-07-05T11:32:20.598Z</published>
-    <updated>2018-09-23T05:19:17.009Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;#2018-06-16&lt;/p&gt;
-&lt;h2 id=&quot;Independence-Day&quot;&gt;&lt;a href=&quot;#Independence-Day&quot; class=&quot;headerlink&quot; title=&quot;Independence Day&quot;&gt;&lt;/a&gt;Independence Day&lt;/h2&gt;&lt;p&gt;aerial // 空中的；航空的&lt;/p&gt;
-&lt;p&gt;petty //小的；琐碎的&lt;/p&gt;
-&lt;p&gt;fate //n.命运 v.注定&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
-    
-      <category term="Mixed" scheme="https://didongdongdi.github.io/tags/Mixed/"/>
     
   </entry>
   
