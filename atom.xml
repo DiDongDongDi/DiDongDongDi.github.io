@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-10-05T16:14:26.861Z</updated>
+  <updated>2018-10-13T05:14:35.244Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (5)</title>
+    <link href="https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-5/"/>
+    <id>https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-5/</id>
+    <published>2018-10-12T15:00:00.000Z</published>
+    <updated>2018-10-13T05:14:35.244Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;High-context-and-low-context-cultures&quot;&gt;&lt;a href=&quot;#High-context-and-low-context-cultures&quot; class=&quot;headerlink&quot; title=&quot;High-context and low-context cultures&quot;&gt;&lt;/a&gt;High-context and low-context cultures&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Q: What are &lt;code&gt;High-context and low-context&lt;/code&gt; culture ?&lt;br&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (2)</title>
+    <link href="https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-2/"/>
+    <id>https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-2/</id>
+    <published>2018-10-12T10:49:00.000Z</published>
+    <updated>2018-10-12T14:58:28.331Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Intercultural-competence&quot;&gt;&lt;a href=&quot;#Intercultural-competence&quot; class=&quot;headerlink&quot; title=&quot;Intercultural competence&quot;&gt;&lt;/a&gt;Intercultural competence&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Q: What is &lt;code&gt;intercultural competence&lt;/code&gt; ?&lt;br&gt;A: A complex of abilities needed to &lt;code&gt;perform&lt;/code&gt; effectively and appropriately when &lt;code&gt;interacting&lt;/code&gt; with others who are linguistically and culturally &lt;code&gt;different&lt;/code&gt; from oneself.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+    
+  </entry>
   
   <entry>
     <title>电路原理图设计原则</title>
@@ -459,54 +502,9 @@
       <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
     
     
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
       <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
-  </entry>
-  
-  <entry>
-    <title>模拟与数字电路笔记</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E7%AC%94%E8%AE%B0/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/模拟与数字电路笔记/</id>
-    <published>2018-07-05T11:32:20.622Z</published>
-    <updated>2018-09-23T05:19:56.340Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;基础知识.png&quot; alt=&quot;基础知识&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="模拟与数字电路" scheme="https://didongdongdi.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Classification of Programming Language</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/the%20Classification%20of%20Programming%20Language/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/the Classification of Programming Language/</id>
-    <published>2018-07-05T11:32:20.613Z</published>
-    <updated>2018-09-23T05:19:44.193Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;计算机语言分类&quot;&gt;&lt;a href=&quot;#计算机语言分类&quot; class=&quot;headerlink&quot; title=&quot;计算机语言分类&quot;&gt;&lt;/a&gt;计算机语言分类&lt;/h1&gt;&lt;p&gt;低级语言&lt;/p&gt;
-&lt;p&gt;高级语言&lt;/p&gt;
-&lt;p&gt;专用语言&lt;/p&gt;
-&lt;p&gt;脚本语言 &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
-    
-    
-      <category term="Classification" scheme="https://didongdongdi.github.io/tags/Classification/"/>
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
