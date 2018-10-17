@@ -251,9 +251,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Livere </tag>
             
@@ -278,9 +278,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> swiftype </tag>
             
@@ -305,9 +305,9 @@
       
         <tags>
             
-            <tag> Vocabulary </tag>
-            
             <tag> Notes </tag>
+            
+            <tag> Vocabulary </tag>
             
             <tag> Novel </tag>
             
@@ -355,9 +355,9 @@
       
         <tags>
             
-            <tag> Vocabulary </tag>
-            
             <tag> Notes </tag>
+            
+            <tag> Vocabulary </tag>
             
             <tag> Novel </tag>
             
@@ -382,9 +382,9 @@
       
         <tags>
             
-            <tag> Vocabulary </tag>
-            
             <tag> Notes </tag>
+            
+            <tag> Vocabulary </tag>
             
             <tag> Novel </tag>
             
@@ -505,9 +505,9 @@
       
         <tags>
             
-            <tag> 物联网 </tag>
-            
             <tag> 嵌入式 </tag>
+            
+            <tag> 物联网 </tag>
             
         </tags>
       
@@ -601,9 +601,9 @@
       
         <tags>
             
-            <tag> Vocabulary </tag>
-            
             <tag> Notes </tag>
+            
+            <tag> Vocabulary </tag>
             
             <tag> Mixed </tag>
             
@@ -651,9 +651,9 @@
       
         <tags>
             
-            <tag> Vocabulary </tag>
-            
             <tag> Notes </tag>
+            
+            <tag> Vocabulary </tag>
             
             <tag> Novel </tag>
             
@@ -663,6 +663,15 @@
     
   
   
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>Everyone has the first.</p>]]></content>
+      
+    </entry>
     
     <entry>
       <title>categories</title>
@@ -679,15 +688,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p>Everyone has the first.</p>]]></content>
       
     </entry>
     
