@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-10-13T05:14:35.244Z</updated>
+  <updated>2018-10-18T11:24:24.416Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (6)</title>
+    <link href="https://didongdongdi.github.io/2018/10/18/Intercultural-Communication-6/"/>
+    <id>https://didongdongdi.github.io/2018/10/18/Intercultural-Communication-6/</id>
+    <published>2018-10-18T05:03:00.000Z</published>
+    <updated>2018-10-18T11:24:24.416Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Linguistic-differences-via-translation&quot;&gt;&lt;a href=&quot;#Linguistic-differences-via-translation&quot; class=&quot;headerlink&quot; title=&quot;Linguistic differences via translation&quot;&gt;&lt;/a&gt;Linguistic differences via translation&lt;/h1&gt;&lt;h2 id=&quot;Correspondence-between-English-and-Chinese-at-word-Level&quot;&gt;&lt;a href=&quot;#Correspondence-between-English-and-Chinese-at-word-Level&quot; class=&quot;headerlink&quot; title=&quot;Correspondence between English and Chinese at word Level&quot;&gt;&lt;/a&gt;Correspondence between English and Chinese at word Level&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Correspondence:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;word-for-word&lt;/li&gt;
+&lt;li&gt;one word with multiple equivalents of the same meaning&lt;/li&gt;
+&lt;li&gt;one word with multiple equivalents of different meanings&lt;/li&gt;
+&lt;li&gt;equivalents interwoven with one another&lt;/li&gt;
+&lt;li&gt;words without equivalents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+    
+  </entry>
   
   <entry>
     <title>the Summary of Intercultural Communication (5)</title>
@@ -483,28 +512,6 @@
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
     
       <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>气象站</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/%E6%B0%94%E8%B1%A1%E7%AB%99/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/气象站/</id>
-    <published>2018-07-05T11:32:20.629Z</published>
-    <updated>2018-09-23T05:20:06.161Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;项目框架&quot;&gt;&lt;a href=&quot;#项目框架&quot; class=&quot;headerlink&quot; title=&quot;项目框架&quot;&gt;&lt;/a&gt;项目框架&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;气象站.jpg&quot; alt=&quot;气象站项目框架&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
-    
-    
-      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
