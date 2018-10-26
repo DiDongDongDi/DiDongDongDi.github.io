@@ -55,10 +55,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,css/images/pose02.jpg,css/images/pose03.jpg,css/images/pose04.jpg,css/images/pose05.jpg,http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-4k-wallpaper-3840-2160-awesome/4k-wallpaper-volcano-smoke-eruption-3840-2160.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/04/06/657118/5cf29d7c5d3f3abbe90692ed2dc1108b-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/07/217910/a4b616ee53bedb877f1abe9a028152bd-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/08/08/771421/658c52cf22b480793ebcd5b2fec738ee-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214354/5aed5397bee3594274a91ca081fede48-700.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/21/233495/7eae763f38b88e05aaa22f36fa015c38-1000.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -106,6 +128,89 @@
       <div id="content" class="outer">
         
           <section id="main">
+  
+    <article id="post-KMP模式匹配算法的个人解读"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/10/24/KMP模式匹配算法的个人解读/">KMP模式匹配算法 的 个人解读</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/10/24/KMP模式匹配算法的个人解读/" class="article-date">
+	  <time datetime="2018-10-24T15:43:00.000Z" itemprop="datePublished">October 24, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <div class="entry-thumbnail">
+            <a href="/2018/10/24/KMP模式匹配算法的个人解读/"><img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+          </div>
+          <div class="entry-summary">
+          （以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）
+
+字符串匹配问题字符串的模式匹配算法大致有以下几种：
+
+
+朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF）
+KMP模式匹配算法（以下简称KMP）
+Horspool算法
+Boyer-Moore算法
+Sunday算法
+RK算法
+字符串匹配自动机
+后缀树算法（分在线和非在线两种）
+对于多模式字符串匹配有：AC算法（字符串匹配自动机思想）、WM算法（BM算法在多模式的推广应用）
+
+
+在这里主要说明KMP和BP，对于其他算法以后再做了解。
+
+
+BF简单粗暴地对于 T 上的每一个（除了最后的|P|-1个）字符，都对 P 扫描一遍这种算法简单，但时间复杂度过高，最差的情况需要O(|T||P|)的代价
+
+
+
+        
+          <p class="article-more-link">
+            <a href="/2018/10/24/KMP模式匹配算法的个人解读/#more">Continue Reading →</a>
+          </p>
+        </div>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
   
     <article id="post-Intercultural-Communication-6"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
@@ -166,6 +271,68 @@ words without equivalents
       
   <span class="ico-tags"></span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competence/">Competence</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-迷宫求解所有路径"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/10/16/迷宫求解所有路径/">迷宫求解  (所有路径)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/10/16/迷宫求解所有路径/" class="article-date">
+	  <time datetime="2018-10-16T05:25:00.000Z" itemprop="datePublished">October 16, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <div class="entry-thumbnail">
+            <a href="/2018/10/16/迷宫求解所有路径/"><img src="https://www.wallpaperup.com/uploads/wallpapers/2013/07/26/123475/9a6414458df24961311231b3bce99906-1000.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+          </div>
+          <div class="entry-summary">
+          迷宫问题对于如下所示的迷宫，如何找到所有路径？（ # 为墙，* 为出口，0 为入口）（注意：要找到所有的路径必须保证一条路径不能在同一个位置走两次及两次以上，反之，一方面，这样没有意义；另一方面，这样可能会造成在一个地方一直转圈）
+
+        
+          <p class="article-more-link">
+            <a href="/2018/10/16/迷宫求解所有路径/#more">Continue Reading →</a>
+          </p>
+        </div>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
 
       
     </footer>
@@ -635,112 +802,6 @@ Negotiation and Persuasion Skills
 
 
   
-    <article id="post-Capital"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/09/06/Capital/">CentOS7登录 之 &#34;Sorry,that doesn&#39;t work.Please try again.&#34;</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/09/06/Capital/" class="article-date">
-	  <time datetime="2018-09-06T06:15:34.166Z" itemprop="datePublished">September 6, 2018</time>
-	</a>
-
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Problem/">Problem</a>
- 
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>大写使用<code>shift+字母</code>,而不是<code>CapsLock</code>。</p>
-<p>本文地址 <a href="https://didongdongdi.github.io/2018/09/06/Capital/">https://didongdongdi.github.io/2018/09/06/Capital/</a> </p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Problem/">Problem</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚拟机/">虚拟机</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-GitConmand"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/08/29/GitConmand/">GitCommand</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/08/29/GitConmand/" class="article-date">
-	  <time datetime="2018-08-29T07:48:00.000Z" itemprop="datePublished">August 29, 2018</time>
-	</a>
-
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Git/">Git</a>
- 
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://github.com/DiDongDongDi/GitCommand" target="_blank" rel="noopener">GitHub地址</a></p>
-<p>本文地址 <a href="https://didongdongdi.github.io/2018/08/29/GitConmand/">https://didongdongdi.github.io/2018/08/29/GitConmand/</a> </p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Git/">Git</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Command/">Command</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
 
 
   <nav id="page-nav">
@@ -839,6 +900,21 @@ Negotiation and Persuasion Skills
 
             
               <div class="widget-entry-thumbnail">
+                <a href="/2018/10/24/KMP模式匹配算法的个人解读/" title=""><img width="50" height="50" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/10/24/KMP模式匹配算法的个人解读/">KMP模式匹配算法 的 个人解读</a></h6>
+              <span>October 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
                 <a href="/2018/10/18/Intercultural-Communication-6/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2012/07/08/5454/0b36ba7b4422a11eeaedba792d9689db-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
               </div>
               <div class="widget-entry-summary">
@@ -846,6 +922,21 @@ Negotiation and Persuasion Skills
 
               <h6 style="margin: 0;"><a href="/2018/10/18/Intercultural-Communication-6/">the Summary of Intercultural Communication (6)</a></h6>
               <span>October 18, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="/2018/10/16/迷宫求解所有路径/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/07/26/123475/9a6414458df24961311231b3bce99906-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/10/16/迷宫求解所有路径/">迷宫求解  (所有路径)</a></h6>
+              <span>October 16, 2018</span>
             </div>
 
           </li>
@@ -895,36 +986,6 @@ Negotiation and Persuasion Skills
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-thumbnail">
-                <a href="/2018/09/28/Intercultural-Communication-1/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/12/07/187135/8cfff552dee296306e4161b3429339fa-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
-              </div>
-              <div class="widget-entry-summary">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/28/Intercultural-Communication-1/">the Summary of Intercultural Communication (1)</a></h6>
-              <span>September 28, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-thumbnail">
-                <a href="/2018/09/28/C++ 与 哲学/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/03/01/46574/71cecd4c03403e277fdd5143296e7ba3.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
-              </div>
-              <div class="widget-entry-summary">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/28/C++ 与 哲学/">C++ 与 哲学</a></h6>
-              <span>September 28, 2018</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -934,7 +995,7 @@ Negotiation and Persuasion Skills
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据结构/">数据结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -944,7 +1005,7 @@ Negotiation and Persuasion Skills
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -954,7 +1015,7 @@ Negotiation and Persuasion Skills
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 11.67px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Competence/" style="font-size: 18.33px;">Competence</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 13.33px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
+      <a href="/tags/C/" style="font-size: 13.33px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Competence/" style="font-size: 18.33px;">Competence</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 13.33px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
     </div>
   </div>
 
@@ -964,7 +1025,7 @@ Negotiation and Persuasion Skills
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">15</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">15</span></li></ul>
     </div>
   </div>
 
@@ -1014,6 +1075,9 @@ Negotiation and Persuasion Skills
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
        
 </script>
 

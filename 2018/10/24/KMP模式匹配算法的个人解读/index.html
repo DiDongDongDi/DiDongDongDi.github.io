@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>KMP模式匹配算法 的 个人解读 | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="算法" />
+  
+  
+  
+  
+  <meta name="description" content="（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）  字符串匹配问题字符串的模式匹配算法大致有以下几种：   朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF） KMP模式匹配算法（以下简称KMP） Horspool算法 Boyer-Moore算法 Sunday算法 RK算法 字符串匹配自动机 后缀树算法（分在线和非在线两种） 对于多模式字符串匹">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KMP模式匹配算法 的 个人解读">
+<meta property="og:url" content="https://didongdongdi.github.io/2018/10/24/KMP模式匹配算法的个人解读/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）  字符串匹配问题字符串的模式匹配算法大致有以下几种：   朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF） KMP模式匹配算法（以下简称KMP） Horspool算法 Boyer-Moore算法 Sunday算法 RK算法 字符串匹配自动机 后缀树算法（分在线和非在线两种） 对于多模式字符串匹">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg">
+<meta property="og:updated_time" content="2018-10-26T13:45:43.730Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KMP模式匹配算法 的 个人解读">
+<meta name="twitter:description" content="（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）  字符串匹配问题字符串的模式匹配算法大致有以下几种：   朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF） KMP模式匹配算法（以下简称KMP） Horspool算法 Boyer-Moore算法 Sunday算法 RK算法 字符串匹配自动机 后缀树算法（分在线和非在线两种） 对于多模式字符串匹">
+<meta name="twitter:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,css/images/pose02.jpg,css/images/pose03.jpg,css/images/pose04.jpg,css/images/pose05.jpg,http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-4k-wallpaper-3840-2160-awesome/4k-wallpaper-volcano-smoke-eruption-3840-2160.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/04/06/657118/5cf29d7c5d3f3abbe90692ed2dc1108b-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/07/217910/a4b616ee53bedb877f1abe9a028152bd-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/08/08/771421/658c52cf22b480793ebcd5b2fec738ee-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214354/5aed5397bee3594274a91ca081fede48-700.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/21/233495/7eae763f38b88e05aaa22f36fa015c38-1000.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-KMP模式匹配算法的个人解读" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg" rel="gallery_cjnq2fzop00008ogvc45t4npm">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      KMP模式匹配算法 的 个人解读
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/10/24/KMP模式匹配算法的个人解读/" class="article-date">
+	  <time datetime="2018-10-24T15:43:00.000Z" itemprop="datePublished">October 24, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）</p>
+<hr>
+<h1 id="字符串匹配问题"><a href="#字符串匹配问题" class="headerlink" title="字符串匹配问题"></a>字符串匹配问题</h1><p>字符串的模式匹配算法大致有以下几种：</p>
+<blockquote>
+<ul>
+<li>朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF）</li>
+<li>KMP模式匹配算法（以下简称KMP）</li>
+<li>Horspool算法</li>
+<li>Boyer-Moore算法</li>
+<li>Sunday算法</li>
+<li>RK算法</li>
+<li>字符串匹配自动机</li>
+<li>后缀树算法（分在线和非在线两种）</li>
+<li>对于多模式字符串匹配有：AC算法（字符串匹配自动机思想）、WM算法（BM算法在多模式的推广应用）</li>
+</ul>
+</blockquote>
+<p>在这里主要说明KMP和BP，对于其他算法以后再做了解。</p>
+<blockquote>
+<ul>
+<li>BF<br>简单粗暴地对于 T 上的每一个（除了最后的|P|-1个）字符，都对 P 扫描一遍<br>这种算法简单，但时间复杂度过高，最差的情况需要<code>O(|T||P|)</code>的代价</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<ul>
+<li>KMP<br>这种算法相对复杂，但时间复杂度低，其时间代价为<code>O(|P|+|T|)</code>，且当T长度远小于P长度时，基本上为O(|T|)</li>
+</ul>
+</blockquote>
+<p>下面说明KMP算法。</p>
+<hr>
+<h1 id="KMP的大致思想"><a href="#KMP的大致思想" class="headerlink" title="KMP的大致思想"></a>KMP的大致思想</h1><ul>
+<li>KMP算法由Knuth、Morris、Pratt等人创造，其本质在于将BP中<code>没有必要的比较</code>去掉，且P的右移与T无关，仅依赖于P本身的特征。</li>
+</ul>
+<p><img src="KMP.jpg" alt="KMP算法原理"></p>
+<ul>
+<li><p>由图可知，当遇到匹配失败的情况时，BP直接将P右移一位，重新扫描P，但这样效率极为低下。若直接将P移至P(i+1)的位置，则极有可能会错过P’的情况；即，在T上，有字符串<code>(i-j)~(i-k-1)</code>和字符串<code>(i-j+k)~(i-1)</code>相等，那么此时极有可能找到从<code>T(i-j+k)</code>位置开始的P’。所以，KMP的主要目的就是找到可能存在的P’。同时，应保证k为最小，即相等的字符串应尽可能地长。而后不断进行迭代。</p>
+</li>
+<li><p>由图可知，字符串<code>T(i-j)~(i-1)</code>与字符串<code>P(0)~(j-1)</code>必定相等（因为前面已经扫描过了）。所以，我们只需要知道和橙色字符串<code>P(0)~(j-k-1)</code>相等的红色字符串<code>P(k)~(j-1)</code>是否存在，且其位置如何。</p>
+</li>
+</ul>
+<hr>
+<h1 id="P的特征向量"><a href="#P的特征向量" class="headerlink" title="P的特征向量"></a>P的特征向量</h1><ul>
+<li><p>P的特征向量为一个大小为|P|的int型数组，其元素为特征值，且对应P上的字符。由<code>特征</code>二字可知，特征向量是反映P的字符串特征的一种表示，其与线性代数中的特征向量没有关系，特征值同样。下面将通过举几个例子来说明特征值和特征向量的意义。</p>
+</li>
+<li><p>对于下面的字符串，其特征向量为：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"> 0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"> 0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"> 0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6 </td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>由上面的字符串及特征向量可知：</li>
+</ul>
+<blockquote>
+<ul>
+<li>P[0]的特征值必定为0</li>
+<li>往后的字符P[j]的特征值i：<br>1.若<code>i == 0</code>，说明该字符与P[0]不同<br>2.若<code>i != 0</code>，说明该字符与P[i-1]相同或者说该字符的下一个字符与P[i]相同（这就是为什么大多数KMP求特征向量的那个数组或函数叫做<code>next</code>），同时字符串<code>P(0)~(i-1)</code>和字符串<code>P(j-i+1)~(j)</code>相等，即有相等子串</li>
+</ul>
+</blockquote>
+<ul>
+<li>在清楚了字符串的特征值和特征向量的含义后，我们先把如何求特征向量先放一边，先看在已有P的特征向量的情况下，如何找到T中的子串。</li>
+</ul>
+<h1 id="已知特征向量-求子串"><a href="#已知特征向量-求子串" class="headerlink" title="已知特征向量 求子串"></a>已知特征向量 求子串</h1><ul>
+<li>先上代码：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">KMPStrMatching</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span> T, <span class="keyword">const</span> <span class="built_in">string</span> P,<span class="keyword">const</span> <span class="keyword">int</span> *N,<span class="keyword">const</span> <span class="keyword">int</span> startIndex)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> TLen = T.length(), PLen = P.length();<span class="comment">//分别获得T和P的长度</span></span><br><span class="line">	<span class="keyword">int</span> lastIndex = TLen - PLen;<span class="comment">//防止开始查找的位置太靠后，T最后的子串长度小于P的长度</span></span><br><span class="line">	<span class="keyword">if</span> (startIndex &gt; lastIndex)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">int</span> i = startIndex, j = <span class="number">0</span>;<span class="comment">//从T[startIndex]位置开始查找，i为T上的位置，j为P上的位置</span></span><br><span class="line">	<span class="keyword">for</span> (; i &lt; TLen; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (P[j] != T[i] &amp;&amp; j &gt; <span class="number">0</span>)<span class="comment">//见分析</span></span><br><span class="line">			j = N[j - <span class="number">1</span>];<span class="comment">//记住这个是右移到相应的位置即可</span></span><br><span class="line">		<span class="keyword">if</span> (P[j] == T[i])<span class="comment">//字符相等，i、j都往后移（j的后移由for循环完成）</span></span><br><span class="line">			i++;</span><br><span class="line">		<span class="keyword">if</span> (j == PLen)<span class="comment">//找到子串，返回子串首字符位置</span></span><br><span class="line">			<span class="keyword">return</span> i - j + <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>while循环</code>的分析：</p>
+<ol>
+<li>若<code>j == 0</code>，说明此时j指向P的首字符，只需要比较即可，即 if (P[j] == T[i])</li>
+<li>若<code>j != 0</code>，说明此时j指向的不是P的首字符<blockquote>
+<ul>
+<li>若<code>P[j] == T[i]</code>，则只需要继续往后面比较即可</li>
+<li>若<code>P[j] != T[i]</code>，则此时进入while循环，寻找是否存在P’（见 KMP的大致思想 部分）</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>语句 <code>j = N[j - 1];</code> 的分析：</p>
+<ol>
+<li>由于此时 j指向的不是P的首字符 且 <code>P[j] != T[i]</code> ，则此时需要将P右移，即，将j左移。</li>
+<li>可知 <code>P[j-1] == T[i-1]</code> ，则先将 j-1</li>
+<li>由前面P的特征向量部分可知<blockquote>
+<ul>
+<li>若 <code>N[j-1] == 0</code> ，说明此时必定不存在P’，故直接将j置零，即，将P直接移到首字符</li>
+<li>若 <code>N[j-1] != 0</code> ，说明此时有可能存在P’，则将j置为N[j-1]，即，将P移到可能存在的P’的位置，然后再比较可能不同的那个字符，即比较P[j]和T[i]；注意，再while循环的过程中i是未发生变化的</li>
+</ul>
+</blockquote>
+</li>
+<li>这个时候你可能会想，如果P[j]和T[i]是相等的还行，那如果要是不相等呢？那么这个时候，你会发现P已经后移了，其实就已经开始了另一轮匹配，这就是迭代。</li>
+</ol>
+<h1 id="求特征向量"><a href="#求特征向量" class="headerlink" title="求特征向量"></a>求特征向量</h1><p>好了，相信这个时候你对KMP的算法实现应该有了一定的了解。</p>
+<p>但我们还有另外一个问题没有解决：如何求特征向量。事实上求特征向量的算法和上面求相等子串的算法都是同一种算法——KMP。</p>
+<p>这个时候，T和P相等，但我们的<code>startIndex</code>（开始查找的位置）设为固定的1。</p>
+<p>这个时候你可能又会问，这样根本找不到相等的子串啊？！没错，但是我们的目的不是为了找相等的子串，而是为了探索P的特征，即在P[1]后（含P[1]）找到和从P[0]开始的子串相等的最长子串，同时将其记录到next（或N）数组中。所以，next数组实际上是对P的数字化描述。同时，在对next数组顺序填充时，空着的位置的特征值只与前面已经填好的位置的特征值有关，这个从求子串时的操作就可以看出。</p>
+<p>下面贴代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> *<span class="title">Next</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span> P)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> m = P.length();<span class="comment">//获得P的长度</span></span><br><span class="line">	assert(m &gt; <span class="number">0</span>);<span class="comment">//如果是空字符串则退出</span></span><br><span class="line">	<span class="keyword">int</span> *N = <span class="keyword">new</span> <span class="keyword">int</span>[m];<span class="comment">//new一个next数组</span></span><br><span class="line">	assert(N != <span class="number">0</span>);<span class="comment">//new不出来就退出</span></span><br><span class="line">	N[<span class="number">0</span>] = <span class="number">0</span>;<span class="comment">//首字符特征值置零，即，跳过首字符</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; m; i++) &#123;<span class="comment">//i往后移</span></span><br><span class="line">		<span class="keyword">int</span> k = N[i - <span class="number">1</span>];<span class="comment">//k往后移</span></span><br><span class="line">		<span class="keyword">while</span> (k &gt; <span class="number">0</span> &amp;&amp; P[i] != P[k])<span class="comment">//这两行与上面求子串的两行完全一样，故不再说明</span></span><br><span class="line">			k = N[k - <span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span> (P[i] == P[k])<span class="comment">//如果相等，在原来k的基础上+1，表示从N[i]往前有相等的子串</span></span><br><span class="line">			N[i] = k + <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span><span class="comment">//否则，置零，表示没有相等的子串</span></span><br><span class="line">			N[i] = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> N;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>综上，你会发现，KMP其实并不难，关键在于while循环的理解。而while循环本质上是不断地迭代，同时 j<code>= N[j - 1];</code> 这一语句将几步操作融合在了一起。</p>
+<p>不得不感叹算法的奇妙啊！</p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2018/10/24/KMP模式匹配算法的个人解读/">https://didongdongdi.github.io/2018/10/24/KMP模式匹配算法的个人解读/</a> </p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据结构/">数据结构</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/18/Intercultural-Communication-6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">the Summary of Intercultural Communication (6)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串匹配问题"><span class="nav-number">1.</span> <span class="nav-text">字符串匹配问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KMP的大致思想"><span class="nav-number">2.</span> <span class="nav-text">KMP的大致思想</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#P的特征向量"><span class="nav-number">3.</span> <span class="nav-text">P的特征向量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#已知特征向量-求子串"><span class="nav-number">4.</span> <span class="nav-text">已知特征向量 求子串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#求特征向量"><span class="nav-number">5.</span> <span class="nav-text">求特征向量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+       
+</script>
+
+<script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

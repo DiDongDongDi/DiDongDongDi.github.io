@@ -55,10 +55,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,css/images/pose02.jpg,css/images/pose03.jpg,css/images/pose04.jpg,css/images/pose05.jpg,http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-4k-wallpaper-3840-2160-awesome/4k-wallpaper-volcano-smoke-eruption-3840-2160.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/04/06/657118/5cf29d7c5d3f3abbe90692ed2dc1108b-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/07/217910/a4b616ee53bedb877f1abe9a028152bd-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/08/08/771421/658c52cf22b480793ebcd5b2fec738ee-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214354/5aed5397bee3594274a91ca081fede48-700.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/21/233495/7eae763f38b88e05aaa22f36fa015c38-1000.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -353,6 +375,21 @@
 
             
               <div class="widget-entry-thumbnail">
+                <a href="/2018/10/24/KMP模式匹配算法的个人解读/" title=""><img width="50" height="50" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-701626.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/10/24/KMP模式匹配算法的个人解读/">KMP模式匹配算法 的 个人解读</a></h6>
+              <span>October 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
                 <a href="/2018/10/18/Intercultural-Communication-6/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2012/07/08/5454/0b36ba7b4422a11eeaedba792d9689db-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
               </div>
               <div class="widget-entry-summary">
@@ -360,6 +397,21 @@
 
               <h6 style="margin: 0;"><a href="/2018/10/18/Intercultural-Communication-6/">the Summary of Intercultural Communication (6)</a></h6>
               <span>October 18, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="/2018/10/16/迷宫求解所有路径/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/07/26/123475/9a6414458df24961311231b3bce99906-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/10/16/迷宫求解所有路径/">迷宫求解  (所有路径)</a></h6>
+              <span>October 16, 2018</span>
             </div>
 
           </li>
@@ -409,36 +461,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-thumbnail">
-                <a href="/2018/09/28/Intercultural-Communication-1/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/12/07/187135/8cfff552dee296306e4161b3429339fa-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
-              </div>
-              <div class="widget-entry-summary">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/28/Intercultural-Communication-1/">the Summary of Intercultural Communication (1)</a></h6>
-              <span>September 28, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-thumbnail">
-                <a href="/2018/09/28/C++ 与 哲学/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/03/01/46574/71cecd4c03403e277fdd5143296e7ba3.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
-              </div>
-              <div class="widget-entry-summary">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/28/C++ 与 哲学/">C++ 与 哲学</a></h6>
-              <span>September 28, 2018</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -448,7 +470,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据结构/">数据结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -458,7 +480,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -468,7 +490,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 11.67px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Competence/" style="font-size: 18.33px;">Competence</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 13.33px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
+      <a href="/tags/C/" style="font-size: 13.33px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Competence/" style="font-size: 18.33px;">Competence</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 13.33px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
     </div>
   </div>
 
@@ -478,7 +500,7 @@
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">15</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">15</span></li></ul>
     </div>
   </div>
 
@@ -528,6 +550,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
        
 </script>
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-10-18T11:24:24.416Z</updated>
+  <updated>2018-10-26T13:45:43.730Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KMP模式匹配算法 的 个人解读</title>
+    <link href="https://didongdongdi.github.io/2018/10/24/KMP%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%A3%E8%AF%BB/"/>
+    <id>https://didongdongdi.github.io/2018/10/24/KMP模式匹配算法的个人解读/</id>
+    <published>2018-10-24T15:43:00.000Z</published>
+    <updated>2018-10-26T13:45:43.730Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;字符串匹配问题&quot;&gt;&lt;a href=&quot;#字符串匹配问题&quot; class=&quot;headerlink&quot; title=&quot;字符串匹配问题&quot;&gt;&lt;/a&gt;字符串匹配问题&lt;/h1&gt;&lt;p&gt;字符串的模式匹配算法大致有以下几种：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF）&lt;/li&gt;
+&lt;li&gt;KMP模式匹配算法（以下简称KMP）&lt;/li&gt;
+&lt;li&gt;Horspool算法&lt;/li&gt;
+&lt;li&gt;Boyer-Moore算法&lt;/li&gt;
+&lt;li&gt;Sunday算法&lt;/li&gt;
+&lt;li&gt;RK算法&lt;/li&gt;
+&lt;li&gt;字符串匹配自动机&lt;/li&gt;
+&lt;li&gt;后缀树算法（分在线和非在线两种）&lt;/li&gt;
+&lt;li&gt;对于多模式字符串匹配有：AC算法（字符串匹配自动机思想）、WM算法（BM算法在多模式的推广应用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在这里主要说明KMP和BP，对于其他算法以后再做了解。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;BF&lt;br&gt;简单粗暴地对于 T 上的每一个（除了最后的|P|-1个）字符，都对 P 扫描一遍&lt;br&gt;这种算法简单，但时间复杂度过高，最差的情况需要&lt;code&gt;O(|T||P|)&lt;/code&gt;的代价&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="算法" scheme="https://didongdongdi.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>the Summary of Intercultural Communication (6)</title>
@@ -42,6 +83,26 @@
     
     
       <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迷宫求解  (所有路径)</title>
+    <link href="https://didongdongdi.github.io/2018/10/16/%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/"/>
+    <id>https://didongdongdi.github.io/2018/10/16/迷宫求解所有路径/</id>
+    <published>2018-10-16T05:25:00.000Z</published>
+    <updated>2018-10-26T15:20:13.356Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;迷宫问题&quot;&gt;&lt;a href=&quot;#迷宫问题&quot; class=&quot;headerlink&quot; title=&quot;迷宫问题&quot;&gt;&lt;/a&gt;迷宫问题&lt;/h1&gt;&lt;p&gt;对于如下所示的迷宫，如何找到所有路径？（ # 为墙，* 为出口，0 为入口）（注意：要找到所有的路径必须保证一条路径不能在同一个位置走两次及两次以上，反之，一方面，这样没有意义；另一方面，这样可能会造成在一个地方一直转圈）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
     
   </entry>
   
@@ -468,50 +529,6 @@
     
     
       <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>github pages 出现 “the CNAME is already taken” 的解决办法</title>
-    <link href="https://didongdongdi.github.io/2018/07/06/CNAME/"/>
-    <id>https://didongdongdi.github.io/2018/07/06/CNAME/</id>
-    <published>2018-07-06T02:46:05.849Z</published>
-    <updated>2018-09-23T05:17:28.078Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 &lt;strong&gt;“the CNAME is already taken”&lt;/strong&gt; 。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
-    
-    
-      <category term="Github" scheme="https://didongdongdi.github.io/tags/Github/"/>
-    
-      <category term="Domain" scheme="https://didongdongdi.github.io/tags/Domain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性代数与解析几何笔记</title>
-    <link href="https://didongdongdi.github.io/2018/07/05/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E7%AC%94%E8%AE%B0/"/>
-    <id>https://didongdongdi.github.io/2018/07/05/线性代数与解析几何笔记/</id>
-    <published>2018-07-05T11:32:20.636Z</published>
-    <updated>2018-09-23T05:20:28.156Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习&lt;a href=&quot;https://space.bilibili.com/88461692/#/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;B站 3Blue1Brown 线性代数的本质 系列视频&lt;/a&gt;(我从中受益匪浅)。相信你在听了他的课程后会对线性代数有着更深一层次的理解。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="线代" scheme="https://didongdongdi.github.io/categories/%E7%BA%BF%E4%BB%A3/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
     
   </entry>
   
