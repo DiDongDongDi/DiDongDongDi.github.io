@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>FPGA-VHDL 门电路设计</title>
+      <link href="/2018/10/31/PGA-VHDL-%E9%97%A8%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+      <url>/2018/10/31/PGA-VHDL-%E9%97%A8%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<ol><li>分析功能</li></ol><blockquote><p>输入 和 输出</p></blockquote><ol start="2"><li><p>画出真值表</p></li><li><p>写出逻辑表达式</p></li></ol><blockquote><p>最小项的或</p></blockquote><a id="more"></a><ol start="4"><li>将逻辑表达式化为最简形式</li></ol><blockquote><p>越简单越好</p></blockquote><ol start="5"><li>从最简形式，反推（二输入）与非门的组成</li></ol><blockquote><p>从（二输入）与非门开始，逐层封装，直到实现最简形式</p></blockquote><blockquote><p>使用与非门的原因是：<br>单纯用与非门可以实现任意逻辑表达式<br>与非门的经济性，在集成电路中，与非门和或非门是仅次于非门的第二简单的门<br>与非门比或非门性能好<br>参考自 <a href="https://www.zhihu.com/question/38788129/answer/78415573" target="_blank" rel="noopener">数字电路基础课程教学中，为什么总是要把逻辑式化简为与非-与非式，并在实际电路中用与非门实现？ - well xiong的回答 - 知乎</a></p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2018/10/31/PGA-VHDL-门电路设计/">https://didongdongdi.github.io/2018/10/31/PGA-VHDL-门电路设计/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 嵌入式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FPGA </tag>
+            
+            <tag> VHDL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>KMP模式匹配算法 的 个人解读</title>
       <link href="/2018/10/24/KMP%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%A3%E8%AF%BB/"/>
       <url>/2018/10/24/KMP%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%A3%E8%AF%BB/</url>
@@ -551,9 +576,9 @@
       
         <tags>
             
-            <tag> 嵌入式 </tag>
-            
             <tag> 物联网 </tag>
+            
+            <tag> 嵌入式 </tag>
             
         </tags>
       
