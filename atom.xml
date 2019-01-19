@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-12-31T07:42:08.243Z</updated>
+  <updated>2018-09-23T05:16:40.000Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -17,409 +17,353 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>the Summary of Intercultural Communication (extra notes)</title>
-    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/"/>
-    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/</id>
-    <published>2018-12-31T05:56:00.000Z</published>
-    <updated>2018-12-31T07:42:08.243Z</updated>
+    <title>Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/评论功能/</id>
+    <published>2019-01-19T05:51:15.957Z</published>
+    <updated>2018-09-23T05:16:40.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;interlink&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;作为一个完整的博客，评论功能自然是必不可少的。&lt;/p&gt;
+&lt;p&gt;而可供选择的第三方评论系统有很多，但不是被墙（如Disqus）就是停止服务（如友言、网易云跟帖），或者需要域名备案（如畅言）。&lt;/p&gt;
+&lt;p&gt;所以只能把目光投向一款来自韩国的评论系统——来必力(livere)。&lt;/p&gt;
     
     </summary>
     
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Livere" scheme="https://didongdongdi.github.io/tags/Livere/"/>
     
   </entry>
   
   <entry>
-    <title>the Summary of Intercultural Communication (11)</title>
-    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/"/>
-    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/</id>
-    <published>2018-12-30T16:44:00.000Z</published>
-    <updated>2019-01-07T09:55:35.300Z</updated>
+    <title>线性代数与解析几何笔记</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E7%AC%94%E8%AE%B0/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/线性代数与解析几何笔记/</id>
+    <published>2019-01-19T05:51:15.944Z</published>
+    <updated>2018-09-23T05:20:30.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Principles-and-strategies-of-intercultural-communication&quot;&gt;&lt;a href=&quot;#Principles-and-strategies-of-intercultural-communication&quot; class=&quot;headerlink&quot; title=&quot;Principles and strategies of intercultural communication&quot;&gt;&lt;/a&gt;Principles and strategies of intercultural communication&lt;/h1&gt;&lt;h2 id=&quot;Cooperative-principle&quot;&gt;&lt;a href=&quot;#Cooperative-principle&quot; class=&quot;headerlink&quot; title=&quot;Cooperative principle&quot;&gt;&lt;/a&gt;Cooperative principle&lt;/h2&gt;
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习&lt;a href=&quot;https://space.bilibili.com/88461692/#/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;B站 3Blue1Brown 线性代数的本质 系列视频&lt;/a&gt;(我从中受益匪浅)。相信你在听了他的课程后会对线性代数有着更深一层次的理解。&lt;/p&gt;
     
     </summary>
     
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+      <category term="线代" scheme="https://didongdongdi.github.io/categories/%E7%BA%BF%E4%BB%A3/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
     
   </entry>
   
   <entry>
-    <title>the Summary of Intercultural Communication (10)</title>
-    <link href="https://didongdongdi.github.io/2018/12/30/Intercultural-Communication-10/"/>
-    <id>https://didongdongdi.github.io/2018/12/30/Intercultural-Communication-10/</id>
-    <published>2018-12-30T09:52:00.000Z</published>
-    <updated>2019-01-07T09:54:57.959Z</updated>
+    <title>Hexo博客 站内搜索 配置 (swiftype)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/站内搜索/</id>
+    <published>2019-01-19T05:51:15.936Z</published>
+    <updated>2018-09-23T05:20:18.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Barriers-to-Intercultural-Communication&quot;&gt;&lt;a href=&quot;#Barriers-to-Intercultural-Communication&quot; class=&quot;headerlink&quot; title=&quot;Barriers to Intercultural Communication&quot;&gt;&lt;/a&gt;Barriers to Intercultural Communication&lt;/h1&gt;&lt;h2 id=&quot;Ethnocentrism&quot;&gt;&lt;a href=&quot;#Ethnocentrism&quot; class=&quot;headerlink&quot; title=&quot;Ethnocentrism&quot;&gt;&lt;/a&gt;Ethnocentrism&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Q: What is &lt;code&gt;Ethnocentrism&lt;/code&gt;?&lt;br&gt;A: The act of &lt;code&gt;judging&lt;/code&gt; another culture based on &lt;code&gt;preconceptions&lt;/code&gt; that are found in &lt;code&gt;values and standards&lt;/code&gt; of one’s own culture.&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。&lt;/p&gt;
+&lt;p&gt;而第三方站内搜索的插件有：&lt;/p&gt;
     
     </summary>
     
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="swiftype" scheme="https://didongdongdi.github.io/tags/swiftype/"/>
     
   </entry>
   
   <entry>
-    <title>the Summary of Intercultural Communication (9)</title>
-    <link href="https://didongdongdi.github.io/2018/11/21/Intercultural-Communicaiton-9/"/>
-    <id>https://didongdongdi.github.io/2018/11/21/Intercultural-Communicaiton-9/</id>
-    <published>2018-11-21T12:27:00.000Z</published>
-    <updated>2019-01-07T09:54:25.997Z</updated>
+    <title>气象站</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/%E6%B0%94%E8%B1%A1%E7%AB%99/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/气象站/</id>
+    <published>2019-01-19T05:51:15.888Z</published>
+    <updated>2018-09-23T05:20:08.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Culture-Shock&quot;&gt;&lt;a href=&quot;#Culture-Shock&quot; class=&quot;headerlink&quot; title=&quot;Culture Shock&quot;&gt;&lt;/a&gt;Culture Shock&lt;/h1&gt;&lt;h2 id=&quot;What-Is-the-Meaning-of-Acculturation&quot;&gt;&lt;a href=&quot;#What-Is-the-Meaning-of-Acculturation&quot; class=&quot;headerlink&quot; title=&quot;What Is the Meaning of Acculturation&quot;&gt;&lt;/a&gt;What Is the Meaning of Acculturation&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&lt;br&gt;&lt;code&gt;Acculturation&lt;/code&gt; is the process of &lt;code&gt;modificating&lt;/code&gt; one’s &lt;code&gt;attitudes, knowledge and behavior&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&lt;br&gt;Q: What is Acculturation ?&lt;br&gt;A: It is a &lt;strong&gt;process&lt;/strong&gt; through which a person or group from one culture comes to &lt;strong&gt;adopt&lt;/strong&gt; practices and values of another culture, while still &lt;strong&gt;retaining&lt;/strong&gt; their own distinct culture.&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;项目框架&quot;&gt;&lt;a href=&quot;#项目框架&quot; class=&quot;headerlink&quot; title=&quot;项目框架&quot;&gt;&lt;/a&gt;项目框架&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;气象站.jpg&quot; alt=&quot;气象站项目框架&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+      <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FPGA-VHDL 门电路设计</title>
-    <link href="https://didongdongdi.github.io/2018/10/31/PGA-VHDL-%E9%97%A8%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
-    <id>https://didongdongdi.github.io/2018/10/31/PGA-VHDL-门电路设计/</id>
-    <published>2018-10-31T13:58:00.000Z</published>
-    <updated>2018-10-31T14:17:44.916Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;分析功能&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;输入 和 输出&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;p&gt;画出真值表&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;写出逻辑表达式&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;最小项的或&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="FPGA" scheme="https://didongdongdi.github.io/tags/FPGA/"/>
-    
-      <category term="VHDL" scheme="https://didongdongdi.github.io/tags/VHDL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (7&amp;8)</title>
-    <link href="https://didongdongdi.github.io/2018/10/31/Intercultural-Communication-7-8/"/>
-    <id>https://didongdongdi.github.io/2018/10/31/Intercultural-Communication-7-8/</id>
-    <published>2018-10-31T08:17:00.000Z</published>
-    <updated>2019-01-07T09:53:57.072Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Nonverbal-communication&quot;&gt;&lt;a href=&quot;#Nonverbal-communication&quot; class=&quot;headerlink&quot; title=&quot;Nonverbal communication&quot;&gt;&lt;/a&gt;Nonverbal communication&lt;/h1&gt;&lt;h2 id=&quot;Comparison&quot;&gt;&lt;a href=&quot;#Comparison&quot; class=&quot;headerlink&quot; title=&quot;Comparison&quot;&gt;&lt;/a&gt;Comparison&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KMP模式匹配算法 的 个人解读</title>
-    <link href="https://didongdongdi.github.io/2018/10/24/KMP%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%A3%E8%AF%BB/"/>
-    <id>https://didongdongdi.github.io/2018/10/24/KMP模式匹配算法的个人解读/</id>
-    <published>2018-10-24T15:43:00.000Z</published>
-    <updated>2018-10-27T03:13:15.210Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;字符串匹配问题&quot;&gt;&lt;a href=&quot;#字符串匹配问题&quot; class=&quot;headerlink&quot; title=&quot;字符串匹配问题&quot;&gt;&lt;/a&gt;字符串匹配问题&lt;/h1&gt;&lt;p&gt;字符串的模式匹配算法大致有以下几种：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF）&lt;/li&gt;
-&lt;li&gt;KMP模式匹配算法（以下简称KMP）&lt;/li&gt;
-&lt;li&gt;Horspool算法&lt;/li&gt;
-&lt;li&gt;Boyer-Moore算法&lt;/li&gt;
-&lt;li&gt;Sunday算法&lt;/li&gt;
-&lt;li&gt;RK算法&lt;/li&gt;
-&lt;li&gt;字符串匹配自动机&lt;/li&gt;
-&lt;li&gt;后缀树算法（分在线和非在线两种）&lt;/li&gt;
-&lt;li&gt;对于多模式字符串匹配有：AC算法（字符串匹配自动机思想）、WM算法（BM算法在多模式的推广应用）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在这里主要说明KMP和BP，对于其他算法以后再做了解。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;BF&lt;br&gt;简单粗暴地对于 T 上的每一个（除了最后的|P|-1个）字符，都对 P 扫描一遍&lt;br&gt;这种算法简单，但时间复杂度过高，最差的情况需要&lt;code&gt;O(|T||P|)&lt;/code&gt;的代价&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="数据结构" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="算法" scheme="https://didongdongdi.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (6)</title>
-    <link href="https://didongdongdi.github.io/2018/10/18/Intercultural-Communication-6/"/>
-    <id>https://didongdongdi.github.io/2018/10/18/Intercultural-Communication-6/</id>
-    <published>2018-10-18T05:03:00.000Z</published>
-    <updated>2019-01-07T09:53:17.098Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Linguistic-differences-via-translation&quot;&gt;&lt;a href=&quot;#Linguistic-differences-via-translation&quot; class=&quot;headerlink&quot; title=&quot;Linguistic differences via translation&quot;&gt;&lt;/a&gt;Linguistic differences via translation&lt;/h1&gt;&lt;h2 id=&quot;Correspondence-between-English-and-Chinese-at-word-Level&quot;&gt;&lt;a href=&quot;#Correspondence-between-English-and-Chinese-at-word-Level&quot; class=&quot;headerlink&quot; title=&quot;Correspondence between English and Chinese at word Level&quot;&gt;&lt;/a&gt;Correspondence between English and Chinese at word Level&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Correspondence:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;word-for-word&lt;/li&gt;
-&lt;li&gt;one word with multiple equivalents of the same meaning&lt;/li&gt;
-&lt;li&gt;one word with multiple equivalents of different meanings&lt;/li&gt;
-&lt;li&gt;equivalents interwoven with one another&lt;/li&gt;
-&lt;li&gt;words without equivalents&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迷宫求解  (所有路径)</title>
-    <link href="https://didongdongdi.github.io/2018/10/16/%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/"/>
-    <id>https://didongdongdi.github.io/2018/10/16/迷宫求解所有路径/</id>
-    <published>2018-10-16T05:25:00.000Z</published>
-    <updated>2018-10-26T15:20:13.356Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;迷宫问题&quot;&gt;&lt;a href=&quot;#迷宫问题&quot; class=&quot;headerlink&quot; title=&quot;迷宫问题&quot;&gt;&lt;/a&gt;迷宫问题&lt;/h1&gt;&lt;p&gt;对于如下所示的迷宫，如何找到所有路径？（ # 为墙，* 为出口，0 为入口）（注意：要找到所有的路径必须保证一条路径不能在同一个位置走两次及两次以上，反之，一方面，这样没有意义；另一方面，这样可能会造成在一个地方一直转圈）&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="数据结构" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (5)</title>
-    <link href="https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-5/"/>
-    <id>https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-5/</id>
-    <published>2018-10-12T15:00:00.000Z</published>
-    <updated>2019-01-07T04:03:35.562Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;High-context-and-low-context-cultures&quot;&gt;&lt;a href=&quot;#High-context-and-low-context-cultures&quot; class=&quot;headerlink&quot; title=&quot;High-context and low-context cultures&quot;&gt;&lt;/a&gt;High-context and low-context cultures&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&lt;br&gt;Q: What are &lt;code&gt;High-context and low-context&lt;/code&gt; culture ?&lt;br&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (2)</title>
-    <link href="https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-2/"/>
-    <id>https://didongdongdi.github.io/2018/10/12/Intercultural-Communication-2/</id>
-    <published>2018-10-12T10:49:00.000Z</published>
-    <updated>2019-01-07T09:51:49.235Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Intercultural-competence&quot;&gt;&lt;a href=&quot;#Intercultural-competence&quot; class=&quot;headerlink&quot; title=&quot;Intercultural competence&quot;&gt;&lt;/a&gt;Intercultural competence&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&lt;br&gt;Q: What is &lt;code&gt;intercultural competence&lt;/code&gt; ?&lt;br&gt;A: A complex of abilities needed to &lt;code&gt;perform&lt;/code&gt; effectively and appropriately when &lt;code&gt;interacting&lt;/code&gt; with others who are linguistically and culturally &lt;code&gt;different&lt;/code&gt; from oneself.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电路原理图设计原则</title>
-    <link href="https://didongdongdi.github.io/2018/10/05/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
-    <id>https://didongdongdi.github.io/2018/10/05/电路原理图设计原则/</id>
-    <published>2018-10-05T15:54:00.000Z</published>
-    <updated>2018-10-05T16:14:26.861Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;先规划放置好元件，尽可能使后面连线简单，且能看出逻辑。&lt;/li&gt;
-&lt;li&gt;数量大且简单的连线尽可能短且集中，先连。&lt;/li&gt;
-&lt;li&gt;数量小且复杂的连线可能较为长且分散，后连。&lt;/li&gt;
-&lt;li&gt;连线完成后进行调整优化，使得连线整齐，利用好每一块地方，使得总体占用的面积最小。（如果空间实在不足，可调整图纸大小）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
+      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
       <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>the Summary of Intercultural Communication (1)</title>
-    <link href="https://didongdongdi.github.io/2018/09/28/Intercultural-Communication-1/"/>
-    <id>https://didongdongdi.github.io/2018/09/28/Intercultural-Communication-1/</id>
-    <published>2018-09-28T06:55:00.000Z</published>
-    <updated>2019-01-07T04:00:02.479Z</updated>
+    <title>模拟与数字电路笔记</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E7%AC%94%E8%AE%B0/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/模拟与数字电路笔记/</id>
+    <published>2019-01-19T05:51:15.878Z</published>
+    <updated>2018-09-23T05:19:58.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;How-to-make-a-power-point-presentation&quot;&gt;&lt;a href=&quot;#How-to-make-a-power-point-presentation&quot; class=&quot;headerlink&quot; title=&quot;How to make a power-point presentation&quot;&gt;&lt;/a&gt;How to make a power-point presentation&lt;/h1&gt;&lt;h2 id=&quot;Top-Tips-for-Effectivve-presentations-10&quot;&gt;&lt;a href=&quot;#Top-Tips-for-Effectivve-presentations-10&quot; class=&quot;headerlink&quot; title=&quot;Top Tips for Effectivve presentations (10)&quot;&gt;&lt;/a&gt;Top Tips for Effectivve presentations (10)&lt;/h2&gt;&lt;h3 id=&quot;Passion-and-Connect&quot;&gt;&lt;a href=&quot;#Passion-and-Connect&quot; class=&quot;headerlink&quot; title=&quot;Passion and Connect&quot;&gt;&lt;/a&gt;Passion and Connect&lt;/h3&gt;
+      &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;基础知识.png&quot; alt=&quot;基础知识&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+      <category term="模拟与数字电路" scheme="https://didongdongdi.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
     
   </entry>
   
   <entry>
-    <title>C++ 与 哲学</title>
-    <link href="https://didongdongdi.github.io/2018/09/28/C++%20%E4%B8%8E%20%E5%93%B2%E5%AD%A6/"/>
-    <id>https://didongdongdi.github.io/2018/09/28/C++ 与 哲学/</id>
-    <published>2018-09-28T02:04:00.000Z</published>
-    <updated>2018-09-28T06:35:51.707Z</updated>
+    <title>the Classification of Programming Language</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/the%20Classification%20of%20Programming%20Language/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/the Classification of Programming Language/</id>
+    <published>2019-01-19T05:51:15.850Z</published>
+    <updated>2018-09-23T05:19:46.000Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;以下只是我个人对C++语言的一些理解，只是为了更好地学习和使用C++，如有描述不当处，还请指出。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;很多的科幻大片中都有虚拟世界的存在，好比是现实世界的映射或是更近一步的提升，如黑客帝国中的&lt;code&gt;matrix&lt;/code&gt;,又如神盾局特工中的&lt;code&gt;framework&lt;/code&gt;，等等。&lt;/p&gt;
-&lt;p&gt;而这些虚拟世界无一不是建立在一行一行代码的基础上的。&lt;/p&gt;
+      &lt;h1 id=&quot;计算机语言分类&quot;&gt;&lt;a href=&quot;#计算机语言分类&quot; class=&quot;headerlink&quot; title=&quot;计算机语言分类&quot;&gt;&lt;/a&gt;计算机语言分类&lt;/h1&gt;&lt;p&gt;低级语言&lt;/p&gt;
+&lt;p&gt;高级语言&lt;/p&gt;
+&lt;p&gt;专用语言&lt;/p&gt;
+&lt;p&gt;脚本语言 &lt;/p&gt;
     
     </summary>
     
       <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
     
     
-      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
+      <category term="Classification" scheme="https://didongdongdi.github.io/tags/Classification/"/>
     
   </entry>
   
   <entry>
-    <title>the Summary of Intercultural Communication (4)</title>
-    <link href="https://didongdongdi.github.io/2018/09/27/Intercultural-Communication-4/"/>
-    <id>https://didongdongdi.github.io/2018/09/27/Intercultural-Communication-4/</id>
-    <published>2018-09-27T04:25:00.000Z</published>
-    <updated>2019-01-07T04:02:45.485Z</updated>
+    <title>STM32之库开发</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/STM32%E4%B9%8B%E5%BA%93%E5%BC%80%E5%8F%91/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/STM32之库开发/</id>
+    <published>2019-01-19T05:51:15.844Z</published>
+    <updated>2018-09-23T05:19:28.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Intercultural-communication-skills&quot;&gt;&lt;a href=&quot;#Intercultural-communication-skills&quot; class=&quot;headerlink&quot; title=&quot;Intercultural communication skills&quot;&gt;&lt;/a&gt;Intercultural communication skills&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Q: What &lt;code&gt;abilities&lt;/code&gt; do employers look for from employees about intercultural skills?&lt;br&gt;A: Understand people from different cultural backgrounds, build trust, demonstrate respect, and speak other languages.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (3)</title>
-    <link href="https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/"/>
-    <id>https://didongdongdi.github.io/2018/09/24/Intercultural-Communication-3/</id>
-    <published>2018-09-24T15:32:00.000Z</published>
-    <updated>2019-01-07T11:55:52.032Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Interpersonal-amp-intercultural-communication-skills&quot;&gt;&lt;a href=&quot;#Interpersonal-amp-intercultural-communication-skills&quot; class=&quot;headerlink&quot; title=&quot;Interpersonal &amp;amp; intercultural communication skills&quot;&gt;&lt;/a&gt;Interpersonal &amp;amp; intercultural communication skills&lt;/h1&gt;&lt;h2 id=&quot;INTERPERSONAL-SKILLS-6&quot;&gt;&lt;a href=&quot;#INTERPERSONAL-SKILLS-6&quot; class=&quot;headerlink&quot; title=&quot;INTERPERSONAL SKILLS (6)&quot;&gt;&lt;/a&gt;INTERPERSONAL SKILLS (6)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Communication Skills&lt;/li&gt;
-&lt;li&gt;Emotional Intelligence&lt;/li&gt;
-&lt;li&gt;Conflict Resolution and Mediation Skills&lt;/li&gt;
-&lt;li&gt;Team-Working, Groups and Meetings&lt;/li&gt;
-&lt;li&gt;Decision-Making and Problem-Solving&lt;/li&gt;
-&lt;li&gt;Negotiation and Persuasion Skills&lt;/li&gt;
+      &lt;h1 id=&quot;STM32-Embedded-Software&quot;&gt;&lt;a href=&quot;#STM32-Embedded-Software&quot; class=&quot;headerlink&quot; title=&quot;STM32 Embedded Software&quot;&gt;&lt;/a&gt;STM32 Embedded Software&lt;/h1&gt;&lt;p&gt;到目前为止STM32的开发库有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标准外设库（STD库）&lt;/li&gt;
+&lt;li&gt;HAL库&lt;/li&gt;
+&lt;li&gt;LL库（ST最近才添加，随HAL源码包一起提供，目前支持的芯片也偏少）&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
     
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+    
+      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qt5教程</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Qt5%E6%95%99%E7%A8%8B/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Qt5教程/</id>
+    <published>2019-01-19T05:51:15.843Z</published>
+    <updated>2018-07-10T09:41:34.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/farewell-farewell/p/7159596.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Qt5" scheme="https://didongdongdi.github.io/categories/Qt5/"/>
+    
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>English Mixed</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Mixed/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Mixed/</id>
+    <published>2019-01-19T05:51:15.842Z</published>
+    <updated>2018-09-23T05:19:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#2018-06-16&lt;/p&gt;
+&lt;h2 id=&quot;Independence-Day&quot;&gt;&lt;a href=&quot;#Independence-Day&quot; class=&quot;headerlink&quot; title=&quot;Independence Day&quot;&gt;&lt;/a&gt;Independence Day&lt;/h2&gt;&lt;p&gt;aerial // 空中的；航空的&lt;/p&gt;
+&lt;p&gt;petty //小的；琐碎的&lt;/p&gt;
+&lt;p&gt;fate //n.命运 v.注定&lt;/p&gt;
+    
+    </summary>
+    
       <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
     
     
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
+    
+      <category term="Mixed" scheme="https://didongdongdi.github.io/tags/Mixed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STM32 J-LINK与ST-LINK 引脚定义</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/JLINK_STLINK/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/JLINK_STLINK/</id>
+    <published>2019-01-19T05:51:15.823Z</published>
+    <updated>2018-09-23T05:41:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;JTAG.jpg&quot; alt=&quot;JTAG&quot;&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+    
+      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flipped (Week4)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week4/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week4/</id>
+    <published>2019-01-19T05:51:15.789Z</published>
+    <updated>2018-09-23T05:18:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018-07-20-p16&quot;&gt;&lt;a href=&quot;#2018-07-20-p16&quot; class=&quot;headerlink&quot; title=&quot;2018-07-20-p16&quot;&gt;&lt;/a&gt;2018-07-20-p16&lt;/h1&gt;&lt;p&gt;1, hay  [heɪ]&lt;/p&gt;
+&lt;p&gt;n. 干草&lt;/p&gt;
+&lt;p&gt;vt. 把晒干&lt;/p&gt;
+&lt;p&gt;vi. 割草晒干&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
+    
+      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flipped (Week3)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week3/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week3/</id>
+    <published>2019-01-19T05:51:15.788Z</published>
+    <updated>2018-09-23T05:18:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018-07-11-p14&quot;&gt;&lt;a href=&quot;#2018-07-11-p14&quot; class=&quot;headerlink&quot; title=&quot;2018-07-11-p14&quot;&gt;&lt;/a&gt;2018-07-11-p14&lt;/h1&gt;&lt;p&gt;1, stalk  [stɔːk]&lt;/p&gt;
+&lt;p&gt;n. （植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步&lt;/p&gt;
+&lt;p&gt;vt. 追踪，潜近；高视阔步&lt;/p&gt;
+&lt;p&gt;vi. 高视阔步地走；潜近，偷偷接近&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
+    
+      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flipped (Week2)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week2/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week2/</id>
+    <published>2019-01-19T05:51:15.787Z</published>
+    <updated>2018-09-23T05:18:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018-06-29-p9&quot;&gt;&lt;a href=&quot;#2018-06-29-p9&quot; class=&quot;headerlink&quot; title=&quot;2018-06-29-p9&quot;&gt;&lt;/a&gt;2018-06-29-p9&lt;/h1&gt;&lt;p&gt;humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)&lt;br&gt;ninny //傻子&lt;br&gt;whiny //烦躁的；爱抱怨的&lt;br&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
+    
+      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flipped (Week 1)</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week1/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week1/</id>
+    <published>2019-01-19T05:51:15.786Z</published>
+    <updated>2018-09-23T05:18:12.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018-06-01-p2&quot;&gt;&lt;a href=&quot;#2018-06-01-p2&quot; class=&quot;headerlink&quot; title=&quot;2018-06-01-p2&quot;&gt;&lt;/a&gt;2018-06-01-p2&lt;/h1&gt;&lt;p&gt;flip over //翻页&lt;/p&gt;
+&lt;p&gt;gutsy girl //勇敢的女孩&lt;/p&gt;
+&lt;p&gt;delightful //可爱的；讨人喜欢的；令人愉快的&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
+    
+      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
     
   </entry>
   
   <entry>
     <title>CentOS7登录 之 &quot;Sorry,that doesn&#39;t work.Please try again.&quot;</title>
-    <link href="https://didongdongdi.github.io/2018/09/06/Capital/"/>
-    <id>https://didongdongdi.github.io/2018/09/06/Capital/</id>
-    <published>2018-09-06T06:15:34.166Z</published>
-    <updated>2018-09-06T06:33:16.043Z</updated>
+    <link href="https://didongdongdi.github.io/2019/01/19/Capital/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/Capital/</id>
+    <published>2019-01-19T05:51:15.783Z</published>
+    <updated>2018-09-06T06:33:18.000Z</updated>
     
     <summary type="html">
     
@@ -444,11 +388,58 @@
   </entry>
   
   <entry>
-    <title>GitCommand</title>
-    <link href="https://didongdongdi.github.io/2018/08/29/GitConmand/"/>
-    <id>https://didongdongdi.github.io/2018/08/29/GitConmand/</id>
-    <published>2018-08-29T07:48:00.000Z</published>
-    <updated>2018-09-26T15:57:34.049Z</updated>
+    <title>C++之名称空间</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/CPP%E4%B9%8B%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/CPP之名称空间/</id>
+    <published>2019-01-19T05:51:15.782Z</published>
+    <updated>2018-09-23T05:17:54.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;传统的C-名称空间&quot;&gt;&lt;a href=&quot;#传统的C-名称空间&quot; class=&quot;headerlink&quot; title=&quot;传统的C++名称空间&quot;&gt;&lt;/a&gt;传统的C++名称空间&lt;/h1&gt;&lt;h2 id=&quot;一些术语&quot;&gt;&lt;a href=&quot;#一些术语&quot; class=&quot;headerlink&quot; title=&quot;一些术语&quot;&gt;&lt;/a&gt;一些术语&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;声明区域&lt;/li&gt;
+&lt;li&gt;潜在作用域&lt;br&gt;变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
+    
+    
+      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github pages 出现 “the CNAME is already taken” 的解决办法</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/CNAME/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/CNAME/</id>
+    <published>2019-01-19T05:51:15.781Z</published>
+    <updated>2018-09-23T05:17:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 &lt;strong&gt;“the CNAME is already taken”&lt;/strong&gt; 。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
+    
+    
+      <category term="Github" scheme="https://didongdongdi.github.io/tags/Github/"/>
+    
+      <category term="Domain" scheme="https://didongdongdi.github.io/tags/Domain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客 百度统计 配置</title>
+    <link href="https://didongdongdi.github.io/2019/01/19/BaiduTongji/"/>
+    <id>https://didongdongdi.github.io/2019/01/19/BaiduTongji/</id>
+    <published>2019-01-19T05:51:15.778Z</published>
+    <updated>2018-08-20T11:08:10.000Z</updated>
     
     <summary type="html">
     
@@ -456,68 +447,59 @@
       
         
         
-          &lt;p&gt;&lt;a href=&quot;https://github.com/DiDongDongDi/GitCommand&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub地址&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;在 &lt;code&gt;baidu_analytics:&lt;/code&gt; 后添加百度统计提供的代码中的网址的 &lt;code&gt;htm?&lt;/code&gt; 后的部分。 &lt;/p&gt;
 &lt;p&gt;本文地址 &lt;a
         
       
     
     </summary>
     
-      <category term="Git" scheme="https://didongdongdi.github.io/categories/Git/"/>
-    
-    
-      <category term="Command" scheme="https://didongdongdi.github.io/tags/Command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</title>
-    <link href="https://didongdongdi.github.io/2018/08/20/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
-    <id>https://didongdongdi.github.io/2018/08/20/评论功能/</id>
-    <published>2018-08-20T08:51:42.731Z</published>
-    <updated>2018-09-23T05:16:38.956Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;作为一个完整的博客，评论功能自然是必不可少的。&lt;/p&gt;
-&lt;p&gt;而可供选择的第三方评论系统有很多，但不是被墙（如Disqus）就是停止服务（如友言、网易云跟帖），或者需要域名备案（如畅言）。&lt;/p&gt;
-&lt;p&gt;所以只能把目光投向一款来自韩国的评论系统——来必力(livere)。&lt;/p&gt;
-    
-    </summary>
-    
       <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
     
     
       <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
     
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+  </entry>
+  
+  <entry>
+    <title>the Summary of Intercultural Communication (extra notes)</title>
+    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/"/>
+    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/</id>
+    <published>2018-12-31T05:56:00.000Z</published>
+    <updated>2018-12-31T07:42:10.000Z</updated>
     
-      <category term="Livere" scheme="https://didongdongdi.github.io/tags/Livere/"/>
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;interlink&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
+    
+    
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo博客 站内搜索 配置 (swiftype)</title>
-    <link href="https://didongdongdi.github.io/2018/08/20/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/"/>
-    <id>https://didongdongdi.github.io/2018/08/20/站内搜索/</id>
-    <published>2018-08-20T07:25:47.166Z</published>
-    <updated>2018-09-23T05:20:17.886Z</updated>
+    <title>the Summary of Intercultural Communication (11)</title>
+    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/"/>
+    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/</id>
+    <published>2018-12-30T16:44:00.000Z</published>
+    <updated>2019-01-07T09:55:36.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。&lt;/p&gt;
-&lt;p&gt;而第三方站内搜索的插件有：&lt;/p&gt;
+      &lt;h1 id=&quot;Principles-and-strategies-of-intercultural-communication&quot;&gt;&lt;a href=&quot;#Principles-and-strategies-of-intercultural-communication&quot; class=&quot;headerlink&quot; title=&quot;Principles and strategies of intercultural communication&quot;&gt;&lt;/a&gt;Principles and strategies of intercultural communication&lt;/h1&gt;&lt;h2 id=&quot;Cooperative-principle&quot;&gt;&lt;a href=&quot;#Cooperative-principle&quot; class=&quot;headerlink&quot; title=&quot;Cooperative principle&quot;&gt;&lt;/a&gt;Cooperative principle&lt;/h2&gt;
     
     </summary>
     
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
+      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
     
     
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="swiftype" scheme="https://didongdongdi.github.io/tags/swiftype/"/>
+      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
     
   </entry>
   
