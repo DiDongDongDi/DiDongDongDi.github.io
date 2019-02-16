@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Python中的一些坑</title>
+      <link href="/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
+      <url>/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<ul><li>Python中没有自增或自减运算符，即没有’++’或’–’</li></ul><a id="more"></a><p>本文地址 <a href="https://didongdongdi.github.io/2019/02/16/Python中的一些坑/">https://didongdongdi.github.io/2019/02/16/Python中的一些坑/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</title>
       <link href="/2019/01/19/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
       <url>/2019/01/19/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
@@ -547,6 +570,29 @@
     </entry>
     
     <entry>
+      <title>FPGA 之 锁存器 (Latch)</title>
+      <link href="/2018/11/08/FPGA-%E4%B9%8B-%E9%94%81%E5%AD%98%E5%99%A8-Latch/"/>
+      <url>/2018/11/08/FPGA-%E4%B9%8B-%E9%94%81%E5%AD%98%E5%99%A8-Latch/</url>
+      
+        <content type="html"><![CDATA[<p>参考自<a href="http://www.eefocus.com/liuyuxue/blog/13-11/300280_d7008.html" target="_blank" rel="noopener">http://www.eefocus.com/liuyuxue/blog/13-11/300280_d7008.html</a></p><a id="more"></a><blockquote><p>信号赋初值以避免综合时出现锁存器。</p></blockquote><blockquote><p>注意警告。</p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2018/11/08/FPGA-之-锁存器-Latch/">https://didongdongdi.github.io/2018/11/08/FPGA-之-锁存器-Latch/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 嵌入式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FPGA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>FPGA-VHDL 门电路设计</title>
       <link href="/2018/10/31/PGA-VHDL-%E9%97%A8%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
       <url>/2018/10/31/PGA-VHDL-%E9%97%A8%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
@@ -860,18 +906,18 @@
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

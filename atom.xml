@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2018-09-23T05:16:40.000Z</updated>
+  <updated>2019-02-16T08:39:52.022Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python中的一些坑</title>
+    <link href="https://didongdongdi.github.io/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
+    <id>https://didongdongdi.github.io/2019/02/16/Python中的一些坑/</id>
+    <published>2019-02-16T08:20:00.000Z</published>
+    <updated>2019-02-16T08:39:52.022Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;Python中没有自增或自减运算符，即没有’++’或’–’&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="https://didongdongdi.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</title>
@@ -473,26 +495,6 @@
       &lt;h1 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;interlink&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (11)</title>
-    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/"/>
-    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-11/</id>
-    <published>2018-12-30T16:44:00.000Z</published>
-    <updated>2019-01-07T09:55:36.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Principles-and-strategies-of-intercultural-communication&quot;&gt;&lt;a href=&quot;#Principles-and-strategies-of-intercultural-communication&quot; class=&quot;headerlink&quot; title=&quot;Principles and strategies of intercultural communication&quot;&gt;&lt;/a&gt;Principles and strategies of intercultural communication&lt;/h1&gt;&lt;h2 id=&quot;Cooperative-principle&quot;&gt;&lt;a href=&quot;#Cooperative-principle&quot; class=&quot;headerlink&quot; title=&quot;Cooperative principle&quot;&gt;&lt;/a&gt;Cooperative principle&lt;/h2&gt;
     
     </summary>
     
