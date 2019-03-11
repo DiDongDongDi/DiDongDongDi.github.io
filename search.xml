@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Linux内核源码分析</title>
+      <link href="/2019/03/10/Linux%E6%BA%90%E7%A0%81/"/>
+      <url>/2019/03/10/Linux%E6%BA%90%E7%A0%81/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>如何获取linux内核源码？<br>一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。</p></blockquote><blockquote><p>Linux内核源码查看网址推荐：<a href="https://elixir.bootlin.com/linux/latest/source" target="_blank" rel="noopener">https://elixir.bootlin.com/linux/latest/source</a></p></blockquote><a id="more"></a><p>Linux内核源码的组成（假设相对于linux目录）：</p><ol><li>arch：包含了此核心源代码所支持的硬件体系结构相关的核心代码，如对于X86平台就是i386</li><li>include： 包含了核心的大多数include文件，另外对于每种支持的体系结构分别有一个子目录</li><li>init：包含了核心启动代码</li><li>mm：包含了所有的内存管理代码</li><li>net：核心的网络部分代码，里面的每个子目录对应于网络的一个方面</li><li>lib：包含了核心的库代码</li><li>scripts：用于配置核心的脚本文件</li><li>Documentation：一些文档，起参考作用</li><li>block：块I/O层</li><li>crypto：加密API</li><li>drivers：设备驱动</li><li>firmware：使用某个驱动需要的设备固件</li><li>fs：VFS和独立文件系统</li><li>ipc：进程间通信</li><li>samples：示例代码</li><li>security：Linux安全模块</li><li>sound：声音子系统</li><li>usr：早期的用户空间代码（叫做initramfs）</li><li>tools：辅助Linux开发的工具</li><li>virt：虚拟化基础设施</li><li>COPYING：内核许可描述文件</li><li>CREDITS：参与Linux内核的开发人员名单</li><li>MAINTAINERS：维护各个子系统和驱动的个人</li><li>Makefile：内核Makefile的基础</li><li>Kbuild：kernel build的意思，即内核编译的意思，linux内核特有的内核编译体系需要用到的文件</li><li>modules：存放了已建好的、可动态加载的模块文件目录，是个空目录，用于存放编译时产生的模块目标文件</li><li>README：核心及其编译配置方法简单介绍</li><li>Kconfig：配置内核时脚本，里面包含了可选项和菜单功能</li></ol><p><img src="Linux内核源码目录结构.jpg" alt="Linux内核源码目录结构"></p><blockquote><p>阅读内核源码方式推荐：<br>开始最好按顺序阅读启动代码，然后进行专题阅读，如进程部分、内存管理部分等<br>使用Source Insight阅读源代码</p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2019/03/10/Linux源码/">https://didongdongdi.github.io/2019/03/10/Linux源码/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Python中的一些坑</title>
       <link href="/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
       <url>/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</url>
@@ -121,9 +144,9 @@
       
         <tags>
             
-            <tag> 物联网 </tag>
-            
             <tag> 嵌入式 </tag>
+            
+            <tag> 物联网 </tag>
             
         </tags>
       
@@ -398,9 +421,9 @@
       
         <tags>
             
-            <tag> 虚拟机 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 虚拟机 </tag>
             
         </tags>
       
@@ -906,18 +929,18 @@
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

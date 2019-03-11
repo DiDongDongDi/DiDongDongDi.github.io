@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-02-16T08:39:52.022Z</updated>
+  <updated>2019-03-11T00:35:19.563Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux内核源码分析</title>
+    <link href="https://didongdongdi.github.io/2019/03/10/Linux%E6%BA%90%E7%A0%81/"/>
+    <id>https://didongdongdi.github.io/2019/03/10/Linux源码/</id>
+    <published>2019-03-10T13:17:00.000Z</published>
+    <updated>2019-03-11T00:35:19.563Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;如何获取linux内核源码？&lt;br&gt;一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux内核源码查看网址推荐：&lt;a href=&quot;https://elixir.bootlin.com/linux/latest/source&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://elixir.bootlin.com/linux/latest/source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Python中的一些坑</title>
@@ -127,9 +152,9 @@
       <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
     
     
-      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
-    
       <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
   </entry>
   
@@ -403,9 +428,9 @@
       <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
     
     
-      <category term="虚拟机" scheme="https://didongdongdi.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
       <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+      <category term="虚拟机" scheme="https://didongdongdi.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
   </entry>
   
@@ -480,28 +505,6 @@
     
     
       <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Summary of Intercultural Communication (extra notes)</title>
-    <link href="https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/"/>
-    <id>https://didongdongdi.github.io/2018/12/31/Intercultural-Communication-extra-notes/</id>
-    <published>2018-12-31T05:56:00.000Z</published>
-    <updated>2018-12-31T07:42:10.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;interlink&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Competence" scheme="https://didongdongdi.github.io/tags/Competence/"/>
     
   </entry>
   
