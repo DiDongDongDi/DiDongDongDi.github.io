@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-03-11T00:35:19.563Z</updated>
+  <updated>2019-03-15T13:39:22.459Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FTP命令问题解决</title>
+    <link href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <id>https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</id>
+    <published>2019-03-15T11:36:00.000Z</published>
+    <updated>2019-03-15T13:39:22.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;发现系统中没有ftp命令，安装ftp&lt;/li&gt;
+&lt;li&gt;ftp连接到树莓派失败，显示&lt;code&gt;ftp:connect:Connection refused&lt;/code&gt;，尝试127.0.0.1一样&lt;/li&gt;
+&lt;li&gt;猜测可能是21端口未开放，执行&lt;code&gt;netstat -tln&lt;/code&gt;查看端口号情况，发现确实如此&lt;/li&gt;
+&lt;li&gt;尝试vsftpd，没有该命令，安装vsftpd&lt;/li&gt;
+&lt;li&gt;执行vsftpd，显示&lt;code&gt;500 OOPS: could not bind listening IPv6 socket&lt;/code&gt;，问题不大，因为不需要用到ipv6
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+      <category term="命令" scheme="https://didongdongdi.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux内核源码分析</title>
@@ -428,9 +455,9 @@
       <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
     
     
-      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
-    
       <category term="虚拟机" scheme="https://didongdongdi.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -478,33 +505,6 @@
       <category term="Github" scheme="https://didongdongdi.github.io/tags/Github/"/>
     
       <category term="Domain" scheme="https://didongdongdi.github.io/tags/Domain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo博客 百度统计 配置</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/BaiduTongji/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/BaiduTongji/</id>
-    <published>2019-01-19T05:51:15.778Z</published>
-    <updated>2018-08-20T11:08:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;在 &lt;code&gt;baidu_analytics:&lt;/code&gt; 后添加百度统计提供的代码中的网址的 &lt;code&gt;htm?&lt;/code&gt; 后的部分。 &lt;/p&gt;
-&lt;p&gt;本文地址 &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
-    
-    
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
     
   </entry>
   

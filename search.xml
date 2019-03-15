@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>FTP命令问题解决</title>
+      <link href="/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <url>/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<ul><li>发现系统中没有ftp命令，安装ftp</li><li>ftp连接到树莓派失败，显示<code>ftp:connect:Connection refused</code>，尝试127.0.0.1一样</li><li>猜测可能是21端口未开放，执行<code>netstat -tln</code>查看端口号情况，发现确实如此</li><li>尝试vsftpd，没有该命令，安装vsftpd</li><li>执行vsftpd，显示<code>500 OOPS: could not bind listening IPv6 socket</code>，问题不大，因为不需要用到ipv6<a id="more"></a></li><li>这时再查看端口情况，会发现21号端口已经在监听</li><li>尝试连接本地，<code>ftp 127.0.0.1</code>成功</li><li>尝试连接树莓派，失败，按前面的方法打开树莓派的21号端口</li><li>在树莓派安装vsftpd，执行vsftpd，显示<code>500 OOPS: config file not owned by correct user, or not a file</code>，问题不大</li><li>成功连接</li></ul><ul><li>成功get文件，但put文件失败</li><li>在修改<code>/etc/vsftpd.conf</code>，将<code>write_enable=YES</code>前面的#取消。 </li><li>重启vsftp服务器<code>sudo service vsftpd restart</code>，启动ftp服务<code>sudo service vsfptd start</code></li></ul><p>本文地址 <a href="https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/">https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Linux内核源码分析</title>
       <link href="/2019/03/10/Linux%E6%BA%90%E7%A0%81/"/>
       <url>/2019/03/10/Linux%E6%BA%90%E7%A0%81/</url>
@@ -421,9 +446,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> 虚拟机 </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -929,18 +954,18 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
