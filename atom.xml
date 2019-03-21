@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-03-15T13:39:22.459Z</updated>
+  <updated>2019-03-21T03:26:55.546Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Deepin扩展显示屏失败</title>
+    <link href="https://didongdongdi.github.io/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/"/>
+    <id>https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/</id>
+    <published>2019-03-21T03:21:00.000Z</published>
+    <updated>2019-03-21T03:26:55.546Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="Deepin" scheme="https://didongdongdi.github.io/tags/Deepin/"/>
+    
+  </entry>
+  
+  <entry>
     <title>FTP命令问题解决</title>
     <link href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     <id>https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</id>
     <published>2019-03-15T11:36:00.000Z</published>
-    <updated>2019-03-15T13:39:22.459Z</updated>
+    <updated>2019-03-21T03:28:17.365Z</updated>
     
     <summary type="html">
     
@@ -483,28 +503,6 @@
     
     
       <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>github pages 出现 “the CNAME is already taken” 的解决办法</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/CNAME/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/CNAME/</id>
-    <published>2019-01-19T05:51:15.781Z</published>
-    <updated>2018-09-23T05:17:30.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 &lt;strong&gt;“the CNAME is already taken”&lt;/strong&gt; 。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
-    
-    
-      <category term="Github" scheme="https://didongdongdi.github.io/tags/Github/"/>
-    
-      <category term="Domain" scheme="https://didongdongdi.github.io/tags/Domain/"/>
     
   </entry>
   

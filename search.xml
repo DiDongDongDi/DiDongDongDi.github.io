@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Deepin扩展显示屏失败</title>
+      <link href="/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/"/>
+      <url>/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/</url>
+      
+        <content type="html"><![CDATA[<p>问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题<br><a id="more"></a><br>解决方法：Deepin在屏幕亮度为0时，屏幕全黑，所以到设置里把扩展的显示屏的亮度调高就行了</p><p>本文地址 <a href="https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/">https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Deepin </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>FTP命令问题解决</title>
       <link href="/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
       <url>/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
@@ -945,15 +968,6 @@
   
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -966,6 +980,15 @@
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
