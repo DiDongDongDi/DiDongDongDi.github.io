@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YouCompleteMe安装配置使用 | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="vim相关vim的version必须为7.4+，同时要支持Python/Python3，查看命令vim --version，支持的话，前面会有+，否则为- 如果不支持Python或者vim版本太低，需要重新编译安装vim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="YouCompleteMe安装配置使用">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="vim相关vim的version必须为7.4+，同时要支持Python/Python3，查看命令vim --version，支持的话，前面会有+，否则为- 如果不支持Python或者vim版本太低，需要重新编译安装vim">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751301.jpg">
+<meta property="og:updated_time" content="2019-04-04T09:35:01.022Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YouCompleteMe安装配置使用">
+<meta name="twitter:description" content="vim相关vim的version必须为7.4+，同时要支持Python/Python3，查看命令vim --version，支持的话，前面会有+，否则为- 如果不支持Python或者vim版本太低，需要重新编译安装vim">
+<meta name="twitter:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751301.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-YouCompleteMe安装" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751301.jpg" rel="gallery_cju2er5nt0000i7o2b3g0onbr">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751301.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      YouCompleteMe安装配置使用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/04/04/YouCompleteMe安装/" class="article-date">
+	  <time datetime="2019-04-04T08:58:00.000Z" itemprop="datePublished">April 4, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Problem/">Problem</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="vim相关"><a href="#vim相关" class="headerlink" title="vim相关"></a>vim相关</h1><p>vim的version必须为7.4+，同时要支持Python/Python3，查看命令<code>vim --version</code>，支持的话，前面会有<code>+</code>，否则为<code>-</code></p>
+<p>如果不支持Python或者vim版本太低，需要重新编译安装vim</p>
+<a id="more"></a>
+<p>参考：</p>
+<p><a href="https://www.jianshu.com/p/aac78ff576c5" target="_blank" rel="noopener">https://www.jianshu.com/p/aac78ff576c5</a>中的<code>./configure</code>参数选项</p>
+<p><a href="https://blog.csdn.net/a464057216/article/details/52821171" target="_blank" rel="noopener">https://blog.csdn.net/a464057216/article/details/52821171</a>中的流程</p>
+<h1 id="安装vim的vundle插件管理器"><a href="#安装vim的vundle插件管理器" class="headerlink" title="安装vim的vundle插件管理器"></a>安装vim的vundle插件管理器</h1><p>参考：</p>
+<p><a href="https://blog.csdn.net/zhangpower1993/article/details/52184581" target="_blank" rel="noopener">https://blog.csdn.net/zhangpower1993/article/details/52184581</a>，注意，将要复制到<code>.vimrc</code>中的配置信息的示例插件安装的内容注释掉，即将没有必须要求的部分注释掉，避免安装上示例插件导致速度很慢</p>
+<h1 id="安装YouCompleteMe"><a href="#安装YouCompleteMe" class="headerlink" title="安装YouCompleteMe"></a>安装YouCompleteMe</h1><p>参考：</p>
+<p><a href="https://www.jianshu.com/p/4cbdadab3ad0" target="_blank" rel="noopener">https://www.jianshu.com/p/4cbdadab3ad0</a>中的主要流程</p>
+<p>完成最后一步时，会出错，提醒你先执行命令，<code>git submodule update --init --recursive</code>，执行即可，确保网络通畅</p>
+<p>然后再执行<code>./install.py --all</code>或者<code>./install.py --all</code>，执行到最后可能会提示，没有<code>msbuild</code>和<code>xbuild</code>，这两个家伙貌似是用来支持C#的，如果不需要C#的话，可以不管，需要的话，再看吧</p>
+<p>参考：</p>
+<p><a href="https://blog.csdn.net/lyh__521/article/details/46295775" target="_blank" rel="noopener">https://blog.csdn.net/lyh__521/article/details/46295775</a></p>
+<p>主要是将YouCompleteMe通过vundle安装，即修改<code>.vimrc</code>，再在vim中执行<code>PluginInstall</code></p>
+<p>最重要的是，在<code>.vimrc</code>中添加<code>let g:ycm_global_ycm_extra_conf = &#39;~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py&#39;</code>，注意将后面的地址改成你的<code>.ycm_extra_conf.py</code>文件的地址，注意<code>list -a</code>，这个文件找找吧，找找就有了</p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/">https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/</a> </p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Problem/">Problem</a>
+
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/02/chrome视频画面卡顿，声音无影响/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">chrome视频画面卡顿，声音无影响</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vim相关"><span class="nav-number">1.</span> <span class="nav-text">vim相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装vim的vundle插件管理器"><span class="nav-number">2.</span> <span class="nav-text">安装vim的vundle插件管理器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装YouCompleteMe"><span class="nav-number">3.</span> <span class="nav-text">安装YouCompleteMe</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+       
+</script>
+
+<script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

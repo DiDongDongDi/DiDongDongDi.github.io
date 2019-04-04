@@ -3,6 +3,40 @@
   
     
     <entry>
+      <title>YouCompleteMe安装配置使用</title>
+      <link href="/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/"/>
+      <url>/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vim相关"><a href="#vim相关" class="headerlink" title="vim相关"></a>vim相关</h1><p>vim的version必须为7.4+，同时要支持Python/Python3，查看命令<code>vim --version</code>，支持的话，前面会有<code>+</code>，否则为<code>-</code></p><p>如果不支持Python或者vim版本太低，需要重新编译安装vim</p><a id="more"></a><p>参考：</p><p><a href="https://www.jianshu.com/p/aac78ff576c5" target="_blank" rel="noopener">https://www.jianshu.com/p/aac78ff576c5</a>中的<code>./configure</code>参数选项</p><p><a href="https://blog.csdn.net/a464057216/article/details/52821171" target="_blank" rel="noopener">https://blog.csdn.net/a464057216/article/details/52821171</a>中的流程</p><h1 id="安装vim的vundle插件管理器"><a href="#安装vim的vundle插件管理器" class="headerlink" title="安装vim的vundle插件管理器"></a>安装vim的vundle插件管理器</h1><p>参考：</p><p><a href="https://blog.csdn.net/zhangpower1993/article/details/52184581" target="_blank" rel="noopener">https://blog.csdn.net/zhangpower1993/article/details/52184581</a>，注意，将要复制到<code>.vimrc</code>中的配置信息的示例插件安装的内容注释掉，即将没有必须要求的部分注释掉，避免安装上示例插件导致速度很慢</p><h1 id="安装YouCompleteMe"><a href="#安装YouCompleteMe" class="headerlink" title="安装YouCompleteMe"></a>安装YouCompleteMe</h1><p>参考：</p><p><a href="https://www.jianshu.com/p/4cbdadab3ad0" target="_blank" rel="noopener">https://www.jianshu.com/p/4cbdadab3ad0</a>中的主要流程</p><p>完成最后一步时，会出错，提醒你先执行命令，<code>git submodule update --init --recursive</code>，执行即可，确保网络通畅</p><p>然后再执行<code>./install.py --all</code>或者<code>./install.py --all</code>，执行到最后可能会提示，没有<code>msbuild</code>和<code>xbuild</code>，这两个家伙貌似是用来支持C#的，如果不需要C#的话，可以不管，需要的话，再看吧</p><p>参考：</p><p><a href="https://blog.csdn.net/lyh__521/article/details/46295775" target="_blank" rel="noopener">https://blog.csdn.net/lyh__521/article/details/46295775</a></p><p>主要是将YouCompleteMe通过vundle安装，即修改<code>.vimrc</code>，再在vim中执行<code>PluginInstall</code></p><p>最重要的是，在<code>.vimrc</code>中添加<code>let g:ycm_global_ycm_extra_conf = &#39;~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py&#39;</code>，注意将后面的地址改成你的<code>.ycm_extra_conf.py</code>文件的地址，注意<code>list -a</code>，这个文件找找吧，找找就有了</p><p>本文地址 <a href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/">https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>chrome视频画面卡顿，声音无影响</title>
+      <link href="/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/"/>
+      <url>/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/</url>
+      
+        <content type="html"><![CDATA[<p>Chrome的话，使用WebRTC，本身不支持H.264（国内视频网站多用这个来编码），但是支持VP8（目前主流，Youtube使用VP8（性能和H264差不多）,现在逐步走向VP9（性能和H265差不多），所以H264采用的是外部的解码，因此可能性能上会略差。 另外实际测试的时候，相同掉包率情况下，VP8的画面丢失和花屏的情况要远好过H264（WebRTC下）。转自知乎<a href="https://www.zhihu.com/question/24577802/answer/30131255" target="_blank" rel="noopener">Lennith的回答</a></p><a id="more"></a><p>在chrome中输入chrome://flags, Ctrl+F全局搜索hardware， 找到如下内容， 并禁用即可</p><p><img src="0.png" alt="WebRTC H.264 software video encoder/decoder"></p><p>本文地址 <a href="https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/">https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> problem </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Deepin扩展显示屏失败</title>
       <link href="/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/"/>
       <url>/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/</url>
@@ -968,6 +1002,15 @@
   
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -980,15 +1023,6 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-03-21T03:26:55.546Z</updated>
+  <updated>2019-04-04T09:35:01.022Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>YouCompleteMe安装配置使用</title>
+    <link href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/"/>
+    <id>https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/</id>
+    <published>2019-04-04T08:58:00.000Z</published>
+    <updated>2019-04-04T09:35:01.022Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;vim相关&quot;&gt;&lt;a href=&quot;#vim相关&quot; class=&quot;headerlink&quot; title=&quot;vim相关&quot;&gt;&lt;/a&gt;vim相关&lt;/h1&gt;&lt;p&gt;vim的version必须为7.4+，同时要支持Python/Python3，查看命令&lt;code&gt;vim --version&lt;/code&gt;，支持的话，前面会有&lt;code&gt;+&lt;/code&gt;，否则为&lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果不支持Python或者vim版本太低，需要重新编译安装vim&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>chrome视频画面卡顿，声音无影响</title>
+    <link href="https://didongdongdi.github.io/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/"/>
+    <id>https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/</id>
+    <published>2019-04-02T09:04:00.000Z</published>
+    <updated>2019-04-02T09:18:41.983Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Chrome的话，使用WebRTC，本身不支持H.264（国内视频网站多用这个来编码），但是支持VP8（目前主流，Youtube使用VP8（性能和H264差不多）,现在逐步走向VP9（性能和H265差不多），所以H264采用的是外部的解码，因此可能性能上会略差。 另外实际测试的时候，相同掉包率情况下，VP8的画面丢失和花屏的情况要远好过H264（WebRTC下）。转自知乎&lt;a href=&quot;https://www.zhihu.com/question/24577802/answer/30131255&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Lennith的回答&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="problem" scheme="https://didongdongdi.github.io/categories/problem/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Deepin扩展显示屏失败</title>
@@ -449,60 +486,6 @@
       <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
     
       <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7登录 之 &quot;Sorry,that doesn&#39;t work.Please try again.&quot;</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/Capital/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/Capital/</id>
-    <published>2019-01-19T05:51:15.783Z</published>
-    <updated>2018-09-06T06:33:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;大写使用&lt;code&gt;shift+字母&lt;/code&gt;,而不是&lt;code&gt;CapsLock&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;本文地址 &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
-    
-      <category term="虚拟机" scheme="https://didongdongdi.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++之名称空间</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/CPP%E4%B9%8B%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/CPP之名称空间/</id>
-    <published>2019-01-19T05:51:15.782Z</published>
-    <updated>2018-09-23T05:17:54.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;传统的C-名称空间&quot;&gt;&lt;a href=&quot;#传统的C-名称空间&quot; class=&quot;headerlink&quot; title=&quot;传统的C++名称空间&quot;&gt;&lt;/a&gt;传统的C++名称空间&lt;/h1&gt;&lt;h2 id=&quot;一些术语&quot;&gt;&lt;a href=&quot;#一些术语&quot; class=&quot;headerlink&quot; title=&quot;一些术语&quot;&gt;&lt;/a&gt;一些术语&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;声明区域&lt;/li&gt;
-&lt;li&gt;潜在作用域&lt;br&gt;变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
-    
-    
-      <category term="C++" scheme="https://didongdongdi.github.io/tags/C/"/>
     
   </entry>
   
