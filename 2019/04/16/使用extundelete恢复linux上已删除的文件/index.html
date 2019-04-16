@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Linux内核源码分析 | DIDA LAB</title>
+  <title>使用extundelete恢复linux上已删除的文件 | DIDA LAB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="Linux" />
+  <meta name="keywords" content="教程" />
   
   
   
   
-  <meta name="description" content="如何获取linux内核源码？一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。   Linux内核源码查看网址推荐：https://elixir.bootlin.com/linux/latest/source">
-<meta name="keywords" content="Linux">
+  <meta name="description" content="参考网址https://blog.51cto.com/ityunwei2017/2328570?source=dra http://extundelete.sourceforge.net/">
+<meta name="keywords" content="教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux内核源码分析">
-<meta property="og:url" content="https://didongdongdi.github.io/2019/03/10/Linux源码/index.html">
+<meta property="og:title" content="使用extundelete恢复linux上已删除的文件">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/index.html">
 <meta property="og:site_name" content="DIDA LAB">
-<meta property="og:description" content="如何获取linux内核源码？一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。   Linux内核源码查看网址推荐：https://elixir.bootlin.com/linux/latest/source">
+<meta property="og:description" content="参考网址https://blog.51cto.com/ityunwei2017/2328570?source=dra http://extundelete.sourceforge.net/">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://www.wallpaperup.com/uploads/wallpapers/2013/01/14/29427/a890eb50ce7ed696094e68650376c162-1000.jpg">
-<meta property="og:updated_time" content="2019-03-11T00:35:19.563Z">
+<meta property="og:image" content="http://papers.co/wallpaper/papers.co-vv75-audi-box-digital-dark-blue-pattern-background-green-32-wallpaper.jpg">
+<meta property="og:updated_time" content="2019-04-16T10:35:13.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux内核源码分析">
-<meta name="twitter:description" content="如何获取linux内核源码？一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。   Linux内核源码查看网址推荐：https://elixir.bootlin.com/linux/latest/source">
-<meta name="twitter:image" content="https://www.wallpaperup.com/uploads/wallpapers/2013/01/14/29427/a890eb50ce7ed696094e68650376c162-1000.jpg">
+<meta name="twitter:title" content="使用extundelete恢复linux上已删除的文件">
+<meta name="twitter:description" content="参考网址https://blog.51cto.com/ityunwei2017/2328570?source=dra http://extundelete.sourceforge.net/">
+<meta name="twitter:image" content="http://papers.co/wallpaper/papers.co-vv75-audi-box-digital-dark-blue-pattern-background-green-32-wallpaper.jpg">
   
     <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
   
@@ -133,14 +133,14 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Linux源码" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-使用extundelete恢复linux上已删除的文件" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://www.wallpaperup.com/uploads/wallpapers/2013/01/14/29427/a890eb50ce7ed696094e68650376c162-1000.jpg" rel="gallery_cjujn6p7w003v5yo295htk7v2">
-        <img src="https://www.wallpaperup.com/uploads/wallpapers/2013/01/14/29427/a890eb50ce7ed696094e68650376c162-1000.jpg" itemprop="image">
+      <a class="article-gallery-img fancybox" href="http://papers.co/wallpaper/papers.co-vv75-audi-box-digital-dark-blue-pattern-background-green-32-wallpaper.jpg" rel="gallery_cjujn7yh3006d5yo2816r5rs6">
+        <img src="http://papers.co/wallpaper/papers.co-vv75-audi-box-digital-dark-blue-pattern-background-green-32-wallpaper.jpg" itemprop="image">
       </a>
     
   </div>
@@ -151,7 +151,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      Linux内核源码分析
+      使用extundelete恢复linux上已删除的文件
     </h1>
   
 
@@ -159,72 +159,42 @@
     
     <div class="article-meta">
       
-	<a href="/2019/03/10/Linux源码/" class="article-date">
-	  <time datetime="2019-03-10T13:17:00.000Z" itemprop="datePublished">March 10, 2019</time>
+	<a href="/2019/04/16/使用extundelete恢复linux上已删除的文件/" class="article-date">
+	  <time datetime="2019-04-16T10:27:00.000Z" itemprop="datePublished">April 16, 2019</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+    <a class="article-category-link" href="/categories/Problem/">Problem</a>
  
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>如何获取linux内核源码？<br>一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。</p>
-</blockquote>
-<blockquote>
-<p>Linux内核源码查看网址推荐：<a href="https://elixir.bootlin.com/linux/latest/source" target="_blank" rel="noopener">https://elixir.bootlin.com/linux/latest/source</a></p>
-</blockquote>
+        <h1 id="参考网址"><a href="#参考网址" class="headerlink" title="参考网址"></a>参考网址</h1><p><a href="https://blog.51cto.com/ityunwei2017/2328570?source=dra" target="_blank" rel="noopener">https://blog.51cto.com/ityunwei2017/2328570?source=dra</a></p>
+<p><a href="http://extundelete.sourceforge.net/" target="_blank" rel="noopener">http://extundelete.sourceforge.net/</a></p>
 <a id="more"></a>
-<p>Linux内核源码的组成（假设相对于linux目录）：</p>
-<ol>
-<li>arch：包含了此核心源代码所支持的硬件体系结构相关的核心代码，如对于X86平台就是i386</li>
-<li>include： 包含了核心的大多数include文件，另外对于每种支持的体系结构分别有一个子目录</li>
-<li>init：包含了核心启动代码</li>
-<li>mm：包含了所有的内存管理代码</li>
-<li>net：核心的网络部分代码，里面的每个子目录对应于网络的一个方面</li>
-<li>lib：包含了核心的库代码</li>
-<li>scripts：用于配置核心的脚本文件</li>
-<li>Documentation：一些文档，起参考作用</li>
-<li>block：块I/O层</li>
-<li>crypto：加密API</li>
-<li>drivers：设备驱动</li>
-<li>firmware：使用某个驱动需要的设备固件</li>
-<li>fs：VFS和独立文件系统</li>
-<li>ipc：进程间通信</li>
-<li>samples：示例代码</li>
-<li>security：Linux安全模块</li>
-<li>sound：声音子系统</li>
-<li>usr：早期的用户空间代码（叫做initramfs）</li>
-<li>tools：辅助Linux开发的工具</li>
-<li>virt：虚拟化基础设施</li>
-<li>COPYING：内核许可描述文件</li>
-<li>CREDITS：参与Linux内核的开发人员名单</li>
-<li>MAINTAINERS：维护各个子系统和驱动的个人</li>
-<li>Makefile：内核Makefile的基础</li>
-<li>Kbuild：kernel build的意思，即内核编译的意思，linux内核特有的内核编译体系需要用到的文件</li>
-<li>modules：存放了已建好的、可动态加载的模块文件目录，是个空目录，用于存放编译时产生的模块目标文件</li>
-<li>README：核心及其编译配置方法简单介绍</li>
-<li>Kconfig：配置内核时脚本，里面包含了可选项和菜单功能</li>
+<p><a href="https://sourceforge.net/p/extundelete/tickets/5/" target="_blank" rel="noopener">https://sourceforge.net/p/extundelete/tickets/5/</a></p>
+<h1 id="出现的问题"><a href="#出现的问题" class="headerlink" title="出现的问题"></a>出现的问题</h1><ol>
+<li><p>找不到库文件</p>
+</li>
+<li><p>源程序出错，需要打补丁</p>
+</li>
+<li><p>最后发现被删除的文件所在的文件系统不是ext3/ext4</p>
+</li>
 </ol>
-<p><img src="Linux内核源码目录结构.jpg" alt="Linux内核源码目录结构"></p>
-<blockquote>
-<p>阅读内核源码方式推荐：<br>开始最好按顺序阅读启动代码，然后进行专题阅读，如进程部分、内存管理部分等<br>使用Source Insight阅读源代码</p>
-</blockquote>
-<p>本文地址 <a href="https://didongdongdi.github.io/2019/03/10/Linux源码/">https://didongdongdi.github.io/2019/03/10/Linux源码/</a> </p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/">https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/</a> </p>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+    <a class="article-category-link" href="/categories/Problem/">Problem</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
 
       
         
@@ -259,19 +229,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/03/15/FTP命令问题解决/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          FTP命令问题解决
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/02/16/Python中的一些坑/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/04/04/YouCompleteMe安装/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Python中的一些坑</div>
+      <div class="article-nav-title">YouCompleteMe安装配置使用</div>
     </a>
   
 </nav>
@@ -285,7 +246,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav">None</ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考网址"><span class="nav-number">1.</span> <span class="nav-text">参考网址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#出现的问题"><span class="nav-number">2.</span> <span class="nav-text">出现的问题</span></a></li></ol>
     
     </div>
   </aside>

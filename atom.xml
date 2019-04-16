@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-04-04T09:35:01.022Z</updated>
+  <updated>2019-04-16T10:35:13.938Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用extundelete恢复linux上已删除的文件</title>
+    <link href="https://didongdongdi.github.io/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/"/>
+    <id>https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/</id>
+    <published>2019-04-16T10:27:00.000Z</published>
+    <updated>2019-04-16T10:35:13.938Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;参考网址&quot;&gt;&lt;a href=&quot;#参考网址&quot; class=&quot;headerlink&quot; title=&quot;参考网址&quot;&gt;&lt;/a&gt;参考网址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://blog.51cto.com/ityunwei2017/2328570?source=dra&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.51cto.com/ityunwei2017/2328570?source=dra&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://extundelete.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://extundelete.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>YouCompleteMe安装配置使用</title>
@@ -40,7 +61,7 @@
     <link href="https://didongdongdi.github.io/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/"/>
     <id>https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/</id>
     <published>2019-04-02T09:04:00.000Z</published>
-    <updated>2019-04-02T09:18:41.983Z</updated>
+    <updated>2019-04-16T10:32:23.805Z</updated>
     
     <summary type="html">
     
@@ -48,7 +69,7 @@
     
     </summary>
     
-      <category term="problem" scheme="https://didongdongdi.github.io/categories/problem/"/>
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
     
     
   </entry>
@@ -449,32 +470,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;2018-06-29-p9&quot;&gt;&lt;a href=&quot;#2018-06-29-p9&quot; class=&quot;headerlink&quot; title=&quot;2018-06-29-p9&quot;&gt;&lt;/a&gt;2018-06-29-p9&lt;/h1&gt;&lt;p&gt;humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)&lt;br&gt;ninny //傻子&lt;br&gt;whiny //烦躁的；爱抱怨的&lt;br&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
-    
-      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flipped (Week 1)</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week1/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week1/</id>
-    <published>2019-01-19T05:51:15.786Z</published>
-    <updated>2018-09-23T05:18:12.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;2018-06-01-p2&quot;&gt;&lt;a href=&quot;#2018-06-01-p2&quot; class=&quot;headerlink&quot; title=&quot;2018-06-01-p2&quot;&gt;&lt;/a&gt;2018-06-01-p2&lt;/h1&gt;&lt;p&gt;flip over //翻页&lt;/p&gt;
-&lt;p&gt;gutsy girl //勇敢的女孩&lt;/p&gt;
-&lt;p&gt;delightful //可爱的；讨人喜欢的；令人愉快的&lt;/p&gt;
     
     </summary>
     
