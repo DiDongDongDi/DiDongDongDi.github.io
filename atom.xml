@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-04-16T10:35:13.938Z</updated>
+  <updated>2019-04-22T06:40:10.535Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统笔记——0</title>
+    <link href="https://didongdongdi.github.io/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/"/>
+    <id>https://didongdongdi.github.io/2019/04/22/操作系统笔记——0/</id>
+    <published>2019-04-22T01:46:00.000Z</published>
+    <updated>2019-04-22T06:40:10.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h1&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>输入时自动删除后面的字</title>
+    <link href="https://didongdongdi.github.io/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/"/>
+    <id>https://didongdongdi.github.io/2019/04/21/输入时自动删除后面的字/</id>
+    <published>2019-04-21T12:41:00.000Z</published>
+    <updated>2019-04-21T12:44:47.283Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;按下键盘上的&lt;code&gt;insert&lt;/code&gt;键，将输入模式改为&lt;code&gt;插入&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用extundelete恢复linux上已删除的文件</title>
@@ -99,7 +133,7 @@
     <link href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     <id>https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</id>
     <published>2019-03-15T11:36:00.000Z</published>
-    <updated>2019-03-21T03:28:17.365Z</updated>
+    <updated>2019-04-22T01:51:46.148Z</updated>
     
     <summary type="html">
     
@@ -117,7 +151,7 @@
     
       <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
     
-      <category term="命令" scheme="https://didongdongdi.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
+      <category term="Command" scheme="https://didongdongdi.github.io/tags/Command/"/>
     
   </entry>
   
@@ -419,57 +453,6 @@
 &lt;p&gt;n. 干草&lt;/p&gt;
 &lt;p&gt;vt. 把晒干&lt;/p&gt;
 &lt;p&gt;vi. 割草晒干&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
-    
-      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flipped (Week3)</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week3/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week3/</id>
-    <published>2019-01-19T05:51:15.788Z</published>
-    <updated>2018-09-23T05:18:42.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;2018-07-11-p14&quot;&gt;&lt;a href=&quot;#2018-07-11-p14&quot; class=&quot;headerlink&quot; title=&quot;2018-07-11-p14&quot;&gt;&lt;/a&gt;2018-07-11-p14&lt;/h1&gt;&lt;p&gt;1, stalk  [stɔːk]&lt;/p&gt;
-&lt;p&gt;n. （植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步&lt;/p&gt;
-&lt;p&gt;vt. 追踪，潜近；高视阔步&lt;/p&gt;
-&lt;p&gt;vi. 高视阔步地走；潜近，偷偷接近&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="English" scheme="https://didongdongdi.github.io/categories/English/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="Vocabulary" scheme="https://didongdongdi.github.io/tags/Vocabulary/"/>
-    
-      <category term="Novel" scheme="https://didongdongdi.github.io/tags/Novel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flipped (Week2)</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/Flipped_Week2/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/Flipped_Week2/</id>
-    <published>2019-01-19T05:51:15.787Z</published>
-    <updated>2018-09-23T05:18:32.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;2018-06-29-p9&quot;&gt;&lt;a href=&quot;#2018-06-29-p9&quot; class=&quot;headerlink&quot; title=&quot;2018-06-29-p9&quot;&gt;&lt;/a&gt;2018-06-29-p9&lt;/h1&gt;&lt;p&gt;humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)&lt;br&gt;ninny //傻子&lt;br&gt;whiny //烦躁的；爱抱怨的&lt;br&gt;
     
     </summary>
     
