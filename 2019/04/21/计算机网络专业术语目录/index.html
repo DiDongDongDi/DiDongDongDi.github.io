@@ -17,7 +17,7 @@
 <meta property="og:description" content="整个目录参考自百度文库；增加了某些名词；增加了解释；目录并不完整，解释也有可能并不全面甚至空白，或者存在错误，还请指正。 计算机网络专业术语目录">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.wallpaperup.com/uploads/wallpapers/2014/11/16/517284/e15148d140efefbf21ae5142a0b75095-700.jpg">
-<meta property="og:updated_time" content="2019-04-23T13:31:15.981Z">
+<meta property="og:updated_time" content="2019-04-23T13:42:51.284Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络专业术语目录（附解释）">
 <meta name="twitter:description" content="整个目录参考自百度文库；增加了某些名词；增加了解释；目录并不完整，解释也有可能并不全面甚至空白，或者存在错误，还请指正。 计算机网络专业术语目录">
@@ -58,10 +58,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,css/images/pose02.jpg,css/images/pose03.jpg,css/images/pose04.jpg,css/images/pose05.jpg,http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-4k-wallpaper-3840-2160-awesome/4k-wallpaper-volcano-smoke-eruption-3840-2160.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/04/06/657118/5cf29d7c5d3f3abbe90692ed2dc1108b-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/07/217910/a4b616ee53bedb877f1abe9a028152bd-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/08/08/771421/658c52cf22b480793ebcd5b2fec738ee-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214354/5aed5397bee3594274a91ca081fede48-700.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/21/233495/7eae763f38b88e05aaa22f36fa015c38-1000.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -114,7 +136,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://www.wallpaperup.com/uploads/wallpapers/2014/11/16/517284/e15148d140efefbf21ae5142a0b75095-700.jpg" rel="gallery_cjuttvkrq003msno24yelvimp">
+      <a class="article-gallery-img fancybox" href="https://www.wallpaperup.com/uploads/wallpapers/2014/11/16/517284/e15148d140efefbf21ae5142a0b75095-700.jpg" rel="gallery_cjv3whdkr004a1no2use5hl4o">
         <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/16/517284/e15148d140efefbf21ae5142a0b75095-700.jpg" itemprop="image">
       </a>
     
@@ -260,12 +282,12 @@
 <tr>
 <td style="text-align:left">Routers</td>
 <td style="text-align:center">路由器</td>
-<td style="text-align:right">分组交换机的一种，二层网络设备，可隔离冲突域</td>
+<td style="text-align:right">分组交换机的一种，3层网络设备，可隔离冲突域</td>
 </tr>
 <tr>
 <td style="text-align:left">Link-layer switches</td>
 <td style="text-align:center">链路层交换机</td>
-<td style="text-align:right">分组交换机的一种，3层网络设备，可隔离冲突域</td>
+<td style="text-align:right">分组交换机的一种，二层网络设备，可隔离冲突域</td>
 </tr>
 <tr>
 <td style="text-align:left">Path</td>
@@ -1228,6 +1250,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
        
 </script>
 

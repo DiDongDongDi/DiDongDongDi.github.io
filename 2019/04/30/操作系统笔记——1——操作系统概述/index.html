@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>操作系统笔记——1——操作系统概述 | DIDA LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Notes" />
+  
+  
+  
+  
+  <meta name="description" content="操作系统的结构   一共分为四层 内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成   内核结构分类 单内核   单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。   单内核结构在硬件之上定义了一个高阶的抽象界">
+<meta name="keywords" content="Notes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统笔记——1——操作系统概述">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="操作系统的结构   一共分为四层 内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成   内核结构分类 单内核   单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。   单内核结构在硬件之上定义了一个高阶的抽象界">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/OS_0.jpg">
+<meta property="og:image" content="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/OS_1.jpg">
+<meta property="og:image" content="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/OS_2">
+<meta property="og:updated_time" content="2019-04-30T15:34:50.800Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="操作系统笔记——1——操作系统概述">
+<meta name="twitter:description" content="操作系统的结构   一共分为四层 内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成   内核结构分类 单内核   单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。   单内核结构在硬件之上定义了一个高阶的抽象界">
+<meta name="twitter:image" content="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/OS_0.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,css/images/pose02.jpg,css/images/pose03.jpg,css/images/pose04.jpg,css/images/pose05.jpg,http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-4k-wallpaper-3840-2160-awesome/4k-wallpaper-volcano-smoke-eruption-3840-2160.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/04/06/657118/5cf29d7c5d3f3abbe90692ed2dc1108b-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/07/217910/a4b616ee53bedb877f1abe9a028152bd-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2015/08/08/771421/658c52cf22b480793ebcd5b2fec738ee-1000.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214354/5aed5397bee3594274a91ca081fede48-700.jpg,https://www.wallpaperup.com/uploads/wallpapers/2014/01/21/233495/7eae763f38b88e05aaa22f36fa015c38-1000.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/avatar.jpg">
+              </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">As a young man, prepare and rule.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-操作系统笔记——1——操作系统概述" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      操作系统笔记——1——操作系统概述
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/04/30/操作系统笔记——1——操作系统概述/" class="article-date">
+	  <time datetime="2019-04-30T14:51:00.000Z" itemprop="datePublished">April 30, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/OS/">OS</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="操作系统的结构"><a href="#操作系统的结构" class="headerlink" title="操作系统的结构"></a>操作系统的结构</h1><p><img src="OS_0.jpg" alt="操作系统的结构"></p>
+<blockquote>
+<ul>
+<li>一共分为四层</li>
+<li>内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成</li>
+</ul>
+</blockquote>
+<h1 id="内核结构分类"><a href="#内核结构分类" class="headerlink" title="内核结构分类"></a>内核结构分类</h1><ul>
+<li><p>单内核</p>
+<p>  单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。</p>
+<p>  单内核结构在硬件之上定义了一个高阶的抽象界面，应用一组原语(或者叫系统调用)来实现操作系统的功能，例如进程管理，文件系统，和存储管理等等，这些功能由多个运行在核心态的模块来完成。</p>
+<p>  尽管每一个模块都是单独地服务这些操作，内核代码是高度集成的，而且难以编写正确。因为所有的模块都在同一个内核空间上运行，一个很小的bug都会使整个系统崩溃。然而，如果开发顺利，单内核结构就可以从运行效率上得到好处。</p>
+<p>  很多现代的单内核结构内核，如Linux和FreeBSD内核，能够在运行时将模块调入执行，这就可以使扩充内核的功能变得更简单，也可以使内核的核心部分变得更简洁。</p>
+<p>  单内核结构是非常有吸引力的一种设计，由于在同一个地址空间上实现所有低级操作的系统控制代码的复杂性的效率会比在不同地址空间上实现更高些。 单核结构正趋向于容易被正确设计，所以它的发展会比微内核结构更迅速些。</p>
+<p>  单内核结构的例子：传统的UNIX内核—-例如伯克利大学发行的版本，Linux内核。</p>
+</li>
+<li><p>微内核</p>
+<p>  微内核（Microkernelkernel）结构由一个非常简单的硬件抽象层和一组比较关键的原语或系统调用组成，这些原语仅仅包括了建立一个系统必需的几个部分，如线程管理，地址空间和进程间通信等。</p>
+<p>  用户模块间通信使用消息传递。</p>
+<p>  微核的目标是将系统服务的实现和系统的基本操作规则分离开来。例如，进程的输入/输出锁定服务可以由运行在微核之外的一个服务组件来提供。这些非常模块化的用户态服务器用于完成操作系统中比较高级的操作，这样的设计使内核中最核心的部分的设计更简单。一个服务组件的失效并不会导致整个系统的崩溃，内核需要做的，仅仅是重新启动这个组件，而不必影响其它的部分。</p>
+<p>  微内核将许多OS服务放入分离的进程，如文件系统,设备驱动程序,而进程通过消息传递调用OS服务。微内核结构必然是多线程的,第一代微内核,在核心提供了较多的服务,因此被称为’胖微内核’,它的典型代表是MACH。它既是GNU HURD也是APPLE SERVER OS的核心，可以说,蒸蒸日上.第二代为微内核只提供最基本的OS服务,典型的OS是QNX,QNX在理论界很有名,被认为是一种先进的OS。</p>
+<p>  微内核只提供了很小一部分的硬件抽象，大部分功能由一种特殊的用户态程序：服务器来完成。微核经常被用于机器人和医疗器械的嵌入式设计中，因为它的系统的关键部分都处在相互分开的，被保护的存储空间中。这对于单核设计来说是不可能的，就算它采用了运行时加载模块的方式。</p>
+<p>  微内核的例子：AIX，BeOS，L4微内核系列，.Mach中用于GNU Hurd和Mac OS X，Minix，MorphOS，QNX，RadiOS，VSTa。</p>
+</li>
+<li><p>混合内核</p>
+<p>  混合内核它很像微内核结构，只不过它的的组件更多的在核心态中运行以获得更快的执行速度。</p>
+<p>  混合内核实质上是微内核，只不过它让一些微核结构运行在用户空间的代码运行在内核空间，这样让内核的运行效率更高些。这是一种妥协做法，设计者参考了微内核结构的系统运行速度不佳的理论。然而后来的实验证明，纯微内核的系统实际上也可以是高效率的。大多数现代操作系统遵循这种设计范畴，微软公司开发的Windows操作系统就是一个很好的例子。另外还有XNU，运行在苹果Mac OS X上的内核，也是一个混合内核。</p>
+<p>  混合内核的例子： BeOS 内核 ，DragonFly BSD，ReactOS 内核</p>
+<p>  Windows NT、Windows 2000、Windows XP、Windows Server 2003以及Windows Vista等基于NT技术的操作系统。</p>
+</li>
+<li><p>外内核</p>
+<p>  外内核系统，也被称为纵向结构操作系统，是一种比较极端的设计方法。</p>
+<p>  外内核这种内核不提供任何硬件抽象操作，但是允许为内核增加额外的运行库，通过这些运行库应用程序可以直接地或者接近直接地对硬件进行操作。</p>
+<p>  它的设计理念是让用户程序的设计者来决定硬件接口的设计。外内核本身非常的小，它通常只负责系统保护和系统资源复用相关的服务。</p>
+<p>  传统的内核设计(包括单核和微核)都对硬件作了抽象，把硬件资源或设备驱动程序都隐藏在硬件抽象层下。比方说，在这些系统中，如果分配一段物理存储，应用程序并不知道它的实际位置。</p>
+<p>  而外核的目标就是让应用程序直接请求一块特定的物理空间，一块特定的磁盘块等等。系统本身只保证被请求的资源当前是空闲的，应用程序就允许直接存取它。既然外核系统只提供了比较低级的硬件操作，而没有像其他系统一样提供高级的硬件抽象，那么就需要增加额外的运行库支持。这些运行库运行在外核之上，给用户程序提供了完整的功能。</p>
+<p>  理论上，这种设计可以让各种操作系统运行在一个外核之上，如Windows和Unix。并且设计人员可以根据运行效率调整系统的各部分功能。</p>
+</li>
+</ul>
+<p><img src="OS_1.jpg" alt="外内核"></p>
+<h1 id="虚拟机管理器（VMM）"><a href="#虚拟机管理器（VMM）" class="headerlink" title="虚拟机管理器（VMM）"></a>虚拟机管理器（VMM）</h1><p>建立和维护一个管理虚拟机的框架，同时为其他vxd程序（virtual X driver，虚拟设备驱动程序）提供许多重要的服务。</p>
+<p><img src="OS_2" alt=""></p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/">https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/</a> </p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/OS/">OS</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/04/vim方向键等功能按键乱码解决/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          vim方向键等功能按键和鼠标乱码解决
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/22/操作系统笔记——0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">操作系统笔记——0</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#操作系统的结构"><span class="nav-number">1.</span> <span class="nav-text">操作系统的结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内核结构分类"><span class="nav-number">2.</span> <span class="nav-text">内核结构分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟机管理器（VMM）"><span class="nav-number">3.</span> <span class="nav-text">虚拟机管理器（VMM）</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 DIDA LAB All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+       
+</script>
+
+<script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-120518210-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
