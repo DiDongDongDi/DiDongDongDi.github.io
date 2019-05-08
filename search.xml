@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>Deepin下安装MySQL（APT Repository）</title>
+      <link href="/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
+      <url>/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/</url>
+      
+        <content type="html"><![CDATA[<p>本文参考自<a href="https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/" target="_blank" rel="noopener">官方文档</a></p><h1 id="添加APT库"><a href="#添加APT库" class="headerlink" title="添加APT库"></a>添加APT库</h1><ol><li>下载APT库</li></ol><a id="more"></a><p>在<a href="https://dev.mysql.com/downloads/repo/apt/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/apt/</a>处下载deb包</p><ol start="2"><li><p>执行<code>sudo dpkg -i &lt;PATH&gt;</code>，<code>&lt;PATH&gt;</code>    为刚下载的包的地址</p></li><li><p>由于这个库是为Debian和Ubuntu准备的，在检测到系统不符时，会让你选择系统，选择<code>Ubuntu Trusty</code>就可以（亲测）</p></li><li><p>然后其他默认即可，也可以修改安装的版本</p></li><li><p>执行<code>sudo apt-get update</code>，这一步是必须的</p></li></ol><h1 id="使用APT安装MySQL"><a href="#使用APT安装MySQL" class="headerlink" title="使用APT安装MySQL"></a>使用APT安装MySQL</h1><p><code>sudo apt-get install mysql-server</code>，server和client以及数据库公共文件都会被安装</p><h1 id="启用和终止MySQL-Server"><a href="#启用和终止MySQL-Server" class="headerlink" title="启用和终止MySQL Server"></a>启用和终止MySQL Server</h1><p>查看server状态（安装后会自动启动），<code>sudo service mysql status</code></p><p>终止server，<code>sudo service mysql stop</code></p><p>重启server，<code>sudo service mysql start</code></p><p>本文地址 <a href="https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/">https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vim方向键等功能按键和鼠标乱码解决</title>
       <link href="/2019/05/04/vim%E6%96%B9%E5%90%91%E9%94%AE%E7%AD%89%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
       <url>/2019/05/04/vim%E6%96%B9%E5%90%91%E9%94%AE%E7%AD%89%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
       
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用<code>set compatible</code>的方案，而我的<code>.vimrc</code>文件中已经有这句话了，只好采用了不是特别完美的解决方案</p><a id="more"></a><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>在<code>.vimrc</code>文件中添加如下代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&quot; 方向键乱码解决</span><br><span class="line">inoremap OA &lt;UP&gt;</span><br><span class="line">inoremap OB &lt;DOWN&gt;</span><br><span class="line">inoremap OC &lt;RIGHT&gt;</span><br><span class="line">inoremap OD &lt;LEFT&gt;</span><br><span class="line"></span><br><span class="line">&quot; 功能键乱码问题解决</span><br><span class="line">inoremap [6~ &lt;pagedown&gt;</span><br><span class="line">inoremap [5~ &lt;pageup&gt;</span><br><span class="line">inoremap OH &lt;home&gt;</span><br><span class="line">inoremap OF &lt;end&gt;</span><br><span class="line">inoremap [3~ &lt;del&gt;</span><br><span class="line">inoremap [2~ &lt;ins&gt;</span><br><span class="line"></span><br><span class="line">&quot; 鼠标设置</span><br><span class="line">set mouse=nvc</span><br></pre></td></tr></table></figure><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><blockquote><p>由于是采用映射的方法，所以会存在，在insert模式下按下被映射的字符时，如果速度过快，对应的字符不会输出而会转换为对应的命令，但是由于这些字符其中有些输入的可能性很小，所以问题不是很大</p></blockquote><blockquote><p>鼠标将insert模式下的功能禁用了</p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/">https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/</a> </p>]]></content>
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用<code>set compatible</code>的方案，而我的<code>.vimrc</code>文件中已经有这句话了，只好采用了不是特别完美的解决方案</p><a id="more"></a><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>在<code>.vimrc</code>文件中添加如下代码：</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" 方向键乱码解决</span></span><br><span class="line"><span class="keyword">inoremap</span> OA <span class="symbol">&lt;UP&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OB <span class="symbol">&lt;DOWN&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OC <span class="symbol">&lt;RIGHT&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OD <span class="symbol">&lt;LEFT&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 功能键乱码问题解决</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">6</span>~ <span class="symbol">&lt;pagedown&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">5</span>~ <span class="symbol">&lt;pageup&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OH <span class="symbol">&lt;home&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OF <span class="symbol">&lt;end&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">3</span>~ <span class="symbol">&lt;del&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">2</span>~ <span class="symbol">&lt;ins&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 鼠标设置</span></span><br><span class="line"><span class="keyword">set</span> mouse=nvc</span><br></pre></td></tr></table></figure><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><blockquote><p>由于是采用映射的方法，所以会存在，在insert模式下按下被映射的字符时，如果速度过快，对应的字符不会输出而会转换为对应的命令，但是由于这些字符其中有些输入的可能性很小，所以问题不是很大</p></blockquote><blockquote><p>鼠标将insert模式下的功能禁用了</p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/">https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/</a> </p>]]></content>
       
       
       <categories>
@@ -17,31 +42,6 @@
           
       </categories>
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>操作系统笔记——1——操作系统概述</title>
-      <link href="/2019/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%941%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
-      <url>/2019/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%941%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-      
-        <content type="html"><![CDATA[<h1 id="操作系统的结构"><a href="#操作系统的结构" class="headerlink" title="操作系统的结构"></a>操作系统的结构</h1><p><img src="OS_0.jpg" alt="操作系统的结构"></p><blockquote><ul><li>一共分为四层</li><li>内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成</li></ul></blockquote><h1 id="内核结构分类"><a href="#内核结构分类" class="headerlink" title="内核结构分类"></a>内核结构分类</h1><ul><li><p>单内核</p><p>  单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。</p><p>  单内核结构在硬件之上定义了一个高阶的抽象界面，应用一组原语(或者叫系统调用)来实现操作系统的功能，例如进程管理，文件系统，和存储管理等等，这些功能由多个运行在核心态的模块来完成。</p><p>  尽管每一个模块都是单独地服务这些操作，内核代码是高度集成的，而且难以编写正确。因为所有的模块都在同一个内核空间上运行，一个很小的bug都会使整个系统崩溃。然而，如果开发顺利，单内核结构就可以从运行效率上得到好处。</p><p>  很多现代的单内核结构内核，如Linux和FreeBSD内核，能够在运行时将模块调入执行，这就可以使扩充内核的功能变得更简单，也可以使内核的核心部分变得更简洁。</p><p>  单内核结构是非常有吸引力的一种设计，由于在同一个地址空间上实现所有低级操作的系统控制代码的复杂性的效率会比在不同地址空间上实现更高些。 单核结构正趋向于容易被正确设计，所以它的发展会比微内核结构更迅速些。</p><p>  单内核结构的例子：传统的UNIX内核—-例如伯克利大学发行的版本，Linux内核。</p></li><li><p>微内核</p><p>  微内核（Microkernelkernel）结构由一个非常简单的硬件抽象层和一组比较关键的原语或系统调用组成，这些原语仅仅包括了建立一个系统必需的几个部分，如线程管理，地址空间和进程间通信等。</p><p>  用户模块间通信使用消息传递。</p><p>  微核的目标是将系统服务的实现和系统的基本操作规则分离开来。例如，进程的输入/输出锁定服务可以由运行在微核之外的一个服务组件来提供。这些非常模块化的用户态服务器用于完成操作系统中比较高级的操作，这样的设计使内核中最核心的部分的设计更简单。一个服务组件的失效并不会导致整个系统的崩溃，内核需要做的，仅仅是重新启动这个组件，而不必影响其它的部分。</p><p>  微内核将许多OS服务放入分离的进程，如文件系统,设备驱动程序,而进程通过消息传递调用OS服务。微内核结构必然是多线程的,第一代微内核,在核心提供了较多的服务,因此被称为’胖微内核’,它的典型代表是MACH。它既是GNU HURD也是APPLE SERVER OS的核心，可以说,蒸蒸日上.第二代为微内核只提供最基本的OS服务,典型的OS是QNX,QNX在理论界很有名,被认为是一种先进的OS。</p><p>  微内核只提供了很小一部分的硬件抽象，大部分功能由一种特殊的用户态程序：服务器来完成。微核经常被用于机器人和医疗器械的嵌入式设计中，因为它的系统的关键部分都处在相互分开的，被保护的存储空间中。这对于单核设计来说是不可能的，就算它采用了运行时加载模块的方式。</p><p>  微内核的例子：AIX，BeOS，L4微内核系列，.Mach中用于GNU Hurd和Mac OS X，Minix，MorphOS，QNX，RadiOS，VSTa。</p></li><li><p>混合内核</p><p>  混合内核它很像微内核结构，只不过它的的组件更多的在核心态中运行以获得更快的执行速度。</p><p>  混合内核实质上是微内核，只不过它让一些微核结构运行在用户空间的代码运行在内核空间，这样让内核的运行效率更高些。这是一种妥协做法，设计者参考了微内核结构的系统运行速度不佳的理论。然而后来的实验证明，纯微内核的系统实际上也可以是高效率的。大多数现代操作系统遵循这种设计范畴，微软公司开发的Windows操作系统就是一个很好的例子。另外还有XNU，运行在苹果Mac OS X上的内核，也是一个混合内核。</p><p>  混合内核的例子： BeOS 内核 ，DragonFly BSD，ReactOS 内核</p><p>  Windows NT、Windows 2000、Windows XP、Windows Server 2003以及Windows Vista等基于NT技术的操作系统。</p></li><li><p>外内核</p><p>  外内核系统，也被称为纵向结构操作系统，是一种比较极端的设计方法。</p><p>  外内核这种内核不提供任何硬件抽象操作，但是允许为内核增加额外的运行库，通过这些运行库应用程序可以直接地或者接近直接地对硬件进行操作。</p><p>  它的设计理念是让用户程序的设计者来决定硬件接口的设计。外内核本身非常的小，它通常只负责系统保护和系统资源复用相关的服务。</p><p>  传统的内核设计(包括单核和微核)都对硬件作了抽象，把硬件资源或设备驱动程序都隐藏在硬件抽象层下。比方说，在这些系统中，如果分配一段物理存储，应用程序并不知道它的实际位置。</p><p>  而外核的目标就是让应用程序直接请求一块特定的物理空间，一块特定的磁盘块等等。系统本身只保证被请求的资源当前是空闲的，应用程序就允许直接存取它。既然外核系统只提供了比较低级的硬件操作，而没有像其他系统一样提供高级的硬件抽象，那么就需要增加额外的运行库支持。这些运行库运行在外核之上，给用户程序提供了完整的功能。</p><p>  理论上，这种设计可以让各种操作系统运行在一个外核之上，如Windows和Unix。并且设计人员可以根据运行效率调整系统的各部分功能。</p></li></ul><p><img src="OS_1.jpg" alt="外内核"></p><h1 id="虚拟机管理器（VMM）"><a href="#虚拟机管理器（VMM）" class="headerlink" title="虚拟机管理器（VMM）"></a>虚拟机管理器（VMM）</h1><p>建立和维护一个管理虚拟机的框架，同时为其他vxd程序（virtual X driver，虚拟设备驱动程序）提供许多重要的服务。</p><p><img src="OS_2" alt=""></p><p>本文地址 <a href="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/">https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/</a> </p>]]></content>
-      
-      
-      <categories>
-          
-          <category> OS </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Notes </tag>
-            
-        </tags>
       
     </entry>
     

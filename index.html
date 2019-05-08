@@ -129,6 +129,71 @@
         
           <section id="main">
   
+    <article id="post-Deepin下安装MySQL"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/05/08/Deepin下安装MySQL/">Deepin下安装MySQL（APT Repository）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/05/08/Deepin下安装MySQL/" class="article-date">
+	  <time datetime="2019-05-08T08:42:00.000Z" itemprop="datePublished">May 8, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据库/">数据库</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <div class="entry-thumbnail">
+            <a href="/2019/05/08/Deepin下安装MySQL/"><img src="https://www.wallpaperup.com/uploads/wallpapers/2014/02/28/281076/51c04946e3c3e8008925c5f2316f2ccc-700.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+          </div>
+          <div class="entry-summary">
+          本文参考自官方文档
+添加APT库
+下载APT库
+
+
+        
+          <p class="article-more-link">
+            <a href="/2019/05/08/Deepin下安装MySQL/#more">Continue Reading →</a>
+          </p>
+        </div>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/数据库/">数据库</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-vim方向键等功能按键乱码解决"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -177,100 +242,6 @@
     <a class="article-category-link" href="/categories/Problem/">Problem</a>
 
       
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-操作系统笔记——1——操作系统概述"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/04/30/操作系统笔记——1——操作系统概述/">操作系统笔记——1——操作系统概述</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2019/04/30/操作系统笔记——1——操作系统概述/" class="article-date">
-	  <time datetime="2019-04-30T14:51:00.000Z" itemprop="datePublished">April 30, 2019</time>
-	</a>
-
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/OS/">OS</a>
- 
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="操作系统的结构"><a href="#操作系统的结构" class="headerlink" title="操作系统的结构"></a>操作系统的结构</h1><p><img src="OS_0.jpg" alt="操作系统的结构"></p>
-<blockquote>
-<ul>
-<li>一共分为四层</li>
-<li>内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成</li>
-</ul>
-</blockquote>
-<h1 id="内核结构分类"><a href="#内核结构分类" class="headerlink" title="内核结构分类"></a>内核结构分类</h1><ul>
-<li><p>单内核</p>
-<p>  单内核（Monolithic kernel），是个很大的进程。它的内部又能够被分为若干模块（或是层次或其他）。但是在运行的时候，它是个单独的二进制大映象。其模块间的通讯是通过直接调用其他模块中的函数实现的，而不是消息传递。</p>
-<p>  单内核结构在硬件之上定义了一个高阶的抽象界面，应用一组原语(或者叫系统调用)来实现操作系统的功能，例如进程管理，文件系统，和存储管理等等，这些功能由多个运行在核心态的模块来完成。</p>
-<p>  尽管每一个模块都是单独地服务这些操作，内核代码是高度集成的，而且难以编写正确。因为所有的模块都在同一个内核空间上运行，一个很小的bug都会使整个系统崩溃。然而，如果开发顺利，单内核结构就可以从运行效率上得到好处。</p>
-<p>  很多现代的单内核结构内核，如Linux和FreeBSD内核，能够在运行时将模块调入执行，这就可以使扩充内核的功能变得更简单，也可以使内核的核心部分变得更简洁。</p>
-<p>  单内核结构是非常有吸引力的一种设计，由于在同一个地址空间上实现所有低级操作的系统控制代码的复杂性的效率会比在不同地址空间上实现更高些。 单核结构正趋向于容易被正确设计，所以它的发展会比微内核结构更迅速些。</p>
-<p>  单内核结构的例子：传统的UNIX内核—-例如伯克利大学发行的版本，Linux内核。</p>
-</li>
-<li><p>微内核</p>
-<p>  微内核（Microkernelkernel）结构由一个非常简单的硬件抽象层和一组比较关键的原语或系统调用组成，这些原语仅仅包括了建立一个系统必需的几个部分，如线程管理，地址空间和进程间通信等。</p>
-<p>  用户模块间通信使用消息传递。</p>
-<p>  微核的目标是将系统服务的实现和系统的基本操作规则分离开来。例如，进程的输入/输出锁定服务可以由运行在微核之外的一个服务组件来提供。这些非常模块化的用户态服务器用于完成操作系统中比较高级的操作，这样的设计使内核中最核心的部分的设计更简单。一个服务组件的失效并不会导致整个系统的崩溃，内核需要做的，仅仅是重新启动这个组件，而不必影响其它的部分。</p>
-<p>  微内核将许多OS服务放入分离的进程，如文件系统,设备驱动程序,而进程通过消息传递调用OS服务。微内核结构必然是多线程的,第一代微内核,在核心提供了较多的服务,因此被称为’胖微内核’,它的典型代表是MACH。它既是GNU HURD也是APPLE SERVER OS的核心，可以说,蒸蒸日上.第二代为微内核只提供最基本的OS服务,典型的OS是QNX,QNX在理论界很有名,被认为是一种先进的OS。</p>
-<p>  微内核只提供了很小一部分的硬件抽象，大部分功能由一种特殊的用户态程序：服务器来完成。微核经常被用于机器人和医疗器械的嵌入式设计中，因为它的系统的关键部分都处在相互分开的，被保护的存储空间中。这对于单核设计来说是不可能的，就算它采用了运行时加载模块的方式。</p>
-<p>  微内核的例子：AIX，BeOS，L4微内核系列，.Mach中用于GNU Hurd和Mac OS X，Minix，MorphOS，QNX，RadiOS，VSTa。</p>
-</li>
-<li><p>混合内核</p>
-<p>  混合内核它很像微内核结构，只不过它的的组件更多的在核心态中运行以获得更快的执行速度。</p>
-<p>  混合内核实质上是微内核，只不过它让一些微核结构运行在用户空间的代码运行在内核空间，这样让内核的运行效率更高些。这是一种妥协做法，设计者参考了微内核结构的系统运行速度不佳的理论。然而后来的实验证明，纯微内核的系统实际上也可以是高效率的。大多数现代操作系统遵循这种设计范畴，微软公司开发的Windows操作系统就是一个很好的例子。另外还有XNU，运行在苹果Mac OS X上的内核，也是一个混合内核。</p>
-<p>  混合内核的例子： BeOS 内核 ，DragonFly BSD，ReactOS 内核</p>
-<p>  Windows NT、Windows 2000、Windows XP、Windows Server 2003以及Windows Vista等基于NT技术的操作系统。</p>
-</li>
-<li><p>外内核</p>
-<p>  外内核系统，也被称为纵向结构操作系统，是一种比较极端的设计方法。</p>
-<p>  外内核这种内核不提供任何硬件抽象操作，但是允许为内核增加额外的运行库，通过这些运行库应用程序可以直接地或者接近直接地对硬件进行操作。</p>
-<p>  它的设计理念是让用户程序的设计者来决定硬件接口的设计。外内核本身非常的小，它通常只负责系统保护和系统资源复用相关的服务。</p>
-<p>  传统的内核设计(包括单核和微核)都对硬件作了抽象，把硬件资源或设备驱动程序都隐藏在硬件抽象层下。比方说，在这些系统中，如果分配一段物理存储，应用程序并不知道它的实际位置。</p>
-<p>  而外核的目标就是让应用程序直接请求一块特定的物理空间，一块特定的磁盘块等等。系统本身只保证被请求的资源当前是空闲的，应用程序就允许直接存取它。既然外核系统只提供了比较低级的硬件操作，而没有像其他系统一样提供高级的硬件抽象，那么就需要增加额外的运行库支持。这些运行库运行在外核之上，给用户程序提供了完整的功能。</p>
-<p>  理论上，这种设计可以让各种操作系统运行在一个外核之上，如Windows和Unix。并且设计人员可以根据运行效率调整系统的各部分功能。</p>
-</li>
-</ul>
-<p><img src="OS_1.jpg" alt="外内核"></p>
-<h1 id="虚拟机管理器（VMM）"><a href="#虚拟机管理器（VMM）" class="headerlink" title="虚拟机管理器（VMM）"></a>虚拟机管理器（VMM）</h1><p>建立和维护一个管理虚拟机的框架，同时为其他vxd程序（virtual X driver，虚拟设备驱动程序）提供许多重要的服务。</p>
-<p><img src="OS_2" alt=""></p>
-<p>本文地址 <a href="https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/">https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述/</a> </p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/OS/">OS</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li></ul>
-
       
     </footer>
     <hr class="entry-footer-hr">
@@ -871,13 +842,13 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
 
             
               <div class="widget-entry-thumbnail">
-                <a href="/2019/05/04/vim方向键等功能按键乱码解决/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+                <a href="/2019/05/08/Deepin下安装MySQL/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2014/02/28/281076/51c04946e3c3e8008925c5f2316f2ccc-700.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
               </div>
               <div class="widget-entry-summary">
             
 
-              <h6 style="margin: 0;"><a href="/2019/05/04/vim方向键等功能按键乱码解决/">vim方向键等功能按键和鼠标乱码解决</a></h6>
-              <span>May 4, 2019</span>
+              <h6 style="margin: 0;"><a href="/2019/05/08/Deepin下安装MySQL/">Deepin下安装MySQL（APT Repository）</a></h6>
+              <span>May 8, 2019</span>
             </div>
 
           </li>
@@ -885,11 +856,14 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
           <li class="clearfix">
 
             
-              <div class="widget-entry-summary" style="margin: 0;">
+              <div class="widget-entry-thumbnail">
+                <a href="/2019/05/04/vim方向键等功能按键乱码解决/" title=""><img width="50" height="50" src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
             
 
-              <h6 style="margin: 0;"><a href="/2019/04/30/操作系统笔记——1——操作系统概述/">操作系统笔记——1——操作系统概述</a></h6>
-              <span>April 30, 2019</span>
+              <h6 style="margin: 0;"><a href="/2019/05/04/vim方向键等功能按键乱码解决/">vim方向键等功能按键和鼠标乱码解决</a></h6>
+              <span>May 4, 2019</span>
             </div>
 
           </li>
@@ -960,7 +934,7 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OS/">OS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据结构/">数据结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机网络/">计算机网络</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OS/">OS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Problem/">Problem</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming-Language/">Programming Language</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt5/">Qt5</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式/">嵌入式</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据结构/">数据结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模拟与数字电路/">模拟与数字电路</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/线代/">线代</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机网络/">计算机网络</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -970,7 +944,7 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deepin/">Deepin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FPGA/">FPGA</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VHDL/">VHDL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competence/">Competence</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deepin/">Deepin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domain/">Domain</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FPGA/">FPGA</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Livere/">Livere</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MindMap/">MindMap</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mixed/">Mixed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Novel/">Novel</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/">STM32</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VHDL/">VHDL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vocabulary/">Vocabulary</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swiftype/">swiftype</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虚拟机/">虚拟机</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -980,7 +954,7 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 13.33px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 11.67px;">Command</a> <a href="/tags/Competence/" style="font-size: 20px;">Competence</a> <a href="/tags/Deepin/" style="font-size: 10px;">Deepin</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/FPGA/" style="font-size: 11.67px;">FPGA</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 18.33px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/VHDL/" style="font-size: 10px;">VHDL</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 15px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
+      <a href="/tags/C/" style="font-size: 13.33px;">C++</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Command/" style="font-size: 11.67px;">Command</a> <a href="/tags/Competence/" style="font-size: 20px;">Competence</a> <a href="/tags/Deepin/" style="font-size: 10px;">Deepin</a> <a href="/tags/Domain/" style="font-size: 10px;">Domain</a> <a href="/tags/FPGA/" style="font-size: 11.67px;">FPGA</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Livere/" style="font-size: 10px;">Livere</a> <a href="/tags/MindMap/" style="font-size: 11.67px;">MindMap</a> <a href="/tags/Mixed/" style="font-size: 10px;">Mixed</a> <a href="/tags/Notes/" style="font-size: 18.33px;">Notes</a> <a href="/tags/Novel/" style="font-size: 15px;">Novel</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/STM32/" style="font-size: 11.67px;">STM32</a> <a href="/tags/VHDL/" style="font-size: 10px;">VHDL</a> <a href="/tags/Vocabulary/" style="font-size: 16.67px;">Vocabulary</a> <a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a> <a href="/tags/嵌入式/" style="font-size: 11.67px;">嵌入式</a> <a href="/tags/教程/" style="font-size: 16.67px;">教程</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a>
     </div>
   </div>
 
@@ -990,7 +964,7 @@ ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

@@ -17,7 +17,7 @@
 <meta property="og:description" content="问题描述突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用set compatible的方案，而我的.vimrc文件中已经有这句话了，只好采用了不是特别完美的解决方案">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg">
-<meta property="og:updated_time" content="2019-05-04T15:03:03.982Z">
+<meta property="og:updated_time" content="2019-05-06T10:37:02.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim方向键等功能按键和鼠标乱码解决">
 <meta name="twitter:description" content="问题描述突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用set compatible的方案，而我的.vimrc文件中已经有这句话了，只好采用了不是特别完美的解决方案">
@@ -136,7 +136,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg" rel="gallery_cjv9j3xp10006mvo2mozcwn3a">
+      <a class="article-gallery-img fancybox" href="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg" rel="gallery_cjvbxk82m0039jho2mz1aqpp1">
         <img src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/12/84804/5add31970243c25abb71f3681af072a2-1000.jpg" itemprop="image">
       </a>
     
@@ -171,7 +171,7 @@
         <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用<code>set compatible</code>的方案，而我的<code>.vimrc</code>文件中已经有这句话了，只好采用了不是特别完美的解决方案</p>
 <a id="more"></a>
 <h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>在<code>.vimrc</code>文件中添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&quot; 方向键乱码解决</span><br><span class="line">inoremap OA &lt;UP&gt;</span><br><span class="line">inoremap OB &lt;DOWN&gt;</span><br><span class="line">inoremap OC &lt;RIGHT&gt;</span><br><span class="line">inoremap OD &lt;LEFT&gt;</span><br><span class="line"></span><br><span class="line">&quot; 功能键乱码问题解决</span><br><span class="line">inoremap [6~ &lt;pagedown&gt;</span><br><span class="line">inoremap [5~ &lt;pageup&gt;</span><br><span class="line">inoremap OH &lt;home&gt;</span><br><span class="line">inoremap OF &lt;end&gt;</span><br><span class="line">inoremap [3~ &lt;del&gt;</span><br><span class="line">inoremap [2~ &lt;ins&gt;</span><br><span class="line"></span><br><span class="line">&quot; 鼠标设置</span><br><span class="line">set mouse=nvc</span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" 方向键乱码解决</span></span><br><span class="line"><span class="keyword">inoremap</span> OA <span class="symbol">&lt;UP&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OB <span class="symbol">&lt;DOWN&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OC <span class="symbol">&lt;RIGHT&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OD <span class="symbol">&lt;LEFT&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 功能键乱码问题解决</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">6</span>~ <span class="symbol">&lt;pagedown&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">5</span>~ <span class="symbol">&lt;pageup&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OH <span class="symbol">&lt;home&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> OF <span class="symbol">&lt;end&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">3</span>~ <span class="symbol">&lt;del&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> [<span class="number">2</span>~ <span class="symbol">&lt;ins&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 鼠标设置</span></span><br><span class="line"><span class="keyword">set</span> mouse=nvc</span><br></pre></td></tr></table></figure>
 <h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><blockquote>
 <p>由于是采用映射的方法，所以会存在，在insert模式下按下被映射的字符时，如果速度过快，对应的字符不会输出而会转换为对应的命令，但是由于这些字符其中有些输入的可能性很小，所以问题不是很大</p>
 </blockquote>
@@ -221,10 +221,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2019/05/08/Deepin下安装MySQL/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Deepin下安装MySQL（APT Repository）
+        
+      </div>
+    </a>
   
-    <a href="/2019/04/30/操作系统笔记——1——操作系统概述/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2019/04/22/操作系统笔记——0/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">操作系统笔记——1——操作系统概述</div>
+      <div class="article-nav-title">操作系统笔记——0</div>
     </a>
   
 </nav>
