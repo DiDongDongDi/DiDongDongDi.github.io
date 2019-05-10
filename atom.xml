@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-05-08T09:16:21.637Z</updated>
+  <updated>2019-05-08T11:25:15.757Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://didongdongdi.github.io/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
     <id>https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/</id>
     <published>2019-05-08T08:42:00.000Z</published>
-    <updated>2019-05-08T09:16:21.637Z</updated>
+    <updated>2019-05-08T11:25:15.757Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,24 @@
     
     
       <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vimscript笔记——0——单行命令</title>
+    <link href="https://didongdongdi.github.io/2019/05/06/vimscript%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940%E2%80%94%E2%80%94%E5%8D%95%E8%A1%8C%E5%91%BD%E4%BB%A4/"/>
+    <id>https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/</id>
+    <published>2019-05-06T05:34:00.000Z</published>
+    <updated>2019-05-08T11:37:20.505Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;预备知识&quot;&gt;&lt;a href=&quot;#预备知识&quot; class=&quot;headerlink&quot; title=&quot;预备知识&quot;&gt;&lt;/a&gt;预备知识&lt;/h1&gt;&lt;p&gt;&lt;code&gt;:echo $MYVIMRC&lt;/code&gt;得知&lt;code&gt;.vimrc&lt;/code&gt;文件的位置&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
     
   </entry>
   
@@ -428,32 +446,6 @@
     
     
       <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Qt5教程</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/Qt5%E6%95%99%E7%A8%8B/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/Qt5教程/</id>
-    <published>2019-01-19T05:51:15.843Z</published>
-    <updated>2018-07-10T09:41:34.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/farewell-farewell/p/7159596.html&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Qt5" scheme="https://didongdongdi.github.io/categories/Qt5/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
