@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>vim按下回车后大括号自动换行缩进</title>
+      <link href="/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/"/>
+      <url>/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/</url>
+      
+        <content type="html"><![CDATA[<p>问题描述: 在一对大括号之间回车，自动分为3行并调整缩进</p><a id="more"></a><p>代码:</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" 大括号自动分行, C/C++下的自动命令</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePre,BufRead *.<span class="keyword">c</span> :<span class="keyword">inoremap</span> <span class="symbol">&lt;Enter&gt;</span> <span class="symbol">&lt;c-r&gt;</span>=BracketsEnter(<span class="string">'&#125;'</span>)<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePre,BufRead *.cpp :<span class="keyword">inoremap</span> <span class="symbol">&lt;Enter&gt;</span> <span class="symbol">&lt;c-r&gt;</span>=BracketsEnter(<span class="string">'&#125;'</span>)<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">BracketsEnter</span><span class="params">(char)</span></span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span>(<span class="string">'.'</span>)-<span class="number">1</span>] == <span class="variable">a:char</span></span><br><span class="line"><span class="keyword">return</span> <span class="string">"\&lt;Enter&gt;\&lt;Tab&gt;\&lt;Esc&gt;mpa\&lt;Enter&gt;\&lt;Esc&gt;`pa"</span> </span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">return</span> <span class="string">"\&lt;Enter&gt;"</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">endf</span></span><br></pre></td></tr></table></figure><p>本文地址 <a href="https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/">https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Deepin搜狗拼音输入法故障</title>
+      <link href="/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/"/>
+      <url>/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Deepin搜狗拼音输入法故障"><a href="#Deepin搜狗拼音输入法故障" class="headerlink" title="Deepin搜狗拼音输入法故障"></a>Deepin搜狗拼音输入法故障</h1><a id="more"></a><blockquote><p>搜狗拼音输入法出错<br>解决方法: <code>rm -rf ~/.config/SogouPY</code>, 重启电脑</p></blockquote><p>本文地址 <a href="https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/">https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Deepin下安装MySQL（APT Repository）</title>
       <link href="/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
       <url>/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/</url>
@@ -311,9 +349,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Livere </tag>
             
@@ -367,9 +405,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> swiftype </tag>
             

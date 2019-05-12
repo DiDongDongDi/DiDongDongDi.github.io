@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-05-08T11:25:15.757Z</updated>
+  <updated>2019-05-12T09:44:22.155Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vim按下回车后大括号自动换行缩进</title>
+    <link href="https://didongdongdi.github.io/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/"/>
+    <id>https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/</id>
+    <published>2019-05-12T09:40:00.000Z</published>
+    <updated>2019-05-12T09:44:22.155Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题描述: 在一对大括号之间回车，自动分为3行并调整缩进&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Deepin搜狗拼音输入法故障</title>
+    <link href="https://didongdongdi.github.io/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/"/>
+    <id>https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/</id>
+    <published>2019-05-10T06:25:00.000Z</published>
+    <updated>2019-05-10T06:35:18.457Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;a href=&quot;#Deepin搜狗拼音输入法故障&quot; class=&quot;headerlink&quot; title=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;/a&gt;Deepin搜狗拼音输入法故障&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Deepin下安装MySQL（APT Repository）</title>
@@ -302,9 +338,9 @@
       <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
     
     
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
       <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
     
       <category term="Livere" scheme="https://didongdongdi.github.io/tags/Livere/"/>
     
@@ -349,9 +385,9 @@
       <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
     
     
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
       <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
     
       <category term="swiftype" scheme="https://didongdongdi.github.io/tags/swiftype/"/>
     
@@ -398,54 +434,6 @@
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
     
       <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>the Classification of Programming Language</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/the%20Classification%20of%20Programming%20Language/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/the Classification of Programming Language/</id>
-    <published>2019-01-19T05:51:15.850Z</published>
-    <updated>2018-09-23T05:19:46.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;计算机语言分类&quot;&gt;&lt;a href=&quot;#计算机语言分类&quot; class=&quot;headerlink&quot; title=&quot;计算机语言分类&quot;&gt;&lt;/a&gt;计算机语言分类&lt;/h1&gt;&lt;p&gt;低级语言&lt;/p&gt;
-&lt;p&gt;高级语言&lt;/p&gt;
-&lt;p&gt;专用语言&lt;/p&gt;
-&lt;p&gt;脚本语言 &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Programming Language" scheme="https://didongdongdi.github.io/categories/Programming-Language/"/>
-    
-    
-      <category term="Classification" scheme="https://didongdongdi.github.io/tags/Classification/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>STM32之库开发</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/STM32%E4%B9%8B%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/STM32之库开发/</id>
-    <published>2019-01-19T05:51:15.844Z</published>
-    <updated>2018-09-23T05:19:28.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;STM32-Embedded-Software&quot;&gt;&lt;a href=&quot;#STM32-Embedded-Software&quot; class=&quot;headerlink&quot; title=&quot;STM32 Embedded Software&quot;&gt;&lt;/a&gt;STM32 Embedded Software&lt;/h1&gt;&lt;p&gt;到目前为止STM32的开发库有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标准外设库（STD库）&lt;/li&gt;
-&lt;li&gt;HAL库&lt;/li&gt;
-&lt;li&gt;LL库（ST最近才添加，随HAL源码包一起提供，目前支持的芯片也偏少）&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
     
   </entry>
   
