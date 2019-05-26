@@ -1,0 +1,1107 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      C++之名称空间 | DIDA LAB
+    
+  </title>
+  <meta name="author" content="DiDong">
+  <meta name="keywords" content="" />
+  <meta name="description" content="DiDong&#39;s Blog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="random" data-normal-src="/img/0.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Current post&nbsp;:&nbsp;《C++之名称空间》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
+		C++之名称空间
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	Posted on
+
+	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
+		<time datetime="2018-05-25T17:26:00.000Z" itemprop="datePublished">
+	  		2018-05-26
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	Updated on
+
+	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
+		<time datetime="2018-05-25T17:26:00.000Z" itemprop="dateUpdated">
+	  		2019-05-26
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/C/" class=" ">
+			C++
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="传统的C-名称空间"><a href="#传统的C-名称空间" class="headerlink" title="传统的C++名称空间"></a>传统的C++名称空间</h1><h2 id="一些术语"><a href="#一些术语" class="headerlink" title="一些术语"></a>一些术语</h2><blockquote>
+<ul>
+<li>声明区域</li>
+<li>潜在作用域<br>变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<p>C++关于全局变量和局部变量的规则定义了一种名称空间层次。每个声明区域都可以声明名称，这些名称独立于在其他声明区域中声明的名称。在一个函数中声明的局部变量不会与在另一个函数中声明的局部变量发生冲突。</p>
+<hr>
+<h1 id="新的名称空间的特性"><a href="#新的名称空间的特性" class="headerlink" title="新的名称空间的特性"></a>新的名称空间的特性</h1><p>C++新增了这样一种功能，即<strong>通过定义一种新的声明区域来创建命名的名称空间</strong>，这样做的目的之一是提供一个声明名称的区域。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><blockquote>
+<ul>
+<li>一个名称空间中的名称不会与另外一个名称空间的相同名称发生冲突，同时允许程序的其他部分使用该名称空间中声明的东西。</li>
+<li>名称空间可以是全局的，也可以位于另一个名称空间，但不能位于代码块中。因此，在默认情况下，在名称空间中声明的名称的链接性为外部的（除非它引用了常量）。</li>
+<li>除了用户定义的名称空间外，还存在另一个名称空间——全局名称空间。它对应于文件级声明区域，因此前面所说的全局变量现在被描述为位于全局名称空间中。</li>
+<li>名称空间是开放的，即可以把名称加入到已有的名称空间中。<br>例如，下面这条语句将名称goose添加到Jill中已有的名称列表中：</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> Jill&#123;</span><br><span class="line">	<span class="function"><span class="keyword">char</span> * <span class="title">goose</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>访问给定空间中的名称，通过作用域解析运算符<code>::</code>，使用名称空间来限定该名称。违背装饰的名称称为未限定的名称(unqualified name)；包含名称空间的名称称为限定的名称(qualified name)。</li>
+</ul>
+</blockquote>
+<h2 id="using声明和using编译指令"><a href="#using声明和using编译指令" class="headerlink" title="using声明和using编译指令"></a>using声明和using编译指令</h2><h3 id="using声明"><a href="#using声明" class="headerlink" title="using声明"></a>using声明</h3><blockquote>
+<ul>
+<li>使特定的标识符可用</li>
+<li>由被限定的名称和它前面的关键字<code>using</code>组成：<code>using Jill::fetch;</code></li>
+<li>将特定的名称添加到它所属的声明区域中</li>
+<li>在函数的外面使用using声明时，将把名称添加到全局名称空间中</li>
+</ul>
+</blockquote>
+<h3 id="using编译指令"><a href="#using编译指令" class="headerlink" title="using编译指令"></a>using编译指令</h3><blockquote>
+<ul>
+<li>使整个名称空间可用</li>
+<li>由名称空间名和它前面的关键字<code>using namespace</code>组成；<code>using namespace Jill;</code></li>
+<li>在函数中使用using编译指令，将使其中的名称在该函数中可用</li>
+<li>在全局声明区域中使用using编译指令，将使该名称空间的名称全局可用</li>
+</ul>
+</blockquote>
+<h2 id="using编译指令和using声明之比较"><a href="#using编译指令和using声明之比较" class="headerlink" title="using编译指令和using声明之比较"></a>using编译指令和using声明之比较</h2><h3 id="使用using编译指令导入一个名称空间中所有的名称"><a href="#使用using编译指令导入一个名称空间中所有的名称" class="headerlink" title="使用using编译指令导入一个名称空间中所有的名称"></a>使用using编译指令导入一个名称空间中所有的名称</h3><blockquote>
+<ul>
+<li>进行名称解析，就像在包含using声明和名称空间本身的最小声明区域中声明了名称一样</li>
+</ul>
+</blockquote>
+<h3 id="使用多个using声明"><a href="#使用多个using声明" class="headerlink" title="使用多个using声明"></a>使用多个using声明</h3><blockquote>
+<ul>
+<li>好像声明了相应的名称</li>
+<li>如果某个名称已经在函数中声明了，则不能用using声明导入相同的名称</li>
+</ul>
+</blockquote>
+<p>在下面的示例中，名称空间为全局的。如果使用using编译指令导入一个已经在函数中声明的名称，则局部名称将隐藏名称空间名，就像隐藏同名的全局变量一样。不过人可以像下面的示例中那样使用作用域解析运算符：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> Jill&#123;</span><br><span class="line">	<span class="function"><span class="keyword">double</span> <span class="title">bucket</span><span class="params">(<span class="keyword">double</span> n)</span></span>&#123;...&#125;</span><br><span class="line">	<span class="keyword">double</span> fetch;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">Hill</span>&#123;</span>...&#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">char</span> fetch;                      <span class="comment">//global namespace</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">using</span> <span class="keyword">namespace</span> Jill;        <span class="comment">//import all namespace names</span></span><br><span class="line">	Hill Thrill;                 <span class="comment">//create a type Jill::Hill structure</span></span><br><span class="line">	<span class="keyword">double</span> water = bucket(<span class="number">2</span>);    <span class="comment">//use Jill::bucket();</span></span><br><span class="line">	<span class="keyword">double</span> fetch;                <span class="comment">//not an error; hides Jill::fetch</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; fetch                 <span class="comment">//read a value into the local fetch</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; ::fetch;              <span class="comment">//read a value into global fetch</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; Jill::fetch;          <span class="comment">//read a value into Jill::fetch</span></span><br><span class="line">	... </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">foom</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Hill top;                    <span class="comment">//ERROR</span></span><br><span class="line">	Jill::Hill crest;            <span class="comment">//valid</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ul>
+<li>虽然函数中的using编译指令将名称空间的名称视为在函数之外声明，但它不会使得该文件中的其他函数能够使用这些名称。因此，在前一个例子中，<code>foom()</code>函数不能使用未限定的标识符Hill。</li>
+<li>一般来说，使用using声明比使用using编译指令更安全，这是由于它只导入指定的名称。如果该名称与局部名称发生冲突，编译器将发出指示。</li>
+<li>如果系统不支持名称空间，可以将</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure>
+<p>换成</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以用嵌套式名称空间来创建一个包含常用using声明的名称空间。</li>
+</ul>
+<h2 id="名称空间的其他特性"><a href="#名称空间的其他特性" class="headerlink" title="名称空间的其他特性"></a>名称空间的其他特性</h2><h3 id="将名称空间声明进行嵌套"><a href="#将名称空间声明进行嵌套" class="headerlink" title="将名称空间声明进行嵌套"></a>将名称空间声明进行嵌套</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> elements</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">namespace</span> fire</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> flame;</span><br><span class="line">		...</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">float</span> water;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ul>
+<li><code>flame</code>指的是<code>element::fire::flame</code></li>
+<li>可以使用<code>using namespace elements::fire</code>的using编译指令使内部的名称可用</li>
+<li>可以在名称空间中使用using编译指令和using声明，如下所示：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> myth</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">using</span> Jill::fetch;</span><br><span class="line">	<span class="keyword">using</span> <span class="keyword">namespace</span> elements;</span><br><span class="line">	<span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line">	<span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cin</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="将using编译指令用于myth名称空间的情况"><a href="#将using编译指令用于myth名称空间的情况" class="headerlink" title="将using编译指令用于myth名称空间的情况"></a>将using编译指令用于myth名称空间的情况</h4><p>using编译指令是可以传递的。如果A op B 且 B op C，则A op C，则说明操作 op 是可传递的。<br>在这个情况下，下面的语句将导入名称空间myth和elements：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> myth;</span><br></pre></td></tr></table></figure>
+<p>这条编译指令与下面两条编译指令等价：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> myth;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> elements;</span><br></pre></td></tr></table></figure>
+<h3 id="可以给名称空间创建别名"><a href="#可以给名称空间创建别名" class="headerlink" title="可以给名称空间创建别名"></a>可以给名称空间创建别名</h3><p>例如，假设有下面的名称空间：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> my_very_favorite_things&#123;...&#125;;</span><br></pre></td></tr></table></figure>
+<p>则可以使用下面的语句让<code>mvft</code>成为<code>my_very_favorite_things</code>的别名：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> mvft = my_very_favorite_things&#123;...&#125;;</span><br></pre></td></tr></table></figure>
+<p>可以使用这种技术来简化对嵌套名称空间的使用：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> MEF = myth::elements::fire;</span><br><span class="line"><span class="keyword">using</span> MEF::flame;</span><br></pre></td></tr></table></figure>
+<h3 id="未命名的名称空间"><a href="#未命名的名称空间" class="headerlink" title="未命名的名称空间"></a>未命名的名称空间</h3><p>可以通过省略名称空间的名称来创建未命名的名称空间：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span>         <span class="comment">// unnamed namespace</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">int</span> ice;</span><br><span class="line">	<span class="keyword">int</span> bandycoot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这就像后面跟着using编译指令一样，也就是说，在该名称空间中声明的名称的潜在作用域为：<strong>从声明点到该声明区域末尾</strong>。从这方面看，它们与全局变量相似。然而，由于这种名称空间没有名称，因此不能显式地使用using编译指令或using声明来使它在其他位置都可用。具体地说，不能在未命名名称空间所属文件之外的其他文件中，使用该名称空间的名称。<strong>这提供了链接性为内部的静态变量的替代品。</strong></p>
+<p>例如：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> counts;</span><br></pre></td></tr></table></figure>
+<p>采用名称空间的方法可替换为：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span>&#123;</span><br><span class="line">	<span class="keyword">int</span> counts;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="名称空间及其前途"><a href="#名称空间及其前途" class="headerlink" title="名称空间及其前途"></a>名称空间及其前途</h1><h2 id="指导原则"><a href="#指导原则" class="headerlink" title="指导原则"></a>指导原则</h2><blockquote>
+<ul>
+<li>使用在已命名的名称空间中声明的变量，而不是使用外部全局变量或静态全局变量</li>
+<li>如果开发了一个函数库或类库，将其放在一个名称空间中。</li>
+<li>仅将编译指令using作为一种将旧代码转换为使用名称空间的权宜之计。</li>
+<li>不要在头文件中使用using编译指令<br>首先，这样做掩盖了要让哪些名称可用；另外，包含头文件的顺序可能影响程序的行为<br>应将其放在所有预处理编译指令<code>#include</code>之后</li>
+<li>导入名称时，首先选用作用域解析符或using声明的方法。</li>
+<li>对于using声明，首选将其作用域设置为局部而不是全局。</li>
+</ul>
+</blockquote>
+<p>注意：使用名称空间的主旨使简化大型编程项目的管理工作。</p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2018/05/26/CPP之名称空间/">https://didongdongdi.github.io/2018/05/26/CPP之名称空间/</a> </p>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">Related post</div>
+				<div>Comment</div>
+				<div>Share</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
+		
+			<a href="/2018/05/26/气象站/" title="气象站" rel="prev">
+				&laquo;Pre post
+			</a>
+		
+		
+			<a href="/2018/05/26/STM32之库开发/" title="STM32之库开发" rel="next">
+				Next post&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/28/C++ 与 哲学/" title="C++ 与 哲学">
+								C++ 与 哲学			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 28日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+以下只是我个人对C++语言的一些理解，只是为了更好地学习和使用C++，如有描述不当处，还请指出。
+
+前言很多的科幻大片中都有虚拟世界的存在，好比是现实世界的映射或是更近一步的提升，如黑客帝国中的matrix,又如神盾局特工中的fra...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/28/C++ 与 哲学/" title="C++ 与 哲学">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/03/01/46574/71cecd4c03403e277fdd5143296e7ba3.jpg" alt="C++ 与 哲学"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/the Classification of Programming Language/" title="the Classification of Programming Language">
+								the Classification of Programming Language			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								计算机语言分类低级语言
+高级语言
+专用语言
+脚本语言 
+
+对数据类型的要求强类型语言—-强调数据类型 
+弱类型语音—-忽略数据类型 
+具体介绍低级语言机器语言、汇编语言和符号语言
+注意：汇编语言源程序必须经过汇编，生成目标文件，然后执...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/the Classification of Programming Language/" title="the Classification of Programming Language">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="the Classification of Programming Language"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/16/迷宫求解所有路径/" title="迷宫求解  (所有路径)">
+								迷宫求解  (所有路径)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 16日, 2018				
+							</p>
+							<p class="relate-post-content">
+								迷宫问题对于如下所示的迷宫，如何找到所有路径？（ # 为墙，* 为出口，0 为入口）（注意：要找到所有的路径必须保证一条路径不能在同一个位置走两次及两次以上，反之，一方面，这样没有意义；另一方面，这样可能会造成在一个地方一直转圈）
+
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/16/迷宫求解所有路径/" title="迷宫求解  (所有路径)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/07/26/123475/9a6414458df24961311231b3bce99906-1000.jpg" alt="迷宫求解  (所有路径)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/24/teamviewer安装问题/" title="teamviewer安装问题">
+								teamviewer安装问题			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								树莓派安装teamviewer
+
+ID不是邮件中发送的, 而是命令teamviewer info中的ID
+
+本文地址 https://didongdongdi.github.io/2019/05/24/teamviewer安装问题/ 
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/24/teamviewer安装问题/" title="teamviewer安装问题">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="teamviewer安装问题"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/19/MYSQL必知必会笔记/" title="MYSQL必知必会笔记">
+								MYSQL必知必会笔记			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 19日, 2019				
+							</p>
+							<p class="relate-post-content">
+								了解SQL
+数据库保存有组织的数据的容器(通常是一个文件或一组文件)
+
+
+
+表某种特定类型数据的结构化清单
+
+
+模式关于数据库和表的布局及特性的信息
+
+
+列表中的每个字段. 所有表都是由一个或多个列组成的.
+
+
+数据类型所容许的数据的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/19/MYSQL必知必会笔记/" title="MYSQL必知必会笔记">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-758127.jpg" alt="MYSQL必知必会笔记"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/16/ctags中文注释错误/" title="ctags中文注释错误">
+								ctags中文注释错误			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 16日, 2019				
+							</p>
+							<p class="relate-post-content">
+								ctags 代码与中文注释同行
+会出现, 即使tag文件中有这个模式的匹配, 在vim中也无法找到对应的匹配的情况
+建议, 中文注释与代码不要同行
+ctags 匹配到多个结果使用:tn显示下一个, :tp显示上一个
+也可用映射, ;t...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/16/ctags中文注释错误/" title="ctags中文注释错误">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/11/10/172337/04990d7a0114f1d1de321f91d5056eeb-700.jpg" alt="ctags中文注释错误"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/12/vim按下回车后大括号自动换行缩进/" title="vim按下回车后大括号自动换行缩进">
+								vim按下回车后大括号自动换行缩进			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 12日, 2019				
+							</p>
+							<p class="relate-post-content">
+								问题描述: 在一对大括号之间回车，自动分为3行并调整缩进
+
+代码:
+1234567891011" 大括号自动分行, C/C++下的自动命令autocmd BufWritePre,BufRead *.c :inoremap &lt;En...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/12/vim按下回车后大括号自动换行缩进/" title="vim按下回车后大括号自动换行缩进">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="vim按下回车后大括号自动换行缩进"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/10/Deepin搜狗拼音輸入法故障/" title="Deepin搜狗拼音输入法故障">
+								Deepin搜狗拼音输入法故障			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 10日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Deepin搜狗拼音输入法故障
+
+搜狗拼音输入法出错解决方法: rm -rf ~/.config/SogouPY, 重启电脑
+
+本文地址 https://didongdongdi.github.io/2019/05/10/Deepin...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/10/Deepin搜狗拼音輸入法故障/" title="Deepin搜狗拼音输入法故障">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Deepin搜狗拼音输入法故障"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/09/SQL注意事项/" title="SQL注意事项">
+								SQL注意事项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 9日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+
+mysql错误1215：无法添加外键可参考https://blog.csdn.net/wangpeng047/article/details/19624351我的原因：添加外键时，references后面的被参照关系同样要指定主键...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/09/SQL注意事项/" title="SQL注意事项">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="SQL注意事项"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/08/Deepin下安装MySQL/" title="Deepin下安装MySQL（APT Repository）">
+								Deepin下安装MySQL（APT Repository）			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 8日, 2019				
+							</p>
+							<p class="relate-post-content">
+								本文参考自官方文档
+添加APT库
+下载APT库
+
+
+在https://dev.mysql.com/downloads/repo/apt/处下载deb包
+
+执行sudo dpkg -i &lt;PATH&gt;，&lt;PATH&gt;...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/08/Deepin下安装MySQL/" title="Deepin下安装MySQL（APT Repository）">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2014/02/28/281076/51c04946e3c3e8008925c5f2316f2ccc-700.jpg" alt="Deepin下安装MySQL（APT Repository）"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+			
+			<!-- livere comment -->
+			<!-- show livere comment -->
+<div id="lv-container" data-id="city" data-uid='MTAyMC8zOTA2MS8xNTU4OA=='>
+	<script type="text/javascript">
+	   (function(d, s) {
+	       var j, e = d.getElementsByTagName(s)[0];
+ 	       if (typeof LivereTower === 'function') { return; }
+ 	       j = d.createElement(s);
+	       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+	       j.async = true;
+ 	       e.parentNode.insertBefore(j, e);
+	   })(document, 'script');
+	</script>
+	<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by DiDong. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>

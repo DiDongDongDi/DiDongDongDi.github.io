@@ -1,0 +1,1007 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      Flipped (Week2) | DIDA LAB
+    
+  </title>
+  <meta name="author" content="DiDong">
+  <meta name="keywords" content="" />
+  <meta name="description" content="DiDong&#39;s Blog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="random" data-normal-src="/img/0.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Current post&nbsp;:&nbsp;《Flipped (Week2)》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2018/05/26/Flipped_Week2/" itemprop="url">
+		Flipped (Week2)
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	Posted on
+
+	<a href="/2018/05/26/Flipped_Week2/" itemprop="url">
+		<time datetime="2018-05-26T05:17:00.000Z" itemprop="datePublished">
+	  		2018-05-26
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	Updated on
+
+	<a href="/2018/05/26/Flipped_Week2/" itemprop="url">
+		<time datetime="2018-05-26T05:17:00.000Z" itemprop="dateUpdated">
+	  		2019-05-26
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/Notes/" class=" ">
+			Notes
+		</a>
+	
+		<a href="/tags/Vocabulary/" class=" ">
+			Vocabulary
+		</a>
+	
+		<a href="/tags/Novel/" class=" ">
+			Novel
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="2018-06-29-p9"><a href="#2018-06-29-p9" class="headerlink" title="2018-06-29-p9"></a>2018-06-29-p9</h1><p>humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)<br>ninny //傻子<br>whiny //烦躁的；爱抱怨的<br><a id="more"></a><br>gossipy //漫谈式的；喜欢饶舌的<br>backstab //以卑鄙的手段陷害<br>elementary //基本的；初级的；元素的<br>undisputed //毫无疑问的<br>diva //歌剧中的首席女主角<br>lap // n.一圈；膝盖；下摆；山坳 vt.使重叠；拍打；包围 vi.重叠；轻拍；围住<br>calisthenics //健美体操<br>claim //vi. 提出要求 vt. 要求；声称；需要；认领 n. 要求；声称；索赔；断言；值得<br>collapse // vi. 倒塌；瓦解；暴跌 vt. 使倒塌，使崩溃；使萎陷；折叠 n. 倒塌；失败；衰竭<br>strain //n. 张力；拉紧；负担；扭伤；血缘 vi. 拉紧；尽力 vt. 拉紧；滥用；滤去；竭力 n. （植物、动物的）品种；种类<br>stretched //adj. 拉伸的，伸展了的 v. 伸直，伸展；舒展（stretch的过去分词）；伸缩<br>swoon //n. 昏晕；狂喜 vi. 昏晕；惊讶；着迷<br>bug // vt. 烦扰，打扰；装窃听器 vi. 装置窃听器；打扰<br>get out of //逃避；避免<br>asthma //哮喘；气喘<br>ankle //踝<br>delicate //微妙的；精美的，雅致的；柔和的；易碎的；纤弱的；清淡可口的<br>clip //n. （塑料或金属的）夹子；回纹针；修剪；剪报 vt. 剪；剪掉；缩短；给…剪毛（或发）用别针别在某物上，用夹子夹在某物上 vi. 剪；修剪；剪下报刊上的文章（或新闻、图片等）；迅速行动；用别针别在某物上，用夹子夹在某物上<br>bead //n. 珠子；滴；念珠 vi. 形成珠状，起泡 vt. 用珠装饰；使成串珠状<br>braid //n. 辫子；穗带；发辫 vt. 编织<br>swirl //n. 漩涡；打旋；涡状形 vi. 盘绕；打旋；眩晕；大口喝酒 vt. 使成漩涡<br>ponytail //马尾辫<br>rival //n. 对手；竞争者 adj. 竞争的 vt. 与…竞争；比得上某人 vi. 竞争<br>carousel //旋转木马；行李传送带；轮播<br>shimmy //n. 西迷舞（一种爵士舞）；摇动；女式衬衣 vt. 摇动；振动<br>cuddle //n. 搂抱 vt. 拥抱；亲热地搂住；抚爱地拥抱 vi. 拥抱；偎依；舒服地贴着身睡<br>dandy //n. 花花公子；好打扮的人 adj. 上等的；服装华丽的<br>pushy //有进取心的；爱出风头的；有冲劲的；固执己见的<br>dawn on //开始被理解；渐渐明白<br>swirly //成涡旋形的；纠结的<br>unravel //vt. 解开；阐明；解决；拆散 vi. 解决；散开<br>sniffle //n. 鼻塞声；不断吸鼻子（等于snuffle） vi. 抽鼻涕；抽噎（等于snuffle）<br>gracefully //优雅地；温文地<br>I had her off of him in two seconds flat. //我在两秒钟内把她从他身边拉了下来。<br>herd //    n. 兽群，畜群；放牧人 vi. 成群，聚在一起 vt. 放牧；使成群</p>
+<h1 id="2018-06-30-p10"><a href="#2018-06-30-p10" class="headerlink" title="2018-06-30-p10"></a>2018-06-30-p10</h1><p>headlock //摔跤中的夹头<br>hammerlock //（摔跤）将对方手臂扭到背后<br>no amount of //即使再大（或再多）的…（也不）<br>squawking //vt. 抗议；发出响而粗的叫声；大声抱怨 n. 抗议；叫声；诉苦；故障 vt. 粗声叫出；诉苦<br>mussed-up //乱的<br>while I told my side of things to the principal //当我把事情告诉校长的时候<br>sturdy //adj. 坚定的；强健的；健全的<br>swift //n. 褐雨燕 adj. 快的；敏捷的；立刻的 adv. 迅速地<br>dilemma //困境<br>restrain //vt. 抑制；约束；制止<br>braid //辫子；穗带<br>blush //vi. 脸红；感到惭愧 n. 脸红；红色；羞愧 vt. 红着脸表示；使成红色<br>detention //n. 拘留；延迟；挽留<br>lean //vi. 倾斜；倚靠；倾向；依赖 adj. 瘦的；贫乏的 vt. 使倾斜 n. 瘦肉；倾斜；倾斜度<br>earlobes //耳垂<br>fuzz //n. 绒毛；模糊；细毛；警员 vi. 作绒毛状飞散；变成绒毛状；变得模糊 vt. 使模糊；起毛<br>blond //adj. 金发的 n. 白肤碧眼金发的人<br>move in with //搬去和……一起住<br>do crossword puzzles and track his stocks //做填字游戏，追踪他的股票<br>distraction //n. 注意力分散；消遣；心烦意乱<br>Given no one to justify it to … //没有人可以证明这一点</p>
+<h1 id="2018-07-03-P11"><a href="#2018-07-03-P11" class="headerlink" title="2018-07-03-P11"></a>2018-07-03-P11</h1><p>wind up //结束；使紧张；卷起；（非正式）忽悠某人（wind sb up）；上紧(钟、表等的)发条<br>coverage //覆盖；覆盖范围；新闻报道<br>climb out of a sycamore tree //爬出一棵梧桐树<br>maple //枫树；淡棕色<br>birch //桦树；桦条；桦木；用桦条鞭打<br>vacant //空虚的；空的；空缺的；空闲的；茫然的<br>massive //大量的；巨大的；魁梧的<br>gnarl //n. 木节；木瘤 vt. 咆哮；形成木节<br>yak //耗牛 喋喋不休<br>visually //形象化地；外表上；看得见地<br>scourge //vt. 鞭打；蹂躏；严斥；痛斥 n. 鞭；灾祸；鞭子；苦难的根源<br>weed //vt. 除草；铲除 n. 杂草 vi. 除草<br>stick out //突出；坚持；醒目<br>barnyard //n. 谷仓前地空场地 adj. 下流地；粗俗的<br>a boa constrictor //一条蟒蛇<br>beady-eyed //起泡地；饰有珠子的；晶亮如小珠的<br>They held that rodent up by its tail and gulp, the boa swallowed it whole. //他们抓住那只啮齿动物的尾巴，把它提起来，蟒蛇把它整个吞了下去。<br>channel //vt. 引导，开导；形成河道 n. 通道；频道；沟渠；海峡<br>plump up //变丰满；鼓起<br>now //conj. 由于；既然<br>edge //n. 边缘；优势；刀刃；锋利 vt. 使锐利；将…开刃；给…加上边 vi. 缓缓移动；侧着移动<br>overboard //adv. 自船上落下；向船外 adj. 及其热心的；全身心投入的<br>permanently //永久地<br>screw up //拧紧；鼓舞；弄糟；狠狠地提高<br>clown around with //小丑在<br>peel big chunks of bark off //把大块地树皮剥掉<br>slide down the crook in its trunk //从树干上滑下来<br>swing from //悬挂<br>slump beneath //经济衰退之下<br>squeal //vt. 告密；长声尖叫 vi. 告密；尖声地说 n. 尖叫声<br>mutant toy-eating foliage //mutant n.突变体；突变异种 adj. 突变的 toy-eating ? foliage 植物；叶子（总称）<br>hostage //人质；抵押品</p>
+<h1 id="2018-07-03-p12"><a href="#2018-07-03-p12" class="headerlink" title="2018-07-03-p12"></a>2018-07-03-p12</h1><p>relieve //vt. 解除；使不单调乏味；换…地班；解围；使放心<br>weenie //细小的；微小的<br>trap //vt. 诱捕；使…受限制；使…陷入困境；吸收；使…上当 n. 陷阱；圈套；困境；[建] 存水湾 vi. 设陷阱<br>goner //已死者；无望的人；落魄的人<br>scramble up //爬上；巴结；搅混起来<br>set off //出发；引起；动身；使爆炸；抵销；分开<br>outdo //vt. 超过；胜过<br>crook //n. 骗子，坏蛋；弯处，弯曲部分；钩状物 vt. 使弯曲；欺骗，诈骗 vi. 弯曲，成钩形<br>limb //n. 肢，臂；分支；枝干 vt. 切断…的手足；从…上截下树枝<br>bungee //n. 蹦极；橡皮筋；松紧绳<br>shatter //vt. 粉碎；打碎；破坏；破掉；使散开 vi. 粉碎；损坏；落叶 n. 碎片；乱七八糟的状态<br>mortify //vt. 抑制；苦修；使…感屈辱 vi. 禁欲；苦行；约束<br>blow-by-blow //详尽的；逐一记录的<br>come up there with her //和她一起上来<br>magnificent //高尚的；壮丽的；华丽的；宏伟的<br>specifically //特别地；明确地<br>swing down from //摇摆不定的<br>wrench //n. 扳手，扳钳；扭伤；痛苦；歪曲；猛扭 vt. 扭伤；猛扭；曲解；折磨 vi. 扭伤；猛扭；猛绞<br>maniac //n. 疯子 adj. 发狂的；狂热的；癫狂的<br>pull up //拔起；停下来；阻止<br>truck //n. 卡车；交易；手推车 vi. 驾驶卡车；以物易物 vt. 交易；以卡车运输 adj. （美）运货汽车的<br>commotion //骚动；暴乱<br>shout stuff up at //对…喊<br>mutant tangle of gnarly  branches  //突变的粗糙的分支<br>pesky //adj. 讨厌的；麻烦的 adv.极端<br>bossy //adj. 专横的；浮雕装饰的；爱指挥他人的 n. 母牛；牛犊<br>bail on //放弃；失约</p>
+<h1 id="2017-07-05-p13"><a href="#2017-07-05-p13" class="headerlink" title="2017-07-05-p13"></a>2017-07-05-p13</h1><p>1, meaty  [‘miːtɪ]<br>adj. 肉的；多肉的；似肉的<br>2, whisker  [‘wɪskə]<br>n. [晶体] 晶须；胡须；腮须<br>3, pushy  [‘pʊʃɪ]<br>adj. 有进取心的；爱出风头的；有冲劲的；固执己见的<br>4, a showoff  </p>
+<p>5, backbone  [‘bækbəʊn]<br>n. 支柱；主干网；决心，毅力；脊椎<br>6, make out<br>理解；辨认出；说明；填写；设法应付<br>7, a fire brigade  </p>
+<p>8, crease  [kriːs]<br>n. 折痕；折缝<br>vi. 起皱<br>vt. 弄皱；使起折痕<br>9, prior  [‘praɪə]<br>adj. 优先的；在先的，在前的<br>n. 小修道院院长；大修道院的副院长; （隐修院）会长; 犯罪前科<br>n. (Prior)人名；(法、西、葡、捷)普里奥尔；(英)普赖尔；(意)普廖尔<br>10, woven  [‘wəʊvn]<br>v. 编织；交织（weave的过去分词）；编造<br>adj. 织物的<br>n. 机织织物<br>11, amputate  [‘æmpjʊteɪt]<br>vt. 截肢；切断；删除<br>12, another few pounds  </p>
+<p>13, come off<br>举行，成功；表现；脱离<br>14, beefy  [‘biːfɪ]<br>adj. 像牛肉的；结实的；健壮的<br>15, regardless  [rɪ’gɑːdlɪs]<br>adj. 不管的；不顾的；不注意的<br>adv. 不顾后果地；不管怎样，无论如何；不惜费用地<br>16, recreational  [rekrɪ’eɪʃənl]<br>adj. 娱乐的，消遣的；休养的<br>17, shave off<br>剃掉，刮掉<br>18, slipper  [‘slɪpə]<br>n. 拖鞋<br>vt. 用拖鞋打<br>19, salt-and-pepper<br>盐和胡椒<br>20, greased-back  </p>
+<p>21, blow off<br>v. 放出；吹掉<br>22, get acquainted<br>开始熟悉<br>变得熟络<br>23, friendliness  [‘fren(d)lɪnɪs]<br>n. 友谊；亲切；亲密<br>24, summon into  </p>
+<p>25, dismember  [dɪs’membə]<br>vt. 肢解，割断手足；分割，瓜分<br>26, naked  [‘neɪkɪd]<br>adj. 裸体的；无装饰的；无证据的；直率的<br>27, lopsided  [lɒp’saɪdɪd]<br>adj. 不平衡的，倾向一方的<br>28, chew  [tʃuː]<br>n. 咀嚼；咀嚼物<br>vt. 嚼碎，咀嚼<br>vi. 细想，深思<br>n. (Chew)人名；(英)丘<br>29, perch  [pɜːtʃ]<br>n. 鲈鱼; 高位；栖木；杆<br>vt. 栖息；就位；位于；使坐落于<br>vi. 栖息；就位；位于<br>n. (Perch)人名；(俄)佩尔奇；(丹)佩克<br>30, board  [bɔːd]<br>n. 董事会；木板；甲板；膳食<br>vt. 上（飞机、车、船等）；用板盖上；给提供膳宿<br>vi. 寄宿<br>n. (Board)人名；(英、西)博德</p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2018/05/26/Flipped_Week2/">https://didongdongdi.github.io/2018/05/26/Flipped_Week2/</a> </p>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">Related post</div>
+				<div>Comment</div>
+				<div>Share</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
+		
+			<a href="/2018/05/26/Mixed/" title="English Mixed" rel="prev">
+				&laquo;Pre post
+			</a>
+		
+		
+			<a href="/2018/05/26/Flipped_Week1/" title="Flipped (Week 1)" rel="next">
+				Next post&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/12/31/Intercultural-Communication-extra-notes/" title="the Summary of Intercultural Communication (extra notes)">
+								the Summary of Intercultural Communication (extra notes)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十二月 31日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Notes
+interlink
+
+
+
+Q: What is genocide?A:
+
+Subtle nonverbal behavior: a dirty look
+Obscene hand gestures
+Arms-length ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/12/31/Intercultural-Communication-extra-notes/" title="the Summary of Intercultural Communication (extra notes)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/03/11/50755/3d4dc9513f36aeb3763c4d9c6fbab491-1000.jpg" alt="the Summary of Intercultural Communication (extra notes)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/12/31/Intercultural-Communication-11/" title="the Summary of Intercultural Communication (11)">
+								the Summary of Intercultural Communication (11)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十二月 31日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Principles and strategies of intercultural communicationCooperative principle
+
+Q: What is cooperative principle?A: 
+
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/12/31/Intercultural-Communication-11/" title="the Summary of Intercultural Communication (11)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-718948.jpg" alt="the Summary of Intercultural Communication (11)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/12/30/Intercultural-Communication-10/" title="the Summary of Intercultural Communication (10)">
+								the Summary of Intercultural Communication (10)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十二月 30日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Barriers to Intercultural CommunicationEthnocentrism
+Q: What is Ethnocentrism?A: The act of judging another culture b...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/12/30/Intercultural-Communication-10/" title="the Summary of Intercultural Communication (10)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://images2.alphacoders.com/975/975260.jpg" alt="the Summary of Intercultural Communication (10)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/11/21/Intercultural-Communicaiton-9/" title="the Summary of Intercultural Communication (9)">
+								the Summary of Intercultural Communication (9)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Culture ShockWhat Is the Meaning of Acculturation
+&amp;&amp;&amp;&amp;&amp;Acculturation is the process of modificati...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/11/21/Intercultural-Communicaiton-9/" title="the Summary of Intercultural Communication (9)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2012/09/22/15918/90fd61b0f2f124f358a63fe2adfcc8a3-1000.jpg" alt="the Summary of Intercultural Communication (9)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/31/Intercultural-Communication-7-8/" title="the Summary of Intercultural Communication (7&8)">
+								the Summary of Intercultural Communication (7&8)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 31日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Nonverbal communicationComparison
+
+
+
+BASIS FOR COMPARISON
+VERBAL
+NON-VERBAL 
+
+
+
+
+Meaning
+the sender uses words to tra...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/31/Intercultural-Communication-7-8/" title="the Summary of Intercultural Communication (7&8)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://images6.alphacoders.com/957/957145.jpg" alt="the Summary of Intercultural Communication (7&amp;8)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/18/Intercultural-Communication-6/" title="the Summary of Intercultural Communication (6)">
+								the Summary of Intercultural Communication (6)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 18日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Linguistic differences via translationCorrespondence between English and Chinese at word Level
+Correspondence:
+
+word-...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/18/Intercultural-Communication-6/" title="the Summary of Intercultural Communication (6)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2012/07/08/5454/0b36ba7b4422a11eeaedba792d9689db-1000.jpg" alt="the Summary of Intercultural Communication (6)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/12/Intercultural-Communication-5/" title="the Summary of Intercultural Communication (5)">
+								the Summary of Intercultural Communication (5)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 12日, 2018				
+							</p>
+							<p class="relate-post-content">
+								High-context and low-context cultures
+&amp;&amp;&amp;&amp;&amp;Q: What are High-context and low-context culture ?A: T...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/12/Intercultural-Communication-5/" title="the Summary of Intercultural Communication (5)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2012/09/14/14476/186e63d047ed2c318201a06f830ce964.jpg" alt="the Summary of Intercultural Communication (5)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/12/Intercultural-Communication-2/" title="the Summary of Intercultural Communication (2)">
+								the Summary of Intercultural Communication (2)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 12日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Intercultural competence
+&amp;&amp;&amp;&amp;&amp;Q: What is intercultural competence ?A: A complex of abilities need...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/12/Intercultural-Communication-2/" title="the Summary of Intercultural Communication (2)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2016/07/15/996148/fbac8671ed87ad33b709c05f9435bc05-700.jpg" alt="the Summary of Intercultural Communication (2)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/28/Intercultural-Communication-1/" title="the Summary of Intercultural Communication (1)">
+								the Summary of Intercultural Communication (1)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 28日, 2018				
+							</p>
+							<p class="relate-post-content">
+								How to make a power-point presentationTop Tips for Effectivve presentations (10)Passion and Connect
+
+
+Be honest with ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/28/Intercultural-Communication-1/" title="the Summary of Intercultural Communication (1)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/12/07/187135/8cfff552dee296306e4161b3429339fa-1000.jpg" alt="the Summary of Intercultural Communication (1)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/27/Intercultural-Communication-4/" title="the Summary of Intercultural Communication (4)">
+								the Summary of Intercultural Communication (4)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 27日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Intercultural communication skills
+Q: What abilities do employers look for from employees about intercultural skills?...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/27/Intercultural-Communication-4/" title="the Summary of Intercultural Communication (4)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-419158.png" alt="the Summary of Intercultural Communication (4)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+			
+			<!-- livere comment -->
+			<!-- show livere comment -->
+<div id="lv-container" data-id="city" data-uid='MTAyMC8zOTA2MS8xNTU4OA=='>
+	<script type="text/javascript">
+	   (function(d, s) {
+	       var j, e = d.getElementsByTagName(s)[0];
+ 	       if (typeof LivereTower === 'function') { return; }
+ 	       j = d.createElement(s);
+	       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+	       j.async = true;
+ 	       e.parentNode.insertBefore(j, e);
+	   })(document, 'script');
+	</script>
+	<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by DiDong. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>

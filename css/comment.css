@@ -1,84 +1,73 @@
-
-/*头像旋转*/
-#ds-reset .ds-avatar{background:none !important; box-shadow:none !important;}
-
-#ds-reset .ds-avatar img , #ds-thread #ds-reset ul.ds-children .ds-avatar img{width:30px !important;height: 30px !important;border-radius: 30px;-webkit-transition: .8s;-moz-transition: .8s;-o-transition: .8s;-ms-transition: .8s;padding:3px;background: #fff;}
-
-.ds-post:hover .ds-avatar img{transform:rotate(720deg);-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-o-transform:rotate(720deg);-ms-transform:rotate(720deg);border-radius:30px !important;}
-
-#ds-reset .ds-avatar img:hover{transform:rotate(720deg);-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-o-transform:rotate(720deg);-ms-transform:rotate(720deg);border-radius:30px !important;}
-
-#ds-thread #ds-reset .ds-comment-body, #ds-thread #ds-reset ul.ds-children .ds-comment-body{padding-left:70px !important;}
-
-#ds-thread #ds-reset .ds-comment-body, #ds-thread #ds-reset ul.ds-children .ds-comment-body{padding-left:70px !important;}
-
-.ds-post:hover{background:transparent !important;}
-
-#ds-thread #ds-reset ul.ds-children .ds-avatar{width:50px !important;}
-
-#ds-thread #ds-reset .ds-replybox{padding: 0 0 0 80px !important;}
-
-#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-body{margin-left: 68px !important;}
-
-#ds-recent-comments li.ds-comment:nth-of-type(1){border:none !important;}
-
-
-/* 隐藏 */
-.ds-sync {display:none !important;}
-
-.ds-meta {display:none !important;}
-
-.ds-comments-info {display:none !important;}
-
-.ds-replybox .ds-avatar{display: none !important;}
-
-.ds-icons-32{display: none !important;}
-
-
-/*隐藏评论总数背景及边框*/
-#ds-thread #ds-reset .ds-textarea-wrapper{border: none;background: #fcfcfc;}
-
-#ds-thread #ds-reset li.ds-post{border-top: none;}
-
-#ds-thread #ds-reset .ds-comments, #ds-thread #ds-reset .ds-paginator{border-bottom: none;}
-
-
-/*隐藏多说底部版权*/
-#ds-thread #ds-reset .ds-powered-by{display:none;}
-
-#ds-thread #ds-reset .ds-textarea-wrapper{border: none;background: #fcfcfc;}
-
-#ds-thread #ds-reset .ds-post-self{border-bottom: 1px dotted #f2f2f2;}
-
-#ds-thread #ds-reset .ds-post-options{border: none;}
-
-#ds-thread{padding-top: 80px;padding-bottom: 80px;}
-
-#ds-thread #ds-reset .ds-replybox{padding: 0 !important;}
-
-
-.ds-post-likes {display: none !important;}
-
-.ds-post-repost{display: none !important;}
-
-.ds-post-report{display: none !important;}
-
-
-.ds-icon-reply{display: none !important;}
-
-
-#ds-thread #ds-reset a.ds-user-name[data-user-id='bpplpp']:after {
-content: "博主";
-margin-left: 6px;
-font-size: 12px;
-color: #13BF20;
-background: rgba(255, 255, 255, .35);
-border-radius: 4px;
-padding: 0 3px;
+.layout-comment {
+  line-height: inherit;
+  margin-top: 1em;
 }
-
-
-#ds-thread #ds-reset .ds-replybox {background: #fafafa;padding: 0 !important;}
-
-#ds-thread #ds-reset .ds-post-button {background: #333333;}
-#ds-thread #ds-reset .ds-post-button:hover {background: #1fa0ae;}
+.layout-comment a {
+  border-bottom: none;
+}
+/* gitalk details */
+.gt-container .gt-header-comment {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 0;
+}
+.gt-container .gt-header-textarea {
+  min-height: 8.125em;
+  max-height: 15em;
+}
+.gt-container .gt-avatar-github {
+  display: none;
+}
+.gt-container .gt-avatar.gt-header-avatar {
+  display: none;
+}
+.gt-container .gt-no-init {
+  padding: 1.25em 0;
+  text-align: center;
+}
+.gt-container .gt-no-init>p {
+  text-align: center;
+}
+.gt-container .gt-meta {
+  margin: 0 0;
+  padding: 1em 0;
+  position: relative;
+  border-bottom: 0px solid #e9e9e9;
+  font-size: 1em;
+  z-index: 0;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  content: '';
+  width: 0.25em;
+  height: 0.25em;
+  background: #6190e8;
+  position: absolute;
+  left: 0.5em;
+  top: 1.2375em;
+}
+/* vline details */
+.valine .vwrap {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+.valine img {
+  display: inline-block;
+}
+.valine .vlist .vcard .vfooter .vat {
+  background: transparent;
+  color: #fff;
+  padding: 0.2em 1em;
+  line-height: 1.6;
+  cursor: pointer;
+  word-break: keep-all;
+  text-transform: uppercase;
+  display: inline-block;
+/*display: inline-block;  fix button ‘回复’ display on Firefox*/
+}
+.layout-share {
+  line-height: inherit;
+  margin-top: 1em;
+}

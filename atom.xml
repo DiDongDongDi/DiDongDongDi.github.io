@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-05-12T09:44:22.155Z</updated>
+  <updated>2019-05-26T05:17:51.351Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>teamviewer安装问题</title>
+    <link href="https://didongdongdi.github.io/2019/05/24/teamviewer%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
+    <id>https://didongdongdi.github.io/2019/05/24/teamviewer安装问题/</id>
+    <published>2019-05-24T08:53:00.000Z</published>
+    <updated>2019-05-26T05:17:51.351Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;树莓派安装teamviewer&quot;&gt;&lt;a href=&quot;#树莓派安装teamviewer&quot; class=&quot;headerlink&quot; title=&quot;树莓派安装teamviewer&quot;&gt;&lt;/a&gt;树莓派安装teamviewer&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MYSQL必知必会笔记</title>
+    <link href="https://didongdongdi.github.io/2019/05/19/MYSQL%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/"/>
+    <id>https://didongdongdi.github.io/2019/05/19/MYSQL必知必会笔记/</id>
+    <published>2019-05-19T08:12:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;了解SQL&quot;&gt;&lt;a href=&quot;#了解SQL&quot; class=&quot;headerlink&quot; title=&quot;了解SQL&quot;&gt;&lt;/a&gt;了解SQL&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;数据库&lt;br&gt;保存有组织的数据的容器(通常是一个文件或一组文件)&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ctags中文注释错误</title>
+    <link href="https://didongdongdi.github.io/2019/05/16/ctags%E4%B8%AD%E6%96%87%E6%B3%A8%E9%87%8A%E9%94%99%E8%AF%AF/"/>
+    <id>https://didongdongdi.github.io/2019/05/16/ctags中文注释错误/</id>
+    <published>2019-05-16T08:18:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;ctags-代码与中文注释同行&quot;&gt;&lt;a href=&quot;#ctags-代码与中文注释同行&quot; class=&quot;headerlink&quot; title=&quot;ctags 代码与中文注释同行&quot;&gt;&lt;/a&gt;ctags 代码与中文注释同行&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>vim按下回车后大括号自动换行缩进</title>
     <link href="https://didongdongdi.github.io/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/"/>
     <id>https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/</id>
     <published>2019-05-12T09:40:00.000Z</published>
-    <updated>2019-05-12T09:44:22.155Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -39,7 +95,7 @@
     <link href="https://didongdongdi.github.io/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/"/>
     <id>https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/</id>
     <published>2019-05-10T06:25:00.000Z</published>
-    <updated>2019-05-10T06:35:18.457Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -53,11 +109,37 @@
   </entry>
   
   <entry>
+    <title>SQL注意事项</title>
+    <link href="https://didongdongdi.github.io/2019/05/09/SQL%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://didongdongdi.github.io/2019/05/09/SQL注意事项/</id>
+    <published>2019-05-09T11:15:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql错误1215：无法添加外键&lt;br&gt;可参考&lt;a href=&quot;https://blog.csdn.net/wangpeng047/article/details/19624351&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Deepin下安装MySQL（APT Repository）</title>
     <link href="https://didongdongdi.github.io/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
     <id>https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/</id>
     <published>2019-05-08T08:42:00.000Z</published>
-    <updated>2019-05-08T11:25:15.757Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -80,7 +162,7 @@
     <link href="https://didongdongdi.github.io/2019/05/06/vimscript%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940%E2%80%94%E2%80%94%E5%8D%95%E8%A1%8C%E5%91%BD%E4%BB%A4/"/>
     <id>https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/</id>
     <published>2019-05-06T05:34:00.000Z</published>
-    <updated>2019-05-08T11:37:20.505Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -98,7 +180,7 @@
     <link href="https://didongdongdi.github.io/2019/05/04/vim%E6%96%B9%E5%90%91%E9%94%AE%E7%AD%89%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
     <id>https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/</id>
     <published>2019-05-04T13:14:00.000Z</published>
-    <updated>2019-05-06T10:37:02.614Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -116,7 +198,7 @@
     <link href="https://didongdongdi.github.io/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/"/>
     <id>https://didongdongdi.github.io/2019/04/22/操作系统笔记——0/</id>
     <published>2019-04-22T01:46:00.000Z</published>
-    <updated>2019-04-30T14:53:37.646Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -136,7 +218,7 @@
     <link href="https://didongdongdi.github.io/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/"/>
     <id>https://didongdongdi.github.io/2019/04/21/输入时自动删除后面的字/</id>
     <published>2019-04-21T12:41:00.000Z</published>
-    <updated>2019-04-21T12:44:47.283Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -154,7 +236,7 @@
     <link href="https://didongdongdi.github.io/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/"/>
     <id>https://didongdongdi.github.io/2019/04/21/计算机网络专业术语目录/</id>
     <published>2019-04-21T03:22:00.000Z</published>
-    <updated>2019-04-23T13:42:51.284Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -173,7 +255,7 @@
     <link href="https://didongdongdi.github.io/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/"/>
     <id>https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/</id>
     <published>2019-04-16T10:27:00.000Z</published>
-    <updated>2019-04-16T10:35:13.938Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -194,7 +276,7 @@
     <link href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/"/>
     <id>https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/</id>
     <published>2019-04-04T08:58:00.000Z</published>
-    <updated>2019-04-04T09:35:01.022Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -213,7 +295,7 @@
     <link href="https://didongdongdi.github.io/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/"/>
     <id>https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/</id>
     <published>2019-04-02T09:04:00.000Z</published>
-    <updated>2019-04-16T10:32:23.805Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -231,7 +313,7 @@
     <link href="https://didongdongdi.github.io/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/"/>
     <id>https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/</id>
     <published>2019-03-21T03:21:00.000Z</published>
-    <updated>2019-03-21T03:26:55.546Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -251,7 +333,7 @@
     <link href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     <id>https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</id>
     <published>2019-03-15T11:36:00.000Z</published>
-    <updated>2019-04-22T01:51:46.148Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -278,7 +360,7 @@
     <link href="https://didongdongdi.github.io/2019/03/10/Linux%E6%BA%90%E7%A0%81/"/>
     <id>https://didongdongdi.github.io/2019/03/10/Linux源码/</id>
     <published>2019-03-10T13:17:00.000Z</published>
-    <updated>2019-03-11T00:35:19.563Z</updated>
+    <updated>2019-05-26T05:15:09.000Z</updated>
     
     <summary type="html">
     
@@ -299,16 +381,38 @@
   </entry>
   
   <entry>
+    <title>Linux命令集合</title>
+    <link href="https://didongdongdi.github.io/2019/03/08/Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
+    <id>https://didongdongdi.github.io/2019/03/08/Linux命令集合/</id>
+    <published>2019-03-08T09:49:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下为一些日常积累的Linux的命令：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+      <category term="命令行" scheme="https://didongdongdi.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python中的一些坑</title>
     <link href="https://didongdongdi.github.io/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
     <id>https://didongdongdi.github.io/2019/02/16/Python中的一些坑/</id>
     <published>2019-02-16T08:20:00.000Z</published>
-    <updated>2019-02-16T08:39:52.022Z</updated>
+    <updated>2019-05-26T05:30:28.046Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;Python中没有自增或自减运算符，即没有’++’或’–’&lt;/li&gt;
+&lt;li&gt;Python中没有自增或自减运算符，即没有&lt;code&gt;++&lt;/code&gt;或&lt;code&gt;--&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -317,123 +421,6 @@
     
     
       <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/评论功能/</id>
-    <published>2019-01-19T05:51:15.957Z</published>
-    <updated>2018-09-23T05:16:40.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;作为一个完整的博客，评论功能自然是必不可少的。&lt;/p&gt;
-&lt;p&gt;而可供选择的第三方评论系统有很多，但不是被墙（如Disqus）就是停止服务（如友言、网易云跟帖），或者需要域名备案（如畅言）。&lt;/p&gt;
-&lt;p&gt;所以只能把目光投向一款来自韩国的评论系统——来必力(livere)。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
-      <category term="Livere" scheme="https://didongdongdi.github.io/tags/Livere/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性代数与解析几何笔记</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E7%AC%94%E8%AE%B0/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/线性代数与解析几何笔记/</id>
-    <published>2019-01-19T05:51:15.944Z</published>
-    <updated>2018-09-23T05:20:30.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习&lt;a href=&quot;https://space.bilibili.com/88461692/#/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;B站 3Blue1Brown 线性代数的本质 系列视频&lt;/a&gt;(我从中受益匪浅)。相信你在听了他的课程后会对线性代数有着更深一层次的理解。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="线代" scheme="https://didongdongdi.github.io/categories/%E7%BA%BF%E4%BB%A3/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客 站内搜索 配置 (swiftype)</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/站内搜索/</id>
-    <published>2019-01-19T05:51:15.936Z</published>
-    <updated>2018-09-23T05:20:18.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。&lt;/p&gt;
-&lt;p&gt;而第三方站内搜索的插件有：&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://didongdongdi.github.io/categories/Blog/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
-    
-      <category term="swiftype" scheme="https://didongdongdi.github.io/tags/swiftype/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>气象站</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/%E6%B0%94%E8%B1%A1%E7%AB%99/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/气象站/</id>
-    <published>2019-01-19T05:51:15.888Z</published>
-    <updated>2018-09-23T05:20:08.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;项目框架&quot;&gt;&lt;a href=&quot;#项目框架&quot; class=&quot;headerlink&quot; title=&quot;项目框架&quot;&gt;&lt;/a&gt;项目框架&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;气象站.jpg&quot; alt=&quot;气象站项目框架&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Projects" scheme="https://didongdongdi.github.io/categories/Projects/"/>
-    
-    
-      <category term="物联网" scheme="https://didongdongdi.github.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模拟与数字电路笔记</title>
-    <link href="https://didongdongdi.github.io/2019/01/19/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E7%AC%94%E8%AE%B0/"/>
-    <id>https://didongdongdi.github.io/2019/01/19/模拟与数字电路笔记/</id>
-    <published>2019-01-19T05:51:15.878Z</published>
-    <updated>2018-09-23T05:19:58.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;基础知识.png&quot; alt=&quot;基础知识&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="模拟与数字电路" scheme="https://didongdongdi.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-      <category term="MindMap" scheme="https://didongdongdi.github.io/tags/MindMap/"/>
     
   </entry>
   
