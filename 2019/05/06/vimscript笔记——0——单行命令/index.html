@@ -295,7 +295,7 @@
 
 	<a href="/2019/05/06/vimscript笔记——0——单行命令/" itemprop="url">
 		<time datetime="2019-05-06T05:34:00.000Z" itemprop="dateUpdated">
-	  		2019-05-26
+	  		2019-05-27
 	  </time>
 	</a> 
 
@@ -338,14 +338,14 @@
 <h1 id="Leaders"><a href="#Leaders" class="headerlink" title="Leaders"></a>Leaders</h1><p><code>let mapleader = &quot;;&quot;</code>，Leader</p>
 <p><code>:let maplocalleader = &quot;,&quot;</code>，Local Leader</p>
 <h1 id="Abreviations"><a href="#Abreviations" class="headerlink" title="Abreviations"></a>Abreviations</h1><p>用于insert、replace和command模式下</p>
-<p><code>iabbrev 替换字符 原字符</code></p>
+<p><code>iabbrev 输入字符 输出字符</code></p>
 <p>Keyword Characters，输入非字母、数字、下划线的字符就会引发abbreviations替换</p>
 <h1 id="本地缓冲区的选项设置和映射"><a href="#本地缓冲区的选项设置和映射" class="headerlink" title="本地缓冲区的选项设置和映射"></a>本地缓冲区的选项设置和映射</h1><p>映射，e.g. <code>:nnoremap &lt;buffer&gt; &lt;localleader&gt;x dd</code></p>
 <p>设置，<code>:setlocal &lt;name&gt;</code> <code>:setlocal no&lt;name&gt;</code></p>
 <p>遮盖，本地缓冲区的映射会遮盖全局的映射</p>
 <h1 id="自动命令"><a href="#自动命令" class="headerlink" title="自动命令"></a>自动命令</h1><p><code>autocmd &lt;event0&gt;,&lt;event1&gt;,... &lt;pattern&gt; :&lt;command&gt;</code></p>
 <p>FileType事件，e.g. <code>autocmd FileType python nnoremap &lt;buffer&gt; &lt;localleader&gt;c I#&lt;esc&gt;</code></p>
-<h1 id="本地缓冲区缩写"><a href="#本地缓冲区缩写" class="headerlink" title="本地缓冲区缩写"></a>本地缓冲区缩写</h1><p><code>iabbrev &lt;buffer&gt; 替换字符 原字符</code></p>
+<h1 id="本地缓冲区缩写"><a href="#本地缓冲区缩写" class="headerlink" title="本地缓冲区缩写"></a>本地缓冲区缩写</h1><p><code>iabbrev &lt;buffer&gt; 输入字符 输出字符</code></p>
 <h1 id="自动命令组"><a href="#自动命令组" class="headerlink" title="自动命令组"></a>自动命令组</h1><p>为防止<code>.vimrc</code>中的<code>autocmd ...</code>自动命令被重复加载，需要将其放置在自动命令组中，并在自动命令组开头加上清除命令：</p>
 <p>e.g. </p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:<span class="keyword">augroup</span> testgroup</span><br><span class="line">:	autocmd!</span><br><span class="line">:	<span class="keyword">autocmd</span> BufWrite * :<span class="keyword">echom</span> <span class="string">"Cats"</span></span><br><span class="line">:<span class="keyword">augroup</span> END</span><br></pre></td></tr></table></figure>
