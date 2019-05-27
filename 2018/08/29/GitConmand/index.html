@@ -49,7 +49,7 @@
 
 
 <!-- header -->
-<header class="fixbackground" data-img-mode="random" data-normal-src="/img/0.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+<header class="fixbackground" data-img-mode="normal" data-normal-src="https://source.unsplash.com/collection/954550/1920x1080" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
 	<div class="mask">
 		<!-- Logo and navigation -->
 		<div class="h-header">
@@ -315,6 +315,46 @@
 	
 	<div id="current-post-cover" data-scr="http://static.simpledesktops.com/uploads/desktops/2018/07/29/night.png"></div>
 
+	
+    	<! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           如果觉得我的文章对您有用, 请随意打赏. 您的支持将鼓励我继续创作!
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一： 
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src=""
+                <img src=""
+        -->
+        <!-- 支付宝打赏图案 -->
+        <img src="/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- 微信打赏图案 -->
+        <img src="/img/WeChatpay.jpg" alt="微信打赏">
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+	
+
 	<!-- relate post, comment...-->
 	<div class="investment-container">
 		<div class="investment-header">
@@ -333,7 +373,7 @@
 			</a>
 		
 		
-			<a href="/2018/05/26/Qt5教程/" title="Qt5教程" rel="next">
+			<a href="/2018/05/26/Mixed/" title="English Mixed" rel="next">
 				Next post&raquo;
 			</a>
 			
@@ -669,14 +709,16 @@ mysql错误1215：无法添加外键可参考https://blog.csdn.net/wangpeng047/a
 	
 
 		
-			
-			<!-- socialShare share -->
-			<div class="social-share"></div>
 
-<!--  css & js -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-			
+			<!-- addThis share -->
+			<!-- www.addthis.com/dashboard -->
+
+	<div class="addthis_inline_share_toolbox">
+	</div>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
+
+
 		
 		
 	
@@ -840,6 +882,7 @@ mysql错误1215：无法添加外键可参考https://blog.csdn.net/wangpeng047/a
 		});
 	}
 </script>
+
 		</main>
 
 		<!--footer-->
@@ -877,13 +920,14 @@ mysql错误1215：无法添加外键可参考https://blog.csdn.net/wangpeng047/a
 
 
 		</p>
-		<p>
+<!--		<p>
 			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
 			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
 			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
-		</p>
+		</p> -->
 	</div>		
 </footer>
+
 		
 	<!-- set '1' to show motto in all pages! -->
 
