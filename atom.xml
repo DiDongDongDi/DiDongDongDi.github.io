@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DIDA LAB</title>
+  
+  <subtitle>DiDong&#39;s Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://didongdongdi.github.io/"/>
+  <updated>2019-05-26T05:15:09.000Z</updated>
+  <id>https://didongdongdi.github.io/</id>
+  
+  <author>
+    <name>DiDong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>teamviewer安装问题</title>
+    <link href="https://didongdongdi.github.io/2019/05/24/teamviewer%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
+    <id>https://didongdongdi.github.io/2019/05/24/teamviewer安装问题/</id>
+    <published>2019-05-24T08:53:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;树莓派安装teamviewer&quot;&gt;&lt;a href=&quot;#树莓派安装teamviewer&quot; class=&quot;headerlink&quot; title=&quot;树莓派安装teamviewer&quot;&gt;&lt;/a&gt;树莓派安装teamviewer&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MYSQL必知必会笔记</title>
+    <link href="https://didongdongdi.github.io/2019/05/19/MYSQL%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/"/>
+    <id>https://didongdongdi.github.io/2019/05/19/MYSQL必知必会笔记/</id>
+    <published>2019-05-19T08:12:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;了解SQL&quot;&gt;&lt;a href=&quot;#了解SQL&quot; class=&quot;headerlink&quot; title=&quot;了解SQL&quot;&gt;&lt;/a&gt;了解SQL&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;数据库&lt;br&gt;保存有组织的数据的容器(通常是一个文件或一组文件)&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ctags中文注释错误</title>
+    <link href="https://didongdongdi.github.io/2019/05/16/ctags%E4%B8%AD%E6%96%87%E6%B3%A8%E9%87%8A%E9%94%99%E8%AF%AF/"/>
+    <id>https://didongdongdi.github.io/2019/05/16/ctags中文注释错误/</id>
+    <published>2019-05-16T08:18:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;ctags-代码与中文注释同行&quot;&gt;&lt;a href=&quot;#ctags-代码与中文注释同行&quot; class=&quot;headerlink&quot; title=&quot;ctags 代码与中文注释同行&quot;&gt;&lt;/a&gt;ctags 代码与中文注释同行&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vim按下回车后大括号自动换行缩进</title>
+    <link href="https://didongdongdi.github.io/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/"/>
+    <id>https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/</id>
+    <published>2019-05-12T09:40:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题描述: 在一对大括号之间回车，自动分为3行并调整缩进&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Deepin搜狗拼音输入法故障</title>
+    <link href="https://didongdongdi.github.io/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/"/>
+    <id>https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/</id>
+    <published>2019-05-10T06:25:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;a href=&quot;#Deepin搜狗拼音输入法故障&quot; class=&quot;headerlink&quot; title=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;/a&gt;Deepin搜狗拼音输入法故障&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SQL注意事项</title>
+    <link href="https://didongdongdi.github.io/2019/05/09/SQL%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://didongdongdi.github.io/2019/05/09/SQL注意事项/</id>
+    <published>2019-05-09T11:15:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql错误1215：无法添加外键&lt;br&gt;可参考&lt;a href=&quot;https://blog.csdn.net/wangpeng047/article/details/19624351&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Deepin下安装MySQL（APT Repository）</title>
+    <link href="https://didongdongdi.github.io/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
+    <id>https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/</id>
+    <published>2019-05-08T08:42:00.000Z</published>
+    <updated>2019-05-29T13:40:25.641Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文参考自&lt;a href=&quot;https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;添加APT库&quot;&gt;&lt;a href=&quot;#添加APT库&quot; class=&quot;headerlink&quot; title=&quot;添加APT库&quot;&gt;&lt;/a&gt;添加APT库&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;下载APT库&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vimscript笔记——0——单行命令</title>
+    <link href="https://didongdongdi.github.io/2019/05/06/vimscript%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940%E2%80%94%E2%80%94%E5%8D%95%E8%A1%8C%E5%91%BD%E4%BB%A4/"/>
+    <id>https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/</id>
+    <published>2019-05-06T05:34:00.000Z</published>
+    <updated>2019-05-27T05:39:44.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;预备知识&quot;&gt;&lt;a href=&quot;#预备知识&quot; class=&quot;headerlink&quot; title=&quot;预备知识&quot;&gt;&lt;/a&gt;预备知识&lt;/h1&gt;&lt;p&gt;&lt;code&gt;:echo $MYVIMRC&lt;/code&gt;得知&lt;code&gt;.vimrc&lt;/code&gt;文件的位置&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vim方向键等功能按键和鼠标乱码解决</title>
+    <link href="https://didongdongdi.github.io/2019/05/04/vim%E6%96%B9%E5%90%91%E9%94%AE%E7%AD%89%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
+    <id>https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/</id>
+    <published>2019-05-04T13:14:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h1&gt;&lt;p&gt;突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用&lt;code&gt;set compatible&lt;/code&gt;的方案，而我的&lt;code&gt;.vimrc&lt;/code&gt;文件中已经有这句话了，只好采用了不是特别完美的解决方案&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统笔记——0</title>
+    <link href="https://didongdongdi.github.io/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/"/>
+    <id>https://didongdongdi.github.io/2019/04/22/操作系统笔记——0/</id>
+    <published>2019-04-22T01:46:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="OS" scheme="https://didongdongdi.github.io/categories/OS/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>输入时自动删除后面的字</title>
+    <link href="https://didongdongdi.github.io/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/"/>
+    <id>https://didongdongdi.github.io/2019/04/21/输入时自动删除后面的字/</id>
+    <published>2019-04-21T12:41:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;按下键盘上的&lt;code&gt;insert&lt;/code&gt;键，将输入模式改为&lt;code&gt;插入&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络专业术语目录（附解释）</title>
+    <link href="https://didongdongdi.github.io/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/"/>
+    <id>https://didongdongdi.github.io/2019/04/21/计算机网络专业术语目录/</id>
+    <published>2019-04-21T03:22:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;整个目录参考自&lt;a href=&quot;https://wenku.baidu.com/view/f5b7e76e26d3240c844769eae009581b6bd9bd9f.html?re=view&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度文库&lt;/a&gt;；增加了某些名词；增加了解释；目录并不完整，解释也有可能并不全面甚至空白，或者存在错误，还请指正。&lt;/p&gt;
+&lt;h1 id=&quot;计算机网络专业术语目录&quot;&gt;&lt;a href=&quot;#计算机网络专业术语目录&quot; class=&quot;headerlink&quot; title=&quot;计算机网络专业术语目录&quot;&gt;&lt;/a&gt;计算机网络专业术语目录&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="计算机网络" scheme="https://didongdongdi.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用extundelete恢复linux上已删除的文件</title>
+    <link href="https://didongdongdi.github.io/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/"/>
+    <id>https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/</id>
+    <published>2019-04-16T10:27:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;参考网址&quot;&gt;&lt;a href=&quot;#参考网址&quot; class=&quot;headerlink&quot; title=&quot;参考网址&quot;&gt;&lt;/a&gt;参考网址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://blog.51cto.com/ityunwei2017/2328570?source=dra&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.51cto.com/ityunwei2017/2328570?source=dra&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://extundelete.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://extundelete.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>YouCompleteMe安装配置使用</title>
+    <link href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/"/>
+    <id>https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/</id>
+    <published>2019-04-04T08:58:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;vim相关&quot;&gt;&lt;a href=&quot;#vim相关&quot; class=&quot;headerlink&quot; title=&quot;vim相关&quot;&gt;&lt;/a&gt;vim相关&lt;/h1&gt;&lt;p&gt;vim的version必须为7.4+，同时要支持Python/Python3，查看命令&lt;code&gt;vim --version&lt;/code&gt;，支持的话，前面会有&lt;code&gt;+&lt;/code&gt;，否则为&lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果不支持Python或者vim版本太低，需要重新编译安装vim&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>chrome视频画面卡顿，声音无影响</title>
+    <link href="https://didongdongdi.github.io/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/"/>
+    <id>https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/</id>
+    <published>2019-04-02T09:04:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Chrome的话，使用WebRTC，本身不支持H.264（国内视频网站多用这个来编码），但是支持VP8（目前主流，Youtube使用VP8（性能和H264差不多）,现在逐步走向VP9（性能和H265差不多），所以H264采用的是外部的解码，因此可能性能上会略差。 另外实际测试的时候，相同掉包率情况下，VP8的画面丢失和花屏的情况要远好过H264（WebRTC下）。转自知乎&lt;a href=&quot;https://www.zhihu.com/question/24577802/answer/30131255&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Lennith的回答&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Deepin扩展显示屏失败</title>
+    <link href="https://didongdongdi.github.io/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/"/>
+    <id>https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/</id>
+    <published>2019-03-21T03:21:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="Deepin" scheme="https://didongdongdi.github.io/tags/Deepin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FTP命令问题解决</title>
+    <link href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <id>https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/</id>
+    <published>2019-03-15T11:36:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;发现系统中没有ftp命令，安装ftp&lt;/li&gt;
+&lt;li&gt;ftp连接到树莓派失败，显示&lt;code&gt;ftp:connect:Connection refused&lt;/code&gt;，尝试127.0.0.1一样&lt;/li&gt;
+&lt;li&gt;猜测可能是21端口未开放，执行&lt;code&gt;netstat -tln&lt;/code&gt;查看端口号情况，发现确实如此&lt;/li&gt;
+&lt;li&gt;尝试vsftpd，没有该命令，安装vsftpd&lt;/li&gt;
+&lt;li&gt;执行vsftpd，显示&lt;code&gt;500 OOPS: could not bind listening IPv6 socket&lt;/code&gt;，问题不大，因为不需要用到ipv6
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+      <category term="Command" scheme="https://didongdongdi.github.io/tags/Command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux内核源码分析</title>
+    <link href="https://didongdongdi.github.io/2019/03/10/Linux%E6%BA%90%E7%A0%81/"/>
+    <id>https://didongdongdi.github.io/2019/03/10/Linux源码/</id>
+    <published>2019-03-10T13:17:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;如何获取linux内核源码？&lt;br&gt;一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux内核源码查看网址推荐：&lt;a href=&quot;https://elixir.bootlin.com/linux/latest/source&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://elixir.bootlin.com/linux/latest/source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux命令集合</title>
+    <link href="https://didongdongdi.github.io/2019/03/08/Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
+    <id>https://didongdongdi.github.io/2019/03/08/Linux命令集合/</id>
+    <published>2019-03-08T09:49:00.000Z</published>
+    <updated>2019-05-26T05:15:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下为一些日常积累的Linux的命令：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
+    
+      <category term="命令行" scheme="https://didongdongdi.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中的一些坑</title>
+    <link href="https://didongdongdi.github.io/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
+    <id>https://didongdongdi.github.io/2019/02/16/Python中的一些坑/</id>
+    <published>2019-02-16T08:20:00.000Z</published>
+    <updated>2019-05-26T05:30:28.046Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;Python中没有自增或自减运算符，即没有&lt;code&gt;++&lt;/code&gt;或&lt;code&gt;--&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="https://didongdongdi.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
+    
+  </entry>
+  
+</feed>
