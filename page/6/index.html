@@ -430,32 +430,17 @@ swiftype网站配置
 				<div class="post-title" id="post-title-index">			
 					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					
-	<a href="/2018/05/26/Flipped_Week3/" itemprop="url">
-		Flipped (Week3)
+	<a href="/2018/05/26/CNAME/" itemprop="url">
+		github pages 出现 “the CNAME is already taken” 的解决办法
 	</a>
 
 				</div>
 
 				<div class="post-content">
 					
-						2018-07-11-p141, stalk  [stɔːk]
-n. （植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步
-vt. 追踪，潜近；高视阔步
-vi. 高视阔步地走；潜近，偷偷接近
+						之前因为每次deploy博客后，都会出现绑定的域名指向 github 404 的情况，原因是 setting 下github pages 的 custom domain 清空了，需要重新设置来生成CNAME文件。为了避免每次都去设置，于是按照网上的方法，在博客的source目录下安放了CNAME文件。然后重新deploy，结果访问绑定的域名仍旧是404。再回到 setting 的 github pages ，提示 “the CNAME is already taken” 。
 
-2, flinch  [‘flɪn(t)ʃ]
-vi. 退缩；畏惧
-n. 退缩；畏惧
-3, look away  
-转移目光；扭头看别处；把脸转过去
-4, pass the salt  
-递食盐
-爱已消失，覆水难收（俗语）
-5, prejudice  [‘predʒʊdɪs]
-n. 偏见；侵害
-vt. 损害；使有偏见
-6, dismiss  [dɪs’mɪs]
-vt. 解散；解雇；开除；...
+然后在网上到处搜索包括看官方的文档也没找到靠谱的解决方案。最后不得已请求 github support ，然后收...
 					
 				</div>
 				
@@ -470,7 +455,7 @@ vt. 解散；解雇；开除；...
 
 
 
-	<a href="/2018/05/26/Flipped_Week3/" itemprop="url">
+	<a href="/2018/05/26/CNAME/" itemprop="url">
 		<time datetime="2018-05-26T05:17:00.000Z" itemprop="datePublished">
 	  		2018-05-26
 	  </time>
@@ -509,7 +494,7 @@ vt. 解散；解雇；开除；...
 
 					
 						<span class="right">      	
-							<a href="/2018/05/26/Flipped_Week3/" title="View all">View all</a>	
+							<a href="/2018/05/26/CNAME/" title="View all">View all</a>	
 						</span>
 					
 				</div>
@@ -521,24 +506,25 @@ vt. 解散；解雇；开除；...
 				<div class="post-title" id="post-title-index">			
 					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					
-	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
-		C++之名称空间
+	<a href="/2018/05/26/Mixed/" itemprop="url">
+		English Mixed
 	</a>
 
 				</div>
 
 				<div class="post-content">
 					
-						传统的C++名称空间一些术语
+						#2018-06-16
+Independence Dayaerial // 空中的；航空的
+petty //小的；琐碎的
+fate //n.命运 v.注定
 
-声明区域
-潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。
-
-
-
-C++关于全局变量和局部变量的规则定义了一种名称空间层次。每个声明区域都可以声明名称，这些名称独立于在其他声明区域中声明的名称。在一个函数中声明的局部变量不会与在另一个函数中声明的局部变量发生冲突。
-
-新的名称空间的特性C++新增了这样一种功能，即通过定义一种新的声明区域来创建命名的名称空间，这样做的目的之一是提供一个...
+Not from tyranny, oppression, or persecution, but from annihilation.
+//不是来自暴政、压迫或是迫害，而是来自消灭。
+vanish //v.消失；绝迹
+East or west, home is the best. //金窝银窝不如自己的狗窝。
+#2018-06-09
+love your curves and all your edges ,all your per...
 					
 				</div>
 				
@@ -553,8 +539,8 @@ C++关于全局变量和局部变量的规则定义了一种名称空间层次�
 
 
 
-	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
-		<time datetime="2018-05-25T17:26:00.000Z" itemprop="datePublished">
+	<a href="/2018/05/26/Mixed/" itemprop="url">
+		<time datetime="2018-05-26T05:17:00.000Z" itemprop="datePublished">
 	  		2018-05-26
 	  </time>
 	</a> 
@@ -592,7 +578,7 @@ C++关于全局变量和局部变量的规则定义了一种名称空间层次�
 
 					
 						<span class="right">      	
-							<a href="/2018/05/26/CPP之名称空间/" title="View all">View all</a>	
+							<a href="/2018/05/26/Mixed/" title="View all">View all</a>	
 						</span>
 					
 				</div>
@@ -763,6 +749,89 @@ STM32 Snippets代码示例的集合，直接基于STM32外设寄存器，可在�
 					
 						<span class="right">      	
 							<a href="/2018/05/26/STM32之库开发/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
+	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
+		C++之名称空间
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						传统的C++名称空间一些术语
+
+声明区域
+潜在作用域变量的潜在作用域从声明点开始，到其声明区域的结尾。因此潜在作用域的比声明区域小，这是由于变量必须定义后才能使用。变量并非在其潜在作用域内的任何位置都是可见的。例如，它可能被另一个在嵌套声明区域中声明的同名变量隐藏。
+
+
+
+C++关于全局变量和局部变量的规则定义了一种名称空间层次。每个声明区域都可以声明名称，这些名称独立于在其他声明区域中声明的名称。在一个函数中声明的局部变量不会与在另一个函数中声明的局部变量发生冲突。
+
+新的名称空间的特性C++新增了这样一种功能，即通过定义一种新的声明区域来创建命名的名称空间，这样做的目的之一是提供一个...
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2018/05/26/CPP之名称空间/" itemprop="url">
+		<time datetime="2018-05-25T17:26:00.000Z" itemprop="datePublished">
+	  		2018-05-26
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2018/05/26/CPP之名称空间/" title="View all">View all</a>	
 						</span>
 					
 				</div>

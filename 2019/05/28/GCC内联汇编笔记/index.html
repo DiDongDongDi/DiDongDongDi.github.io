@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      vimscript笔记——0——单行命令 | DIDA LAB
+      GCC内联汇编笔记 | DIDA LAB
     
   </title>
   <meta name="author" content="DiDong">
@@ -164,7 +164,7 @@
 	<!-- Page title -->
 	<p>
 		
-			Current post&nbsp;:&nbsp;《vimscript笔记——0——单行命令》
+			Current post&nbsp;:&nbsp;《GCC内联汇编笔记》
 		
 	</p>
 
@@ -261,8 +261,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/05/06/vimscript笔记——0——单行命令/" itemprop="url">
-		vimscript笔记——0——单行命令
+	<a href="/2019/05/28/GCC内联汇编笔记/" itemprop="url">
+		GCC内联汇编笔记
 	</a>
 
 	</div>
@@ -275,9 +275,9 @@
 
 	Posted on
 
-	<a href="/2019/05/06/vimscript笔记——0——单行命令/" itemprop="url">
-		<time datetime="2019-05-06T05:34:00.000Z" itemprop="datePublished">
-	  		2019-05-06
+	<a href="/2019/05/28/GCC内联汇编笔记/" itemprop="url">
+		<time datetime="2019-05-28T06:29:00.000Z" itemprop="datePublished">
+	  		2019-05-28
 	  </time>
 	</a>
 	&nbsp;
@@ -293,9 +293,9 @@
 
 	Updated on
 
-	<a href="/2019/05/06/vimscript笔记——0——单行命令/" itemprop="url">
-		<time datetime="2019-05-06T05:34:00.000Z" itemprop="dateUpdated">
-	  		2019-05-27
+	<a href="/2019/05/28/GCC内联汇编笔记/" itemprop="url">
+		<time datetime="2019-05-28T06:29:00.000Z" itemprop="dateUpdated">
+	  		2019-06-03
 	  </time>
 	</a> 
 
@@ -314,87 +314,331 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<h1 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h1><p><code>:echo $MYVIMRC</code>得知<code>.vimrc</code>文件的位置</p>
-<a id="more"></a>
-<h1 id="打印信息"><a href="#打印信息" class="headerlink" title="打印信息"></a>打印信息</h1><p><code>:echo &quot;Hello, world!</code>，信息不会保存</p>
-<p><code>:echom &quot;Hello, world!</code>，信息会保存</p>
-<p><code>:messages</code>，查看信息</p>
-<h1 id="设置选项"><a href="#设置选项" class="headerlink" title="设置选项"></a>设置选项</h1><p><code>:set &lt;name&gt;</code>，打开选项</p>
-<p><code>:set no&lt;name&gt;</code>，关闭选项</p>
-<p><code>:set &lt;name&gt;!</code>，切换选项</p>
-<p><code>:set &lt;name&gt;?</code>，查看选项当前值</p>
-<p><code>:set &lt;name&gt;=&lt;value&gt;</code>，改变非布尔选项的选项值</p>
-<p><code>:set &lt;name&gt; no&lt;name&gt; &lt;name&gt;=&lt;value&gt; ...</code>，设置多个选项的值</p>
-<h1 id="基本映射"><a href="#基本映射" class="headerlink" title="基本映射"></a>基本映射</h1><p><code>:map 映射命令 原命令</code></p>
-<p><code>&lt;keyname&gt;</code>可用于特殊字符（按键）</p>
-<h1 id="模式映射"><a href="#模式映射" class="headerlink" title="模式映射"></a>模式映射</h1><p><code>nmap</code>，normal模式下有效</p>
-<p><code>vmap</code>，visual模式下有效</p>
-<p><code>imap</code>，insert模式下有效</p>
-<h1 id="精确映射"><a href="#精确映射" class="headerlink" title="精确映射"></a>精确映射</h1><p>非递归映射，任何时候使用</p>
-<p><code>noremap</code>，任何模式下有效</p>
-<p><code>nnoremap</code>，normal模式下有效</p>
-<p><code>vnoremap</code>，visual模式下有效</p>
-<p><code>inoremap</code>，insert模式下有效</p>
-<h1 id="Leaders"><a href="#Leaders" class="headerlink" title="Leaders"></a>Leaders</h1><p><code>let mapleader = &quot;;&quot;</code>，Leader</p>
-<p><code>:let maplocalleader = &quot;,&quot;</code>，Local Leader</p>
-<h1 id="Abreviations"><a href="#Abreviations" class="headerlink" title="Abreviations"></a>Abreviations</h1><p>用于insert、replace和command模式下</p>
-<p><code>iabbrev 输入字符 输出字符</code></p>
-<p>Keyword Characters，输入非字母、数字、下划线的字符就会引发abbreviations替换</p>
-<h1 id="本地缓冲区的选项设置和映射"><a href="#本地缓冲区的选项设置和映射" class="headerlink" title="本地缓冲区的选项设置和映射"></a>本地缓冲区的选项设置和映射</h1><p>映射，e.g. <code>:nnoremap &lt;buffer&gt; &lt;localleader&gt;x dd</code></p>
-<p>设置，<code>:setlocal &lt;name&gt;</code> <code>:setlocal no&lt;name&gt;</code></p>
-<p>遮盖，本地缓冲区的映射会遮盖全局的映射</p>
-<h1 id="自动命令"><a href="#自动命令" class="headerlink" title="自动命令"></a>自动命令</h1><p><code>autocmd &lt;event0&gt;,&lt;event1&gt;,... &lt;pattern&gt; :&lt;command&gt;</code></p>
-<p>FileType事件，e.g. <code>autocmd FileType python nnoremap &lt;buffer&gt; &lt;localleader&gt;c I#&lt;esc&gt;</code></p>
-<h1 id="本地缓冲区缩写"><a href="#本地缓冲区缩写" class="headerlink" title="本地缓冲区缩写"></a>本地缓冲区缩写</h1><p><code>iabbrev &lt;buffer&gt; 输入字符 输出字符</code></p>
-<h1 id="自动命令组"><a href="#自动命令组" class="headerlink" title="自动命令组"></a>自动命令组</h1><p>为防止<code>.vimrc</code>中的<code>autocmd ...</code>自动命令被重复加载，需要将其放置在自动命令组中，并在自动命令组开头加上清除命令：</p>
-<p>e.g. </p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:<span class="keyword">augroup</span> testgroup</span><br><span class="line">:	autocmd!</span><br><span class="line">:	<span class="keyword">autocmd</span> BufWrite * :<span class="keyword">echom</span> <span class="string">"Cats"</span></span><br><span class="line">:<span class="keyword">augroup</span> END</span><br></pre></td></tr></table></figure>
-<h1 id="Operator-Pending映射"><a href="#Operator-Pending映射" class="headerlink" title="Operator-Pending映射"></a>Operator-Pending映射</h1><p>一个Operator（操作）就是一个命令，你可以在这个命令的后面输入一个Movement（移动）命令，然后Vim开始对文本执行前面的操作命令，这个操作命令会从你当前所在的位置开始执行，一直到这个移动命令会把你带到的位置结束。</p>
-<p>常用Operator有<code>d</code>、<code>y</code>和<code>c</code>，e.g.</p>
+		<h1 id="什么是内联汇编"><a href="#什么是内联汇编" class="headerlink" title="什么是内联汇编?"></a>什么是内联汇编?</h1><blockquote>
+<p>内联函数<br>我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方</p>
+</blockquote>
+<blockquote>
+<p>inline(内联)的作用<br>减少函数调用开销, 同时如果所有实参的值为常量, 它们的已知值可以再编译期允许简化, 因此并非所有的内联函数代码都需要被包含进去, 代码大小的影响是不可预测的, 这取决于特定的情况</p>
+</blockquote>
+<blockquote>
+<p>内联汇编<br>写为内联函数的汇编程序<br>可以操作并且使其输出通过通过C变量显示出来, 因此<code>asm</code>可作为汇编指令和包含它的C程序之间的接口</p>
+</blockquote>
+<h1 id="源操作数和目的操作数顺序"><a href="#源操作数和目的操作数顺序" class="headerlink" title="源操作数和目的操作数顺序"></a>源操作数和目的操作数顺序</h1><p>Op-code src dst (Intel语法相反)</p>
+<h1 id="寄存器命名"><a href="#寄存器命名" class="headerlink" title="寄存器命名"></a>寄存器命名</h1><p>%eax</p>
+<h1 id="立即数"><a href="#立即数" class="headerlink" title="立即数"></a>立即数</h1><p>$0xFFFF</p>
+<h1 id="操作数大小"><a href="#操作数大小" class="headerlink" title="操作数大小"></a>操作数大小</h1><p>取决于操作码名字的最后一个字符</p>
 <table>
 <thead>
 <tr>
-<th>按键</th>
-<th>操作</th>
-<th>移动</th>
+<th style="text-align:center">AT&amp;T</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">w</th>
+<th style="text-align:center">l</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>dw</td>
-<td>删除</td>
-<td>到下一个单词</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">字节</td>
+<td style="text-align:center">字</td>
+<td style="text-align:center">长型</td>
 </tr>
 <tr>
-<td>ci(</td>
-<td>修改</td>
-<td>在括号内</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">32</td>
 </tr>
 <tr>
-<td>yt,</td>
-<td>复制</td>
-<td>到到逗号</td>
+<td style="text-align:center">Intel</td>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">word</td>
+<td style="text-align:center">dword</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">ptr</td>
+<td style="text-align:center">ptr</td>
+<td style="text-align:center">ptr</td>
 </tr>
 </tbody>
 </table>
-<p>Movement映射，<code>:onoremap 映射命令 原命令</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">AT&amp;T</th>
+<th style="text-align:center">movb foo, %al</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Intel</td>
+<td style="text-align:center">mov al, byte ptr foo</td>
+</tr>
+</tbody>
+</table>
+<h1 id="存储器操作数"><a href="#存储器操作数" class="headerlink" title="存储器操作数"></a>存储器操作数</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">AT&amp;T</th>
+<th style="text-align:center">section:disp(base, index, scale)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Intel</td>
+<td style="text-align:center">section:[base + index*scale + disp]</td>
+</tr>
+</tbody>
+</table>
+<p>注意: 当一个常量用于disp或scale, 不能添加<code>$</code>前缀</p>
 <blockquote>
-<p> 下面两条规则可以让你可以很直观的以多种方式创建operator-pending映射：</p>
+<p>base: 基址寄存器 ebx<br>index: 索引(寄存器)<br>scale: 比例(数值)<br>disp: 位移(数值)</p>
+</blockquote>
+<h1 id="基本内联"><a href="#基本内联" class="headerlink" title="基本内联"></a>基本内联</h1><blockquote>
+<p>asm(“汇编代码”); 或者 <strong>asm</strong>(“汇编代码”);<br>采用后者的原因: asm和标识符冲突时, 或是为了与ANSI C兼容</p>
+</blockquote>
+<blockquote>
+<p>指令多于一条</p>
 <ul>
-<li>如果你的operator-pending映射以在可视模式下选中文本结束，Vim会操作这些文本。</li>
-<li>否则，Vim会操作从光标的原始位置到一个新位置之间的文本。</li>
+<li>每个一行</li>
+<li>用双引号圈起</li>
+<li>每条指令添加后缀<code>\n\t</code><blockquote>
+<ul>
+<li>gcc将每一条当做字符串发送给as(GAS, GNU汇编器), 并且通过使用<code>\n\t</code>发送正确格式化后的行给汇编器</li>
 </ul>
 </blockquote>
-<p>e.g. <code>:onoremap ah :&lt;c-u&gt;execute &quot;normal! ?^==\\+\r:nohlsearch\rg_vk0&quot;&lt;cr&gt;</code></p>
-<p><code>execute</code>用于替换字符串中的所有特殊字符串</p>
-<p><code>normal!</code>用于执行后面的字符</p>
-<h1 id="状态条"><a href="#状态条" class="headerlink" title="状态条"></a>状态条</h1><p>状态条中代码的通用格式：<code>%-0{minwid}.{maxwid}{item}</code>，除了<code>%</code>和<code>item</code>外其他都是可选的</p>
-<p>分割，可以使用<code>+=</code>来一条一条地定义要显示的代码</p>
-<p>本文地址 <a href="https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/">https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/</a> </p>
+</li>
+</ul>
+</blockquote>
+<p>e.g.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">__asm__(<span class="string">"movl %eax, %ebx\n\t"</span></span><br><span class="line">		<span class="string">"movl $56, %esi\n\t"</span></span><br><span class="line">		<span class="string">"movl %ecx, $label(%edx, %ebx, $4)\n\t"</span></span><br><span class="line">		<span class="string">"movb %ah, (%ebx)"</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="扩展汇编"><a href="#扩展汇编" class="headerlink" title="扩展汇编"></a>扩展汇编</h1><h2 id="为什么需要扩展汇编"><a href="#为什么需要扩展汇编" class="headerlink" title="为什么需要扩展汇编?"></a>为什么需要扩展汇编?</h2><blockquote>
+<p>如果在代码中, 我们涉及到一些寄存器(即改变其内容), 但在没有恢复这些变化的情况下从汇编中返回, 将会导致一些意想不到的事情.<br>这是因为GCC并不知道寄存器内容的变化, 这会导致问题, 特别是当编译器做了某些优化.<br>在没有告知GCC的情况下, 他将会假设一些寄存器存储了一些值, 而我们可能已经改变却没有告知GCC, 它会像什么事都没发生一样(GCC不会假设寄存器装入的值是有效的, 当退出改变了寄存器值的内联汇编后, 寄存器的值不会保存到相应的变量或内存空间)继续运行.<br>我们可以做的是, 使用那些没有副作用的指令, 或者当我们退出时恢复这些寄存器, 要不就等着程序崩溃.<br>这就是为什么我们需要一些扩展功能, 扩展汇编给我们提供了那些功能.</p>
+</blockquote>
+<h2 id="扩展汇编的使用"><a href="#扩展汇编的使用" class="headerlink" title="扩展汇编的使用"></a>扩展汇编的使用</h2><blockquote>
+<p>扩展汇编中, 我们可以同时指定操作数.<br>它允许我们指定输入寄存器, 输出寄存器以及修饰寄存器列表.<br>GCC不强制用户必须指定使用的寄存器.<br>我们可以把头疼的事留给GCC, 这可能可以更好地适应GCC的优化.</p>
+</blockquote>
+<p>结构:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">asm</span>(汇编语句</span><br><span class="line">:输出操作数<span class="comment">/*可选的*/</span></span><br><span class="line">:输入操作数<span class="comment">/*可选的*/</span></span><br><span class="line">:修饰寄存器列表<span class="comment">/*可选的*/</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>每一个操作数由一个操作数字符串所描述, 其后紧接一个括弧括起的C表达式.<br>逗号用于分离每一个组内的操作数.<br>总操作数的数目限制在10个, 或者机器描述中的任何指令格式中的最大操作数数目, 以较大者为准.<br>如果没有输出操作数但存在输入操作数, 你必须将两个连续的冒号放置于输出操作数原本会放置的地方周围.</p>
+</blockquote>
+<p>e.g.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用汇编指令使b变量的值等于a变量的值</span></span><br><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>, b;</span><br><span class="line"><span class="keyword">asm</span>(<span class="string">"movl %1, %%eax;</span></span><br><span class="line"><span class="string">	movl %%eax, %0;"</span></span><br><span class="line">	:<span class="string">"=r"</span>(b)	<span class="comment">/*输出*/</span></span><br><span class="line">	:<span class="string">"r"</span>(a)		<span class="comment">/*输入*/</span></span><br><span class="line">	:<span class="string">"%eax"</span>);	<span class="comment">/*修饰寄存器*/</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意:</p>
+<ol>
+<li><code>b</code>为输出操作数, 用<code>%0</code>引用; <code>a</code>为输入操作数, 用<code>%1</code>引用</li>
+<li><code>r</code>为操作数约束, <code>r</code>告诉GCC可以使用任意寄存器存储操作数; 输出操作数应该有一个约束修饰符<code>=</code>, 表明它是一个只写的输出操作数.</li>
+<li>寄存器名字以<code>%%</code>为前缀, 这有利于GCC区分操作数和寄存器, 操作数以<code>%</code>为前缀; 第三个冒号之后的修饰寄存器<code>%eax</code>用于告诉GCC<code>%eax</code>的值将会在asm内部被修改, 所以GCC将不会使用此寄存器存储任何其他值.</li>
+<li>当asm执行完毕, b变量会映射到更新的值, 因为它被指定为输出操作数; 换句话说asm内b变量的修改应该会被映射到asm外部.</li>
+</ol>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote>
+<p>约束字符串主要用于决定操作数的寻址方式, 同时也用于指定使用的寄存器.</p>
+</blockquote>
+<blockquote>
+<p>输出操作数表达式必须为左值.<br>输入操作数的要求不像这样严格.<br>他们可以为表达式.<br>扩展汇编特性常常用于编译器所不知道的机器指令.<br>如果输出表达式无法直接寻址(即, 它是一个位域), 我们的约束字符串必须给定一个寄存器.<br>在这种情况下, GCC将会使用该寄存器作为汇编的输出, 然后存储该寄存器的内容到输出.</p>
+</blockquote>
+<blockquote>
+<p>普通的输出操作数必须为只写的.<br>GCC将会假设指令前的操作数值是死的, 并且不需要被(提前)生成.<br>扩展汇编也支持输入-输出或者读-写操作数.</p>
+</blockquote>
+<blockquote>
+<p>如果我们的指令可以修改条件码寄存器(cc), 我们必须将<code>cc</code>添加进修饰寄存器列表.<br>如果我们的指令, 以不可预测的方式修改了内存, 那么需要将<code>memory</code>添加进修饰寄存器列表.<br>这可以使GCC不会在汇编指令间保持缓存于寄存器的内存值.<br>如果被影响的内存不在汇编的输入或输出列表中, 我们也必须添加<code>volatile</code>关键字.</p>
+</blockquote>
+<h2 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h2><blockquote>
+<p>如果我们的汇编语句必须在我们放置它的地方执行(如不能为了优化而被移出循环语句), 将关键词<code>volatile</code>放置在<code>asm</code>后面, <code>()</code>前面.<br>以防止它被移动, 删除或者其他操作, 我们将其声明为<code>asm volatile(... :... :... :...);</code><br>如果担心发生冲突, 请使用<code>__volatile__</code>.</p>
+</blockquote>
+<blockquote>
+<p>如果我们的汇编只是用于一些计算并且没有任何副作用, 不使用<code>volatile</code>关键词会更好.<br>不使用<code>volatile</code>可以帮助gcc优化代码并使代码更漂亮.</p>
+</blockquote>
+<h2 id="常用约束"><a href="#常用约束" class="headerlink" title="常用约束"></a>常用约束</h2><h3 id="寄存器操作数约束"><a href="#寄存器操作数约束" class="headerlink" title="寄存器操作数约束"></a>寄存器操作数约束</h3><p>GPR(General Purpose Register, 通用寄存器)</p>
+<p>要指定寄存器, 你必须使用特定寄存器约束直接地指定寄存器的名字, 它们为:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">r</th>
+<th style="text-align:center">Register(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a</td>
+<td style="text-align:center">%eax, %ax, %al</td>
+</tr>
+<tr>
+<td style="text-align:center">b</td>
+<td style="text-align:center">%ebx, %bx, %bl</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">%ecx, %cx, %cl</td>
+</tr>
+<tr>
+<td style="text-align:center">d</td>
+<td style="text-align:center">%edx, %dx, %dl</td>
+</tr>
+<tr>
+<td style="text-align:center">S</td>
+<td style="text-align:center">%esi, %si</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:center">%edi, %di</td>
+</tr>
+</tbody>
+</table>
+<h3 id="内存操作数约束"><a href="#内存操作数约束" class="headerlink" title="内存操作数约束"></a>内存操作数约束</h3><blockquote>
+<p>当操作数位于内存时, 任何对它们的操作将直接发生在内存位置, 这与寄存器约束相反, 后者首先将值存储在要修改的寄存器中, 然后将它写回内存位置.<br>但寄存器约束通常用于一个指令必须使用它们或者它们可以大大提高处理速度的地方.<br>当需要在<code>asm</code>内更新一个C变量, 而又不是使用寄存器去保存它的值, 使用内存最为有效.</p>
+</blockquote>
+<p>e.g.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//IDTR寄存器的值存储于内存位置loc处</span></span><br><span class="line"><span class="keyword">asm</span>(<span class="string">"sidt %0\n"</span>::<span class="string">"m"</span>(loc));</span><br></pre></td></tr></table></figure>
+<p>注意: 每条指令应以分界符结尾, 有效的分界符有换行符<code>\n</code>和分号<code>;</code>, <code>\n</code>可以紧随一个制表符<code>\t</code>.</p>
+<h3 id="匹配-数字-约束"><a href="#匹配-数字-约束" class="headerlink" title="匹配(数字)约束"></a>匹配(数字)约束</h3><blockquote>
+<p>在某些情况下, 一个变量可能既充当输入操作数, 也充当输出操作数.<br>可以通过使用匹配约束在<code>asm</code>中指定这种情况.</p>
+</blockquote>
+<p>e.g.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">asm</span>(<span class="string">"incl %0"</span> :<span class="string">"=a"</span>(var) :<span class="string">"0"</span>(var));</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明:<br>寄存器<code>%eax</code>既用作输入变量, 也用作输出变量.<br>var输入被读进<code>%eax</code>, 并且等递增后更新的<code>%eax</code>再次被存储进var.<br>这里的<code>0</code>用于指定与第0个输出变量相同的约束.<br>它指定var输出示例应只被存储在<code>%eax</code>中.<br>该约束可用于:</p>
+<blockquote>
+<ul>
+<li>在输入从变量读取或变量修改后且修改被写回同一变量的情况</li>
+<li>在不需要将输入操作数实例和输出操作数实例分开的情况</li>
+</ul>
+</blockquote>
+<p>使用匹配约束最重要的意义在于它们可以有效地使用可用寄存器.</p>
+</blockquote>
+<h3 id="其他一些约束"><a href="#其他一些约束" class="headerlink" title="其他一些约束"></a>其他一些约束</h3><table>
+<thead>
+<tr>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m</td>
+<td>允许一个内存操作数, 可以使用机器普遍支持的任一种地址</td>
+</tr>
+<tr>
+<td>o</td>
+<td>允许一个内存操作数, 但只有当地址是可偏移的; 即, 该地址加上一个小的偏移量可以得到一个有效地址</td>
+</tr>
+<tr>
+<td>V</td>
+<td>一个不允许偏移的内存操作数; 换言之, 任何适合<code>m</code>约束而不适合<code>o</code>约束的操作数</td>
+</tr>
+<tr>
+<td>i</td>
+<td>允许一个(带有常量)的立即整型操作数; 这包括其值仅在汇编时期知道的符号常量</td>
+</tr>
+<tr>
+<td>n</td>
+<td>允许一个带有已知数字的立即整型操作数; 许多系统不支持汇编时期的常量, 因为操作数少于一个字宽; 对于此种操作数, 约束应该使用<code>n</code>而不是<code>i</code></td>
+</tr>
+<tr>
+<td>g</td>
+<td>允许任一寄存器, 内存或者立即整型操作数, 不包括通用寄存器之外的寄存器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="x86特有约束"><a href="#x86特有约束" class="headerlink" title="x86特有约束"></a>x86特有约束</h3><table>
+<thead>
+<tr>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r</td>
+<td>寄存器操作数约束, 查看上面的给定的表格</td>
+</tr>
+<tr>
+<td>q</td>
+<td>寄存器<code>a</code>, <code>b</code>, <code>c</code>, 或者<code>d</code></td>
+</tr>
+<tr>
+<td>l</td>
+<td>范围从0到31的常量(对于32位移位)</td>
+</tr>
+<tr>
+<td>J</td>
+<td>范围从0到63的常量(对于64位移位)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>0xff</td>
+</tr>
+<tr>
+<td>L</td>
+<td>0xffff</td>
+</tr>
+<tr>
+<td>M</td>
+<td>0, 1, 2 或 3(lea指令的移位)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>范围从0到255的常量(对于out指令)</td>
+</tr>
+<tr>
+<td>f</td>
+<td>浮点寄存器</td>
+</tr>
+<tr>
+<td>t</td>
+<td>第一个(栈顶)浮点寄存器</td>
+</tr>
+<tr>
+<td>u</td>
+<td>第二个浮点寄存器</td>
+</tr>
+<tr>
+<td>A</td>
+<td>指定<code>a</code>或<code>d</code>寄存器; 这主要用于想要返回64位整型数, 使用<code>d</code>寄存器保存最高有效位和<code>a</code>寄存器保存最低有效位</td>
+</tr>
+</tbody>
+</table>
+<h2 id="约束修饰符"><a href="#约束修饰符" class="headerlink" title="约束修饰符"></a>约束修饰符</h2><p>当使用约束时, 对于更精确的控制超过了对约束作用的需求, GCC给我们提供了约束修饰符.</p>
+<table>
+<thead>
+<tr>
+<th>约束修饰符</th>
+<th>I/O</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>O</td>
+<td>对于这条指令, 操作数为只写的; 旧值会被忽略并被输出数据所替换; 只能写在第一个字符的位置</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>O</td>
+<td>用符号&amp;进行修饰时,等于向GCC声明, “GCC不得为任何Input操作表达式分配与此Output操作表达式相同的寄存器”; 其原因是修饰符&amp;意味着被其修饰的Output操作表达式要在所有的Input操作表达式被输入之前输出; 即, GCC会先使用输出值对被修饰符&amp;修饰的Output操作表达式进行填充,然后,才对Input操作表达式进行输入; 这样的话,如果不使用修饰符&amp;对Output操作表达式进行修饰,一旦后面的Input操作表达式使用了与Output操作表达式相同的寄存器,就会产生输入输出数据混乱的情况; 相反,如果用修饰符&amp;修饰输出操作表达式, 那么, 就意味着GCC会先把Input操作表达式的值输入到选定的寄存器中,然后经过处理,最后才用输出值填充对应的Output操作表达式; 只能写在第二个字符的位置; 参考自<a href="https://blog.csdn.net/koozxcv/article/details/49612791" target="_blank" rel="noopener">https://blog.csdn.net/koozxcv/article/details/49612791</a></td>
+</tr>
+<tr>
+<td>+</td>
+<td>O</td>
+<td>对于这条指令, 操作数为可读可写的; 只能写在第一个字符的位置</td>
+</tr>
+<tr>
+<td>%</td>
+<td>I</td>
+<td>表示此Input操作表达式中的C/C++表达式可以与下一个Input操作表达式中的C/C++表达式互换</td>
+</tr>
+</tbody>
+</table>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/">https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/</a> </p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="https://www.wallpaperup.com/uploads/wallpapers/2013/12/23/203043/24bdd63b85e9b5937b96d5ba0be08686-700.jpg"></div>
+	<div id="current-post-cover" data-scr="https://www.wallpaperup.com/uploads/wallpapers/2015/01/19/590738/03184d055da164780a30798d345d4cfd-700.jpg"></div>
 
 	
     	<! -- 添加捐赠图标 -->
@@ -449,12 +693,8 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
 		
-			<a href="/2019/05/08/Deepin下安装MySQL/" title="Deepin下安装MySQL（APT Repository）" rel="prev">
-				&laquo;Pre post
-			</a>
 		
-		
-			<a href="/2019/05/04/vim方向键等功能按键乱码解决/" title="vim方向键等功能按键和鼠标乱码解决" rel="next">
+			<a href="/2019/05/24/teamviewer安装问题/" title="teamviewer安装问题" rel="next">
 				Next post&raquo;
 			</a>
 			
@@ -472,33 +712,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/05/28/GCC内联汇编笔记/" title="GCC内联汇编笔记">
-								GCC内联汇编笔记			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 28日, 2019				
-							</p>
-							<p class="relate-post-content">
-								什么是内联汇编?
-内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方
-
-
-inline(内联)的作用减少函数调用开销, 同时如果所有实参的值为常量, 它们的已知值可以再编译期允许简化, 因此并非所有的内联...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/05/28/GCC内联汇编笔记/" title="GCC内联汇编笔记">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2015/01/19/590738/03184d055da164780a30798d345d4cfd-700.jpg" alt="GCC内联汇编笔记"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -532,6 +745,33 @@ inline(内联)的作用减少函数调用开销, 同时如果所有实参的值�
 							<a href="/2019/05/19/MYSQL必知必会笔记/" title="MYSQL必知必会笔记">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-758127.jpg" alt="MYSQL必知必会笔记"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/06/vimscript笔记——0——单行命令/" title="vimscript笔记——0——单行命令">
+								vimscript笔记——0——单行命令			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 6日, 2019				
+							</p>
+							<p class="relate-post-content">
+								预备知识:echo $MYVIMRC得知.vimrc文件的位置
+
+打印信息:echo &quot;Hello, world!，信息不会保存
+:echom &quot;Hello, world!，信息会保存
+:messages，查看信息...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/06/vimscript笔记——0——单行命令/" title="vimscript笔记——0——单行命令">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2013/12/23/203043/24bdd63b85e9b5937b96d5ba0be08686-700.jpg" alt="vimscript笔记——0——单行命令"/>
 							</a>
 						</div>
 					</li>											

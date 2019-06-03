@@ -248,6 +248,92 @@
 				<div class="post-title" id="post-title-index">			
 					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					
+	<a href="/2019/05/28/GCC内联汇编笔记/" itemprop="url">
+		GCC内联汇编笔记
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						什么是内联汇编?
+内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方
+
+
+inline(内联)的作用减少函数调用开销, 同时如果所有实参的值为常量, 它们的已知值可以再编译期允许简化, 因此并非所有的内联函数代码都需要被包含进去, 代码大小的影响是不可预测的, 这取决于特定的情况
+
+
+内联汇编写为内联函数的汇编程序可以操作并且使其输出通过通过C变量显示出来, 因此asm可作为汇编指令和包含它的C程序之间的接口
+
+源操作数和目的操作数顺序Op-code src dst (Intel语法相反)
+寄存器命名%eax
+立即数$0xFFFF
+操作数大小取决于操作码名字...
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2019/05/28/GCC内联汇编笔记/" itemprop="url">
+		<time datetime="2019-05-28T06:29:00.000Z" itemprop="datePublished">
+	  		2019-05-28
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2019/05/28/GCC内联汇编笔记/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
 	<a href="/2019/05/24/teamviewer安装问题/" itemprop="url">
 		teamviewer安装问题
 	</a>
@@ -989,87 +1075,6 @@ mysql错误1215：无法添加外键可参考https://blog.csdn.net/wangpeng047/a
 					
 						<span class="right">      	
 							<a href="/2019/05/04/vim方向键等功能按键乱码解决/" title="View all">View all</a>	
-						</span>
-					
-				</div>
-			</div>
-		</div>
-	
-		<div class="post" id="post">
-			<div class="post-text">
-				<div class="post-title" id="post-title-index">			
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					
-	<a href="/2019/04/22/操作系统笔记——0/" itemprop="url">
-		操作系统笔记——0
-	</a>
-
-				</div>
-
-				<div class="post-content">
-					
-						参考资料
-
-
-清华操作系统课程讨论区——piazza
-汇编语言（https://www.jianshu.com/p/4a7b716a2d1b，http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html，https://www.w3cschool.cn/assembly/，https://www.linuxprobe.com/gcc-how-to.html，https://www.cnblogs.com/lsgxeva/p/8948153.html）
-uCore OS实验指导书
-操作系统课程问答
-OS 2019 ...
-					
-				</div>
-				
-				<div class="post-meta">
-					<span>
-						Posted on
-						<i>
-							
-
-
-
-
-
-
-	<a href="/2019/04/22/操作系统笔记——0/" itemprop="url">
-		<time datetime="2019-04-22T01:46:00.000Z" itemprop="datePublished">
-	  		2019-04-22
-	  </time>
-	</a> 
-
-						</i>
-					</span>
-					
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-					
-						<span class="right">      	
-							<a href="/2019/04/22/操作系统笔记——0/" title="View all">View all</a>	
 						</span>
 					
 				</div>

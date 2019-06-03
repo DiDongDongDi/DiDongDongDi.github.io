@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-05-26T05:15:09.000Z</updated>
+  <updated>2019-06-03T03:34:41.363Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GCC内联汇编笔记</title>
+    <link href="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/"/>
+    <id>https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/</id>
+    <published>2019-05-28T06:29:00.000Z</published>
+    <updated>2019-06-03T03:34:41.363Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是内联汇编&quot;&gt;&lt;a href=&quot;#什么是内联汇编&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>teamviewer安装问题</title>
@@ -399,28 +423,6 @@
       <category term="Linux" scheme="https://didongdongdi.github.io/tags/Linux/"/>
     
       <category term="命令行" scheme="https://didongdongdi.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中的一些坑</title>
-    <link href="https://didongdongdi.github.io/2019/02/16/Python%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
-    <id>https://didongdongdi.github.io/2019/02/16/Python中的一些坑/</id>
-    <published>2019-02-16T08:20:00.000Z</published>
-    <updated>2019-05-26T05:30:28.046Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;Python中没有自增或自减运算符，即没有&lt;code&gt;++&lt;/code&gt;或&lt;code&gt;--&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="https://didongdongdi.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
     
   </entry>
   
