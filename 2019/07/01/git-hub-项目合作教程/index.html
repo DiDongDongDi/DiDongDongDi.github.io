@@ -1,0 +1,1070 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      git(hub)项目合作教程 | DIDA LAB
+    
+  </title>
+  <meta name="author" content="DiDong">
+  <meta name="keywords" content="" />
+  <meta name="description" content="DiDong&#39;s Blog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="https://source.unsplash.com/collection/954550/1920x1080" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Current post&nbsp;:&nbsp;《git(hub)项目合作教程》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/DiDongDongDi" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2019/07/01/git-hub-项目合作教程/" itemprop="url">
+		git(hub)项目合作教程
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	Posted on
+
+	<a href="/2019/07/01/git-hub-项目合作教程/" itemprop="url">
+		<time datetime="2019-07-01T06:57:00.000Z" itemprop="datePublished">
+	  		2019-07-01
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	Updated on
+
+	<a href="/2019/07/01/git-hub-项目合作教程/" itemprop="url">
+		<time datetime="2019-07-01T06:57:00.000Z" itemprop="dateUpdated">
+	  		2019-07-01
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/教程/" class=" ">
+			教程
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>大二小学期的项目终于开始正式起来了, 一起做东西的人也多了, 同时大家对git(hub)的了解也逐渐多了起来, 以及java有C++做铺垫, 相对以前来说, 有更多的时间去考虑项目(代码)管理. git(hub)终于可以发挥其真正的用途.</p>
+<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><h2 id="远程库的建立"><a href="#远程库的建立" class="headerlink" title="远程库的建立"></a>远程库的建立</h2><ol>
+<li><p>有了github账号后, new一个远程库</p>
+</li>
+<li><p>填入库的名称</p>
+</li>
+<li><p>填入库的描述, 如果在后面勾选了README, 则描述会添加到README中</p>
+</li>
+<li><p>选择公开库就好(私有库只支持3人及以下免费, 支持无限创建, 虽然说以前完全不免费. 有个有钱的微软爸爸就是好啊(滑稽)! 而且, 学生项目没有必要, 开源学习就好.)</p>
+</li>
+<li><p>由于是新开启了一个项目, 可以勾选生成README; 如果是一个已经存在的项目, 这里不用勾选, 可以在项目根目录中再添加, 以及下面两个步骤都要忽略, 否则会在push和pull的时候起冲突, 也可通过合并本地仓库和远程仓库解决冲突</p>
+</li>
+<li><p>选择.gitignore文件对应的项目编程语言, 关于.gitignore文件参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208</a>, 不同的编程语言有不同的模板, 可参考<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://github.com/github/gitignore</a></p>
+</li>
+<li><p>添加license, 关于不同开源项目协议的选择, 参考下面的图片</p>
+</li>
+</ol>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/201105/free_software_licenses.png" alt="不同开源项目协议的选择"></p>
+<p>如果想更换协议, 或是在原有项目的基础上添加协议, 参考<a href="https://www.cnblogs.com/chenmingjun/p/8555906.html" target="_blank" rel="noopener">https://www.cnblogs.com/chenmingjun/p/8555906.html</a></p>
+<ol start="8">
+<li>添加协作者, 在远程库<code>setting - Collaborators</code>中添加协作者</li>
+</ol>
+<h2 id="本地仓库的建立"><a href="#本地仓库的建立" class="headerlink" title="本地仓库的建立"></a>本地仓库的建立</h2><p>在新开启一个项目的情况下, <code>git clone &lt;刚建立的远程仓库的地址&gt;</code>, 克隆远程仓库, 建议使用ssh协议</p>
+<p>或者</p>
+<p>在已有项目的基础上, 进入项目根目录, <code>git init</code>, 创建本地仓库</p>
+<h2 id="开始开发"><a href="#开始开发" class="headerlink" title="开始开发"></a>开始开发</h2><p>在仓库根目录下, 开始项目开发后, 或者已有项目的基础上</p>
+<p><code>git add *</code>提交所有更改到缓存区, 或者, <code>git add &lt;文件路径&gt;</code>提交该文件的更改到缓存区</p>
+<p>有些时候<code>git add *</code>可能不管用, 使用<code>git status</code>查看库的状态, 如果有文件没有提交到缓存区, 单独提交一下即可</p>
+<p><code>git commit -m &lt;提交的描述&gt;</code>, 在所有文件提交到缓存区后, 需要再做一次对整体的提交, 这才是真正的提交了, 同时注意写明这一次提交的描述</p>
+<p><code>git push origin master</code>, 推送主分支的更改到远程库, 关于分支的内容, 由于项目较简单, 故暂不应用</p>
+<p><code>git pull</code>, 拉取远程库的更改</p>
+<p>其他更多git(hub)的内容参考最后的链接</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>刚安装完git后, 需要设置github的账户和密码, 按照git给出的提示设置即可</p>
+<p><code>git remote add origin &lt;github仓库地址&gt;</code>, 将本地的仓库连接到某个远程服务器, 用于本地仓库不是从远程库克隆而来.</p>
+<p>本地仓库和远程仓库冲突时, 参考<a href="https://blog.csdn.net/M87138/article/details/44921583" target="_blank" rel="noopener">https://blog.csdn.net/M87138/article/details/44921583</a>, 如果冲突无法自动合并, 则需要通过手动合并来解决</p>
+<p>如果push的时候总是需要输入用户名和密码, 原因是未采用ssh方式来克隆仓库; 如果就是希望使用https方式来克隆仓库, 参考<a href="https://blog.csdn.net/nongweiyilady/article/details/77772602" target="_blank" rel="noopener">https://blog.csdn.net/nongweiyilady/article/details/77772602</a></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>git教程参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a></p>
+<p>git使用简易指南参考<a href="http://www.bootcss.com/p/git-guide/" target="_blank" rel="noopener">http://www.bootcss.com/p/git-guide/</a></p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/07/01/git-hub-项目合作教程/">https://didongdongdi.github.io/2019/07/01/git-hub-项目合作教程/</a> </p>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="https://www.wallpaperup.com/uploads/wallpapers/2012/11/26/22658/d6c9014012026345627093b686ab0089-1000.jpg"></div>
+
+	
+    	<! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           如果觉得我的文章对您有用, 请随意打赏. 您的支持将鼓励我继续创作!
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一： 
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src=""
+                <img src=""
+        -->
+        <!-- 支付宝打赏图案 -->
+        <img src="/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- 微信打赏图案 -->
+        <img src="/img/WeChatpay.jpg" alt="微信打赏">
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+	
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">Related post</div>
+				<div>Comment</div>
+				<div>Share</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
+		
+		
+			<a href="/2019/06/25/vim下写java/" title="vim下写java" rel="next">
+				Next post&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/08/29/GitConmand/" title="GitCommand">
+								GitCommand			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								八月 29日, 2018				
+							</p>
+							<p class="relate-post-content">
+								GitHub地址
+本文地址 https://didongdongdi.github.io/2018/08/29/GitConmand/ 
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/08/29/GitConmand/" title="GitCommand">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="http://static.simpledesktops.com/uploads/desktops/2018/07/29/night.png" alt="GitCommand"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/06/25/vim下写java/" title="vim下写java">
+								vim下写java			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 25日, 2019				
+							</p>
+							<p class="relate-post-content">
+								前言由于已经习惯了vim下的各种姿势, 刚开始学习java时虽然有很多优秀的IDE可以选, 但本着vim下一切皆有可能, 一切都可编辑的本性, 尝试着配置vim, 使其足以应付java的学习.
+文件编译运行单文件
+直接vim Test...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/06/25/vim下写java/" title="vim下写java">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2016/09/03/1014964/63b86661345e13b430af6acc1442634f-1000.jpg" alt="vim下写java"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/08/Deepin下安装MySQL/" title="Deepin下安装MySQL（APT Repository）">
+								Deepin下安装MySQL（APT Repository）			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 8日, 2019				
+							</p>
+							<p class="relate-post-content">
+								本文参考自官方文档
+添加APT库
+下载APT库
+
+
+在https://dev.mysql.com/downloads/repo/apt/处下载deb包
+
+执行sudo dpkg -i &lt;PATH&gt;，&lt;PATH&gt;...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/08/Deepin下安装MySQL/" title="Deepin下安装MySQL（APT Repository）">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2014/02/28/281076/51c04946e3c3e8008925c5f2316f2ccc-700.jpg" alt="Deepin下安装MySQL（APT Repository）"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/04/16/使用extundelete恢复linux上已删除的文件/" title="使用extundelete恢复linux上已删除的文件">
+								使用extundelete恢复linux上已删除的文件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 16日, 2019				
+							</p>
+							<p class="relate-post-content">
+								参考网址https://blog.51cto.com/ityunwei2017/2328570?source=dra
+http://extundelete.sourceforge.net/
+
+https://sourceforge.n...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/04/16/使用extundelete恢复linux上已删除的文件/" title="使用extundelete恢复linux上已删除的文件">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="http://papers.co/wallpaper/papers.co-vv75-audi-box-digital-dark-blue-pattern-background-green-32-wallpaper.jpg" alt="使用extundelete恢复linux上已删除的文件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Qt5教程/" title="Qt5教程">
+								Qt5教程			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								https://www.cnblogs.com/farewell-farewell/p/7159596.html
+本文地址 https://didongdongdi.github.io/2018/05/26/Qt5教程/ 
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Qt5教程/" title="Qt5教程">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Qt5教程"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/评论功能/" title="Hexo博客 添加评论功能 （来必力 livere）& Template render error (Hexo BUG)">
+								Hexo博客 添加评论功能 （来必力 livere）& Template render error (Hexo BUG)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								前言作为一个完整的博客，评论功能自然是必不可少的。
+而可供选择的第三方评论系统有很多，但不是被墙（如Disqus）就是停止服务（如友言、网易云跟帖），或者需要域名备案（如畅言）。
+所以只能把目光投向一款来自韩国的评论系统——来必力(l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/评论功能/" title="Hexo博客 添加评论功能 （来必力 livere）& Template render error (Hexo BUG)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hexo博客 添加评论功能 （来必力 livere）&amp; Template render error (Hexo BUG)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/站内搜索/" title="Hexo博客 站内搜索 配置 (swiftype)">
+								Hexo博客 站内搜索 配置 (swiftype)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								前言随着博客的文章增多，添加一个博客站内搜索的功能就显得很有必要。
+而第三方站内搜索的插件有：
+
+
+google自定义搜索（免费的标准版貌似有广告而且要科学上网）
+
+百度站内搜索（貌似不支持https并且只显示收录的页面）
+
+swif...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/站内搜索/" title="Hexo博客 站内搜索 配置 (swiftype)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hexo博客 站内搜索 配置 (swiftype)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/06/06/操作系统笔记-2-实验1-答案/" title="操作系统笔记_2_实验1_答案">
+								操作系统笔记_2_实验1_答案			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 6日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Lab1 report[练习1][练习1.1] 操作系统镜像文件 ucore.img 是如何一步一步生成的?(需要比较详细地解释 Makefile 中每一条相关命令和命令参数的含义,以及说明命令导致的结果)
+1234567891011...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/06/06/操作系统笔记-2-实验1-答案/" title="操作系统笔记_2_实验1_答案">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="操作系统笔记_2_实验1_答案"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/06/06/ipv6网络相关/" title="ipv6网络相关">
+								ipv6网络相关			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 6日, 2019				
+							</p>
+							<p class="relate-post-content">
+								ipv6网络影响因素
+操作系统配置(windows, deepin, …)
+
+接入网(DLUT, DLUT-EDA无线, DLUT-EDA有线, OurEDA需要认证, OurEDA无需认证, 移动, 联通, …)
+
+连接方式(直连,...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/06/06/ipv6网络相关/" title="ipv6网络相关">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://w.wallhaven.cc/full/r2/wallhaven-r2g7rm.jpg" alt="ipv6网络相关"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/28/GCC内联汇编笔记/" title="GCC内联汇编笔记">
+								GCC内联汇编笔记			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 28日, 2019				
+							</p>
+							<p class="relate-post-content">
+								什么是内联汇编?
+内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方
+
+
+inline(内联)的作用减少函数调用开销, 同时如果所有实参的值为常量, 它们的已知值可以再编译期允许简化, 因此并非所有的内联...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/28/GCC内联汇编笔记/" title="GCC内联汇编笔记">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2015/01/19/590738/03184d055da164780a30798d345d4cfd-700.jpg" alt="GCC内联汇编笔记"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+			
+			<!-- livere comment -->
+			<!-- show livere comment -->
+<div id="lv-container" data-id="city" data-uid='MTAyMC8zOTA2MS8xNTU4OA=='>
+	<script type="text/javascript">
+	   (function(d, s) {
+	       var j, e = d.getElementsByTagName(s)[0];
+ 	       if (typeof LivereTower === 'function') { return; }
+ 	       j = d.createElement(s);
+	       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+	       j.async = true;
+ 	       e.parentNode.insertBefore(j, e);
+	   })(document, 'script');
+	</script>
+	<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+
+			<!-- addThis share -->
+			<!-- www.addthis.com/dashboard -->
+
+	<div class="addthis_inline_share_toolbox">
+	</div>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
+
+
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/DiDongDongDi" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by DiDong. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+		</p>
+<!--	<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p> -->
+<!--	<p>
+			<a href="http://www.beian.miit.gov.cn/">辽ICP备19008633号</a>
+		</p> -->
+	</div>		
+</footer>
+
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>

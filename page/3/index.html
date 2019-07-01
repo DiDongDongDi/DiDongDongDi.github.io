@@ -248,6 +248,328 @@
 				<div class="post-title" id="post-title-index">			
 					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					
+	<a href="/2019/04/02/chrome视频画面卡顿，声音无影响/" itemprop="url">
+		chrome视频画面卡顿，声音无影响
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						Chrome的话，使用WebRTC，本身不支持H.264（国内视频网站多用这个来编码），但是支持VP8（目前主流，Youtube使用VP8（性能和H264差不多）,现在逐步走向VP9（性能和H265差不多），所以H264采用的是外部的解码，因此可能性能上会略差。 另外实际测试的时候，相同掉包率情况下，VP8的画面丢失和花屏的情况要远好过H264（WebRTC下）。转自知乎Lennith的回答
+
+在chrome中输入chrome://flags, Ctrl+F全局搜索hardware， 找到如下内容， 并禁用即可
+
+本文地址 https://didongdongdi.github.io/2...
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2019/04/02/chrome视频画面卡顿，声音无影响/" itemprop="url">
+		<time datetime="2019-04-02T09:04:00.000Z" itemprop="datePublished">
+	  		2019-04-02
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2019/04/02/chrome视频画面卡顿，声音无影响/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
+	<a href="/2019/03/21/Deepin扩展显示屏失败/" itemprop="url">
+		Deepin扩展显示屏失败
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题解决方法：Deepin在屏幕亮度为0时，屏幕全黑，所以到设置里把扩展的显示屏的亮度调高就行了
+本文地址 https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/ 
+
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2019/03/21/Deepin扩展显示屏失败/" itemprop="url">
+		<time datetime="2019-03-21T03:21:00.000Z" itemprop="datePublished">
+	  		2019-03-21
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2019/03/21/Deepin扩展显示屏失败/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
+	<a href="/2019/03/15/FTP命令问题解决/" itemprop="url">
+		FTP命令问题解决
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						
+发现系统中没有ftp命令，安装ftp
+ftp连接到树莓派失败，显示ftp:connect:Connection refused，尝试127.0.0.1一样
+猜测可能是21端口未开放，执行netstat -tln查看端口号情况，发现确实如此
+尝试vsftpd，没有该命令，安装vsftpd
+执行vsftpd，显示500 OOPS: could not bind listening IPv6 socket，问题不大，因为不需要用到ipv6
+这时再查看端口情况，会发现21号端口已经在监听
+尝试连接本地，ftp 127.0.0.1成功
+尝试连接树莓派，失败，按前面的方法打开树莓派的21号端口
+在...
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2019/03/15/FTP命令问题解决/" itemprop="url">
+		<time datetime="2019-03-15T11:36:00.000Z" itemprop="datePublished">
+	  		2019-03-15
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2019/03/15/FTP命令问题解决/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
+	<a href="/2019/03/10/Linux源码/" itemprop="url">
+		Linux内核源码分析
+	</a>
+
+				</div>
+
+				<div class="post-content">
+					
+						
+如何获取linux内核源码？一般来讲，在安装的linux系统下，/usr/src/linux目录下的东西就是内核源代码。还可以从互联网上下载,解压缩后文件一般也都位于linux目录下。
+
+
+Linux内核源码查看网址推荐：https://elixir.bootlin.com/linux/latest/source
+
+
+Linux内核源码的组成（假设相对于linux目录）：
+
+arch：包含了此核心源代码所支持的硬件体系结构相关的核心代码，如对于X86平台就是i386
+include： 包含了核心的大多数include文件，另外对于每种支持的体系结构分别有一个子目录
+init：包含了核心...
+					
+				</div>
+				
+				<div class="post-meta">
+					<span>
+						Posted on
+						<i>
+							
+
+
+
+
+
+
+	<a href="/2019/03/10/Linux源码/" itemprop="url">
+		<time datetime="2019-03-10T13:17:00.000Z" itemprop="datePublished">
+	  		2019-03-10
+	  </time>
+	</a> 
+
+						</i>
+					</span>
+					
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+					
+						<span class="right">      	
+							<a href="/2019/03/10/Linux源码/" title="View all">View all</a>	
+						</span>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="post" id="post">
+			<div class="post-text">
+				<div class="post-title" id="post-title-index">			
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					
 	<a href="/2019/03/08/Linux命令集合/" itemprop="url">
 		Linux命令集合
 	</a>
@@ -758,379 +1080,6 @@ Ethnocentrism often leads to pride, vanity, belief in one’s own group’s supe
 					
 						<span class="right">      	
 							<a href="/2018/11/21/Intercultural-Communicaiton-9/" title="View all">View all</a>	
-						</span>
-					
-				</div>
-			</div>
-		</div>
-	
-		<div class="post" id="post">
-			<div class="post-text">
-				<div class="post-title" id="post-title-index">			
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					
-	<a href="/2018/11/08/FPGA-之-锁存器-Latch/" itemprop="url">
-		FPGA 之 锁存器 (Latch)
-	</a>
-
-				</div>
-
-				<div class="post-content">
-					
-						参考自http://www.eefocus.com/liuyuxue/blog/13-11/300280_d7008.html
-
-
-信号赋初值以避免综合时出现锁存器。
-
-
-注意警告。
-
-本文地址 https://didongdongdi.github.io/2018/11/08/FPGA-之-锁存器-Latch/ 
-
-					
-				</div>
-				
-				<div class="post-meta">
-					<span>
-						Posted on
-						<i>
-							
-
-
-
-
-
-
-	<a href="/2018/11/08/FPGA-之-锁存器-Latch/" itemprop="url">
-		<time datetime="2018-11-07T16:14:00.000Z" itemprop="datePublished">
-	  		2018-11-08
-	  </time>
-	</a> 
-
-						</i>
-					</span>
-					
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-					
-						<span class="right">      	
-							<a href="/2018/11/08/FPGA-之-锁存器-Latch/" title="View all">View all</a>	
-						</span>
-					
-				</div>
-			</div>
-		</div>
-	
-		<div class="post" id="post">
-			<div class="post-text">
-				<div class="post-title" id="post-title-index">			
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					
-	<a href="/2018/10/31/PGA-VHDL-门电路设计/" itemprop="url">
-		FPGA-VHDL 门电路设计
-	</a>
-
-				</div>
-
-				<div class="post-content">
-					
-						
-分析功能
-
-
-输入 和 输出
-
-
-画出真值表
-
-写出逻辑表达式
-
-
-
-最小项的或
-
-
-
-将逻辑表达式化为最简形式
-
-
-越简单越好
-
-
-从最简形式，反推（二输入）与非门的组成
-
-
-从（二输入）与非门开始，逐层封装，直到实现最简形式
-
-
-使用与非门的原因是：单纯用与非门可以实现任意逻辑表达式与非门的经济性，在集成电路中，与非门和或非门是仅次于非门的第二简单的门与非门比或非门性能好参考自 数字电路基础课程教学中，为什么总是要把逻辑式化简为与非-与非式，并在实际电路中用与非门实现？ - well xiong的回答 - 知乎
-
-本文地址 https://didongdongdi.github.i...
-					
-				</div>
-				
-				<div class="post-meta">
-					<span>
-						Posted on
-						<i>
-							
-
-
-
-
-
-
-	<a href="/2018/10/31/PGA-VHDL-门电路设计/" itemprop="url">
-		<time datetime="2018-10-31T13:58:00.000Z" itemprop="datePublished">
-	  		2018-10-31
-	  </time>
-	</a> 
-
-						</i>
-					</span>
-					
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-					
-						<span class="right">      	
-							<a href="/2018/10/31/PGA-VHDL-门电路设计/" title="View all">View all</a>	
-						</span>
-					
-				</div>
-			</div>
-		</div>
-	
-		<div class="post" id="post">
-			<div class="post-text">
-				<div class="post-title" id="post-title-index">			
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					
-	<a href="/2018/10/31/Intercultural-Communication-7-8/" itemprop="url">
-		the Summary of Intercultural Communication (7&amp;8)
-	</a>
-
-				</div>
-
-				<div class="post-content">
-					
-						Nonverbal communicationComparison
-
-
-
-BASIS FOR COMPARISON
-VERBAL
-NON-VERBAL 
-
-
-
-
-Meaning
-the sender uses words to transmit the message to the receiver
-take place between sender and receiver with the use of signs
-
-
-Types
-formal,informal
-Chronemics, Vocalics, Haptics, Kinesics, Proxemics, Artifacts...
-					
-				</div>
-				
-				<div class="post-meta">
-					<span>
-						Posted on
-						<i>
-							
-
-
-
-
-
-
-	<a href="/2018/10/31/Intercultural-Communication-7-8/" itemprop="url">
-		<time datetime="2018-10-31T08:17:00.000Z" itemprop="datePublished">
-	  		2018-10-31
-	  </time>
-	</a> 
-
-						</i>
-					</span>
-					
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-					
-						<span class="right">      	
-							<a href="/2018/10/31/Intercultural-Communication-7-8/" title="View all">View all</a>	
-						</span>
-					
-				</div>
-			</div>
-		</div>
-	
-		<div class="post" id="post">
-			<div class="post-text">
-				<div class="post-title" id="post-title-index">			
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					
-	<a href="/2018/10/24/KMP模式匹配算法的个人解读/" itemprop="url">
-		KMP模式匹配算法 的 个人解读
-	</a>
-
-				</div>
-
-				<div class="post-content">
-					
-						（以下，将目标字符串称为 T ，将模式字符串称为 P ，|A|为字符串A的长度）
-
-字符串匹配问题字符串的模式匹配算法大致有以下几种：
-
-
-朴素的模式匹配算法（又叫 Brute Force 算法，以下简称 BF）
-KMP模式匹配算法（以下简称KMP）
-Horspool算法
-Boyer-Moore算法
-Sunday算法
-RK算法
-字符串匹配自动机
-后缀树算法（分在线和非在线两种）
-对于多模式字符串匹配有：AC算法（字符串匹配自动机思想）、WM算法（BM算法在多模式的推广应用）
-
-
-在这里主要说明KMP和BP，对于其他算法以后再做了解。
-
-
-BF简单粗暴地对于 T 上的每一个（除了最后的|P...
-					
-				</div>
-				
-				<div class="post-meta">
-					<span>
-						Posted on
-						<i>
-							
-
-
-
-
-
-
-	<a href="/2018/10/24/KMP模式匹配算法的个人解读/" itemprop="url">
-		<time datetime="2018-10-24T15:43:00.000Z" itemprop="datePublished">
-	  		2018-10-24
-	  </time>
-	</a> 
-
-						</i>
-					</span>
-					
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-					
-						<span class="right">      	
-							<a href="/2018/10/24/KMP模式匹配算法的个人解读/" title="View all">View all</a>	
 						</span>
 					
 				</div>

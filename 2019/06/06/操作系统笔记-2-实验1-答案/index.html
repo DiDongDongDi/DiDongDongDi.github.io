@@ -1,0 +1,1109 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      操作系统笔记_2_实验1_答案 | DIDA LAB
+    
+  </title>
+  <meta name="author" content="DiDong">
+  <meta name="keywords" content="" />
+  <meta name="description" content="DiDong&#39;s Blog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="https://source.unsplash.com/collection/954550/1920x1080" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Current post&nbsp;:&nbsp;《操作系统笔记_2_实验1_答案》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">Home</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">Archive</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">Category</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">Tag</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">About</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/DiDongDongDi" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2019/06/06/操作系统笔记-2-实验1-答案/" itemprop="url">
+		操作系统笔记_2_实验1_答案
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	Posted on
+
+	<a href="/2019/06/06/操作系统笔记-2-实验1-答案/" itemprop="url">
+		<time datetime="2019-06-06T09:12:00.000Z" itemprop="datePublished">
+	  		2019-06-06
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	Updated on
+
+	<a href="/2019/06/06/操作系统笔记-2-实验1-答案/" itemprop="url">
+		<time datetime="2019-06-06T09:12:00.000Z" itemprop="dateUpdated">
+	  		2019-06-06
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/Notes/" class=" ">
+			Notes
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="Lab1-report"><a href="#Lab1-report" class="headerlink" title="Lab1 report"></a>Lab1 report</h1><h2 id="练习1"><a href="#练习1" class="headerlink" title="[练习1]"></a>[练习1]</h2><p>[练习1.1] 操作系统镜像文件 ucore.img 是如何一步一步生成的?(需要比较详细地解释 Makefile 中<br>每一条相关命令和命令参数的含义,以及说明命令导致的结果)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line">bin/ucore.img</span><br><span class="line">| 生成ucore.img的相关代码为</span><br><span class="line">| $(UCOREIMG): $(kernel) $(bootblock)</span><br><span class="line">|	$(V)dd if=/dev/zero of=$@ count=10000</span><br><span class="line">|	$(V)dd if=$(bootblock) of=$@ conv=notrunc</span><br><span class="line">|	$(V)dd if=$(kernel) of=$@ seek=1 conv=notrunc</span><br><span class="line">|</span><br><span class="line">| 为了生成ucore.img，首先需要生成bootblock、kernel</span><br><span class="line">|</span><br><span class="line">|&gt;	bin/bootblock</span><br><span class="line">|	| 生成bootblock的相关代码为</span><br><span class="line">|	| $(bootblock): $(call toobj,$(bootfiles)) | $(call totarget,sign)</span><br><span class="line">|	|	@echo + ld $@</span><br><span class="line">|	|	$(V)$(LD) $(LDFLAGS) -N -e start -Ttext 0x7C00 $^ \</span><br><span class="line">|	|		-o $(call toobj,bootblock)</span><br><span class="line">|	|	@$(OBJDUMP) -S $(call objfile,bootblock) &gt; \</span><br><span class="line">|	|		$(call asmfile,bootblock)</span><br><span class="line">|	|	@$(OBJCOPY) -S -O binary $(call objfile,bootblock) \</span><br><span class="line">|	|		$(call outfile,bootblock)</span><br><span class="line">|	|	@$(call totarget,sign) $(call outfile,bootblock) $(bootblock)</span><br><span class="line">|	|</span><br><span class="line">|	| 为了生成bootblock，首先需要生成bootasm.o、bootmain.o、sign</span><br><span class="line">|	|</span><br><span class="line">|	|&gt;	obj/boot/bootasm.o, obj/boot/bootmain.o</span><br><span class="line">|	|	| 生成bootasm.o,bootmain.o的相关makefile代码为</span><br><span class="line">|	|	| bootfiles = $(call listf_cc,boot) </span><br><span class="line">|	|	| $(foreach f,$(bootfiles),$(call cc_compile,$(f),$(CC),\</span><br><span class="line">|	|	|	$(CFLAGS) -Os -nostdinc))</span><br><span class="line">|	|	| 实际代码由宏批量生成</span><br><span class="line">|	|	| </span><br><span class="line">|	|	| 生成bootasm.o需要bootasm.S</span><br><span class="line">|	|	| 实际命令为</span><br><span class="line">|	|	| gcc -Iboot/ -fno-builtin -Wall -ggdb -m32 -gstabs \</span><br><span class="line">|	|	| 	-nostdinc  -fno-stack-protector -Ilibs/ -Os -nostdinc \</span><br><span class="line">|	|	| 	-c boot/bootasm.S -o obj/boot/bootasm.o</span><br><span class="line">|	|	| 其中关键的参数为</span><br><span class="line">|	|	| 	-ggdb  生成可供gdb使用的调试信息。这样才能用qemu+gdb来调试bootloader or ucore。</span><br><span class="line">|	|	|	-m32  生成适用于32位环境的代码。我们用的模拟硬件是32bit的80386，所以ucore也要是32位的软件。</span><br><span class="line">|	|	| 	-gstabs  生成stabs格式的调试信息。这样要ucore的monitor可以显示出便于开发者阅读的函数调用栈信息</span><br><span class="line">|	|	| 	-nostdinc  不使用标准库。标准库是给应用程序用的，我们是编译ucore内核，OS内核是提供服务的，所以所有的服务要自给自足。</span><br><span class="line">|	|	|	-fno-stack-protector  不生成用于检测缓冲区溢出的代码。这是for 应用程序的，我们是编译内核，ucore内核好像还用不到此功能。</span><br><span class="line">|	|	| 	-Os  为减小代码大小而进行优化。根据硬件spec，主引导扇区只有512字节，我们写的简单bootloader的最终大小不能大于510字节。</span><br><span class="line">|	|	| 	-I&lt;dir&gt;  添加搜索头文件的路径</span><br><span class="line">|	|	| </span><br><span class="line">|	|	| 生成bootmain.o需要bootmain.c</span><br><span class="line">|	|	| 实际命令为</span><br><span class="line">|	|	| gcc -Iboot/ -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc \</span><br><span class="line">|	|	| 	-fno-stack-protector -Ilibs/ -Os -nostdinc \</span><br><span class="line">|	|	| 	-c boot/bootmain.c -o obj/boot/bootmain.o</span><br><span class="line">|	|	| 新出现的关键参数有</span><br><span class="line">|	|	| 	-fno-builtin  除非用__builtin_前缀，</span><br><span class="line">|	|	|	              否则不进行builtin函数的优化</span><br><span class="line">|	|</span><br><span class="line">|	|&gt;	bin/sign</span><br><span class="line">|	|	| 生成sign工具的makefile代码为</span><br><span class="line">|	|	| $(call add_files_host,tools/sign.c,sign,sign)</span><br><span class="line">|	|	| $(call create_target_host,sign,sign)</span><br><span class="line">|	|	| </span><br><span class="line">|	|	| 实际命令为</span><br><span class="line">|	|	| gcc -Itools/ -g -Wall -O2 -c tools/sign.c \</span><br><span class="line">|	|	| 	-o obj/sign/tools/sign.o</span><br><span class="line">|	|	| gcc -g -Wall -O2 obj/sign/tools/sign.o -o bin/sign</span><br><span class="line">|	|</span><br><span class="line">|	| 首先生成bootblock.o</span><br><span class="line">|	| ld -m    elf_i386 -nostdlib -N -e start -Ttext 0x7C00 \</span><br><span class="line">|	|	obj/boot/bootasm.o obj/boot/bootmain.o -o obj/bootblock.o</span><br><span class="line">|	| 其中关键的参数为</span><br><span class="line">|	|	-m &lt;emulation&gt;  模拟为i386上的连接器</span><br><span class="line">|	|	-nostdlib  不使用标准库</span><br><span class="line">|	|	-N  设置代码段和数据段均可读写</span><br><span class="line">|	|	-e &lt;entry&gt;  指定入口</span><br><span class="line">|	|	-Ttext  制定代码段开始位置</span><br><span class="line">|	|</span><br><span class="line">|	| 拷贝二进制代码bootblock.o到bootblock.out</span><br><span class="line">|	| objcopy -S -O binary obj/bootblock.o obj/bootblock.out</span><br><span class="line">|	| 其中关键的参数为</span><br><span class="line">|	|	-S  移除所有符号和重定位信息</span><br><span class="line">|	|	-O &lt;bfdname&gt;  指定输出格式</span><br><span class="line">|	|</span><br><span class="line">|	| 使用sign工具处理bootblock.out，生成bootblock</span><br><span class="line">|	| bin/sign obj/bootblock.out bin/bootblock</span><br><span class="line">|</span><br><span class="line">|&gt;	bin/kernel</span><br><span class="line">|	| 生成kernel的相关代码为</span><br><span class="line">|	| $(kernel): tools/kernel.ld</span><br><span class="line">|	| $(kernel): $(KOBJS)</span><br><span class="line">|	| 	@echo + ld $@</span><br><span class="line">|	| 	$(V)$(LD) $(LDFLAGS) -T tools/kernel.ld -o $@ $(KOBJS)</span><br><span class="line">|	| 	@$(OBJDUMP) -S $@ &gt; $(call asmfile,kernel)</span><br><span class="line">|	| 	@$(OBJDUMP) -t $@ | $(SED) &apos;1,/SYMBOL TABLE/d; s/ .* / /; \</span><br><span class="line">|	| 		/^$$/d&apos; &gt; $(call symfile,kernel)</span><br><span class="line">|	| </span><br><span class="line">|	| 为了生成kernel，首先需要 kernel.ld init.o readline.o stdio.o kdebug.o</span><br><span class="line">|	|	kmonitor.o panic.o clock.o console.o intr.o picirq.o trap.o</span><br><span class="line">|	|	trapentry.o vectors.o pmm.o  printfmt.o string.o</span><br><span class="line">|	| kernel.ld已存在</span><br><span class="line">|	|</span><br><span class="line">|	|&gt;	obj/kern/*/*.o </span><br><span class="line">|	|	| 生成这些.o文件的相关makefile代码为</span><br><span class="line">|	|	| $(call add_files_cc,$(call listf_cc,$(KSRCDIR)),kernel,\</span><br><span class="line">|	|	|	$(KCFLAGS))</span><br><span class="line">|	|	| 这些.o生成方式和参数均类似，仅举init.o为例，其余不赘述</span><br><span class="line">|	|&gt;	obj/kern/init/init.o</span><br><span class="line">|	|	| 编译需要init.c</span><br><span class="line">|	|	| 实际命令为</span><br><span class="line">|	|	|	gcc -Ikern/init/ -fno-builtin -Wall -ggdb -m32 \</span><br><span class="line">|	|	|		-gstabs -nostdinc  -fno-stack-protector \</span><br><span class="line">|	|	|		-Ilibs/ -Ikern/debug/ -Ikern/driver/ \</span><br><span class="line">|	|	|		-Ikern/trap/ -Ikern/mm/ -c kern/init/init.c \</span><br><span class="line">|	|	|		-o obj/kern/init/init.o</span><br><span class="line">|	| </span><br><span class="line">|	| 生成kernel时，makefile的几条指令中有@前缀的都不必需</span><br><span class="line">|	| 必需的命令只有</span><br><span class="line">|	| ld -m    elf_i386 -nostdlib -T tools/kernel.ld -o bin/kernel \</span><br><span class="line">|	| 	obj/kern/init/init.o obj/kern/libs/readline.o \</span><br><span class="line">|	| 	obj/kern/libs/stdio.o obj/kern/debug/kdebug.o \</span><br><span class="line">|	| 	obj/kern/debug/kmonitor.o obj/kern/debug/panic.o \</span><br><span class="line">|	| 	obj/kern/driver/clock.o obj/kern/driver/console.o \</span><br><span class="line">|	| 	obj/kern/driver/intr.o obj/kern/driver/picirq.o \</span><br><span class="line">|	| 	obj/kern/trap/trap.o obj/kern/trap/trapentry.o \</span><br><span class="line">|	| 	obj/kern/trap/vectors.o obj/kern/mm/pmm.o \</span><br><span class="line">|	| 	obj/libs/printfmt.o obj/libs/string.o</span><br><span class="line">|	| 其中新出现的关键参数为</span><br><span class="line">|	|	-T &lt;scriptfile&gt;  让连接器使用指定的脚本</span><br><span class="line">|</span><br><span class="line">| 生成一个有10000个块的文件，每个块默认512字节，用0填充</span><br><span class="line">| dd if=/dev/zero of=bin/ucore.img count=10000</span><br><span class="line">|</span><br><span class="line">| 把bootblock中的内容写到第一个块</span><br><span class="line">| dd if=bin/bootblock of=bin/ucore.img conv=notrunc</span><br><span class="line">|</span><br><span class="line">| 从第二个块开始写kernel中的内容</span><br><span class="line">| dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc</span><br></pre></td></tr></table></figure>
+<p>[练习1.2] 一个被系统认为是符合规范的硬盘主引导扇区的特征是什么?</p>
+<p>从sign.c的代码来看，一个磁盘主引导扇区只有512字节。且<br>第510个（倒数第二个）字节是0x55，<br>第511个（倒数第一个）字节是0xAA。</p>
+<h2 id="练习2"><a href="#练习2" class="headerlink" title="[练习2]"></a>[练习2]</h2><p>[练习2.1] 从 CPU 加电后执行的第一条指令开始,单步跟踪 BIOS 的执行。</p>
+<p>练习2可以单步跟踪，方法如下：</p>
+<p>1 修改 lab1/tools/gdbinit,内容为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set architecture i8086</span><br><span class="line">target remote :1234</span><br></pre></td></tr></table></figure></p>
+<p>2 在 lab1目录下，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make debug</span><br></pre></td></tr></table></figure></p>
+<p>3 在看到gdb的调试界面(gdb)后，在gdb调试界面下执行如下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">si</span><br></pre></td></tr></table></figure></p>
+<p>即可单步跟踪BIOS了。</p>
+<p>4 在gdb界面下，可通过如下命令来看BIOS的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x /2i $pc  //显示当前eip处的汇编指令</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>[进一步的补充]</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">改写Makefile文件</span><br><span class="line">	debug: $(UCOREIMG)</span><br><span class="line">		$(V)$(TERMINAL) -e &quot;$(QEMU) -S -s -d in_asm -D $(BINDIR)/q.log -parallel stdio -hda $&lt; -serial null&quot;</span><br><span class="line">		$(V)sleep 2</span><br><span class="line">		$(V)$(TERMINAL) -e &quot;gdb -q -tui -x tools/gdbinit&quot;</span><br></pre></td></tr></table></figure>
+<p>在调用qemu时增加<code>-d in_asm -D q.log</code>参数，便可以将运行的汇编指令保存在q.log中。<br>为防止qemu在gdb连接后立即开始执行，删除了<code>tools/gdbinit</code>中的<code>continue</code>行。</p>
+<p>[练习2.2] 在初始化位置0x7c00 设置实地址断点,测试断点正常。</p>
+<p>在tools/gdbinit结尾加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   set architecture i8086  //设置当前调试的CPU是8086</span><br><span class="line">b *0x7c00  //在0x7c00处设置断点。此地址是bootloader入口点地址，可看boot/bootasm.S的start地址处</span><br><span class="line">c          //continue简称，表示继续执行</span><br><span class="line">x /2i $pc  //显示当前eip处的汇编指令</span><br><span class="line">set architecture i386  //设置当前调试的CPU是80386</span><br></pre></td></tr></table></figure>
+<p>运行”make debug”便可得到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Breakpoint 2, 0x00007c00 in ?? ()</span><br><span class="line">=&gt; 0x7c00:      cli    </span><br><span class="line">   0x7c01:      cld    </span><br><span class="line">   0x7c02:      xor    %eax,%eax</span><br><span class="line">   0x7c04:      mov    %eax,%ds</span><br><span class="line">   0x7c06:      mov    %eax,%es</span><br><span class="line">   0x7c08:      mov    %eax,%ss </span><br><span class="line">   0x7c0a:      in     $0x64,%al</span><br><span class="line">   0x7c0c:      test   $0x2,%al</span><br><span class="line">   0x7c0e:      jne    0x7c0a</span><br><span class="line">   0x7c10:      mov    $0xd1,%al</span><br></pre></td></tr></table></figure>
+<p>[练习2.3] 在调用qemu 时增加-d in_asm -D q.log 参数，便可以将运行的汇编指令保存在q.log 中。<br>将执行的汇编代码与bootasm.S 和 bootblock.asm 进行比较，看看二者是否一致。</p>
+<p>在tools/gdbinit结尾加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">b *0x7c00</span><br><span class="line">c</span><br><span class="line">x /10i $pc</span><br></pre></td></tr></table></figure></p>
+<p>便可以在q.log中读到”call bootmain”前执行的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c00:  cli    </span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c01:  cld    </span><br><span class="line">0x00007c02:  xor    %ax,%ax</span><br><span class="line">0x00007c04:  mov    %ax,%ds</span><br><span class="line">0x00007c06:  mov    %ax,%es</span><br><span class="line">0x00007c08:  mov    %ax,%ss</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c0a:  in     $0x64,%al</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c0c:  test   $0x2,%al</span><br><span class="line">0x00007c0e:  jne    0x7c0a</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c10:  mov    $0xd1,%al</span><br><span class="line">0x00007c12:  out    %al,$0x64</span><br><span class="line">0x00007c14:  in     $0x64,%al</span><br><span class="line">0x00007c16:  test   $0x2,%al</span><br><span class="line">0x00007c18:  jne    0x7c14</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c1a:  mov    $0xdf,%al</span><br><span class="line">0x00007c1c:  out    %al,$0x60</span><br><span class="line">0x00007c1e:  lgdtw  0x7c6c</span><br><span class="line">0x00007c23:  mov    %cr0,%eax</span><br><span class="line">0x00007c26:  or     $0x1,%eax</span><br><span class="line">0x00007c2a:  mov    %eax,%cr0</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c2d:  ljmp   $0x8,$0x7c32</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c32:  mov    $0x10,%ax</span><br><span class="line">0x00007c36:  mov    %eax,%ds</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c38:  mov    %eax,%es</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c3a:  mov    %eax,%fs</span><br><span class="line">0x00007c3c:  mov    %eax,%gs</span><br><span class="line">0x00007c3e:  mov    %eax,%ss</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c40:  mov    $0x0,%ebp</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007c45:  mov    $0x7c00,%esp</span><br><span class="line">0x00007c4a:  call   0x7d0d</span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line">IN: </span><br><span class="line">0x00007d0d:  push   %ebp</span><br></pre></td></tr></table></figure></p>
+<p>其与bootasm.S和bootblock.asm中的代码相同。</p>
+<h2 id="练习3"><a href="#练习3" class="headerlink" title="[练习3]"></a>[练习3]</h2><p>分析bootloader 进入保护模式的过程。</p>
+<p>从<code>%cs=0 $pc=0x7c00</code>，进入后</p>
+<p>首先清理环境：包括将flag置0和将段寄存器置0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.code16</span><br><span class="line">    cli</span><br><span class="line">    cld</span><br><span class="line">    xorw %ax, %ax</span><br><span class="line">    movw %ax, %ds</span><br><span class="line">    movw %ax, %es</span><br><span class="line">    movw %ax, %ss</span><br></pre></td></tr></table></figure></p>
+<p>开启A20：通过将键盘控制器上的A20线置于高电位，全部32条地址线可用，<br>可以访问4G的内存空间。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">seta20.1:               # 等待8042键盘控制器不忙</span><br><span class="line">    inb $0x64, %al      # </span><br><span class="line">    testb $0x2, %al     #</span><br><span class="line">    jnz seta20.1        #</span><br><span class="line"></span><br><span class="line">    movb $0xd1, %al     # 发送写8042输出端口的指令</span><br><span class="line">    outb %al, $0x64     #</span><br><span class="line"></span><br><span class="line">seta20.1:               # 等待8042键盘控制器不忙</span><br><span class="line">    inb $0x64, %al      # </span><br><span class="line">    testb $0x2, %al     #</span><br><span class="line">    jnz seta20.1        #</span><br><span class="line"></span><br><span class="line">    movb $0xdf, %al     # 打开A20</span><br><span class="line">    outb %al, $0x60     #</span><br></pre></td></tr></table></figure></p>
+<p>初始化GDT表：一个简单的GDT表和其描述符已经静态储存在引导区中，载入即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lgdt gdtdesc</span><br></pre></td></tr></table></figure></p>
+<p>进入保护模式：通过将cr0寄存器PE位置1便开启了保护模式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">movl %cr0, %eax</span><br><span class="line">orl $CR0_PE_ON, %eax</span><br><span class="line">movl %eax, %cr0</span><br></pre></td></tr></table></figure></p>
+<p>通过长跳转更新cs的基地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> ljmp $PROT_MODE_CSEG, $protcseg</span><br><span class="line">.code32</span><br><span class="line">protcseg:</span><br></pre></td></tr></table></figure></p>
+<p>设置段寄存器，并建立堆栈<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">movw $PROT_MODE_DSEG, %ax</span><br><span class="line">movw %ax, %ds</span><br><span class="line">movw %ax, %es</span><br><span class="line">movw %ax, %fs</span><br><span class="line">movw %ax, %gs</span><br><span class="line">movw %ax, %ss</span><br><span class="line">movl $0x0, %ebp</span><br><span class="line">movl $start, %esp</span><br></pre></td></tr></table></figure></p>
+<p>转到保护模式完成，进入boot主方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">call bootmain</span><br></pre></td></tr></table></figure></p>
+<h2 id="练习4"><a href="#练习4" class="headerlink" title="[练习4]"></a>[练习4]</h2><p>分析bootloader加载ELF格式的OS的过程。</p>
+<p>首先看readsect函数，<br><code>readsect</code>从设备的第secno扇区读取数据到dst位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">static void</span><br><span class="line">readsect(void *dst, uint32_t secno) &#123;</span><br><span class="line">    waitdisk();</span><br><span class="line"></span><br><span class="line">    outb(0x1F2, 1);                         // 设置读取扇区的数目为1</span><br><span class="line">    outb(0x1F3, secno &amp; 0xFF);</span><br><span class="line">    outb(0x1F4, (secno &gt;&gt; 8) &amp; 0xFF);</span><br><span class="line">    outb(0x1F5, (secno &gt;&gt; 16) &amp; 0xFF);</span><br><span class="line">    outb(0x1F6, ((secno &gt;&gt; 24) &amp; 0xF) | 0xE0);</span><br><span class="line">        // 上面四条指令联合制定了扇区号</span><br><span class="line">        // 在这4个字节线联合构成的32位参数中</span><br><span class="line">        //   29-31位强制设为1</span><br><span class="line">        //   28位(=0)表示访问&quot;Disk 0&quot;</span><br><span class="line">        //   0-27位是28位的偏移量</span><br><span class="line">    outb(0x1F7, 0x20);                      // 0x20命令，读取扇区</span><br><span class="line"></span><br><span class="line">    waitdisk();</span><br><span class="line"></span><br><span class="line">    insl(0x1F0, dst, SECTSIZE / 4);         // 读取到dst位置，</span><br><span class="line">                                            // 幻数4因为这里以DW为单位</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>readseg简单包装了readsect，可以从设备读取任意长度的内容。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">static void</span><br><span class="line">readseg(uintptr_t va, uint32_t count, uint32_t offset) &#123;</span><br><span class="line">    uintptr_t end_va = va + count;</span><br><span class="line"></span><br><span class="line">    va -= offset % SECTSIZE;</span><br><span class="line"></span><br><span class="line">    uint32_t secno = (offset / SECTSIZE) + 1; </span><br><span class="line">    // 加1因为0扇区被引导占用</span><br><span class="line">    // ELF文件从1扇区开始</span><br><span class="line"></span><br><span class="line">    for (; va &lt; end_va; va += SECTSIZE, secno ++) &#123;</span><br><span class="line">        readsect((void *)va, secno);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在bootmain函数中，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">void</span><br><span class="line">bootmain(void) &#123;</span><br><span class="line">    // 首先读取ELF的头部</span><br><span class="line">    readseg((uintptr_t)ELFHDR, SECTSIZE * 8, 0);</span><br><span class="line"></span><br><span class="line">    // 通过储存在头部的幻数判断是否是合法的ELF文件</span><br><span class="line">    if (ELFHDR-&gt;e_magic != ELF_MAGIC) &#123;</span><br><span class="line">        goto bad;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    struct proghdr *ph, *eph;</span><br><span class="line"></span><br><span class="line">    // ELF头部有描述ELF文件应加载到内存什么位置的描述表，</span><br><span class="line">    // 先将描述表的头地址存在ph</span><br><span class="line">    ph = (struct proghdr *)((uintptr_t)ELFHDR + ELFHDR-&gt;e_phoff);</span><br><span class="line">    eph = ph + ELFHDR-&gt;e_phnum;</span><br><span class="line"></span><br><span class="line">    // 按照描述表将ELF文件中数据载入内存</span><br><span class="line">    for (; ph &lt; eph; ph ++) &#123;</span><br><span class="line">        readseg(ph-&gt;p_va &amp; 0xFFFFFF, ph-&gt;p_memsz, ph-&gt;p_offset);</span><br><span class="line">    &#125;</span><br><span class="line">    // ELF文件0x1000位置后面的0xd1ec比特被载入内存0x00100000</span><br><span class="line">    // ELF文件0xf000位置后面的0x1d20比特被载入内存0x0010e000</span><br><span class="line"></span><br><span class="line">    // 根据ELF头部储存的入口信息，找到内核的入口</span><br><span class="line">    ((void (*)(void))(ELFHDR-&gt;e_entry &amp; 0xFFFFFF))();</span><br><span class="line"></span><br><span class="line">bad:</span><br><span class="line">    outw(0x8A00, 0x8A00);</span><br><span class="line">    outw(0x8A00, 0x8E00);</span><br><span class="line">    while (1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="练习5"><a href="#练习5" class="headerlink" title="[练习5]"></a>[练习5]</h2><p>实现函数调用堆栈跟踪函数 </p>
+<p>ss:ebp指向的堆栈位置储存着caller的ebp，以此为线索可以得到所有使用堆栈的函数ebp。<br>ss:ebp+4指向caller调用时的eip，ss:ebp+8等是（可能的）参数。</p>
+<p>输出中，堆栈最深一层为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ebp:0x00007bf8 eip:0x00007d68 \</span><br><span class="line">	args:0x00000000 0x00000000 0x00000000 0x00007c4f</span><br><span class="line">    &lt;unknow&gt;: -- 0x00007d67 --</span><br></pre></td></tr></table></figure></p>
+<p>其对应的是第一个使用堆栈的函数，bootmain.c中的bootmain。<br>bootloader设置的堆栈从0x7c00开始，使用”call bootmain”转入bootmain函数。<br>call指令压栈，所以bootmain中ebp为0x7bf8。</p>
+<h2 id="练习6"><a href="#练习6" class="headerlink" title="[练习6]"></a>[练习6]</h2><p>完善中断初始化和处理</p>
+<p>[练习6.1] 中断向量表中一个表项占多少字节？其中哪几位代表中断处理代码的入口？</p>
+<p>中断向量表一个表项占用8字节，其中2-3字节是段选择子，0-1字节和6-7字节拼成位移，<br>两者联合便是中断处理程序的入口地址。</p>
+<p>[练习6.2] 请编程完善kern/trap/trap.c中对中断向量表进行初始化的函数idt_init。</p>
+<p>见代码</p>
+<p>[练习6.3] 请编程完善trap.c中的中断处理函数trap，在对时钟中断进行处理的部分填写trap函数</p>
+<p>见代码</p>
+<h2 id="练习7"><a href="#练习7" class="headerlink" title="[练习7]"></a>[练习7]</h2><p>增加syscall功能，即增加一用户态函数（可执行一特定系统调用：获得时钟计数值），<br>当内核初始完毕后，可从内核态返回到用户态的函数，而用户态的函数又通过系统调用得到内核态的服务</p>
+<p>在idt_init中，将用户态调用SWITCH_TOK中断的权限打开。<br>    SETGATE(idt[T_SWITCH_TOK], 1, KERNEL_CS, __vectors[T_SWITCH_TOK], 3);</p>
+<p>在trap_dispatch中，将iret时会从堆栈弹出的段寄存器进行修改<br>    对TO User<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tf-&gt;tf_cs = USER_CS;</span><br><span class="line">tf-&gt;tf_ds = USER_DS;</span><br><span class="line">tf-&gt;tf_es = USER_DS;</span><br><span class="line">tf-&gt;tf_ss = USER_DS;</span><br></pre></td></tr></table></figure></p>
+<pre><code>对TO Kernel
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tf-&gt;tf_cs = KERNEL_CS;</span><br><span class="line">tf-&gt;tf_ds = KERNEL_DS;</span><br><span class="line">tf-&gt;tf_es = KERNEL_DS;</span><br></pre></td></tr></table></figure>
+<p>在lab1_switch_to_user中，调用T_SWITCH_TOU中断。<br>注意从中断返回时，会多pop两位，并用这两位的值更新ss,sp，损坏堆栈。<br>所以要先把栈压两位，并在从中断返回后修复esp。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">asm volatile (</span><br><span class="line">    &quot;sub $0x8, %%esp \n&quot;</span><br><span class="line">    &quot;int %0 \n&quot;</span><br><span class="line">    &quot;movl %%ebp, %%esp&quot;</span><br><span class="line">    : </span><br><span class="line">    : &quot;i&quot;(T_SWITCH_TOU)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>在lab1_switch_to_kernel中，调用T_SWITCH_TOK中断。<br>注意从中断返回时，esp仍在TSS指示的堆栈中。所以要在从中断返回后修复esp。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">asm volatile (</span><br><span class="line">    &quot;int %0 \n&quot;</span><br><span class="line">    &quot;movl %%ebp, %%esp \n&quot;</span><br><span class="line">    : </span><br><span class="line">    : &quot;i&quot;(T_SWITCH_TOK)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>但这样不能正常输出文本。根据提示，在trap_dispatch中转User态时，将调用io所需权限降低。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tf-&gt;tf_eflags |= 0x3000;</span><br></pre></td></tr></table></figure></p>
+<p>本文地址 <a href="https://didongdongdi.github.io/2019/06/06/操作系统笔记-2-实验1-答案/">https://didongdongdi.github.io/2019/06/06/操作系统笔记-2-实验1-答案/</a> </p>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+	
+    	<! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           如果觉得我的文章对您有用, 请随意打赏. 您的支持将鼓励我继续创作!
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一： 
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src=""
+                <img src=""
+        -->
+        <!-- 支付宝打赏图案 -->
+        <img src="/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- 微信打赏图案 -->
+        <img src="/img/WeChatpay.jpg" alt="微信打赏">
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+	
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">Related post</div>
+				<div>Comment</div>
+				<div>Share</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
+		
+			<a href="/2019/06/25/vim下写java/" title="vim下写java" rel="prev">
+				&laquo;Pre post
+			</a>
+		
+		
+			<a href="/2019/06/06/ipv6网络相关/" title="ipv6网络相关" rel="next">
+				Next post&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/04/30/操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用/" title="操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用">
+								操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 30日, 2019				
+							</p>
+							<p class="relate-post-content">
+								操作系统的结构
+
+
+一共分为四层
+内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成
+
+
+
+操作系统内核内核特征
+
+并发
+共享
+
+宏观上, 同时访问
+微观上, 互斥访问
+
+
+
+虚拟, 多道程序设计
+异步
+
+程序的执行不是...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/04/30/操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用/" title="操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="http://papers.co/wallpaper/papers.co-vx59-cloud-dark-pattern-background-bw-32-wallpaper.jpg" alt="操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/04/22/操作系统笔记——0/" title="操作系统笔记——0">
+								操作系统笔记——0			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 22日, 2019				
+							</p>
+							<p class="relate-post-content">
+								参考资料
+
+
+课程网站
+清华操作系统课程讨论区——piazza
+汇编语言（https://www.jianshu.com/p/4a7b716a2d1b，http://www.ruanyifeng.com/blog/2018/01/as...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/04/22/操作系统笔记——0/" title="操作系统笔记——0">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2016/03/02/903121/3a991c35f291351978d1e55b64129134-1400.jpg" alt="操作系统笔记——0"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week1/" title="Flipped (Week 1)">
+								Flipped (Week 1)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-06-01-p2flip over //翻页
+gutsy girl //勇敢的女孩
+delightful //可爱的；讨人喜欢的；令人愉快的
+
+With a charismatic leading lady kids wil...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week1/" title="Flipped (Week 1)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week 1)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week2/" title="Flipped (Week2)">
+								Flipped (Week2)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-06-29-p9humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)ninny //傻子whiny //烦躁的；爱抱怨的gossipy //漫谈式的；喜欢饶舌的backst...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week2/" title="Flipped (Week2)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week2)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week3/" title="Flipped (Week3)">
+								Flipped (Week3)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-07-11-p141, stalk  [stɔːk]
+n. （植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步
+vt. 追踪，潜近；高视阔步
+vi. 高视阔步地走；潜近，偷偷接近
+
+2, flinch  [‘f...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week3/" title="Flipped (Week3)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week3)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week4/" title="Flipped (Week4)">
+								Flipped (Week4)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-07-20-p161, hay  [heɪ]
+n. 干草
+vt. 把晒干
+vi. 割草晒干
+
+2, cheek  [tʃiːk]
+n. 面颊，脸颊；臀部
+vt. 无礼地向…讲话，对…大胆无礼
+n. (Cheek)人名；(英)...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week4/" title="Flipped (Week4)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week4)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Mixed/" title="English Mixed">
+								English Mixed			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								#2018-06-16
+Independence Dayaerial // 空中的；航空的
+petty //小的；琐碎的
+fate //n.命运 v.注定
+
+Not from tyranny, oppression, or perse...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Mixed/" title="English Mixed">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="English Mixed"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/模拟与数字电路笔记/" title="模拟与数字电路笔记">
+								模拟与数字电路笔记			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								基础知识
+
+模拟电路部分半导体器件
+注（此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行看书）（可下载图片查看MindMap）
+本文地址 https://didongdongdi.gith...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/模拟与数字电路笔记/" title="模拟与数字电路笔记">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="模拟与数字电路笔记"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/线性代数与解析几何笔记/" title="线性代数与解析几何笔记">
+								线性代数与解析几何笔记			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								前言线性代数与几何空间从来不是分离开来的，几何空间是线性代数的本质，而线性代数是几何空间的抽象表示。因此，推荐大家去学习B站 3Blue1Brown 线性代数的本质 系列视频(我从中受益匪浅)。相信你在听了他的课程后会对线性代数有着更...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/线性代数与解析几何笔记/" title="线性代数与解析几何笔记">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="线性代数与解析几何笔记"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/01/git-hub-项目合作教程/" title="git(hub)项目合作教程">
+								git(hub)项目合作教程			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 1日, 2019				
+							</p>
+							<p class="relate-post-content">
+								前言大二小学期的项目终于开始正式起来了, 一起做东西的人也多了, 同时大家对git(hub)的了解也逐渐多了起来, 以及java有C++做铺垫, 相对以前来说, 有更多的时间去考虑项目(代码)管理. git(hub)终于可以发挥其真正...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/01/git-hub-项目合作教程/" title="git(hub)项目合作教程">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2012/11/26/22658/d6c9014012026345627093b686ab0089-1000.jpg" alt="git(hub)项目合作教程"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+			
+			<!-- livere comment -->
+			<!-- show livere comment -->
+<div id="lv-container" data-id="city" data-uid='MTAyMC8zOTA2MS8xNTU4OA=='>
+	<script type="text/javascript">
+	   (function(d, s) {
+	       var j, e = d.getElementsByTagName(s)[0];
+ 	       if (typeof LivereTower === 'function') { return; }
+ 	       j = d.createElement(s);
+	       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+	       j.async = true;
+ 	       e.parentNode.insertBefore(j, e);
+	   })(document, 'script');
+	</script>
+	<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+
+			<!-- addThis share -->
+			<!-- www.addthis.com/dashboard -->
+
+	<div class="addthis_inline_share_toolbox">
+	</div>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
+
+
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/DiDongDongDi" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by DiDong. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+		</p>
+<!--	<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p> -->
+<!--	<p>
+			<a href="http://www.beian.miit.gov.cn/">辽ICP备19008633号</a>
+		</p> -->
+	</div>		
+</footer>
+
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>
