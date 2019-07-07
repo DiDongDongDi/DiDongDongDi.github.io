@@ -295,7 +295,7 @@
 
 	<a href="/2019/06/06/shell笔记/" itemprop="url">
 		<time datetime="2019-06-06T14:17:00.000Z" itemprop="dateUpdated">
-	  		2019-06-27
+	  		2019-07-07
 	  </time>
 	</a> 
 
@@ -744,6 +744,124 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> `date`</span><br></pre></td></tr></table></figure>
 <p>结果将显示当前日期</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>能否引用变量 | 能否引用转义符 | 能否引用文本格式符(如: 换行符, 制表符)<br>单引号 | 否 | 否 | 否<br>双引号 | 能 | 能 | 能<br>无引号 | 能 | 能 | 否</p>
+<h1 id="printf命令"><a href="#printf命令" class="headerlink" title="printf命令"></a>printf命令</h1><p>printf由POSIX标准所定义, 因此使用printf的脚本比使用echo移植性好</p>
+<p>printf使用引用文本或空格分割的参数</p>
+<p>语法; <code>printf format-string [arguments...]</code></p>
+<p>具体格式化字符串参照C中的printf()函数</p>
+<blockquote>
+<p>注意:</p>
+<ul>
+<li>单引号与双引号效果一样</li>
+<li>没有引号也可以输出</li>
+<li>格式只指定了一个参数, 但多出的参数仍然会安装该格式输出, format-string被重用</li>
+<li>如果没有arguments, 那么 %s 用 NULL 代替, %d 用 0 代替</li>
+</ul>
+</blockquote>
+<h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><p>和Java, PHP等语言不一样, sh的流程控制不可为空, 如果else分支没有语句执行, 就不要写这个else</p>
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h2><h3 id="if"><a href="#if" class="headerlink" title="if"></a>if</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition</span><br><span class="line"><span class="keyword">then</span> </span><br><span class="line">	command1</span><br><span class="line">	command2</span><br><span class="line">	...</span><br><span class="line">	commandN</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<p>也可以写成一行(每行命令末尾要加分号)</p>
+<h3 id="if-else-1"><a href="#if-else-1" class="headerlink" title="if else"></a>if else</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	command1</span><br><span class="line">	command2</span><br><span class="line">	...</span><br><span class="line">	commandN</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	<span class="built_in">command</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<h3 id="if-else-if-else"><a href="#if-else-if-else" class="headerlink" title="if else-if else"></a>if else-if else</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	command1</span><br><span class="line"><span class="keyword">elif</span> condition2</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	command2</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	commandN</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> var <span class="keyword">in</span> item1 item2 ... itemN</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	command1</span><br><span class="line">	command2</span><br><span class="line">	...</span><br><span class="line">	commandN</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>也可以写成一行(每行命令末尾要加分号)</p>
+<p>类似于C中的for循环</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>((assignment;condition;next));</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	command1;</span><br><span class="line">	command2;</span><br><span class="line">	...</span><br><span class="line">	commandN;</span><br><span class="line"><span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
+<p>注意: 如果要在循环体中进行for中的next操作, 记得变量要加<code>$</code>, 不然程序会变成死循环</p>
+<h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> condition</span><br><span class="line"><span class="keyword">do</span> <span class="built_in">command</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h3 id="let命令"><a href="#let命令" class="headerlink" title="let命令"></a>let命令</h3><p>let命令是BASH中用于计算的工具, 用于执行一个或多个表达式, 变量计算中不需要加上<code>$</code>来表示变量. 如果表达式中包含了空格或其他特殊字符, 则必须引起来.</p>
+<p>语法格式: <code>let arg [arg ...]</code>, 其中arg为要执行的表达式</p>
+<p>与C/C++表达式类似</p>
+<h2 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> :</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">command</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">true</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">command</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (( ; ; ))</span><br></pre></td></tr></table></figure>
+<h2 id="until循环"><a href="#until循环" class="headerlink" title="until循环"></a>until循环</h2><p>until循环执行一系列命令<code>直至条件为true</code>时停止, while循环执行一系列命令<code>直至条件为false</code>时停止</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">until condition</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">command</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h2 id="case-语句"><a href="#case-语句" class="headerlink" title="case 语句"></a>case 语句</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> 值 <span class="keyword">in</span></span><br><span class="line">	模式1)</span><br><span class="line">		command1</span><br><span class="line">		command2</span><br><span class="line">		...</span><br><span class="line">		commandN</span><br><span class="line">		;;</span><br><span class="line">	模式2)</span><br><span class="line">		command1</span><br><span class="line">		command2</span><br><span class="line">		...</span><br><span class="line">		commandN</span><br><span class="line">		;;</span><br><span class="line"><span class="keyword">esac</span></span><br></pre></td></tr></table></figure>
+<p>如果没有匹配的模式, 使用<code>*</code>捕获该值</p>
+<h2 id="跳出循环"><a href="#跳出循环" class="headerlink" title="跳出循环"></a>跳出循环</h2><h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><h1 id="shell函数"><a href="#shell函数" class="headerlink" title="shell函数"></a>shell函数</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[ <span class="keyword">function</span> ] funname [()]</span><br><span class="line">&#123;</span><br><span class="line">	action;</span><br><span class="line">	[<span class="built_in">return</span> int;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明:</p>
+<ul>
+<li>可以带<code>function funname()</code>定义, 也可以直接<code>funname()</code>定义, 不带任何参数</li>
+<li>参数返回, 可以显示加<code>return</code>返回, 如果不加, 将以最后一条命令运行结果, 作为返回值, return后跟数值<code>n(o-255)</code></li>
+<li><code>funname</code>调用函数</li>
+</ul>
+</blockquote>
+<h1 id="输入-输出重定向"><a href="#输入-输出重定向" class="headerlink" title="输入/输出重定向"></a>输入/输出重定向</h1><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>command &gt; file</td>
+<td>将输出重定向到file</td>
+</tr>
+<tr>
+<td>command &lt; file</td>
+<td>将输入重定向到file</td>
+</tr>
+<tr>
+<td>command &gt;&gt; file</td>
+<td>将输出以追加的方式重定向到file</td>
+</tr>
+<tr>
+<td>n &gt; file</td>
+<td>将文件描述符为n的文件重定向到file</td>
+</tr>
+<tr>
+<td>n &gt;&gt; file</td>
+<td>将文件描述符为n的文件以追加的方式重定向到file</td>
+</tr>
+<tr>
+<td>n &gt;&amp; m</td>
+<td>将输出文件m和n合并</td>
+</tr>
+<tr>
+<td>n &lt;&amp; m</td>
+<td>将输入文件m和n合并</td>
+</tr>
+<tr>
+<td>&lt;&lt; tag</td>
+<td>将开始标记tag和结束标记tag之间的内容作为输入</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>文件描述符0通常是标准输入(STDIN), 1是标准输出(STDOUT), 2是标准错误输出(STDERR)</p>
+</blockquote>
+<blockquote>
+<p><code>command1 &lt; infile &gt; outfile</code><br>同时替换输入和输出, 执行command1, 从文件infile读取内容, 然后将输出写入到outfile中</p>
+</blockquote>
+<blockquote>
+<p>如果希望stderr重定向到file<br><code>command 2 &gt; file</code><br>如果希望stderr追加到file文件末尾<br><code>command 2 &gt; file</code></p>
+</blockquote>
+<blockquote>
+<p>如果希望将stdout和stderr合并后重定向到file<br><code>command &gt; file 2&gt;&amp;1</code><br>或者<br><code>command &gt;&gt; file 2&gt;&amp;1</code></p>
+</blockquote>
+<h2 id="Here-Document"><a href="#Here-Document" class="headerlink" title="Here Document"></a>Here Document</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">command</span> &lt;&lt; delimiter</span><br><span class="line">	document</span><br><span class="line">delimiter</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>将两个delimiter之间的内容(documnet)作为输入传递给command<br>结尾的delimiter一定要顶格写, 前面不能有任何字符, 后面也不能有任何字符, 包括空格和tab缩进<br>开始的delimiter前后的空格会被忽略掉</p>
+</blockquote>
+<p>示例:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wc -l &lt;&lt; EOF</span><br><span class="line">	DIDA</span><br><span class="line">	LAB</span><br><span class="line">	DiDong</span><br><span class="line">EOF</span><br><span class="line">3 <span class="comment"># 输出结果为3行</span></span><br></pre></td></tr></table></figure>
+<h2 id="dev-null文件"><a href="#dev-null文件" class="headerlink" title="/dev/null文件"></a>/dev/null文件</h2><blockquote>
+<p>如果希望执行某个命令, 但又不希望在屏幕上显示输出结果, 那么可以将输出重定向到<code>/dev/null</code><br><code>command &gt; /dev/null</code><br><code>/dev/null</code>是一个特殊的文件, 写入到它的内容都会被丢弃; 如果尝试从该文件读取内容, 什么也读不到<br>如果希望屏蔽stdout和stderr<br><code>command &gt; /dev/null 2&gt;&amp;1</code></p>
+</blockquote>
+<h2 id="顺序问题"><a href="#顺序问题" class="headerlink" title="顺序问题"></a>顺序问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">find /etc -name .bashrc &gt; list 2&gt;&amp;1</span><br><span class="line"><span class="comment"># 和</span></span><br><span class="line">find /etc -name .bashrc 2&gt;&amp;1 &gt; list</span><br><span class="line"><span class="comment"># 之间的区别</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>第一种<br>先要将输出到stdout的内容重定向到文件, 此时文件list就是这个程序的stdout, 再将stderr重定向到stdout, 也就是文件list<br>第二种<br>先将要输出的stderr的内容重定向到stdout, 此时会产生一个<code>stdout拷贝</code>, 作为程序的stderr, 而程序原本要输出到stdout的内容, 依然是对接在stdout原身上的, 因此第二步重定向stdout, 对stdout的拷贝不产生任何影响</p>
+</blockquote>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><blockquote>
+<p>直接在FreeBSD或者csh中使用<code>command &gt; file 2&gt;&amp;1</code>的时候会得到这个错误:<code>Ambiguous output redirect</code>. 出错的原因在于FreeBSD默认使用csh, 在csh中如果想把标准输出和错误输出同时重定向到一个文件, 需要用<code>command &gt;&amp; file</code></p>
+</blockquote>
+<h1 id="shell文件包含"><a href="#shell文件包含" class="headerlink" title="shell文件包含"></a>shell文件包含</h1><p>包含外部脚本, 方便封装一些公用的代码作为一个独立的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">. filename</span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="built_in">source</span> filename</span><br></pre></td></tr></table></figure>
+<p>被包含的文件不需要可执行权限</p>
 <p>本文地址 <a href="https://didongdongdi.github.io/2019/06/06/shell笔记/">https://didongdongdi.github.io/2019/06/06/shell笔记/</a> </p>
 	
 	</div>
@@ -803,7 +921,7 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">To Top</a>
 		
-			<a href="/2019/06/08/Deepin触摸板手势/" title="Deepin触摸板手势" rel="prev">
+			<a href="/2019/06/25/vim下写java/" title="vim下写java" rel="prev">
 				&laquo;Pre post
 			</a>
 		
@@ -826,30 +944,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/06/08/Deepin触摸板手势/" title="Deepin触摸板手势">
-								Deepin触摸板手势			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 8日, 2019				
-							</p>
-							<p class="relate-post-content">
-								本文地址 https://didongdongdi.github.io/2019/06/08/Deepin触摸板手势/ 
-
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/06/08/Deepin触摸板手势/" title="Deepin触摸板手势">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Deepin触摸板手势"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -969,32 +1063,6 @@ ps
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/06/06/操作系统笔记-2-实验1/" title="操作系统笔记_2_实验1">
-								操作系统笔记_2_实验1			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 6日, 2019				
-							</p>
-							<p class="relate-post-content">
-								实验内容完成一个能够切换到x86的保护模式并显示字符的bootloader
-注意事项Bootloader可以让CPU进入保护模式, 读磁盘并加载ELF执行文件格式, 并显示字符
-OS只是一个可以处理时钟中断和显示字符的幼儿园级别OS
-...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/06/06/操作系统笔记-2-实验1/" title="操作系统笔记_2_实验1">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://www.wallpaperup.com/uploads/wallpapers/2012/12/20/25886/6299ed9d41dd43b8f268556218016906-700.jpg" alt="操作系统笔记_2_实验1"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/04/30/操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用/" title="操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用">
 								操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用			
 							</a>
@@ -1067,37 +1135,6 @@ OS只是一个可以处理时钟中断和显示字符的幼儿园级别OS
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2018/05/26/Flipped_Week4/" title="Flipped (Week4)">
-								Flipped (Week4)			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 26日, 2018				
-							</p>
-							<p class="relate-post-content">
-								2018-07-20-p161, hay  [heɪ]
-n. 干草
-vt. 把晒干
-vi. 割草晒干
-
-2, cheek  [tʃiːk]
-n. 面颊，脸颊；臀部
-vt. 无礼地向…讲话，对…大胆无礼
-n. (Cheek)人名；(英)...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2018/05/26/Flipped_Week4/" title="Flipped (Week4)">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week4)"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2018/05/26/Mixed/" title="English Mixed">
 								English Mixed			
 							</a>
@@ -1119,6 +1156,83 @@ Not from tyranny, oppression, or perse...
 							<a href="/2018/05/26/Mixed/" title="English Mixed">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="English Mixed"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week2/" title="Flipped (Week2)">
+								Flipped (Week2)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-06-29-p9humming // n. 哼唱 adj. 嗡嗡作响的，精力充沛的 v. 嗡嗡作响(hum的ing形式)ninny //傻子whiny //烦躁的；爱抱怨的gossipy //漫谈式的；喜欢饶舌的backst...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week2/" title="Flipped (Week2)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week2)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/Flipped_Week1/" title="Flipped (Week 1)">
+								Flipped (Week 1)			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								2018-06-01-p2flip over //翻页
+gutsy girl //勇敢的女孩
+delightful //可爱的；讨人喜欢的；令人愉快的
+
+With a charismatic leading lady kids wil...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/Flipped_Week1/" title="Flipped (Week 1)">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Flipped (Week 1)"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/05/26/模拟与数字电路笔记/" title="模拟与数字电路笔记">
+								模拟与数字电路笔记			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 26日, 2018				
+							</p>
+							<p class="relate-post-content">
+								基础知识
+
+模拟电路部分半导体器件
+注（此为个人笔记，因个人水平限制尚有许多不完善的地方，如有不当之处，欢迎指正，未补充的地方还请自行看书）（可下载图片查看MindMap）
+本文地址 https://didongdongdi.gith...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/05/26/模拟与数字电路笔记/" title="模拟与数字电路笔记">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="模拟与数字电路笔记"/>
 							</a>
 						</div>
 					</li>											
