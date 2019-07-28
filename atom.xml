@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-07-01T09:31:58.516Z</updated>
+  <updated>2019-07-28T03:03:20.730Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://didongdongdi.github.io/2019/07/01/git-hub-%E9%A1%B9%E7%9B%AE%E5%90%88%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
     <id>https://didongdongdi.github.io/2019/07/01/git-hub-项目合作教程/</id>
     <published>2019-07-01T06:57:00.000Z</published>
-    <updated>2019-07-01T09:31:58.516Z</updated>
+    <updated>2019-07-28T03:03:20.730Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;大二小学期的项目终于开始正式起来了, 一起做东西的人也多了, 同时大家对git(hub)的了解也逐渐多了起来,
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;大二小学期的项目终于开始正式起来了, 一起做东西的人也多了, 同时大家对git(hub)的了解也逐渐多了起来, 以及java有C++做铺垫, 相对以前来说, 有更多的时间去考虑项目(代码)管理. git(hub)终于可以发挥其真正的用途.&lt;/p&gt;
     
     </summary>
     
@@ -47,17 +41,11 @@
     <link href="https://didongdongdi.github.io/2019/06/25/vim%E4%B8%8B%E5%86%99java/"/>
     <id>https://didongdongdi.github.io/2019/06/25/vim下写java/</id>
     <published>2019-06-25T06:23:00.000Z</published>
-    <updated>2019-06-25T09:05:18.311Z</updated>
+    <updated>2019-07-28T03:08:37.052Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;由于已经习惯了vim下的各种姿势, 刚开始学习java时虽然有很多优秀的IDE可以选, 但本着vim下一切皆有可能, 一切都可编辑的本性,
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;由于已经习惯了vim下的各种姿势, 刚开始学习java时虽然有很多优秀的IDE可以选, 但本着vim下一切皆有可能, 一切都可编辑的本性, 尝试着配置vim, 使其足以应付java的学习.&lt;/p&gt;
     
     </summary>
     
@@ -75,17 +63,19 @@
     <link href="https://didongdongdi.github.io/2019/06/06/shell%E7%AC%94%E8%AE%B0/"/>
     <id>https://didongdongdi.github.io/2019/06/06/shell笔记/</id>
     <published>2019-06-06T14:17:00.000Z</published>
-    <updated>2019-07-07T06:47:26.660Z</updated>
+    <updated>2019-07-28T03:09:11.098Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;参考自&lt;a href=&quot;https://www.runoob.com/linux/linux-shell.html&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;参考自&lt;a href=&quot;https://www.runoob.com/linux/linux-shell.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.runoob.com/linux/linux-shell.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;运行shell脚本&quot;&gt;&lt;a href=&quot;#运行shell脚本&quot; class=&quot;headerlink&quot; title=&quot;运行shell脚本&quot;&gt;&lt;/a&gt;运行shell脚本&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;作为可执行程序, &lt;code&gt;./test.sh&lt;/code&gt;, 注意添加&lt;code&gt;#!/bin/bash&lt;/code&gt;标记, 打开一个子shell来读取并执行&lt;code&gt;test.sh&lt;/code&gt;中的命令, 需要”执行权限”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;作为解释器参数&lt;code&gt;bash test.sh&lt;/code&gt;, 打开一个子shell来读取并执行&lt;code&gt;test.sh&lt;/code&gt;中的命令, 可以无”执行权限”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;source命令, &lt;code&gt;source test.sh&lt;/code&gt;, 在当前bash环境下读取并执行&lt;code&gt;test.sh&lt;/code&gt;中的命令, 可以无”执行权限”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -101,17 +91,33 @@
     <link href="https://didongdongdi.github.io/2019/06/06/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-2-%E5%AE%9E%E9%AA%8C1-%E7%AD%94%E6%A1%88/"/>
     <id>https://didongdongdi.github.io/2019/06/06/操作系统笔记-2-实验1-答案/</id>
     <published>2019-06-06T09:12:00.000Z</published>
-    <updated>2019-06-06T14:04:35.977Z</updated>
+    <updated>2019-07-28T03:09:55.698Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;Lab1-report&quot;&gt;&lt;a href=&quot;#Lab1-report&quot; class=&quot;headerlink&quot; title=&quot;Lab1 report&quot;&gt;&lt;/a&gt;Lab1 report&lt;/h1&gt;&lt;h2 id=&quot;练习1&quot;&gt;&lt;a href=&quot;#练习1&quot;
-        
-      
+      &lt;h1 id=&quot;Lab1-report&quot;&gt;&lt;a href=&quot;#Lab1-report&quot; class=&quot;headerlink&quot; title=&quot;Lab1 report&quot;&gt;&lt;/a&gt;Lab1 report&lt;/h1&gt;&lt;h2 id=&quot;练习1&quot;&gt;&lt;a href=&quot;#练习1&quot; class=&quot;headerlink&quot; title=&quot;[练习1]&quot;&gt;&lt;/a&gt;[练习1]&lt;/h2&gt;&lt;p&gt;[练习1.1] 操作系统镜像文件 ucore.img 是如何一步一步生成的?(需要比较详细地解释 Makefile 中&lt;br&gt;每一条相关命令和命令参数的含义,以及说明命令导致的结果)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="OS" scheme="https://didongdongdi.github.io/categories/OS/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统笔记_2_实验1</title>
+    <link href="https://didongdongdi.github.io/2019/06/06/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-2-%E5%AE%9E%E9%AA%8C1/"/>
+    <id>https://didongdongdi.github.io/2019/06/06/操作系统笔记-2-实验1/</id>
+    <published>2019-06-06T05:48:00.000Z</published>
+    <updated>2019-07-28T03:15:53.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;实验内容&quot;&gt;&lt;a href=&quot;#实验内容&quot; class=&quot;headerlink&quot; title=&quot;实验内容&quot;&gt;&lt;/a&gt;实验内容&lt;/h1&gt;&lt;p&gt;完成一个能够切换到x86的保护模式并显示字符的bootloader&lt;/p&gt;
+&lt;h1 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot; title=&quot;注意事项&quot;&gt;&lt;/a&gt;注意事项&lt;/h1&gt;&lt;p&gt;Bootloader可以让CPU进入保护模式, 读磁盘并加载ELF执行文件格式, 并显示字符&lt;/p&gt;
+&lt;p&gt;OS只是一个可以处理时钟中断和显示字符的幼儿园级别OS&lt;/p&gt;
     
     </summary>
     
@@ -127,18 +133,13 @@
     <link href="https://didongdongdi.github.io/2019/06/06/ipv6%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/"/>
     <id>https://didongdongdi.github.io/2019/06/06/ipv6网络相关/</id>
     <published>2019-06-06T04:30:00.000Z</published>
-    <updated>2019-06-06T13:45:53.952Z</updated>
+    <updated>2019-07-28T03:10:35.608Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;ipv6网络影响因素&quot;&gt;&lt;a href=&quot;#ipv6网络影响因素&quot; class=&quot;headerlink&quot; title=&quot;ipv6网络影响因素&quot;&gt;&lt;/a&gt;ipv6网络影响因素&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;操作系统配置(windows, deepin,
-        
-      
+      &lt;h1 id=&quot;ipv6网络影响因素&quot;&gt;&lt;a href=&quot;#ipv6网络影响因素&quot; class=&quot;headerlink&quot; title=&quot;ipv6网络影响因素&quot;&gt;&lt;/a&gt;ipv6网络影响因素&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;操作系统配置(windows, deepin, …)&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -152,17 +153,13 @@
     <link href="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/"/>
     <id>https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/</id>
     <published>2019-05-28T06:29:00.000Z</published>
-    <updated>2019-06-03T03:34:41.363Z</updated>
+    <updated>2019-07-28T03:11:04.075Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;什么是内联汇编&quot;&gt;&lt;a href=&quot;#什么是内联汇编&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;什么是内联汇编&quot;&gt;&lt;a href=&quot;#什么是内联汇编&quot; class=&quot;headerlink&quot; title=&quot;什么是内联汇编?&quot;&gt;&lt;/a&gt;什么是内联汇编?&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;内联函数&lt;br&gt;我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -428,27 +425,6 @@
     
       <category term="计算机网络" scheme="https://didongdongdi.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>使用extundelete恢复linux上已删除的文件</title>
-    <link href="https://didongdongdi.github.io/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/"/>
-    <id>https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/</id>
-    <published>2019-04-16T10:27:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;参考网址&quot;&gt;&lt;a href=&quot;#参考网址&quot; class=&quot;headerlink&quot; title=&quot;参考网址&quot;&gt;&lt;/a&gt;参考网址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://blog.51cto.com/ityunwei2017/2328570?source=dra&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.51cto.com/ityunwei2017/2328570?source=dra&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://extundelete.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://extundelete.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
