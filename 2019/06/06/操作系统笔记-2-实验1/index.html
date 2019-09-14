@@ -168,7 +168,7 @@
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="实验内容完成一个能够切换到x86的保护模式并显示字符的bootloader 注意事项Bootloader可以让CPU进入保护模式, 读磁盘并加载ELF执行文件格式, 并显示字符 OS只是一个可以处理时钟中断和显示字符的幼儿园级别OS">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-28T03:15:53.610Z">
+<meta property="og:updated_time" content="2019-08-03T10:03:41.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统笔记_2_实验1">
 <meta name="twitter:description" content="实验内容完成一个能够切换到x86的保护模式并显示字符的bootloader 注意事项Bootloader可以让CPU进入保护模式, 读磁盘并加载ELF执行文件格式, 并显示字符 OS只是一个可以处理时钟中断和显示字符的幼儿园级别OS">
@@ -368,7 +368,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories<span class="badge">19</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories<span class="badge">21</span></a>
 
   </li>
         
@@ -386,7 +386,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">64</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">67</span></a>
 
   </li>
 
@@ -528,7 +528,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-07-28 11:15:53" itemprop="dateModified" datetime="2019-07-28T11:15:53+08:00">2019-07-28</time>
+                <time title="Modified: 2019-08-03 18:03:41" itemprop="dateModified" datetime="2019-08-03T18:03:41+08:00">2019-08-03</time>
               </span>
             
           
@@ -575,7 +575,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span title="Symbols count in article">2.3k</span>
+              <span title="Symbols count in article">4.2k</span>
             </span>
           
 
@@ -587,7 +587,7 @@
               
                 <span class="post-meta-item-text">Reading time &asymp;</span>
               
-              <span title="Reading time">2 mins.</span>
+              <span title="Reading time">4 mins.</span>
             </span>
           
 
@@ -635,6 +635,48 @@
 <li>最后一条指令打印指令指针寄存器(pc/eip)的内容(当前正在执行的指令的地址)</li>
 </ul>
 </blockquote>
+<h1 id="计算机启动流程-从计算机上电到进入ucore"><a href="#计算机启动流程-从计算机上电到进入ucore" class="headerlink" title="计算机启动流程(从计算机上电到进入ucore)"></a>计算机启动流程(从计算机上电到进入ucore)</h1><ol>
+<li><p>计算机上电, 运行第一条长跳转指令(CS和EIP都会更新)到BIOS代码中执行</p>
+</li>
+<li><p>BIOS执行其功能, 同时加载存储设备的第一个扇区的512字节到内存的0x7c00处, 然后跳转到这里开始执行</p>
+</li>
+<li><p>bootloader关闭中断, 清除方向标志, 确保内存地址由小到大增加</p>
+</li>
+<li><p>ds, es, ss 段寄存器置零</p>
+</li>
+<li><p>准备开启A20, 首先等待8042键盘控制器不忙(检查0x64端口或P2端口), 写入0xd1; 再次等待不忙, 写入0xdf到0x60端口; 由此完成了打开A20的操作</p>
+</li>
+<li><p>初始化gdt表, gdt表在这512个字节中的24个字节, 一共3个表项</p>
+</li>
+<li><p>将cr0就寄存器PE位(即最低位)置1, 从而进入保护模式</p>
+</li>
+<li><p>通过一个长跳转(段间跳转), 更新cs的基地址, 同时进入32位保护模式的代码部分</p>
+</li>
+<li><p>将保护模式下的数据段选择子, 放入ds, es, fs, gs, ss 段寄存器</p>
+</li>
+<li><p>设置ebp和esp寄存器初值</p>
+</li>
+<li><p>进入bootmain函数(进入c代码部分)</p>
+</li>
+<li><p>读取存储设备的八个扇区(8个512字节), 到内存中, 读取elf文件的头部</p>
+</li>
+<li><p>检查elf头部的幻数, 验证elf文件是否合法</p>
+</li>
+<li><p>读取elf头部的描述表(描述了elf文件应加载到内存什么位置)</p>
+</li>
+<li><p>按照描述表将elf文件中数据载入内存</p>
+</li>
+<li><p>根据elf头部存储的入口信息, 找到内核入口, 并进入</p>
+</li>
+</ol>
+<h1 id="BIOS的向后兼容"><a href="#BIOS的向后兼容" class="headerlink" title="BIOS的向后兼容"></a>BIOS的向后兼容</h1><blockquote>
+<p>Intel的CPU具有很好的向后兼容性。在16位的8086 CPU时代，内存限制在1MB范围内，且BIOS的代码固化在EPROM中。在基于Intel的8086 CPU的PC机中的EPROM被编址在1ＭB内存地址空间的最高64KB中。PC加电后，CS寄存器初始化为0xF000，IP寄存器初始化为0xFFF0，所以CPU要执行的第一条指令的地址为CS:IP=0xF000:0XFFF0（Segment:Offset 表示）=0xFFFF0（Linear表示）。这个地址位于被固化EPROM中，指令是一个长跳转指令JMP F000:E05B。这样就开启了BIOS的执行过程。</p>
+</blockquote>
+<blockquote>
+<p>到了32位的80386 CPU时代，内存空间扩大到了4G，多了段机制和页机制，但Intel依然很好地保证了80386向后兼容8086。地址空间的变化导致无法直接采用8086的启动约定。如果把BIOS启动固件编址在0xF000起始的64KB内存地址空间内，就会把整个物理内存地址空间隔离成不连续的两段，一段是0xF000以前的地址，一段是1MB以后的地址，这很不协调。为此，intel采用了一个折中的方案：默认将执行BIOS ROM编址在32位内存地址空间的最高端，即位于4GB地址的最后一个64KB内。在PC系统开机复位时，CPU进入实模式，并将CS寄存器设置成0xF000，将它的shadow register的Base值初始化设置为0xFFFF0000，EIP寄存器初始化设置为0x0000FFF0。所以机器执行的第一条指令的物理地址是0xFFFFFFF0。80386的BIOS代码也要和以前8086的BIOS代码兼容，故地址0xFFFFFFF0处的指令还是一条长跳转指令<code>jmp F000:E05B</code>。注意，这个长跳转指令会触发更新CS寄存器和它的shadow register，即执行<code>jmp F000 : E05B</code>后，CS将被更新成0xF000。表面上看CS其实没有变化，但CS的shadow register被更新为另外一个值了，它的Base域被更新成0x000F0000，此时形成的物理地址为Base+EIP=0x000FE05B，这就是CPU执行的第二条指令的地址。此时这条指令的地址已经是1M以内了，且此地址不再位于BIOS ROM中，而是位于RAM空间中。由于Intel设计了一种映射机制，将内存高端的BIOS ROM映射到1MB以内的RAM空间里，并且可以使这一段被映射的RAM空间具有与ROM类似的只读属性。所以PC机启动时将开启这种映射机制，让4GB地址空间的最高一个64KB的内容等同于1MB地址空间的最高一个64K的内容，从而使得执行了长跳转指令后，其实是回到了早期的8086 CPU初始化控制流，保证了向下兼容。</p>
+</blockquote>
+<h2 id="BIOS中A20的设置"><a href="#BIOS中A20的设置" class="headerlink" title="BIOS中A20的设置"></a>BIOS中A20的设置</h2><p>参考<a href="https://zhidao.baidu.com/question/24524472.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/24524472.html</a></p>
+<h2 id="如果在保护模式下不启用A20"><a href="#如果在保护模式下不启用A20" class="headerlink" title="如果在保护模式下不启用A20"></a>如果在保护模式下不启用A20</h2><p>参考<a href="https://www.zhihu.com/question/29375534" target="_blank" rel="noopener">https://www.zhihu.com/question/29375534</a></p>
 
       
     </div>
@@ -647,10 +689,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-26</div>
+        <div class="popular-posts-date">2019-06-06</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/05/26/Mixed/" rel="bookmark">English Mixed</a></div>
+      <div class="popular-posts-title"><a href="/2019/06/06/操作系统笔记-2-实验1-答案/" rel="bookmark">操作系统笔记_2_实验1_答案</a></div>
       
     </li>
   
@@ -677,16 +719,16 @@
         <div class="popular-posts-date">2018-05-26</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/05/26/Flipped_Week2/" rel="bookmark">Flipped (Week2)</a></div>
+      <div class="popular-posts-title"><a href="/2018/05/26/Flipped_Week3/" rel="bookmark">Flipped (Week3)</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-06-06</div>
+        <div class="popular-posts-date">2018-05-26</div>
       
       
-      <div class="popular-posts-title"><a href="/2019/06/06/shell笔记/" rel="bookmark">shell笔记</a></div>
+      <div class="popular-posts-title"><a href="/2018/05/26/Mixed/" rel="bookmark">English Mixed</a></div>
       
     </li>
   
@@ -880,7 +922,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-count">67</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -935,7 +977,11 @@
         
           
         
-        <span class="site-state-item-count">18</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">categories</span>
         </a>
       </div>
@@ -1085,7 +1131,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#实验内容"><span class="nav-number">1.</span> <span class="nav-text">实验内容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意事项"><span class="nav-number">2.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重点"><span class="nav-number">3.</span> <span class="nav-text">重点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#练习1"><span class="nav-number">4.</span> <span class="nav-text">练习1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#练习2"><span class="nav-number">5.</span> <span class="nav-text">练习2</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#实验内容"><span class="nav-number">1.</span> <span class="nav-text">实验内容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意事项"><span class="nav-number">2.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重点"><span class="nav-number">3.</span> <span class="nav-text">重点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#练习1"><span class="nav-number">4.</span> <span class="nav-text">练习1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#练习2"><span class="nav-number">5.</span> <span class="nav-text">练习2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机启动流程-从计算机上电到进入ucore"><span class="nav-number">6.</span> <span class="nav-text">计算机启动流程(从计算机上电到进入ucore)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BIOS的向后兼容"><span class="nav-number">7.</span> <span class="nav-text">BIOS的向后兼容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#BIOS中A20的设置"><span class="nav-number">7.1.</span> <span class="nav-text">BIOS中A20的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如果在保护模式下不启用A20"><span class="nav-number">7.2.</span> <span class="nav-text">如果在保护模式下不启用A20</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1120,7 +1166,7 @@
     
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">149k</span>
+    <span title="Symbols count total">160k</span>
   
 
   
@@ -1131,7 +1177,7 @@
     
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">2:16</span>
+    <span title="Reading time total">2:26</span>
   
 </div>
 

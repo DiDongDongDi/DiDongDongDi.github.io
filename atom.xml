@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-07-28T03:03:20.730Z</updated>
+  <updated>2019-09-14T14:57:19.426Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器人操作系统ROS_1</title>
+    <link href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS/"/>
+    <id>https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS/</id>
+    <published>2019-09-14T02:47:00.000Z</published>
+    <updated>2019-09-14T14:57:19.426Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;初识ROS&quot;&gt;&lt;a href=&quot;#初识ROS&quot; class=&quot;headerlink&quot; title=&quot;初识ROS&quot;&gt;&lt;/a&gt;初识ROS&lt;/h1&gt;&lt;h2 id=&quot;ROS介绍&quot;&gt;&lt;a href=&quot;#ROS介绍&quot; class=&quot;headerlink&quot; title=&quot;ROS介绍&quot;&gt;&lt;/a&gt;ROS介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;ros的设计目标: 提高机器人研发中的软件复用率&lt;/li&gt;
+&lt;li&gt;ros集成了大量的工具, 库, 协议, 提供了类似操作系统的功能, 把原本松散的零部件耦合在了一起&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_1_介绍</title>
+    <link href="https://didongdongdi.github.io/2019/09/08/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-1-%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://didongdongdi.github.io/2019/09/08/水下机器人视觉-1-介绍/</id>
+    <published>2019-09-08T05:13:00.000Z</published>
+    <updated>2019-09-08T11:44:53.702Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;机器人&quot;&gt;&lt;a href=&quot;#机器人&quot; class=&quot;headerlink&quot; title=&quot;机器人&quot;&gt;&lt;/a&gt;机器人&lt;/h1&gt;&lt;h1 id=&quot;水下机器人&quot;&gt;&lt;a href=&quot;#水下机器人&quot; class=&quot;headerlink&quot; title=&quot;水下机器人&quot;&gt;&lt;/a&gt;水下机器人&lt;/h1&gt;&lt;h1 id=&quot;水下机器人视觉&quot;&gt;&lt;a href=&quot;#水下机器人视觉&quot; class=&quot;headerlink&quot; title=&quot;水下机器人视觉&quot;&gt;&lt;/a&gt;水下机器人视觉&lt;/h1&gt;&lt;p&gt;目标检测 实例分割&lt;/p&gt;
+&lt;h1 id=&quot;人工智能&quot;&gt;&lt;a href=&quot;#人工智能&quot; class=&quot;headerlink&quot; title=&quot;人工智能&quot;&gt;&lt;/a&gt;人工智能&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eclipse Unhandled event loop exception No more handles 错误解决</title>
+    <link href="https://didongdongdi.github.io/2019/09/03/eclipse-Unhandled-event-loop-exception-No-more-handles-%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/"/>
+    <id>https://didongdongdi.github.io/2019/09/03/eclipse-Unhandled-event-loop-exception-No-more-handles-错误解决/</id>
+    <published>2019-09-03T04:04:00.000Z</published>
+    <updated>2019-09-03T04:10:08.554Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;将tomcat安装到非root用户下后, 同时将eclipse也安装到同一用户下, 使用该用户的权限启动后, 不再出现该问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;建议以后统一将自定义安装软件安装到普通用户目录下,
+        
+      
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="java" scheme="https://didongdongdi.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>git(hub)项目合作教程</title>
@@ -111,7 +189,7 @@
     <link href="https://didongdongdi.github.io/2019/06/06/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-2-%E5%AE%9E%E9%AA%8C1/"/>
     <id>https://didongdongdi.github.io/2019/06/06/操作系统笔记-2-实验1/</id>
     <published>2019-06-06T05:48:00.000Z</published>
-    <updated>2019-07-28T03:15:53.610Z</updated>
+    <updated>2019-08-03T10:03:41.300Z</updated>
     
     <summary type="html">
     
@@ -350,7 +428,7 @@
     <link href="https://didongdongdi.github.io/2019/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%941%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87_%E5%90%AF%E5%8A%A8_%E4%B8%AD%E6%96%AD_%E5%BC%82%E5%B8%B8%E5%92%8C%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/"/>
     <id>https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用/</id>
     <published>2019-04-30T14:51:00.000Z</published>
-    <updated>2019-06-06T14:04:34.948Z</updated>
+    <updated>2019-08-01T03:17:03.040Z</updated>
     
     <summary type="html">
     
@@ -368,63 +446,6 @@
     
     
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统笔记——0</title>
-    <link href="https://didongdongdi.github.io/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/"/>
-    <id>https://didongdongdi.github.io/2019/04/22/操作系统笔记——0/</id>
-    <published>2019-04-22T01:46:00.000Z</published>
-    <updated>2019-06-08T03:12:21.746Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="OS" scheme="https://didongdongdi.github.io/categories/OS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>输入时自动删除后面的字</title>
-    <link href="https://didongdongdi.github.io/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/"/>
-    <id>https://didongdongdi.github.io/2019/04/21/输入时自动删除后面的字/</id>
-    <published>2019-04-21T12:41:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;按下键盘上的&lt;code&gt;insert&lt;/code&gt;键，将输入模式改为&lt;code&gt;插入&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络专业术语目录（附解释）</title>
-    <link href="https://didongdongdi.github.io/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/"/>
-    <id>https://didongdongdi.github.io/2019/04/21/计算机网络专业术语目录/</id>
-    <published>2019-04-21T03:22:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;整个目录参考自&lt;a href=&quot;https://wenku.baidu.com/view/f5b7e76e26d3240c844769eae009581b6bd9bd9f.html?re=view&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度文库&lt;/a&gt;；增加了某些名词；增加了解释；目录并不完整，解释也有可能并不全面甚至空白，或者存在错误，还请指正。&lt;/p&gt;
-&lt;h1 id=&quot;计算机网络专业术语目录&quot;&gt;&lt;a href=&quot;#计算机网络专业术语目录&quot; class=&quot;headerlink&quot; title=&quot;计算机网络专业术语目录&quot;&gt;&lt;/a&gt;计算机网络专业术语目录&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="计算机网络" scheme="https://didongdongdi.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
     
   </entry>
   
