@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-09-14T14:57:19.426Z</updated>
+  <updated>2019-10-20T05:49:06.595Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -17,11 +17,165 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>水下机器人视觉_mnist手写数字识别</title>
+    <link href="https://didongdongdi.github.io/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/"/>
+    <id>https://didongdongdi.github.io/2019/10/20/水下机器人视觉-mnist手写数字识别/</id>
+    <published>2019-10-20T01:26:00.000Z</published>
+    <updated>2019-10-20T05:49:06.595Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In this notebook, we train an MLP to classify images from the MNIST database.&lt;/p&gt;
+&lt;h3 id=&quot;1-Load-MNIST-Database&quot;&gt;&lt;a href=&quot;#1-Load-MNIST-Database&quot; class=&quot;headerlink&quot; title=&quot;1. Load MNIST Database&quot;&gt;&lt;/a&gt;1. Load MNIST Database&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_7_卷积神经网络</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/</id>
+    <published>2019-09-28T23:55:00.000Z</published>
+    <updated>2019-10-20T04:00:19.859Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_6_张量</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/</id>
+    <published>2019-09-28T23:55:00.000Z</published>
+    <updated>2019-10-20T00:43:25.516Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_5_深度学习算法调优</title>
+    <link href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/"/>
+    <id>https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/</id>
+    <published>2019-09-28T09:30:00.000Z</published>
+    <updated>2019-10-19T23:59:28.874Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;学习率&quot;&gt;&lt;a href=&quot;#学习率&quot; class=&quot;headerlink&quot; title=&quot;学习率&quot;&gt;&lt;/a&gt;学习率&lt;/h1&gt;&lt;p&gt;学习率太大或太小的问题:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-39.png&quot; alt=&quot;学习率太大或太小&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器人操作系统ROS_2</title>
+    <link href="https://didongdongdi.github.io/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2/"/>
+    <id>https://didongdongdi.github.io/2019/09/27/机器人操作系统ROS-2/</id>
+    <published>2019-09-27T12:28:00.000Z</published>
+    <updated>2019-10-19T23:51:09.507Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;ROS的通信机制&quot;&gt;&lt;a href=&quot;#ROS的通信机制&quot; class=&quot;headerlink&quot; title=&quot;ROS的通信机制&quot;&gt;&lt;/a&gt;ROS的通信机制&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;ROS通信架构:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;各种数据的处理&lt;/li&gt;
+&lt;li&gt;进程的运行&lt;/li&gt;
+&lt;li&gt;消息的传递&lt;/li&gt;
+&lt;li&gt;等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_4_反向传播</title>
+    <link href="https://didongdongdi.github.io/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/"/>
+    <id>https://didongdongdi.github.io/2019/09/21/水下机器人视觉-4-反向传播/</id>
+    <published>2019-09-21T11:37:00.000Z</published>
+    <updated>2019-09-21T14:23:36.953Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;sigmoid函数的导数计算:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-35.png&quot; alt=&quot;sigmoid函数的导数&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人视觉_3_深度神经网络</title>
+    <link href="https://didongdongdi.github.io/2019/09/15/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-3-%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>https://didongdongdi.github.io/2019/09/15/水下机器人视觉-3-深度神经网络/</id>
+    <published>2019-09-15T13:46:00.000Z</published>
+    <updated>2019-09-21T14:06:31.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;非线性模型&quot;&gt;&lt;a href=&quot;#非线性模型&quot; class=&quot;headerlink&quot; title=&quot;非线性模型&quot;&gt;&lt;/a&gt;非线性模型&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-31.png&quot; alt=&quot;分类例子--没那么简单&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器人操作系统ROS_1</title>
-    <link href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS/"/>
-    <id>https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS/</id>
+    <link href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1/"/>
+    <id>https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1/</id>
     <published>2019-09-14T02:47:00.000Z</published>
-    <updated>2019-09-14T14:57:19.426Z</updated>
+    <updated>2019-10-14T03:39:43.496Z</updated>
     
     <summary type="html">
     
@@ -42,11 +196,34 @@
   </entry>
   
   <entry>
+    <title>水下机器人视觉_2_感知机</title>
+    <link href="https://didongdongdi.github.io/2019/09/08/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-2-%E6%84%9F%E7%9F%A5%E6%9C%BA/"/>
+    <id>https://didongdongdi.github.io/2019/09/08/水下机器人视觉-2-感知机/</id>
+    <published>2019-09-08T05:17:00.000Z</published>
+    <updated>2019-09-15T14:01:14.576Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;线性模型–分类例子&quot;&gt;&lt;a href=&quot;#线性模型–分类例子&quot; class=&quot;headerlink&quot; title=&quot;线性模型–分类例子&quot;&gt;&lt;/a&gt;线性模型–分类例子&lt;/h1&gt;&lt;p&gt;二维&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-6.png&quot; alt=&quot;二维&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>水下机器人视觉_1_介绍</title>
     <link href="https://didongdongdi.github.io/2019/09/08/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-1-%E4%BB%8B%E7%BB%8D/"/>
     <id>https://didongdongdi.github.io/2019/09/08/水下机器人视觉-1-介绍/</id>
     <published>2019-09-08T05:13:00.000Z</published>
-    <updated>2019-09-08T11:44:53.702Z</updated>
+    <updated>2019-09-14T23:55:22.028Z</updated>
     
     <summary type="html">
     
@@ -281,171 +458,6 @@
     
       <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>ctags中文注释错误</title>
-    <link href="https://didongdongdi.github.io/2019/05/16/ctags%E4%B8%AD%E6%96%87%E6%B3%A8%E9%87%8A%E9%94%99%E8%AF%AF/"/>
-    <id>https://didongdongdi.github.io/2019/05/16/ctags中文注释错误/</id>
-    <published>2019-05-16T08:18:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;ctags-代码与中文注释同行&quot;&gt;&lt;a href=&quot;#ctags-代码与中文注释同行&quot; class=&quot;headerlink&quot; title=&quot;ctags 代码与中文注释同行&quot;&gt;&lt;/a&gt;ctags 代码与中文注释同行&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vim按下回车后大括号自动换行缩进</title>
-    <link href="https://didongdongdi.github.io/2019/05/12/vim%E6%8C%89%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%BC%A9%E8%BF%9B/"/>
-    <id>https://didongdongdi.github.io/2019/05/12/vim按下回车后大括号自动换行缩进/</id>
-    <published>2019-05-12T09:40:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;问题描述: 在一对大括号之间回车，自动分为3行并调整缩进&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Deepin搜狗拼音输入法故障</title>
-    <link href="https://didongdongdi.github.io/2019/05/10/Deepin%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95%E6%95%85%E9%9A%9C/"/>
-    <id>https://didongdongdi.github.io/2019/05/10/Deepin搜狗拼音輸入法故障/</id>
-    <published>2019-05-10T06:25:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;a href=&quot;#Deepin搜狗拼音输入法故障&quot; class=&quot;headerlink&quot; title=&quot;Deepin搜狗拼音输入法故障&quot;&gt;&lt;/a&gt;Deepin搜狗拼音输入法故障&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SQL注意事项</title>
-    <link href="https://didongdongdi.github.io/2019/05/09/SQL%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://didongdongdi.github.io/2019/05/09/SQL注意事项/</id>
-    <published>2019-05-09T11:15:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;mysql错误1215：无法添加外键&lt;br&gt;可参考&lt;a href=&quot;https://blog.csdn.net/wangpeng047/article/details/19624351&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Deepin下安装MySQL（APT Repository）</title>
-    <link href="https://didongdongdi.github.io/2019/05/08/Deepin%E4%B8%8B%E5%AE%89%E8%A3%85MySQL/"/>
-    <id>https://didongdongdi.github.io/2019/05/08/Deepin下安装MySQL/</id>
-    <published>2019-05-08T08:42:00.000Z</published>
-    <updated>2019-05-29T13:40:25.641Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文参考自&lt;a href=&quot;https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;添加APT库&quot;&gt;&lt;a href=&quot;#添加APT库&quot; class=&quot;headerlink&quot; title=&quot;添加APT库&quot;&gt;&lt;/a&gt;添加APT库&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;下载APT库&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="数据库" scheme="https://didongdongdi.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vimscript笔记——0——单行命令</title>
-    <link href="https://didongdongdi.github.io/2019/05/06/vimscript%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940%E2%80%94%E2%80%94%E5%8D%95%E8%A1%8C%E5%91%BD%E4%BB%A4/"/>
-    <id>https://didongdongdi.github.io/2019/05/06/vimscript笔记——0——单行命令/</id>
-    <published>2019-05-06T05:34:00.000Z</published>
-    <updated>2019-05-27T05:39:44.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;预备知识&quot;&gt;&lt;a href=&quot;#预备知识&quot; class=&quot;headerlink&quot; title=&quot;预备知识&quot;&gt;&lt;/a&gt;预备知识&lt;/h1&gt;&lt;p&gt;&lt;code&gt;:echo $MYVIMRC&lt;/code&gt;得知&lt;code&gt;.vimrc&lt;/code&gt;文件的位置&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vim方向键等功能按键和鼠标乱码解决</title>
-    <link href="https://didongdongdi.github.io/2019/05/04/vim%E6%96%B9%E5%90%91%E9%94%AE%E7%AD%89%E5%8A%9F%E8%83%BD%E6%8C%89%E9%94%AE%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
-    <id>https://didongdongdi.github.io/2019/05/04/vim方向键等功能按键乱码解决/</id>
-    <published>2019-05-04T13:14:00.000Z</published>
-    <updated>2019-05-26T05:15:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h1&gt;&lt;p&gt;突然之间vim的方向键等功能按键和鼠标在insert模式下出现乱码，在搜索一段时间后，大部分采用&lt;code&gt;set compatible&lt;/code&gt;的方案，而我的&lt;code&gt;.vimrc&lt;/code&gt;文件中已经有这句话了，只好采用了不是特别完美的解决方案&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用</title>
-    <link href="https://didongdongdi.github.io/2019/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%941%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87_%E5%90%AF%E5%8A%A8_%E4%B8%AD%E6%96%AD_%E5%BC%82%E5%B8%B8%E5%92%8C%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/"/>
-    <id>https://didongdongdi.github.io/2019/04/30/操作系统笔记——1——操作系统概述_操作系统实验环境准备_启动_中断_异常和系统调用/</id>
-    <published>2019-04-30T14:51:00.000Z</published>
-    <updated>2019-08-01T03:17:03.040Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;操作系统的结构&quot;&gt;&lt;a href=&quot;#操作系统的结构&quot; class=&quot;headerlink&quot; title=&quot;操作系统的结构&quot;&gt;&lt;/a&gt;操作系统的结构&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/os-20.png&quot; alt=&quot;操作系统的结构&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;一共分为四层&lt;/li&gt;
-&lt;li&gt;内核由系统调用接口、系统调用接口下的各个功能模块和硬件抽象层组成&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="OS" scheme="https://didongdongdi.github.io/categories/OS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
     
   </entry>
   
