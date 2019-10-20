@@ -38,16 +38,15 @@
   </entry>
   
   <entry>
-    <title>水下机器人视觉_7_卷积神经网络</title>
-    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/</id>
+    <title>水下机器人视觉_6_张量</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/</id>
     <published>2019-09-28T23:55:00.000Z</published>
-    <updated>2019-10-20T04:00:19.859Z</updated>
+    <updated>2019-10-20T00:43:25.516Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
+      &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -59,15 +58,16 @@
   </entry>
   
   <entry>
-    <title>水下机器人视觉_6_张量</title>
-    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/"/>
-    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/</id>
+    <title>水下机器人视觉_7_卷积神经网络</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/</id>
     <published>2019-09-28T23:55:00.000Z</published>
-    <updated>2019-10-20T00:43:25.516Z</updated>
+    <updated>2019-10-20T10:11:26.411Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
     
     </summary>
     

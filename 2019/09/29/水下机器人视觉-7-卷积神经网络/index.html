@@ -70,7 +70,7 @@
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="深度神经网络识别手写字mnist手写数字识别 独热编码(One-Hot Encoding)">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-20T04:00:19.859Z">
+<meta property="og:updated_time" content="2019-10-20T10:11:26.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="水下机器人视觉_7_卷积神经网络">
 <meta name="twitter:description" content="深度神经网络识别手写字mnist手写数字识别 独热编码(One-Hot Encoding)">
@@ -394,7 +394,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-20 12:00:19" itemprop="dateModified" datetime="2019-10-20T12:00:19+08:00">2019-10-20</time>
+                <time title="Modified: 2019-10-20 18:11:26" itemprop="dateModified" datetime="2019-10-20T18:11:26+08:00">2019-10-20</time>
               </span>
             
           
@@ -433,7 +433,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span>111</span>
+              <span>1.4k</span>
             </span>
           
             <span class="post-meta-item" title="Reading time">
@@ -456,12 +456,91 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="深度神经网络识别手写字"><a href="#深度神经网络识别手写字" class="headerlink" title="深度神经网络识别手写字"></a>深度神经网络识别手写字</h1><p><a href="">mnist手写数字识别</a></p>
+        <h1 id="深度神经网络识别手写字"><a href="#深度神经网络识别手写字" class="headerlink" title="深度神经网络识别手写字"></a>深度神经网络识别手写字</h1><p><a href="https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/" target="_blank" rel="noopener">mnist手写数字识别</a></p>
 <h2 id="独热编码-One-Hot-Encoding"><a href="#独热编码-One-Hot-Encoding" class="headerlink" title="独热编码(One-Hot Encoding)"></a>独热编码(One-Hot Encoding)</h2><a id="more"></a>
-<p><img alt="二分类与多分类的编码" data-src="http://qiniu.wangqy.top/didong/images/"></p>
-<p><img alt="多分类独热编码" data-src="http://qiniu.wangqy.top/didong/images/"></p>
+<p><img alt="二分类与多分类的编码" data-src="http://qiniu.wangqy.top/didong/images/vision-49.png"></p>
+<p><img alt="多分类独热编码" data-src="http://qiniu.wangqy.top/didong/images/vision-50.png"></p>
 <p>关于独热编码的更多内容参考<a href="https://zhuanlan.zhihu.com/p/35287916" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35287916</a></p>
-<h1 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h1><h1 id="卷积层"><a href="#卷积层" class="headerlink" title="卷积层"></a>卷积层</h1><h1 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h1>
+<p><img alt="categorical Cross-Entropy" data-src="http://qiniu.wangqy.top/didong/images/vision-51.png"></p>
+<h1 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h1><p><img alt="CNN" data-src="http://qiniu.wangqy.top/didong/images/vision-52.png"></p>
+<table>
+<thead>
+<tr>
+<th>多层感知机(MLPs)</th>
+<th>卷积神经网络(CNNs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只用全连接层</td>
+<td><code>也</code>使用稀疏层</td>
+</tr>
+<tr>
+<td>只接收向量作为输入</td>
+<td><code>也</code>接收矩阵作为输入</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="MLPs接受向量作为输入" data-src="http://qiniu.wangqy.top/didong/images/vision-53.png"></p>
+<p><img alt="CNNs也接收矩阵作为输入" data-src="http://qiniu.wangqy.top/didong/images/vision-54.png"></p>
+<h1 id="卷积层"><a href="#卷积层" class="headerlink" title="卷积层"></a>卷积层</h1><blockquote>
+<p>filer(卷积核)<br>同输入层中与卷积核重叠的部分进行求和运算, 而后将求和后的结果经过激活函数处理, 得到卷积后的结果(卷积层)中的一个像素的值</p>
+</blockquote>
+<p><img alt="卷积层的生成" data-src="http://qiniu.wangqy.top/didong/images/vision-55.png"></p>
+<blockquote>
+<p>使用一个卷积核可以获得输入层的一种输入特征<br>使用多个卷积核可以获得输入层的多种输入特征, 从而使得到的特征更加丰富, 使模型更加准确</p>
+</blockquote>
+<p><img alt="使用多个卷积核, 获得深度" data-src="http://qiniu.wangqy.top/didong/images/vision-56.png"></p>
+<p><img alt="多个卷积核的卷积计算" data-src="http://qiniu.wangqy.top/didong/images/vision-57.png"></p>
+<p><img alt="多个卷积核形成卷积层(1)" data-src="http://qiniu.wangqy.top/didong/images/vision-58.png"></p>
+<p><img alt="多个卷积核形成卷积层(2)" data-src="http://qiniu.wangqy.top/didong/images/vision-59.png"></p>
+<p><img alt="多个卷积核形成卷积层(3)" data-src="http://qiniu.wangqy.top/didong/images/vision-60.png"></p>
+<blockquote>
+<p>步长(stride)<br>卷积核每次移动的长度(几个像素)</p>
+</blockquote>
+<p><img alt="左边的步长较小, 右边的步长较大" data-src="http://qiniu.wangqy.top/didong/images/vision-61.png"></p>
+<blockquote>
+<p>填充(padding)<br>当卷积核移动到边缘时, 覆盖的像素数少于卷积核的像素数, 此时在空白处填0进行填充</p>
+</blockquote>
+<p><img alt="出现空白" data-src="http://qiniu.wangqy.top/didong/images/vision-62.png"></p>
+<p><img alt="使用0进行填充" data-src="http://qiniu.wangqy.top/didong/images/vision-63.png"></p>
+<blockquote>
+<p>在Keras中使用卷积层:<br>参考<a href="https://keras.io/zh/layers/convolutional/#conv2d" target="_blank" rel="noopener">Keras中文文档</a><br>e.g.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from keras.models import Sequential</span><br><span class="line">from keras.layers import Conv2D</span><br><span class="line"></span><br><span class="line">model = Sequential()</span><br><span class="line">model.add(Conv2D(filters=32, kernel_size=3, strides=2, padding=&apos;same&apos;, activation=&apos;relu&apos;, input_shape=(128, 128, 3)))</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意:</p>
+<ul>
+<li>activation如果不指定, 则不使用激活函数(即线性激活函数: <code>a(x) = x</code>)</li>
+<li>input_shape, 当使用该层作为模型第一层时, 必须提供</li>
+<li>padding, <code>same</code>代表保留边界处的卷积结果, 即会padding, 而<code>vaild</code>代表只进行有效的卷积, 对边界数据不处理, 即丢弃, 详细内容参考<a href="https://oldpan.me/archives/tf-keras-padding-vaild-same" target="_blank" rel="noopener">https://oldpan.me/archives/tf-keras-padding-vaild-same</a></li>
+</ul>
+</blockquote>
+<h1 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h1><h2 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h2><blockquote>
+<p>在CNN网络中卷积层之后会跟上一个池化层, 根据计算出来的值不一样, 分为均值池化层和最大池化层, 一般常见的多为最大池化层<br>池化操作不改变通道数, 且不需要参数控制</p>
+</blockquote>
+<p><img alt="最大池化层的计算" data-src="http://qiniu.wangqy.top/didong/images/vision-64.png"></p>
+<p><img alt="最大池化层" data-src="http://qiniu.wangqy.top/didong/images/vision-65.png"></p>
+<p><img alt="全局平均池化层" data-src="http://qiniu.wangqy.top/didong/images/vision-66.png"></p>
+<h2 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h2><blockquote>
+<p>池化层的作用<a href="https://blog.csdn.net/XX_123_1_RJ/article/details/86677482" target="_blank" rel="noopener">https://blog.csdn.net/XX_123_1_RJ/article/details/86677482</a>:</p>
+<ul>
+<li>下采样(downsamping), 即缩小图像, 主要目的是(参考自<a href="https://blog.csdn.net/majinlei121/article/details/46742339" target="_blank" rel="noopener">https://blog.csdn.net/majinlei121/article/details/46742339</a>)<blockquote>
+<ul>
+<li>使得图像符合显示区域的大小</li>
+<li>生成对应图像的缩略图</li>
+</ul>
+</blockquote>
+</li>
+<li>降维, 去除冗余信息, 对特征进行压缩, 简化网络复杂度, 减小计算量, 减小内存消耗等等; 总之就是减少参数量</li>
+<li>实现非线性</li>
+<li>扩大感知野(感知野是卷积神经网络每一层输出的特征图上的像素点在原始图像上映射的区域的大小, 参考<a href="https://blog.csdn.net/m0_37561765/article/details/79943816" target="_blank" rel="noopener">https://blog.csdn.net/m0_37561765/article/details/79943816</a>)</li>
+<li>实现不变性, 其中不变性包括: 平移不变性, 旋转不变性和尺度不变性</li>
+<li><a href="https://www.zhihu.com/question/36686900" target="_blank" rel="noopener">知乎相关问题</a></li>
+</ul>
+</blockquote>
+<h2 id="怎么办-Keras中使用池化层"><a href="#怎么办-Keras中使用池化层" class="headerlink" title="怎么办(Keras中使用池化层)"></a>怎么办(Keras中使用池化层)</h2><p>参考<a href="https://keras.io/zh/layers/pooling/" target="_blank" rel="noopener">Keras官方中文文档</a></p>
+
     </div>
 
     
@@ -527,8 +606,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/29/水下机器人视觉-6-张量/" rel="next" title="水下机器人视觉_6_张量">
-                  <i class="fa fa-chevron-left"></i> 水下机器人视觉_6_张量
+                <a href="/2019/09/28/水下机器人视觉-5-深度学习算法调优/" rel="next" title="水下机器人视觉_5_深度学习算法调优">
+                  <i class="fa fa-chevron-left"></i> 水下机器人视觉_5_深度学习算法调优
                 </a>
               
             </div>
@@ -537,8 +616,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/10/20/水下机器人视觉-mnist手写数字识别/" rel="prev" title="水下机器人视觉_mnist手写数字识别">
-                  水下机器人视觉_mnist手写数字识别 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/29/水下机器人视觉-6-张量/" rel="prev" title="水下机器人视觉_6_张量">
+                  水下机器人视觉_6_张量 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -592,7 +671,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深度神经网络识别手写字"><span class="nav-number">1.</span> <span class="nav-text">深度神经网络识别手写字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#独热编码-One-Hot-Encoding"><span class="nav-number">1.1.</span> <span class="nav-text">独热编码(One-Hot Encoding)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卷积神经网络"><span class="nav-number">2.</span> <span class="nav-text">卷积神经网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卷积层"><span class="nav-number">3.</span> <span class="nav-text">卷积层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#池化层"><span class="nav-number">4.</span> <span class="nav-text">池化层</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深度神经网络识别手写字"><span class="nav-number">1.</span> <span class="nav-text">深度神经网络识别手写字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#独热编码-One-Hot-Encoding"><span class="nav-number">1.1.</span> <span class="nav-text">独热编码(One-Hot Encoding)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卷积神经网络"><span class="nav-number">2.</span> <span class="nav-text">卷积神经网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卷积层"><span class="nav-number">3.</span> <span class="nav-text">卷积层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#池化层"><span class="nav-number">4.</span> <span class="nav-text">池化层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#是什么"><span class="nav-number">4.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么"><span class="nav-number">4.2.</span> <span class="nav-text">为什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么办-Keras中使用池化层"><span class="nav-number">4.3.</span> <span class="nav-text">怎么办(Keras中使用池化层)</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -708,14 +787,14 @@
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">185k</span>
+    <span title="Symbols count total">186k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">2:48</span>
+    <span title="Reading time total">2:49</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
