@@ -70,7 +70,7 @@
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="深度神经网络识别手写字mnist手写数字识别 独热编码(One-Hot Encoding)">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-20T10:11:26.411Z">
+<meta property="og:updated_time" content="2019-10-20T14:11:16.941Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="水下机器人视觉_7_卷积神经网络">
 <meta name="twitter:description" content="深度神经网络识别手写字mnist手写数字识别 独热编码(One-Hot Encoding)">
@@ -263,7 +263,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">22</span></a>
 
   </li>
       
@@ -287,7 +287,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">75</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">83</span></a>
 
   </li>
       
@@ -394,7 +394,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-20 18:11:26" itemprop="dateModified" datetime="2019-10-20T18:11:26+08:00">2019-10-20</time>
+                <time title="Modified: 2019-10-20 22:11:16" itemprop="dateModified" datetime="2019-10-20T22:11:16+08:00">2019-10-20</time>
               </span>
             
           
@@ -433,7 +433,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span>1.4k</span>
+              <span>1.9k</span>
             </span>
           
             <span class="post-meta-item" title="Reading time">
@@ -443,7 +443,7 @@
               
                 <span class="post-meta-item-text">Reading time &asymp;</span>
               
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
           
 
@@ -518,6 +518,26 @@
 </blockquote>
 <h1 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h1><h2 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h2><blockquote>
 <p>在CNN网络中卷积层之后会跟上一个池化层, 根据计算出来的值不一样, 分为均值池化层和最大池化层, 一般常见的多为最大池化层<br>池化操作不改变通道数, 且不需要参数控制</p>
+</blockquote>
+<blockquote>
+<p>池化层的种类(参考自<a href="https://blog.csdn.net/XX_123_1_RJ/article/details/86677482" target="_blank" rel="noopener">https://blog.csdn.net/XX_123_1_RJ/article/details/86677482</a>):</p>
+<ul>
+<li>一般池化<blockquote>
+<ul>
+<li>平均池化</li>
+<li>最大池化</li>
+</ul>
+</blockquote>
+</li>
+<li>重叠池化(OverlappingPooling): 相邻池化窗口之间有重叠区域, 此时一般<code>sizeX &gt; stride</code></li>
+<li>空金字塔池化(Spatial Pyramid Pooling): <blockquote>
+<ul>
+<li>空金字塔池化的思想源自<code>Spatial Pyramid Model</code>, 它将一个pooling变成了多个scale的pooling; 用不同大小池化窗口作用于上层卷积特征; 也就是活<code>spatial pyramid pooling layer</code>就是把前一卷积层的feature maps的每一个图片上进行了3个卷积操作, 并把结果输出给全连接层; 其中每一个pool操作可以看成是一个空间金字塔的一层</li>
+<li>这样做的好处是, 空间金字塔池化可以把任意尺度的图像的卷积特征转化成相同维度, 这不仅可以让CNN处理任意尺度的图像, 还能避免cropping和warping操作, 导致一些信息的丢失, 具有非常重要的意义</li>
+</ul>
+</blockquote>
+</li>
+</ul>
 </blockquote>
 <p><img alt="最大池化层的计算" data-src="http://qiniu.wangqy.top/didong/images/vision-64.png"></p>
 <p><img alt="最大池化层" data-src="http://qiniu.wangqy.top/didong/images/vision-65.png"></p>
@@ -690,7 +710,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-count">83</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -703,7 +723,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-count">22</span>
         <span class="site-state-item-name">categories</span>
         </a>
       </div>
@@ -787,14 +807,14 @@
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">186k</span>
+    <span title="Symbols count total">204k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">2:49</span>
+    <span title="Reading time total">3:06</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
