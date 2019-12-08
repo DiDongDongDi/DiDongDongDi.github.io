@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2019-10-27T07:17:40.509Z</updated>
+  <updated>2019-12-07T09:34:37.064Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下STM32开发</title>
+    <link href="https://didongdongdi.github.io/2019/12/07/Linux%E4%B8%8BSTM32%E5%BC%80%E5%8F%91/"/>
+    <id>https://didongdongdi.github.io/2019/12/07/Linux下STM32开发/</id>
+    <published>2019-12-07T04:25:00.000Z</published>
+    <updated>2019-12-07T09:34:37.064Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考自&lt;a href=&quot;http://panqiincs.me/2019/07/26/develop-stm32-on-linux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://panqiincs.me/2019/07/26/develop-stm32-on-linux/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由于我是在Deepin下进行配置的, 所以和原教程有所差别&lt;/p&gt;
+&lt;p&gt;同时采用的编辑器是vim, 而不是VSC&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://didongdongdi.github.io/categories/Linux/"/>
+    
+    
+      <category term="STM32" scheme="https://didongdongdi.github.io/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>犬种识别代码</title>
+    <link href="https://didongdongdi.github.io/2019/12/07/%E7%8A%AC%E7%A7%8D%E8%AF%86%E5%88%AB%E4%BB%A3%E7%A0%81/"/>
+    <id>https://didongdongdi.github.io/2019/12/07/犬种识别代码/</id>
+    <published>2019-12-07T04:21:00.000Z</published>
+    <updated>2019-12-08T02:58:19.227Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;模型训练&quot;&gt;&lt;a href=&quot;#模型训练&quot; class=&quot;headerlink&quot; title=&quot;模型训练&quot;&gt;&lt;/a&gt;模型训练&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人传感技术_1</title>
+    <link href="https://didongdongdi.github.io/2019/11/02/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%8A%80%E6%9C%AF-1/"/>
+    <id>https://didongdongdi.github.io/2019/11/02/水下机器人传感技术-1/</id>
+    <published>2019-11-02T14:37:00.000Z</published>
+    <updated>2019-11-03T00:49:15.681Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;机器人行业介绍&quot;&gt;&lt;a href=&quot;#机器人行业介绍&quot; class=&quot;headerlink&quot; title=&quot;机器人行业介绍&quot;&gt;&lt;/a&gt;机器人行业介绍&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;现实中机器人的主要特点:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于目前的科技与制造水平&lt;/li&gt;
+&lt;li&gt;外形各异, 大部分并不与人相像&lt;/li&gt;
+&lt;li&gt;与人交流的方式不局限于语言&lt;/li&gt;
+&lt;li&gt;为完成某一种特定的场景与工作目标而设计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
+    
+  </entry>
   
   <entry>
     <title>机器人操作系统ROS_6_MoveIt!机械臂控制</title>
@@ -185,7 +255,7 @@
     <link href="https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/"/>
     <id>https://didongdongdi.github.io/2019/10/21/机器人操作系统ROS-3-机器人建模与仿真/</id>
     <published>2019-10-21T08:09:00.000Z</published>
-    <updated>2019-10-21T11:59:16.126Z</updated>
+    <updated>2019-11-11T01:53:16.197Z</updated>
     
     <summary type="html">
     
@@ -249,15 +319,16 @@
   </entry>
   
   <entry>
-    <title>水下机器人视觉_6_张量</title>
-    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/"/>
-    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/</id>
+    <title>水下机器人视觉_7_卷积神经网络</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/</id>
     <published>2019-09-28T23:55:00.000Z</published>
-    <updated>2019-10-20T00:43:25.516Z</updated>
+    <updated>2019-10-20T14:11:16.941Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
     
     </summary>
     
@@ -269,16 +340,15 @@
   </entry>
   
   <entry>
-    <title>水下机器人视觉_7_卷积神经网络</title>
-    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/</id>
+    <title>水下机器人视觉_6_张量</title>
+    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/"/>
+    <id>https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/</id>
     <published>2019-09-28T23:55:00.000Z</published>
-    <updated>2019-10-20T14:11:16.941Z</updated>
+    <updated>2019-10-20T00:43:25.516Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
+      &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -426,79 +496,6 @@
     
     
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_1_介绍</title>
-    <link href="https://didongdongdi.github.io/2019/09/08/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-1-%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://didongdongdi.github.io/2019/09/08/水下机器人视觉-1-介绍/</id>
-    <published>2019-09-08T05:13:00.000Z</published>
-    <updated>2019-09-14T23:55:22.028Z</updated>
-    
-    <summary type="html">
-    
-      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;机器人&quot;&gt;&lt;a href=&quot;#机器人&quot; class=&quot;headerlink&quot; title=&quot;机器人&quot;&gt;&lt;/a&gt;机器人&lt;/h1&gt;&lt;h1 id=&quot;水下机器人&quot;&gt;&lt;a href=&quot;#水下机器人&quot; class=&quot;headerlink&quot; title=&quot;水下机器人&quot;&gt;&lt;/a&gt;水下机器人&lt;/h1&gt;&lt;h1 id=&quot;水下机器人视觉&quot;&gt;&lt;a href=&quot;#水下机器人视觉&quot; class=&quot;headerlink&quot; title=&quot;水下机器人视觉&quot;&gt;&lt;/a&gt;水下机器人视觉&lt;/h1&gt;&lt;p&gt;目标检测 实例分割&lt;/p&gt;
-&lt;h1 id=&quot;人工智能&quot;&gt;&lt;a href=&quot;#人工智能&quot; class=&quot;headerlink&quot; title=&quot;人工智能&quot;&gt;&lt;/a&gt;人工智能&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>eclipse Unhandled event loop exception No more handles 错误解决</title>
-    <link href="https://didongdongdi.github.io/2019/09/03/eclipse-Unhandled-event-loop-exception-No-more-handles-%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/"/>
-    <id>https://didongdongdi.github.io/2019/09/03/eclipse-Unhandled-event-loop-exception-No-more-handles-错误解决/</id>
-    <published>2019-09-03T04:04:00.000Z</published>
-    <updated>2019-09-03T04:10:08.554Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;将tomcat安装到非root用户下后, 同时将eclipse也安装到同一用户下, 使用该用户的权限启动后, 不再出现该问题&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;建议以后统一将自定义安装软件安装到普通用户目录下,
-        
-      
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
-    
-    
-      <category term="java" scheme="https://didongdongdi.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git(hub)项目合作教程</title>
-    <link href="https://didongdongdi.github.io/2019/07/01/git-hub-%E9%A1%B9%E7%9B%AE%E5%90%88%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
-    <id>https://didongdongdi.github.io/2019/07/01/git-hub-项目合作教程/</id>
-    <published>2019-07-01T06:57:00.000Z</published>
-    <updated>2019-07-28T03:03:20.730Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;大二小学期的项目终于开始正式起来了, 一起做东西的人也多了, 同时大家对git(hub)的了解也逐渐多了起来, 以及java有C++做铺垫, 相对以前来说, 有更多的时间去考虑项目(代码)管理. git(hub)终于可以发挥其真正的用途.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="https://didongdongdi.github.io/categories/Git/"/>
-    
-    
-      <category term="教程" scheme="https://didongdongdi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

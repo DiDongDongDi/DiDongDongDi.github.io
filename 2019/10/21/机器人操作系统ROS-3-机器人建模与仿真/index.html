@@ -70,7 +70,7 @@
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="机器人统一描述格式urdfurdf介绍 Unified Robot Description Format, 统一机器人描述(URDF)是种用于描述机器人机器结构, 关节, 自由度等的xml格式文件ROS中的urdf功能包包含一个URDF的C++解析器, URDF文件使用XML格式描述机器人模型   URDF语法规范见:http://wiki.ros.org/urdf/XML">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-21T11:59:16.126Z">
+<meta property="og:updated_time" content="2019-11-11T01:53:16.197Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器人操作系统ROS_3_机器人建模与仿真">
 <meta name="twitter:description" content="机器人统一描述格式urdfurdf介绍 Unified Robot Description Format, 统一机器人描述(URDF)是种用于描述机器人机器结构, 关节, 自由度等的xml格式文件ROS中的urdf功能包包含一个URDF的C++解析器, URDF文件使用XML格式描述机器人模型   URDF语法规范见:http://wiki.ros.org/urdf/XML">
@@ -239,7 +239,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">28</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
 
   </li>
       
@@ -263,7 +263,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">22</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
 
   </li>
       
@@ -287,7 +287,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">83</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
 
   </li>
       
@@ -383,11 +383,19 @@
                 
               
 
-              <time title="Created: 2019-10-21 16:09:00 / Modified: 19:59:16" itemprop="dateCreated datePublished" datetime="2019-10-21T16:09:00+08:00">2019-10-21</time>
+              <time title="Created: 2019-10-21 16:09:00" itemprop="dateCreated datePublished" datetime="2019-10-21T16:09:00+08:00">2019-10-21</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-11 09:53:16" itemprop="dateModified" datetime="2019-11-11T09:53:16+08:00">2019-11-11</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -425,7 +433,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span>4.3k</span>
+              <span>4.1k</span>
             </span>
           
             <span class="post-meta-item" title="Reading time">
@@ -628,7 +636,7 @@
 <li>宏定义</li>
 </ol>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">xacro:macro</span> <span class="attr">name</span>=<span class="string">"default_origin"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">origin</span> <span class="attr">xyz</span>=<span class="string">"0 0 0"</span> <span class="attr">rpy</span>=<span class="string">"0 0 0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">xacro:macro</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xacro:default_origin</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">xacro:macro</span> <span class="attr">name</span>=<span class="string">"default_link"</span> <span class="attr">params</span>=<span class="string">"prefix"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">name</span>=<span class="string">"$&#123;prefix&#125;_link1"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">xacro:macro</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xacro:default_link</span> <span class="attr">prefix</span>=<span class="string">"my"</span> /&gt;</span></span><br><span class="line">&lt;xacro:default_&lt;xacro:macro name="default_link" params="prefix"&gt;</span><br><span class="line">•</span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">name</span>=<span class="string">"$&#123;prefix&#125;_link1"</span> /&gt;</span></span><br><span class="line">• <span class="tag">&lt;/<span class="name">xacro:macro</span>&gt;</span></span><br><span class="line">• <span class="tag">&lt;<span class="name">xacro:default_link</span> <span class="attr">prefix</span>=<span class="string">"my"</span> /&gt;</span></span><br><span class="line">• <span class="tag">&lt;<span class="name">xacro:default_link</span> <span class="attr">prefix</span>=<span class="string">"your"</span> /&gt;</span>link prefix="your" /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">xacro:macro</span> <span class="attr">name</span>=<span class="string">"default_link"</span> <span class="attr">params</span>=<span class="string">"prefix"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">name</span>=<span class="string">"$&#123;prefix&#125;_link1"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">xacro:macro</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xacro:default_link</span> <span class="attr">prefix</span>=<span class="string">"my"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xacro:default_link</span> <span class="attr">prefix</span>=<span class="string">"your"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>不单由这样简单的参数, 还可以使用块参数</p>
 </blockquote>
@@ -798,7 +806,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-count">86</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -811,7 +819,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">categories</span>
         </a>
       </div>
@@ -824,7 +832,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
@@ -895,14 +903,14 @@
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">204k</span>
+    <span title="Symbols count total">215k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">3:06</span>
+    <span title="Reading time total">3:15</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
