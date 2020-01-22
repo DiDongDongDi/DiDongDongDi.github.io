@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-01-21T14:22:58.260Z</updated>
+  <updated>2020-01-22T01:45:26.477Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -21,9 +21,12 @@
     <link href="https://didongdongdi.github.io/2020/01/21/Next-Hexo-%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/"/>
     <id>https://didongdongdi.github.io/2020/01/21/Next-Hexo-%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</id>
     <published>2020-01-21T14:22:00.000Z</published>
-    <updated>2020-01-21T14:22:58.260Z</updated>
+    <updated>2020-01-22T01:45:26.477Z</updated>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;更新Next主题&quot;&gt;&lt;a href=&quot;#更新Next主题&quot; class=&quot;headerlink&quot; title=&quot;更新Next主题&quot;&gt;&lt;/a&gt;更新Next主题&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git pull&lt;/code&gt;直接更新主题, 但是&lt;code&gt;_config.yml&lt;/code&gt;中往往会有冲突产生, 所以需要仔细修改.&lt;/p&gt;
+&lt;h1 id=&quot;更新hexo及相关插件&quot;&gt;&lt;a href=&quot;#更新hexo及相关插件&quot; class=&quot;headerlink&quot; title=&quot;更新hexo及相关插件&quot;&gt;&lt;/a&gt;更新hexo及相关插件&lt;/h1&gt;&lt;p&gt;主题仓库重新拉取后, &lt;code&gt;hexo clean&lt;/code&gt;清除生成的网页文件, &lt;code&gt;hexo g&lt;/code&gt;再次生成时出现错误.&lt;/p&gt;
     
     </summary>
     

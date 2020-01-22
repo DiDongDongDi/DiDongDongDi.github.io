@@ -8,7 +8,7 @@
       <link href="/2020/01/21/Next-Hexo-%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/"/>
       <url>/2020/01/21/Next-Hexo-%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="更新Next主题"><a href="#更新Next主题" class="headerlink" title="更新Next主题"></a>更新Next主题</h1><p><code>git pull</code>直接更新主题, 但是<code>_config.yml</code>中往往会有冲突产生, 所以需要仔细修改.</p><h1 id="更新hexo及相关插件"><a href="#更新hexo及相关插件" class="headerlink" title="更新hexo及相关插件"></a>更新hexo及相关插件</h1><p>主题仓库重新拉取后, <code>hexo clean</code>清除生成的网页文件, <code>hexo g</code>再次生成时出现错误.</p><a id="more"></a><p>怀疑是hexo的版本太低, 根据<a href="https://whjkm.github.io/2018/07/17/Hexo%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E5%92%8CNext%E4%B8%BB%E9%A2%98%E5%8D%87%E7%BA%A7%E4%B9%8B%E5%9D%91/" target="_blank" rel="noopener">https://whjkm.github.io/2018/07/17/Hexo%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E5%92%8CNext%E4%B8%BB%E9%A2%98%E5%8D%87%E7%BA%A7%E4%B9%8B%E5%9D%91/</a>升级hexo, 参考其升级hexo版本的部分即可.</p><p>但是后面发现仍然出现错误, 而后升级<code>node.js</code>解决.</p><p>升级<code>node.js</code>的方法见<a href="https://github.com/nodesource/distributions#debinstall" target="_blank" rel="noopener">https://github.com/nodesource/distributions#debinstall</a>, 根据对应的版本执行对应的命令.</p>]]></content>
       
       
       <categories>
