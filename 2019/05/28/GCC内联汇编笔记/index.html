@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
   <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
   <meta name="baidu-site-verification" content="mBrz0gqBDR">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+<link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
     root: '/',
     scheme: 'Muse',
-    version: '7.4.1',
+    version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":false,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -43,6 +38,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
       appID: '',
       apiKey: '',
@@ -52,28 +48,23 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
   <meta name="description" content="什么是内联汇编? 内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GCC内联汇编笔记">
-<meta property="og:url" content="https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/index.html">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="什么是内联汇编? 内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-28T03:11:04.075Z">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-05-28T06:29:00.000Z">
+<meta property="article:modified_time" content="2019-07-28T03:11:04.075Z">
+<meta property="article:author" content="DiDong">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GCC内联汇编笔记">
-<meta name="twitter:description" content="什么是内联汇编? 内联函数我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方">
-  <link rel="canonical" href="https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/">
+
+<link rel="canonical" href="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -81,9 +72,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -91,15 +80,13 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
     <script pjax>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
+      if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-120518210-1');
       }
     </script>
-  
 
 
   <script pjax>
@@ -111,8 +98,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
-
 
 
 
@@ -129,7 +114,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -141,6 +125,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -175,134 +160,36 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-        
-        
         <li class="menu-item menu-item-home">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-tags">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-          
-        
-      
-    
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">27</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-categories">
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-    
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-archives">
-      
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">87</span></a>
 
   </li>
-      
-    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">
-        
-          <i class="fa fa-search fa-fw"></i>
-        
-        Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
       </li>
-    
   </ul>
-
-    
 
 </nav>
   <div class="site-search">
@@ -343,6 +230,8 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+
           <div class="content">
             
 
@@ -351,12 +240,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -364,11 +253,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            GCC内联汇编笔记
-            
-
-          
+          GCC内联汇编笔记
         </h2>
 
         <div class="post-meta">
@@ -378,16 +263,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-05-28 14:29:00" itemprop="dateCreated datePublished" datetime="2019-05-28T14:29:00+08:00">2019-05-28</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -395,25 +272,17 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-07-28 11:11:04" itemprop="dateModified" datetime="2019-07-28T11:11:04+08:00">2019-07-28</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Notes/" itemprop="url" rel="index">
                     <span itemprop="name">Notes</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -422,29 +291,21 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-          <br>
+            </span><br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>4.7k</span>
+              <span>4.2k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>4 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -459,6 +320,7 @@
 <p>内联函数<br>我们可以要求编译器将一个函数的代码插入到调用者的代码中函数实际调用的地方</p>
 </blockquote>
 <a id="more"></a>
+
 <blockquote>
 <p>inline(内联)的作用<br>减少函数调用开销, 同时如果所有实参的值为常量, 它们的已知值可以再编译期允许简化, 因此并非所有的内联函数代码都需要被包含进去, 代码大小的影响是不可预测的, 这取决于特定的情况</p>
 </blockquote>
@@ -472,67 +334,61 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">AT&amp;T</th>
-<th style="text-align:center">b</th>
-<th style="text-align:center">w</th>
-<th style="text-align:center">l</th>
+<th align="center">AT&amp;T</th>
+<th align="center">b</th>
+<th align="center">w</th>
+<th align="center">l</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">字节</td>
-<td style="text-align:center">字</td>
-<td style="text-align:center">长型</td>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">字节</td>
+<td align="center">字</td>
+<td align="center">长型</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center">32</td>
+<td align="center"></td>
+<td align="center">8</td>
+<td align="center">16</td>
+<td align="center">32</td>
 </tr>
 <tr>
-<td style="text-align:center">Intel</td>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">word</td>
-<td style="text-align:center">dword</td>
+<td align="center">Intel</td>
+<td align="center">byte</td>
+<td align="center">word</td>
+<td align="center">dword</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">ptr</td>
-<td style="text-align:center">ptr</td>
-<td style="text-align:center">ptr</td>
+<td align="center"></td>
+<td align="center">ptr</td>
+<td align="center">ptr</td>
+<td align="center">ptr</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">AT&amp;T</th>
-<th style="text-align:center">movb foo, %al</th>
+<th align="center">AT&amp;T</th>
+<th align="center">movb foo, %al</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">Intel</td>
-<td style="text-align:center">mov al, byte ptr foo</td>
+<tbody><tr>
+<td align="center">Intel</td>
+<td align="center">mov al, byte ptr foo</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h1 id="存储器操作数"><a href="#存储器操作数" class="headerlink" title="存储器操作数"></a>存储器操作数</h1><table>
 <thead>
 <tr>
-<th style="text-align:center">AT&amp;T</th>
-<th style="text-align:center">section:disp(base, index, scale)</th>
+<th align="center">AT&amp;T</th>
+<th align="center">section:disp(base, index, scale)</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">Intel</td>
-<td style="text-align:center">section:[base + index*scale + disp]</td>
+<tbody><tr>
+<td align="center">Intel</td>
+<td align="center">section:[base + index*scale + disp]</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>注意: 当一个常量用于disp或scale, 不能添加<code>$</code>前缀</p>
 <blockquote>
 <p>base: 基址寄存器 ebx<br>index: 索引(寄存器)<br>scale: 比例(数值)<br>disp: 位移(数值)</p>
@@ -555,6 +411,7 @@
 </blockquote>
 <p>e.g.</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">__asm__(<span class="string">"movl %eax, %ebx\n\t"</span></span><br><span class="line">		<span class="string">"movl $56, %esi\n\t"</span></span><br><span class="line">		<span class="string">"movl %ecx, $label(%edx, %ebx, $4)\n\t"</span></span><br><span class="line">		<span class="string">"movb %ah, (%ebx)"</span>);</span><br></pre></td></tr></table></figure>
+
 <h1 id="扩展汇编"><a href="#扩展汇编" class="headerlink" title="扩展汇编"></a>扩展汇编</h1><h2 id="为什么需要扩展汇编"><a href="#为什么需要扩展汇编" class="headerlink" title="为什么需要扩展汇编?"></a>为什么需要扩展汇编?</h2><blockquote>
 <p>如果在代码中, 我们涉及到一些寄存器(即改变其内容), 但在没有恢复这些变化的情况下从汇编中返回, 将会导致一些意想不到的事情.<br>这是因为GCC并不知道寄存器内容的变化, 这会导致问题, 特别是当编译器做了某些优化.<br>在没有告知GCC的情况下, 他将会假设一些寄存器存储了一些值, 而我们可能已经改变却没有告知GCC, 它会像什么事都没发生一样(GCC不会假设寄存器装入的值是有效的, 当退出改变了寄存器值的内联汇编后, 寄存器的值不会保存到相应的变量或内存空间)继续运行.<br>我们可以做的是, 使用那些没有副作用的指令, 或者当我们退出时恢复这些寄存器, 要不就等着程序崩溃.<br>这就是为什么我们需要一些扩展功能, 扩展汇编给我们提供了那些功能.</p>
 </blockquote>
@@ -563,11 +420,13 @@
 </blockquote>
 <p>结构:</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">asm</span>(汇编语句</span><br><span class="line">:输出操作数<span class="comment">/*可选的*/</span></span><br><span class="line">:输入操作数<span class="comment">/*可选的*/</span></span><br><span class="line">:修饰寄存器列表<span class="comment">/*可选的*/</span>);</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>每一个操作数由一个操作数字符串所描述, 其后紧接一个括弧括起的C表达式.<br>逗号用于分离每一个组内的操作数.<br>总操作数的数目限制在10个, 或者机器描述中的任何指令格式中的最大操作数数目, 以较大者为准.<br>如果没有输出操作数但存在输入操作数, 你必须将两个连续的冒号放置于输出操作数原本会放置的地方周围.</p>
 </blockquote>
 <p>e.g.</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用汇编指令使b变量的值等于a变量的值</span></span><br><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>, b;</span><br><span class="line"><span class="keyword">asm</span>(<span class="string">"movl %1, %%eax;</span></span><br><span class="line"><span class="string">	movl %%eax, %0;"</span></span><br><span class="line">	:<span class="string">"=r"</span>(b)	<span class="comment">/*输出*/</span></span><br><span class="line">	:<span class="string">"r"</span>(a)		<span class="comment">/*输入*/</span></span><br><span class="line">	:<span class="string">"%eax"</span>);	<span class="comment">/*修饰寄存器*/</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>注意:</p>
 <ol>
@@ -600,48 +459,48 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">r</th>
-<th style="text-align:center">Register(s)</th>
+<th align="center">r</th>
+<th align="center">Register(s)</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">a</td>
-<td style="text-align:center">%eax, %ax, %al</td>
+<tbody><tr>
+<td align="center">a</td>
+<td align="center">%eax, %ax, %al</td>
 </tr>
 <tr>
-<td style="text-align:center">b</td>
-<td style="text-align:center">%ebx, %bx, %bl</td>
+<td align="center">b</td>
+<td align="center">%ebx, %bx, %bl</td>
 </tr>
 <tr>
-<td style="text-align:center">c</td>
-<td style="text-align:center">%ecx, %cx, %cl</td>
+<td align="center">c</td>
+<td align="center">%ecx, %cx, %cl</td>
 </tr>
 <tr>
-<td style="text-align:center">d</td>
-<td style="text-align:center">%edx, %dx, %dl</td>
+<td align="center">d</td>
+<td align="center">%edx, %dx, %dl</td>
 </tr>
 <tr>
-<td style="text-align:center">S</td>
-<td style="text-align:center">%esi, %si</td>
+<td align="center">S</td>
+<td align="center">%esi, %si</td>
 </tr>
 <tr>
-<td style="text-align:center">D</td>
-<td style="text-align:center">%edi, %di</td>
+<td align="center">D</td>
+<td align="center">%edi, %di</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="内存操作数约束"><a href="#内存操作数约束" class="headerlink" title="内存操作数约束"></a>内存操作数约束</h3><blockquote>
 <p>当操作数位于内存时, 任何对它们的操作将直接发生在内存位置, 这与寄存器约束相反, 后者首先将值存储在要修改的寄存器中, 然后将它写回内存位置.<br>但寄存器约束通常用于一个指令必须使用它们或者它们可以大大提高处理速度的地方.<br>当需要在<code>asm</code>内更新一个C变量, 而又不是使用寄存器去保存它的值, 使用内存最为有效.</p>
 </blockquote>
 <p>e.g.</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//IDTR寄存器的值存储于内存位置loc处</span></span><br><span class="line"><span class="keyword">asm</span>(<span class="string">"sidt %0\n"</span>::<span class="string">"m"</span>(loc));</span><br></pre></td></tr></table></figure>
+
 <p>注意: 每条指令应以分界符结尾, 有效的分界符有换行符<code>\n</code>和分号<code>;</code>, <code>\n</code>可以紧随一个制表符<code>\t</code>.</p>
 <h3 id="匹配-数字-约束"><a href="#匹配-数字-约束" class="headerlink" title="匹配(数字)约束"></a>匹配(数字)约束</h3><blockquote>
 <p>在某些情况下, 一个变量可能既充当输入操作数, 也充当输出操作数.<br>可以通过使用匹配约束在<code>asm</code>中指定这种情况.</p>
 </blockquote>
 <p>e.g.</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">asm</span>(<span class="string">"incl %0"</span> :<span class="string">"=a"</span>(var) :<span class="string">"0"</span>(var));</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>说明:<br>寄存器<code>%eax</code>既用作输入变量, 也用作输出变量.<br>var输入被读进<code>%eax</code>, 并且等递增后更新的<code>%eax</code>再次被存储进var.<br>这里的<code>0</code>用于指定与第0个输出变量相同的约束.<br>它指定var输出示例应只被存储在<code>%eax</code>中.<br>该约束可用于:</p>
 <blockquote>
@@ -659,8 +518,7 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>m</td>
 <td>允许一个内存操作数, 可以使用机器普遍支持的任一种地址</td>
 </tr>
@@ -684,8 +542,7 @@
 <td>g</td>
 <td>允许任一寄存器, 内存或者立即整型操作数, 不包括通用寄存器之外的寄存器</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="x86特有约束"><a href="#x86特有约束" class="headerlink" title="x86特有约束"></a>x86特有约束</h3><table>
 <thead>
 <tr>
@@ -693,8 +550,7 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>r</td>
 <td>寄存器操作数约束, 查看上面的给定的表格</td>
 </tr>
@@ -742,8 +598,7 @@
 <td>A</td>
 <td>指定<code>a</code>或<code>d</code>寄存器; 这主要用于想要返回64位整型数, 使用<code>d</code>寄存器保存最高有效位和<code>a</code>寄存器保存最低有效位</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="约束修饰符"><a href="#约束修饰符" class="headerlink" title="约束修饰符"></a>约束修饰符</h2><p>当使用约束时, 对于更精确的控制超过了对约束作用的需求, GCC给我们提供了约束修饰符.</p>
 <table>
 <thead>
@@ -753,8 +608,7 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>=</td>
 <td>O</td>
 <td>对于这条指令, 操作数为只写的; 旧值会被忽略并被输出数据所替换; 只能写在第一个字符的位置</td>
@@ -774,29 +628,24 @@
 <td>I</td>
 <td>表示此Input操作表达式中的C/C++表达式可以与下一个Input操作表达式中的C/C++表达式互换</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
     </div>
 
     
     
     
-        
-      
         <div class="reward-container">
   <div>Thank you for your reward !</div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
   <div id="qr" style="display: none;">
-        
       
       <div style="display: inline-block;">
         <img src="/images/wechatpay.png" alt="DiDong WeChat Pay">
         <p>WeChat Pay</p>
       </div>
-        
       
       <div style="display: inline-block;">
         <img src="/images/alipay.png" alt="DiDong Alipay">
@@ -806,7 +655,6 @@
   </div>
 </div>
 
-      
         
 
 <div>
@@ -816,7 +664,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/" title="GCC内联汇编笔记">https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/</a>
+    <a href="https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/" title="GCC内联汇编笔记">https://didongdongdi.github.io/2019/05/28/GCC内联汇编笔记/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -824,32 +672,23 @@
 </ul>
 </div>
 
-      
 
       <footer class="post-footer">
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/05/24/teamviewer安装问题/" rel="next" title="teamviewer安装问题">
-                  <i class="fa fa-chevron-left"></i> teamviewer安装问题
-                </a>
-              
-            </div>
 
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/06/06/ipv6网络相关/" rel="prev" title="ipv6网络相关">
-                  ipv6网络相关 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
         
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/05/24/teamviewer%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/" rel="prev" title="teamviewer安装问题">
+      <i class="fa fa-chevron-left"></i> teamviewer安装问题
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/06/06/ipv6%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/" rel="next" title="ipv6网络相关">
+      ipv6网络相关 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -863,12 +702,32 @@
           </div>
           
     
-    
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
   </div>
   
-  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -881,11 +740,6 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -899,89 +753,48 @@
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
           <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是内联汇编"><span class="nav-number">1.</span> <span class="nav-text">什么是内联汇编?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#源操作数和目的操作数顺序"><span class="nav-number">2.</span> <span class="nav-text">源操作数和目的操作数顺序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#寄存器命名"><span class="nav-number">3.</span> <span class="nav-text">寄存器命名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#立即数"><span class="nav-number">4.</span> <span class="nav-text">立即数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作数大小"><span class="nav-number">5.</span> <span class="nav-text">操作数大小</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#存储器操作数"><span class="nav-number">6.</span> <span class="nav-text">存储器操作数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本内联"><span class="nav-number">7.</span> <span class="nav-text">基本内联</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩展汇编"><span class="nav-number">8.</span> <span class="nav-text">扩展汇编</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么需要扩展汇编"><span class="nav-number">8.1.</span> <span class="nav-text">为什么需要扩展汇编?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展汇编的使用"><span class="nav-number">8.2.</span> <span class="nav-text">扩展汇编的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">8.3.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#volatile"><span class="nav-number">8.4.</span> <span class="nav-text">volatile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用约束"><span class="nav-number">8.5.</span> <span class="nav-text">常用约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#寄存器操作数约束"><span class="nav-number">8.5.1.</span> <span class="nav-text">寄存器操作数约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存操作数约束"><span class="nav-number">8.5.2.</span> <span class="nav-text">内存操作数约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配-数字-约束"><span class="nav-number">8.5.3.</span> <span class="nav-text">匹配(数字)约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他一些约束"><span class="nav-number">8.5.4.</span> <span class="nav-text">其他一些约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x86特有约束"><span class="nav-number">8.5.5.</span> <span class="nav-text">x86特有约束</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约束修饰符"><span class="nav-number">8.6.</span> <span class="nav-text">约束修饰符</span></a></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="/images/avatar.gif"
-      alt="DiDong">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">DiDong</p>
   <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-categories">
-        
-          
             <a href="/categories/">
           
-        
-        <span class="site-state-item-count">23</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
-        
-          
             <a href="/tags/">
           
-        
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span>
-        </a>
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
-    
   </nav>
 </div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/DiDongDongDi" title="GitHub &rarr; https://github.com/DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
-    
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:wangqy101@gmail.com" title="E-Mail &rarr; mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:wangqy101@gmail.com" title="E-Mail → mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
-    
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    
-  
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
@@ -1002,8 +815,9 @@
         
 
 <div class="copyright">
+  
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1013,15 +827,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">215k</span>
+    <span title="Symbols count total">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">3:15</span>
+    <span title="Reading time total">2:55</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
@@ -1038,9 +850,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-  
     <span class="post-meta-divider">|</span>
-  
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1049,7 +859,6 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-  
 </div>
 
 
@@ -1059,28 +868,33 @@
 
 
 
-
-
-
-
-        
       </div>
     </footer>
   </div>
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
-<script src="/js/schemes/muse.js?v=7.4.1"></script>
-<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -1100,9 +914,6 @@ var pjax = new Pjax({
 
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    if (element.type !== 'text/javascript') {
-      return;
-    }
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -1113,13 +924,16 @@ window.addEventListener('pjax:success', () => {
     if (element.className) {
       script.className = element.className;
     }
+    if (element.type) {
+      script.type = element.type;
+    }
     if (element.src) {
       script.src = element.src;
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1131,6 +945,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
@@ -1155,11 +970,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
-
-
-
-  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -1204,13 +1017,10 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
-
     <div id="pjax">
-
   
 
   
-    
       
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
@@ -1261,13 +1071,21 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
     
-  
 
   
-
-  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/2019/05/28/GCC%E5%86%85%E8%81%94%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/',]
+      });
+      });
+  </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -1279,6 +1097,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
     </div>

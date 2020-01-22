@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
   <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
   <meta name="baidu-site-verification" content="mBrz0gqBDR">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+<link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
     root: '/',
     scheme: 'Muse',
-    version: '7.4.1',
+    version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":false,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -43,6 +38,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
       appID: '',
       apiKey: '',
@@ -52,13 +48,7 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
@@ -68,11 +58,11 @@
 <meta property="og:url" content="https://didongdongdi.github.io/page/2/index.html">
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="As a young man, prepare and rule.">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="DiDong">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DIDA LAB">
-<meta name="twitter:description" content="As a young man, prepare and rule.">
-  <link rel="canonical" href="https://didongdongdi.github.io/page/2/">
+
+<link rel="canonical" href="https://didongdongdi.github.io/page/2/">
 
 
 <script id="page-configurations">
@@ -80,9 +70,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: true,
-    isPost: false,
-    isPage: false,
-    isArchive: false
+    isPost: false
   };
 </script>
 
@@ -90,15 +78,13 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
     <script pjax>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
+      if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-120518210-1');
       }
     </script>
-  
 
 
   <script pjax>
@@ -110,8 +96,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
-
 
 
 
@@ -128,7 +112,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -140,6 +123,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -174,134 +158,36 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-        
-        
         <li class="menu-item menu-item-home">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-tags">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-          
-        
-      
-    
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">27</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-categories">
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-    
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-archives">
-      
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">87</span></a>
 
   </li>
-      
-    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">
-        
-          <i class="fa fa-search fa-fw"></i>
-        
-        Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
       </li>
-    
   </ul>
-
-    
 
 </nav>
   <div class="site-search">
@@ -342,6 +228,8 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+
           <div class="content">
             
 
@@ -350,12 +238,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/10/20/水下机器人视觉-8-CNN应用/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -364,9 +252,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/10/20/水下机器人视觉-8-CNN应用/" class="post-title-link" itemprop="url">水下机器人视觉_8_CNN应用</a>
-          
+            <a href="/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/" class="post-title-link" itemprop="url">机器人操作系统ROS_3_机器人建模与仿真</a>
         </h2>
 
         <div class="post-meta">
@@ -376,16 +262,110 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
+              <time title="Created: 2019-10-21 16:09:00" itemprop="dateCreated datePublished" datetime="2019-10-21T16:09:00+08:00">2019-10-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-11 09:53:16" itemprop="dateModified" datetime="2019-11-11T09:53:16+08:00">2019-11-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ROS/" itemprop="url" rel="index">
+                    <span itemprop="name">ROS</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>3.8k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="机器人统一描述格式urdf"><a href="#机器人统一描述格式urdf" class="headerlink" title="机器人统一描述格式urdf"></a>机器人统一描述格式urdf</h1><h2 id="urdf介绍"><a href="#urdf介绍" class="headerlink" title="urdf介绍"></a>urdf介绍</h2><blockquote>
+<p>Unified Robot Description Format, 统一机器人描述(URDF)是种用于描述机器人机器结构, 关节, 自由度等的xml格式文件<br>ROS中的urdf功能包包含一个URDF的C++解析器, URDF文件使用XML格式描述机器人模型</p>
+</blockquote>
+<blockquote>
+<p>URDF语法规范见:<br><a href="http://wiki.ros.org/urdf/XML" target="_blank" rel="noopener">http://wiki.ros.org/urdf/XML</a></p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-8-CNN%E5%BA%94%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="DiDong">
+      <meta itemprop="description" content="As a young man, prepare and rule.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DIDA LAB">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-8-CNN%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">水下机器人视觉_8_CNN应用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2019-10-20 22:12:00" itemprop="dateCreated datePublished" datetime="2019-10-20T22:12:00+08:00">2019-10-20</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -393,48 +373,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-27 10:03:42" itemprop="dateModified" datetime="2019-10-27T10:03:42+08:00">2019-10-27</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>810</span>
+              <span>699</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -449,13 +414,11 @@
 <p>卷积层: 检测局部图片的局部特征<br>池化层: 降低维度</p>
 </blockquote>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/10/20/水下机器人视觉-8-CNN应用/#more" rel="contents">
+              <a class="btn" href="/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-8-CNN%E5%BA%94%E7%94%A8/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -465,25 +428,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/10/20/水下机器人视觉-mnist手写数字识别/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -492,9 +453,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/10/20/水下机器人视觉-mnist手写数字识别/" class="post-title-link" itemprop="url">水下机器人视觉_mnist手写数字识别</a>
-          
+            <a href="/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/" class="post-title-link" itemprop="url">水下机器人视觉_mnist手写数字识别</a>
         </h2>
 
         <div class="post-meta">
@@ -503,58 +462,37 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-
-              
-                
               
 
               <time title="Created: 2019-10-20 09:26:00 / Modified: 13:49:06" itemprop="dateCreated datePublished" datetime="2019-10-20T09:26:00+08:00">2019-10-20</time>
             </span>
-          
-            
-
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>10k</span>
+              <span>8.8k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>9 mins.</span>
+              <span>8 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -568,13 +506,11 @@
           <p>In this notebook, we train an MLP to classify images from the MNIST database.</p>
 <h3 id="1-Load-MNIST-Database"><a href="#1-Load-MNIST-Database" class="headerlink" title="1. Load MNIST Database"></a>1. Load MNIST Database</h3>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/10/20/水下机器人视觉-mnist手写数字识别/#more" rel="contents">
+              <a class="btn" href="/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -584,25 +520,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/29/水下机器人视觉-7-卷积神经网络/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -611,9 +545,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/29/水下机器人视觉-7-卷积神经网络/" class="post-title-link" itemprop="url">水下机器人视觉_7_卷积神经网络</a>
-          
+            <a href="/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/" class="post-title-link" itemprop="url">水下机器人视觉_6_张量</a>
         </h2>
 
         <div class="post-meta">
@@ -623,16 +555,105 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
+              <time title="Created: 2019-09-29 07:55:00" itemprop="dateCreated datePublished" datetime="2019-09-29T07:55:00+08:00">2019-09-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-20 08:43:25" itemprop="dateModified" datetime="2019-10-20T08:43:25+08:00">2019-10-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>842</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Feedforward"><a href="#Feedforward" class="headerlink" title="Feedforward"></a>Feedforward</h1><p><img src="http://qiniu.wangqy.top/didong/images/vision-42.png" alt="前向传播"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-6-%E5%BC%A0%E9%87%8F/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="DiDong">
+      <meta itemprop="description" content="As a young man, prepare and rule.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DIDA LAB">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="post-title-link" itemprop="url">水下机器人视觉_7_卷积神经网络</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2019-09-29 07:55:00" itemprop="dateCreated datePublished" datetime="2019-09-29T07:55:00+08:00">2019-09-29</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -640,48 +661,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-20 22:11:16" itemprop="dateModified" datetime="2019-10-20T22:11:16+08:00">2019-10-20</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>1.9k</span>
+              <span>1.8k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>2 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -695,13 +701,11 @@
           <h1 id="深度神经网络识别手写字"><a href="#深度神经网络识别手写字" class="headerlink" title="深度神经网络识别手写字"></a>深度神经网络识别手写字</h1><p><a href="https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/" target="_blank" rel="noopener">mnist手写数字识别</a></p>
 <h2 id="独热编码-One-Hot-Encoding"><a href="#独热编码-One-Hot-Encoding" class="headerlink" title="独热编码(One-Hot Encoding)"></a>独热编码(One-Hot Encoding)</h2>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/29/水下机器人视觉-7-卷积神经网络/#more" rel="contents">
+              <a class="btn" href="/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -711,25 +715,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/29/水下机器人视觉-6-张量/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -738,9 +740,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/29/水下机器人视觉-6-张量/" class="post-title-link" itemprop="url">水下机器人视觉_6_张量</a>
-          
+            <a href="/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/" class="post-title-link" itemprop="url">水下机器人视觉_5_深度学习算法调优</a>
         </h2>
 
         <div class="post-meta">
@@ -749,143 +749,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-29 07:55:00" itemprop="dateCreated datePublished" datetime="2019-09-29T07:55:00+08:00">2019-09-29</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-20 08:43:25" itemprop="dateModified" datetime="2019-10-20T08:43:25+08:00">2019-10-20</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>1k</span>
-            </span>
-          
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>1 mins.</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Feedforward"><a href="#Feedforward" class="headerlink" title="Feedforward"></a>Feedforward</h1><p><img src="http://qiniu.wangqy.top/didong/images/vision-42.png" alt="前向传播"></p>
-          <!--noindex-->
-          
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/水下机器人视觉-6-张量/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </article>
-  
-  
-  
-
-    
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="DiDong">
-      <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DIDA LAB">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            
-            <a href="/2019/09/28/水下机器人视觉-5-深度学习算法调优/" class="post-title-link" itemprop="url">水下机器人视觉_5_深度学习算法调优</a>
-          
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
 
               <time title="Created: 2019-09-28 17:30:00" itemprop="dateCreated datePublished" datetime="2019-09-28T17:30:00+08:00">2019-09-28</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -893,48 +759,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-20 07:59:28" itemprop="dateModified" datetime="2019-10-20T07:59:28+08:00">2019-10-20</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>5.2k</span>
+              <span>4.9k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>5 mins.</span>
+              <span>4 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -948,13 +799,11 @@
           <h1 id="学习率"><a href="#学习率" class="headerlink" title="学习率"></a>学习率</h1><p>学习率太大或太小的问题:</p>
 <p><img src="http://qiniu.wangqy.top/didong/images/vision-39.png" alt="学习率太大或太小"></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/28/水下机器人视觉-5-深度学习算法调优/#more" rel="contents">
+              <a class="btn" href="/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -964,25 +813,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/27/机器人操作系统ROS-2-ROS通信机制与编程基础/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -991,9 +838,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/27/机器人操作系统ROS-2-ROS通信机制与编程基础/" class="post-title-link" itemprop="url">机器人操作系统ROS_2_ROS通信机制与编程基础</a>
-          
+            <a href="/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">机器人操作系统ROS_2_ROS通信机制与编程基础</a>
         </h2>
 
         <div class="post-meta">
@@ -1003,16 +848,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-09-27 20:28:00" itemprop="dateCreated datePublished" datetime="2019-09-27T20:28:00+08:00">2019-09-27</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1020,48 +857,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-21 16:14:35" itemprop="dateModified" datetime="2019-10-21T16:14:35+08:00">2019-10-21</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/ROS/" itemprop="url" rel="index">
                     <span itemprop="name">ROS</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>10k</span>
+              <span>8.6k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>9 mins.</span>
+              <span>8 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1082,13 +904,11 @@
 </ul>
 </blockquote>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/27/机器人操作系统ROS-2-ROS通信机制与编程基础/#more" rel="contents">
+              <a class="btn" href="/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1098,25 +918,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/21/水下机器人视觉-4-反向传播/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1125,9 +943,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/21/水下机器人视觉-4-反向传播/" class="post-title-link" itemprop="url">水下机器人视觉_4_反向传播</a>
-          
+            <a href="/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" class="post-title-link" itemprop="url">水下机器人视觉_4_反向传播</a>
         </h2>
 
         <div class="post-meta">
@@ -1136,58 +952,37 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-
-              
-                
               
 
               <time title="Created: 2019-09-21 19:37:00 / Modified: 22:23:36" itemprop="dateCreated datePublished" datetime="2019-09-21T19:37:00+08:00">2019-09-21</time>
             </span>
-          
-            
-
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>164</span>
+              <span>153</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1201,13 +996,11 @@
           <p>sigmoid函数的导数计算:</p>
 <p><img src="http://qiniu.wangqy.top/didong/images/vision-35.png" alt="sigmoid函数的导数"></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/21/水下机器人视觉-4-反向传播/#more" rel="contents">
+              <a class="btn" href="/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1217,25 +1010,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/15/水下机器人视觉-3-深度神经网络/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/15/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-3-%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1244,9 +1035,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/15/水下机器人视觉-3-深度神经网络/" class="post-title-link" itemprop="url">水下机器人视觉_3_深度神经网络</a>
-          
+            <a href="/2019/09/15/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-3-%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="post-title-link" itemprop="url">水下机器人视觉_3_深度神经网络</a>
         </h2>
 
         <div class="post-meta">
@@ -1256,16 +1045,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-09-15 21:46:00" itemprop="dateCreated datePublished" datetime="2019-09-15T21:46:00+08:00">2019-09-15</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1273,48 +1054,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-09-21 22:06:31" itemprop="dateModified" datetime="2019-09-21T22:06:31+08:00">2019-09-21</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>794</span>
+              <span>695</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1329,13 +1095,11 @@
 
 <h1 id="非线性模型"><a href="#非线性模型" class="headerlink" title="非线性模型"></a>非线性模型</h1><p><img src="http://qiniu.wangqy.top/didong/images/vision-31.png" alt="分类例子--没那么简单"></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/15/水下机器人视觉-3-深度神经网络/#more" rel="contents">
+              <a class="btn" href="/2019/09/15/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-3-%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1345,25 +1109,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1372,9 +1134,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/" class="post-title-link" itemprop="url">机器人操作系统ROS_1_ROS系统架构及概念</a>
-          
+            <a href="/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/" class="post-title-link" itemprop="url">机器人操作系统ROS_1_ROS系统架构及概念</a>
         </h2>
 
         <div class="post-meta">
@@ -1384,16 +1144,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-09-14 10:47:00" itemprop="dateCreated datePublished" datetime="2019-09-14T10:47:00+08:00">2019-09-14</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1401,48 +1153,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-21 16:15:56" itemprop="dateModified" datetime="2019-10-21T16:15:56+08:00">2019-10-21</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/ROS/" itemprop="url" rel="index">
                     <span itemprop="name">ROS</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>7.2k</span>
+              <span>6.1k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>7 mins.</span>
+              <span>6 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1460,13 +1197,11 @@
 </ul>
 </blockquote>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/#more" rel="contents">
+              <a class="btn" href="/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1476,144 +1211,13 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/08/水下机器人视觉-2-感知机/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="DiDong">
-      <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DIDA LAB">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            
-            <a href="/2019/09/08/水下机器人视觉-2-感知机/" class="post-title-link" itemprop="url">水下机器人视觉_2_感知机</a>
-          
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-08 13:17:00" itemprop="dateCreated datePublished" datetime="2019-09-08T13:17:00+08:00">2019-09-08</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-15 22:01:14" itemprop="dateModified" datetime="2019-09-15T22:01:14+08:00">2019-09-15</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>572</span>
-            </span>
-          
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>1 mins.</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<h1 id="线性模型–分类例子"><a href="#线性模型–分类例子" class="headerlink" title="线性模型–分类例子"></a>线性模型–分类例子</h1><p>二维</p>
-<p><img src="http://qiniu.wangqy.top/didong/images/vision-6.png" alt="二维"></p>
-          <!--noindex-->
-          
-            <div class="post-button">
-              <a class="btn" href="/2019/09/08/水下机器人视觉-2-感知机/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </article>
-  
-  
-  
-
-    
   </div>
 
   
@@ -1625,6 +1229,28 @@
 
           </div>
           
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -1654,83 +1280,43 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="/images/avatar.gif"
-      alt="DiDong">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">DiDong</p>
   <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-categories">
-        
-          
             <a href="/categories/">
           
-        
-        <span class="site-state-item-count">23</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
-        
-          
             <a href="/tags/">
           
-        
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span>
-        </a>
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
-    
   </nav>
 </div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/DiDongDongDi" title="GitHub &rarr; https://github.com/DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
-    
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:wangqy101@gmail.com" title="E-Mail &rarr; mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:wangqy101@gmail.com" title="E-Mail → mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
-    
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    
-  
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
@@ -1751,8 +1337,9 @@
         
 
 <div class="copyright">
+  
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1762,15 +1349,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">215k</span>
+    <span title="Symbols count total">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">3:15</span>
+    <span title="Reading time total">2:55</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
@@ -1787,9 +1372,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-  
     <span class="post-meta-divider">|</span>
-  
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1798,7 +1381,6 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-  
 </div>
 
 
@@ -1808,28 +1390,33 @@
 
 
 
-
-
-
-
-        
       </div>
     </footer>
   </div>
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
-<script src="/js/schemes/muse.js?v=7.4.1"></script>
-<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -1849,9 +1436,6 @@ var pjax = new Pjax({
 
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    if (element.type !== 'text/javascript') {
-      return;
-    }
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -1862,13 +1446,16 @@ window.addEventListener('pjax:success', () => {
     if (element.className) {
       script.className = element.className;
     }
+    if (element.type) {
+      script.type = element.type;
+    }
     if (element.src) {
       script.src = element.src;
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1880,6 +1467,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
@@ -1904,11 +1492,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
-
-
-
-  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -1953,13 +1539,10 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
-
     <div id="pjax">
-
   
 
   
-    
       
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
@@ -2010,28 +1593,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
     
-  
-
-  
-    
-      
-    
-  
-    <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
-    <script>
-      
-        window.addEventListener('load', () => {
-      
-        quicklink({
-          timeout: 3000,
-          priority: true,
-          ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/page/2/',]
-        });
-      
-        });
-      
-    </script>
-  
 
   
 

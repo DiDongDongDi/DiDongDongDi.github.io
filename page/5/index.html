@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
   <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
   <meta name="baidu-site-verification" content="mBrz0gqBDR">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+<link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
     root: '/',
     scheme: 'Muse',
-    version: '7.4.1',
+    version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":false,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -43,6 +38,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
       appID: '',
       apiKey: '',
@@ -52,13 +48,7 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
@@ -68,11 +58,11 @@
 <meta property="og:url" content="https://didongdongdi.github.io/page/5/index.html">
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="As a young man, prepare and rule.">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="DiDong">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DIDA LAB">
-<meta name="twitter:description" content="As a young man, prepare and rule.">
-  <link rel="canonical" href="https://didongdongdi.github.io/page/5/">
+
+<link rel="canonical" href="https://didongdongdi.github.io/page/5/">
 
 
 <script id="page-configurations">
@@ -80,9 +70,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: true,
-    isPost: false,
-    isPage: false,
-    isArchive: false
+    isPost: false
   };
 </script>
 
@@ -90,15 +78,13 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
     <script pjax>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
+      if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-120518210-1');
       }
     </script>
-  
 
 
   <script pjax>
@@ -110,8 +96,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
-
 
 
 
@@ -128,7 +112,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -140,6 +123,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -174,134 +158,36 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-        
-        
         <li class="menu-item menu-item-home">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-tags">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-          
-        
-      
-    
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">27</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-categories">
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-    
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-archives">
-      
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">87</span></a>
 
   </li>
-      
-    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">
-        
-          <i class="fa fa-search fa-fw"></i>
-        
-        Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
       </li>
-    
   </ul>
-
-    
 
 </nav>
   <div class="site-search">
@@ -342,6 +228,8 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+
           <div class="content">
             
 
@@ -350,12 +238,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/21/输入时自动删除后面的字/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -364,9 +252,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/04/21/输入时自动删除后面的字/" class="post-title-link" itemprop="url">输入时自动删除后面的字</a>
-          
+            <a href="/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/" class="post-title-link" itemprop="url">操作系统笔记——0</a>
         </h2>
 
         <div class="post-meta">
@@ -376,16 +262,105 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
+              <time title="Created: 2019-04-22 09:46:00" itemprop="dateCreated datePublished" datetime="2019-04-22T09:46:00+08:00">2019-04-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-06-08 11:12:21" itemprop="dateModified" datetime="2019-06-08T11:12:21+08:00">2019-06-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/" itemprop="url" rel="index">
+                    <span itemprop="name">OS</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>523</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%940/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="DiDong">
+      <meta itemprop="description" content="As a young man, prepare and rule.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DIDA LAB">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/" class="post-title-link" itemprop="url">输入时自动删除后面的字</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2019-04-21 20:41:00" itemprop="dateCreated datePublished" datetime="2019-04-21T20:41:00+08:00">2019-04-21</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -393,48 +368,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Problem/" itemprop="url" rel="index">
                     <span itemprop="name">Problem</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>24</span>
+              <span>23</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -447,13 +407,11 @@
       
           <p>按下键盘上的<code>insert</code>键，将输入模式改为<code>插入</code></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/04/21/输入时自动删除后面的字/#more" rel="contents">
+              <a class="btn" href="/2019/04/21/%E8%BE%93%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -463,25 +421,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/21/计算机网络专业术语目录/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -490,9 +446,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/04/21/计算机网络专业术语目录/" class="post-title-link" itemprop="url">计算机网络专业术语目录（附解释）</a>
-          
+            <a href="/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/" class="post-title-link" itemprop="url">计算机网络专业术语目录（附解释）</a>
         </h2>
 
         <div class="post-meta">
@@ -502,16 +456,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-04-21 11:22:00" itemprop="dateCreated datePublished" datetime="2019-04-21T11:22:00+08:00">2019-04-21</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -519,48 +465,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
                     <span itemprop="name">计算机网络</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>13k</span>
+              <span>12k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>12 mins.</span>
+              <span>11 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -574,13 +505,11 @@
           <p>整个目录参考自<a href="https://wenku.baidu.com/view/f5b7e76e26d3240c844769eae009581b6bd9bd9f.html?re=view" target="_blank" rel="noopener">百度文库</a>；增加了某些名词；增加了解释；目录并不完整，解释也有可能并不全面甚至空白，或者存在错误，还请指正。</p>
 <h1 id="计算机网络专业术语目录"><a href="#计算机网络专业术语目录" class="headerlink" title="计算机网络专业术语目录"></a>计算机网络专业术语目录</h1>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/04/21/计算机网络专业术语目录/#more" rel="contents">
+              <a class="btn" href="/2019/04/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%9B%AE%E5%BD%95/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -590,25 +519,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/16/使用extundelete恢复linux上已删除的文件/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -617,9 +544,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/04/16/使用extundelete恢复linux上已删除的文件/" class="post-title-link" itemprop="url">使用extundelete恢复linux上已删除的文件</a>
-          
+            <a href="/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">使用extundelete恢复linux上已删除的文件</a>
         </h2>
 
         <div class="post-meta">
@@ -629,16 +554,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-04-16 18:27:00" itemprop="dateCreated datePublished" datetime="2019-04-16T18:27:00+08:00">2019-04-16</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -646,48 +563,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Problem/" itemprop="url" rel="index">
                     <span itemprop="name">Problem</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>203</span>
+              <span>191</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -701,13 +603,11 @@
           <h1 id="参考网址"><a href="#参考网址" class="headerlink" title="参考网址"></a>参考网址</h1><p><a href="https://blog.51cto.com/ityunwei2017/2328570?source=dra" target="_blank" rel="noopener">https://blog.51cto.com/ityunwei2017/2328570?source=dra</a></p>
 <p><a href="http://extundelete.sourceforge.net/" target="_blank" rel="noopener">http://extundelete.sourceforge.net/</a></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/04/16/使用extundelete恢复linux上已删除的文件/#more" rel="contents">
+              <a class="btn" href="/2019/04/16/%E4%BD%BF%E7%94%A8extundelete%E6%81%A2%E5%A4%8Dlinux%E4%B8%8A%E5%B7%B2%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -717,25 +617,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe安装/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -744,9 +642,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/04/04/YouCompleteMe安装/" class="post-title-link" itemprop="url">YouCompleteMe安装配置使用</a>
-          
+            <a href="/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">YouCompleteMe安装配置使用</a>
         </h2>
 
         <div class="post-meta">
@@ -756,16 +652,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-04-04 16:58:00" itemprop="dateCreated datePublished" datetime="2019-04-04T16:58:00+08:00">2019-04-04</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -773,48 +661,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Problem/" itemprop="url" rel="index">
                     <span itemprop="name">Problem</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>926</span>
+              <span>899</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -828,13 +701,11 @@
           <h1 id="vim相关"><a href="#vim相关" class="headerlink" title="vim相关"></a>vim相关</h1><p>vim的version必须为7.4+，同时要支持Python/Python3，查看命令<code>vim --version</code>，支持的话，前面会有<code>+</code>，否则为<code>-</code></p>
 <p>如果不支持Python或者vim版本太低，需要重新编译安装vim</p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/04/04/YouCompleteMe安装/#more" rel="contents">
+              <a class="btn" href="/2019/04/04/YouCompleteMe%E5%AE%89%E8%A3%85/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -844,25 +715,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/02/chrome视频画面卡顿，声音无影响/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -871,9 +740,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/04/02/chrome视频画面卡顿，声音无影响/" class="post-title-link" itemprop="url">chrome视频画面卡顿，声音无影响</a>
-          
+            <a href="/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/" class="post-title-link" itemprop="url">chrome视频画面卡顿，声音无影响</a>
         </h2>
 
         <div class="post-meta">
@@ -883,16 +750,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-04-02 17:04:00" itemprop="dateCreated datePublished" datetime="2019-04-02T17:04:00+08:00">2019-04-02</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -900,48 +759,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Problem/" itemprop="url" rel="index">
                     <span itemprop="name">Problem</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>260</span>
+              <span>252</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -954,13 +798,11 @@
       
           <p>Chrome的话，使用WebRTC，本身不支持H.264（国内视频网站多用这个来编码），但是支持VP8（目前主流，Youtube使用VP8（性能和H264差不多）,现在逐步走向VP9（性能和H265差不多），所以H264采用的是外部的解码，因此可能性能上会略差。 另外实际测试的时候，相同掉包率情况下，VP8的画面丢失和花屏的情况要远好过H264（WebRTC下）。转自知乎<a href="https://www.zhihu.com/question/24577802/answer/30131255" target="_blank" rel="noopener">Lennith的回答</a></p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/04/02/chrome视频画面卡顿，声音无影响/#more" rel="contents">
+              <a class="btn" href="/2019/04/02/chrome%E8%A7%86%E9%A2%91%E7%94%BB%E9%9D%A2%E5%8D%A1%E9%A1%BF%EF%BC%8C%E5%A3%B0%E9%9F%B3%E6%97%A0%E5%BD%B1%E5%93%8D/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -970,25 +812,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/21/Deepin扩展显示屏失败/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -997,9 +837,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/03/21/Deepin扩展显示屏失败/" class="post-title-link" itemprop="url">Deepin扩展显示屏失败</a>
-          
+            <a href="/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/" class="post-title-link" itemprop="url">Deepin扩展显示屏失败</a>
         </h2>
 
         <div class="post-meta">
@@ -1009,16 +847,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-03-21 11:21:00" itemprop="dateCreated datePublished" datetime="2019-03-21T11:21:00+08:00">2019-03-21</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1026,48 +856,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Problem/" itemprop="url" rel="index">
                     <span itemprop="name">Problem</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>88</span>
+              <span>87</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1078,15 +893,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题<br>
+          <p>问题描述：在Deepin下，扩展的显示屏不显示，但是发光，在win10下不存在问题</p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/03/21/Deepin扩展显示屏失败/#more" rel="contents">
+              <a class="btn" href="/2019/03/21/Deepin%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%A4%B1%E8%B4%A5/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1096,25 +909,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/15/FTP命令问题解决/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1123,9 +934,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/03/15/FTP命令问题解决/" class="post-title-link" itemprop="url">FTP命令问题解决</a>
-          
+            <a href="/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">FTP命令问题解决</a>
         </h2>
 
         <div class="post-meta">
@@ -1135,16 +944,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-03-15 19:36:00" itemprop="dateCreated datePublished" datetime="2019-03-15T19:36:00+08:00">2019-03-15</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1152,48 +953,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Linux/" itemprop="url" rel="index">
                     <span itemprop="name">Linux</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>1.6k</span>
+              <span>1.5k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1211,13 +997,11 @@
 <li>尝试vsftpd，没有该命令，安装vsftpd</li>
 <li>执行vsftpd，显示<code>500 OOPS: could not bind listening IPv6 socket</code>，问题不大，因为不需要用到ipv6
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/03/15/FTP命令问题解决/#more" rel="contents">
+              <a class="btn" href="/2019/03/15/FTP%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1227,25 +1011,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/10/Linux源码/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/10/Linux%E6%BA%90%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1254,9 +1036,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/03/10/Linux源码/" class="post-title-link" itemprop="url">Linux内核源码分析</a>
-          
+            <a href="/2019/03/10/Linux%E6%BA%90%E7%A0%81/" class="post-title-link" itemprop="url">Linux内核源码分析</a>
         </h2>
 
         <div class="post-meta">
@@ -1266,16 +1046,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-03-10 21:17:00" itemprop="dateCreated datePublished" datetime="2019-03-10T21:17:00+08:00">2019-03-10</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1283,48 +1055,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Linux/" itemprop="url" rel="index">
                     <span itemprop="name">Linux</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>922</span>
+              <span>877</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1342,13 +1099,11 @@
 <p>Linux内核源码查看网址推荐：<a href="https://elixir.bootlin.com/linux/latest/source" target="_blank" rel="noopener">https://elixir.bootlin.com/linux/latest/source</a></p>
 </blockquote>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/03/10/Linux源码/#more" rel="contents">
+              <a class="btn" href="/2019/03/10/Linux%E6%BA%90%E7%A0%81/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1358,25 +1113,23 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/08/Linux命令集合/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/03/08/Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1385,9 +1138,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            
-            <a href="/2019/03/08/Linux命令集合/" class="post-title-link" itemprop="url">Linux命令集合</a>
-          
+            <a href="/2019/03/08/Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/" class="post-title-link" itemprop="url">Linux命令集合</a>
         </h2>
 
         <div class="post-meta">
@@ -1397,16 +1148,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-03-08 17:49:00" itemprop="dateCreated datePublished" datetime="2019-03-08T17:49:00+08:00">2019-03-08</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -1414,48 +1157,33 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-05-26 13:15:09" itemprop="dateModified" datetime="2019-05-26T13:15:09+08:00">2019-05-26</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Linux/" itemprop="url" rel="index">
                     <span itemprop="name">Linux</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
           <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>626</span>
+              <span>534</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
               <span>1 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -1468,13 +1196,11 @@
       
           <p>以下为一些日常积累的Linux的命令：</p>
           <!--noindex-->
-          
             <div class="post-button">
-              <a class="btn" href="/2019/03/08/Linux命令集合/#more" rel="contents">
+              <a class="btn" href="/2019/03/08/Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
@@ -1484,143 +1210,13 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
   </article>
   
   
   
 
-    
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/02/16/Python中的一些坑/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="DiDong">
-      <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DIDA LAB">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            
-            <a href="/2019/02/16/Python中的一些坑/" class="post-title-link" itemprop="url">Python中的一些坑</a>
-          
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-02-16 16:20:00" itemprop="dateCreated datePublished" datetime="2019-02-16T16:20:00+08:00">2019-02-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-05-26 13:30:28" itemprop="dateModified" datetime="2019-05-26T13:30:28+08:00">2019-05-26</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>108</span>
-            </span>
-          
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>1 mins.</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li>Python中没有自增或自减运算符，即没有<code>++</code>或<code>--</code></li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button">
-              <a class="btn" href="/2019/02/16/Python中的一些坑/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </article>
-  
-  
-  
-
-    
   </div>
 
   
@@ -1632,6 +1228,28 @@
 
           </div>
           
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -1661,83 +1279,43 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="/images/avatar.gif"
-      alt="DiDong">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">DiDong</p>
   <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-categories">
-        
-          
             <a href="/categories/">
           
-        
-        <span class="site-state-item-count">23</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
-        
-          
             <a href="/tags/">
           
-        
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span>
-        </a>
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
-    
   </nav>
 </div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/DiDongDongDi" title="GitHub &rarr; https://github.com/DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
-    
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:wangqy101@gmail.com" title="E-Mail &rarr; mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:wangqy101@gmail.com" title="E-Mail → mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
-    
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    
-  
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
@@ -1758,8 +1336,9 @@
         
 
 <div class="copyright">
+  
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1769,15 +1348,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">215k</span>
+    <span title="Symbols count total">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">3:15</span>
+    <span title="Reading time total">2:55</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
@@ -1794,9 +1371,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-  
     <span class="post-meta-divider">|</span>
-  
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1805,7 +1380,6 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-  
 </div>
 
 
@@ -1815,28 +1389,33 @@
 
 
 
-
-
-
-
-        
       </div>
     </footer>
   </div>
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
-<script src="/js/schemes/muse.js?v=7.4.1"></script>
-<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -1856,9 +1435,6 @@ var pjax = new Pjax({
 
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    if (element.type !== 'text/javascript') {
-      return;
-    }
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -1869,13 +1445,16 @@ window.addEventListener('pjax:success', () => {
     if (element.className) {
       script.className = element.className;
     }
+    if (element.type) {
+      script.type = element.type;
+    }
     if (element.src) {
       script.src = element.src;
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1887,6 +1466,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
@@ -1911,11 +1491,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
-
-
-
-  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -1960,13 +1538,10 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
-
     <div id="pjax">
-
   
 
   
-    
       
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
@@ -2017,28 +1592,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
     
-  
-
-  
-    
-      
-    
-  
-    <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
-    <script>
-      
-        window.addEventListener('load', () => {
-      
-        quicklink({
-          timeout: 3000,
-          priority: true,
-          ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/page/5/',]
-        });
-      
-        });
-      
-    </script>
-  
 
   
 

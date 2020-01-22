@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
   <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
   <meta name="baidu-site-verification" content="mBrz0gqBDR">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+<link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
     root: '/',
     scheme: 'Muse',
-    version: '7.4.1',
+    version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":false,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -43,6 +38,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
       appID: '',
       apiKey: '',
@@ -52,29 +48,34 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
   <meta name="description" content="学习率学习率太大或太小的问题:">
-<meta name="keywords" content="Notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="水下机器人视觉_5_深度学习算法调优">
-<meta property="og:url" content="https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/index.html">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/index.html">
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="学习率学习率太大或太小的问题:">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-19T23:59:28.874Z">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-39.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-41.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-36.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/stdcoutzyx/Blogs/master/blogs/imgs/n7-1.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-40.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-38.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/vision-37.png">
+<meta property="og:image" content="https://img-blog.csdn.net/20170410195019493?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="https://img-blog.csdn.net/20170411141442576?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="article:published_time" content="2019-09-28T09:30:00.000Z">
+<meta property="article:modified_time" content="2019-10-19T23:59:28.874Z">
+<meta property="article:author" content="DiDong">
+<meta property="article:tag" content="Notes">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="水下机器人视觉_5_深度学习算法调优">
-<meta name="twitter:description" content="学习率学习率太大或太小的问题:">
-  <link rel="canonical" href="https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/">
+<meta name="twitter:image" content="http://qiniu.wangqy.top/didong/images/vision-39.png">
+
+<link rel="canonical" href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/">
 
 
 <script id="page-configurations">
@@ -82,9 +83,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -92,15 +91,13 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
     <script pjax>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
+      if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-120518210-1');
       }
     </script>
-  
 
 
   <script pjax>
@@ -112,8 +109,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
-
 
 
 
@@ -130,7 +125,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -142,6 +136,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -176,134 +171,36 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-        
-        
         <li class="menu-item menu-item-home">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-tags">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-          
-        
-      
-    
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">27</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-categories">
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-    
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-archives">
-      
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">87</span></a>
 
   </li>
-      
-    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">
-        
-          <i class="fa fa-search fa-fw"></i>
-        
-        Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
       </li>
-    
   </ul>
-
-    
 
 </nav>
   <div class="site-search">
@@ -344,6 +241,8 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+
           <div class="content">
             
 
@@ -352,12 +251,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -365,11 +264,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            水下机器人视觉_5_深度学习算法调优
-            
-
-          
+          水下机器人视觉_5_深度学习算法调优
         </h2>
 
         <div class="post-meta">
@@ -379,16 +274,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-09-28 17:30:00" itemprop="dateCreated datePublished" datetime="2019-09-28T17:30:00+08:00">2019-09-28</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -396,25 +283,17 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-20 07:59:28" itemprop="dateModified" datetime="2019-10-20T07:59:28+08:00">2019-10-20</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
                     <span itemprop="name">机器学习</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -423,29 +302,21 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-          <br>
+            </span><br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>5.2k</span>
+              <span>4.9k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>5 mins.</span>
+              <span>4 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -457,8 +328,9 @@
 
       
         <h1 id="学习率"><a href="#学习率" class="headerlink" title="学习率"></a>学习率</h1><p>学习率太大或太小的问题:</p>
-<p><img alt="学习率太大或太小" data-src="http://qiniu.wangqy.top/didong/images/vision-39.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-39.png" alt="学习率太大或太小"></p>
 <a id="more"></a>
+
 <blockquote>
 <p>降低学习率的准则:</p>
 <ul>
@@ -477,9 +349,9 @@
 </ul>
 </blockquote>
 <h1 id="过拟合与欠拟合"><a href="#过拟合与欠拟合" class="headerlink" title="过拟合与欠拟合"></a>过拟合与欠拟合</h1><p>当神经网络过于复杂, 或者模型迭代次数过多时, 就会出现过拟合; 反之, 则出现欠拟合</p>
-<p><img alt="过拟合与欠拟合" data-src="http://qiniu.wangqy.top/didong/images/vision-41.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-41.png" alt="过拟合与欠拟合"></p>
 <h1 id="Early-Stopping"><a href="#Early-Stopping" class="headerlink" title="Early Stopping"></a>Early Stopping</h1><p>通过早停机来防止过拟合</p>
-<p><img alt="early stopping" data-src="http://qiniu.wangqy.top/didong/images/vision-36.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-36.png" alt="early stopping"></p>
 <h1 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h1><blockquote>
 <p>由于参数过多容易造成过拟合<br>通过惩罚大的权重来防止过拟合</p>
 </blockquote>
@@ -498,19 +370,21 @@
 <li>费时</li>
 <li>过拟合</li>
 </ul>
-<p>为了解决过拟合问题, 一般会采用ensemble方法, 即训练多个模型做组合, 此时, 费事就称为一个大问题, 不经训练起来费时, 测试起来多个模型也费事; 总之, 几乎形成一个死锁<br>dropouot的出现很好地解决这个问题, 每次做完dropout, 相当于从原始的网络中找到一个更瘦的网络<br><img alt="" data-src="https://raw.githubusercontent.com/stdcoutzyx/Blogs/master/blogs/imgs/n7-1.png"><br>因而, 对于一个有N个节点的神经网络, 有了dropout后, 就可以看做是\(2^n\)个模型的集合了, 但此时要训练的参数数目却是不变的, 这就解脱了费时的问题<br>解释二:<br>dropout强迫一个神经单元, 和随机挑选出来的其他神经单元共同工作, 达到好的效果; 消除减弱了神经元节点间的联合适应性, 增强了泛化能力<br>(更多dropout有效的原因及相关知识, 参考<a href="https://blog.csdn.net/stdcoutzyx/article/details/49022443" target="_blank" rel="noopener">https://blog.csdn.net/stdcoutzyx/article/details/49022443</a>)</p>
+<p>为了解决过拟合问题, 一般会采用ensemble方法, 即训练多个模型做组合, 此时, 费事就称为一个大问题, 不经训练起来费时, 测试起来多个模型也费事; 总之, 几乎形成一个死锁<br>dropouot的出现很好地解决这个问题, 每次做完dropout, 相当于从原始的网络中找到一个更瘦的网络<br><img data-src="https://raw.githubusercontent.com/stdcoutzyx/Blogs/master/blogs/imgs/n7-1.png" alt=""><br>因而, 对于一个有N个节点的神经网络, 有了dropout后, 就可以看做是\(2^n\)个模型的集合了, 但此时要训练的参数数目却是不变的, 这就解脱了费时的问题<br>解释二:<br>dropout强迫一个神经单元, 和随机挑选出来的其他神经单元共同工作, 达到好的效果; 消除减弱了神经元节点间的联合适应性, 增强了泛化能力<br>(更多dropout有效的原因及相关知识, 参考<a href="https://blog.csdn.net/stdcoutzyx/article/details/49022443" target="_blank" rel="noopener">https://blog.csdn.net/stdcoutzyx/article/details/49022443</a>)</p>
 </blockquote>
 <p>在keras中应用dropout:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">model.add(Dense(32, activation=&apos;sigmoid&apos;))</span><br><span class="line">model.add(Dropout(0.2))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">model.add(Dense(32, activation&#x3D;&#39;sigmoid&#39;))</span><br><span class="line">model.add(Dropout(0.2))</span><br></pre></td></tr></table></figure>
+
 <p>其中, 0.2是每个神经元会被drop的概率(上面链接中的文章表明, 0.5可能最好, 原因是0.5的时候dropout随机生成的网络结构最多)</p>
 <h1 id="ReLU激活函数"><a href="#ReLU激活函数" class="headerlink" title="ReLU激活函数"></a>ReLU激活函数</h1><blockquote>
 <p>sigmoid激活函数存在的问题:<br>梯度消失, 在反向传播的过程中, 当神经网络深度很大时, 随着求导次数的增加, 最终的导数值会很小, 接近于0, 从而难以对靠近输入层的参数做出改变</p>
 </blockquote>
-<p><img alt="梯度消失" data-src="http://qiniu.wangqy.top/didong/images/vision-40.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-40.png" alt="梯度消失"></p>
 <p>其他激活函数:</p>
-<p><img alt="tanh激活函数" data-src="http://qiniu.wangqy.top/didong/images/vision-38.png"></p>
-<p><img alt="relu激活函数" data-src="http://qiniu.wangqy.top/didong/images/vision-37.png"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 激活函数</span><br><span class="line">model.add(Activation(&apos;sigmoid&apos;))</span><br><span class="line">model.add(Activation(&apos;softmax&apos;))</span><br><span class="line">model.add(Activation(&apos;relu&apos;))</span><br><span class="line">model.add(Activation(&apos;tanh&apos;))</span><br><span class="line"># ...</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-38.png" alt="tanh激活函数"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/vision-37.png" alt="relu激活函数"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 激活函数</span><br><span class="line">model.add(Activation(&#39;sigmoid&#39;))</span><br><span class="line">model.add(Activation(&#39;softmax&#39;))</span><br><span class="line">model.add(Activation(&#39;relu&#39;))</span><br><span class="line">model.add(Activation(&#39;tanh&#39;))</span><br><span class="line"># ...</span><br></pre></td></tr></table></figure>
+
 <h1 id="Random-Restart"><a href="#Random-Restart" class="headerlink" title="Random Restart"></a>Random Restart</h1><p>由于存在局部最优, 故通过随机开始迭代, 来尝试从不同的地方获得局部最优解, 从而比较获得全局最优解(不一定找得到, 则选择次优)</p>
 <h1 id="梯度下降优化"><a href="#梯度下降优化" class="headerlink" title="梯度下降优化"></a>梯度下降优化</h1><p>(以下内容参考自: <a href="https://blog.csdn.net/google19890102/article/details/69942970" target="_blank" rel="noopener">https://blog.csdn.net/google19890102/article/details/69942970</a>)</p>
 <blockquote>
@@ -523,15 +397,17 @@
 <p>$$ \theta = \theta - \eta \cdot \nabla_\theta J(\theta) $$</p>
 <p>因为在执行每次更新时, 我们需要在整个数据集上计算所有梯度, 所以批梯度下降法的速度会很慢, 同时, 批梯度下降法无法处理超出内存容量限制的数据集, 同样也不能在线更新模型, 即在运行的过程中, 不能增加新的样本.</p>
 <p>代码示例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i in range(nb_epochs):</span><br><span class="line">	params_grad = evaluate_gradient(loss_function, data, params)</span><br><span class="line">	params = params - learning_rate * params_grad</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i in range(nb_epochs):</span><br><span class="line">	params_grad &#x3D; evaluate_gradient(loss_function, data, params)</span><br><span class="line">	params &#x3D; params - learning_rate * params_grad</span><br></pre></td></tr></table></figure>
+
 <p>对于凸误差函数, 批梯度下降法能够保证收敛到全局最小值, 对于非凸函数, 则收敛到一个局部最小值</p>
 <h3 id="随机梯度下降法"><a href="#随机梯度下降法" class="headerlink" title="随机梯度下降法"></a>随机梯度下降法</h3><p>随机梯度下降法(stochastic gradient descent, SGD)根据每一条训练样本\(x^{(i)}\)和标签\(y^{(i)}\)更新参数:</p>
 <p>$$ \theta = \theta - \eta \cdot \nabla_\theta J(\theta; x^{(i)}; y^{(i)}) $$</p>
 <p>对于的大数据集, 因为批梯度下降法在每一个参数更新之前, 会对相似的样本计算梯度, 所以在计算过程中会有冗余; 而SGD在每一次更新中只执行一次, 从而消除了冗余; 因而, 通常SGD的运行速度更快, 同时, 可以用于在线学习; SGD以高方差频繁地更新, 导致目标函数出现如下图所示的剧烈波动</p>
-<p><img alt="SGD波动" data-src="https://img-blog.csdn.net/20170410195019493?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<p><img data-src="https://img-blog.csdn.net/20170410195019493?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="SGD波动"></p>
 <p>与梯度下降法的收敛会使得损失函数陷入局部最小相比, 由于SGD的波动性, 一方面, 波动性使得SGD可以跳到新的和潜在更好的局部最优; 另一方面, 这使得最终收敛到特定最小值的过程变得复杂, 因为SGD会一直持续波动; 然而, 已经证明当我们缓慢减小学习率, SGD与批梯度下降法具有相同的收敛行为, 对于非凸优化和凸优化, 可以分别收敛到局部最小值和全局最小值; 与批梯度下降的代码相比, SGD的代码片段仅仅是在对训练样本的遍历和利用每一条样本计算梯度的过程中增加一层循环; 在每一次循环中, 我们打乱训练样本</p>
 <p>代码示例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i in range(nb_epochs):</span><br><span class="line">	np.random.shuffle(data)</span><br><span class="line">	for example in data:</span><br><span class="line">		params_grad = evaluate_gradient(loss_function, example, params)</span><br><span class="line">		params = params - learning_rate  * params_grad</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i in range(nb_epochs):</span><br><span class="line">	np.random.shuffle(data)</span><br><span class="line">	for example in data:</span><br><span class="line">		params_grad &#x3D; evaluate_gradient(loss_function, example, params)</span><br><span class="line">		params &#x3D; params - learning_rate  * params_grad</span><br></pre></td></tr></table></figure>
+
 <h3 id="小批量梯度下降法"><a href="#小批量梯度下降法" class="headerlink" title="小批量梯度下降法"></a>小批量梯度下降法</h3><p>小批量梯度下降法最终结合了上述两种方法的优点, 在每次更新时使用n个小批量训练样本:</p>
 <p>$$ \theta = \theta - \eta \cdot \nabla_\theta J(\theta; x^{(i:i+n)}; y^{(i:i+n)}) $$</p>
 <blockquote>
@@ -543,7 +419,8 @@
 </blockquote>
 <p>通常, 小批量数据的大小在50到256之间, 也可以根据不同的应用有所变化; 当训练神经网络模型时, 小批量梯度下降法是典型的选择算法</p>
 <p>代码示例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 在大小为50的小批量数据上做迭代</span><br><span class="line">for i in range(nb_epochs):</span><br><span class="line">	np.random.shuffle(data)</span><br><span class="line">	for batch in get_batches(data, batch_size=50):</span><br><span class="line">		params_grad = evaluate_gradient(loss_function, batch, params)</span><br><span class="line">		params = params - learning_rate * params_grad</span><br><span class="line"></span><br><span class="line"># 在keras中使用小批量梯度下降</span><br><span class="line">model.fit(X_train, y_train, epochs=1000, batch_size=100, verbose=0)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 在大小为50的小批量数据上做迭代</span><br><span class="line">for i in range(nb_epochs):</span><br><span class="line">	np.random.shuffle(data)</span><br><span class="line">	for batch in get_batches(data, batch_size&#x3D;50):</span><br><span class="line">		params_grad &#x3D; evaluate_gradient(loss_function, batch, params)</span><br><span class="line">		params &#x3D; params - learning_rate * params_grad</span><br><span class="line"></span><br><span class="line"># 在keras中使用小批量梯度下降</span><br><span class="line">model.fit(X_train, y_train, epochs&#x3D;1000, batch_size&#x3D;100, verbose&#x3D;0)</span><br></pre></td></tr></table></figure>
+
 <h2 id="挑战"><a href="#挑战" class="headerlink" title="挑战"></a>挑战</h2><p>虽然Vanilla小批量梯度下降法并不能保证较好的收敛性, 但是需要强调的是, 这也给我们留下了如下的一些挑战:</p>
 <ul>
 <li>选择一个合适的学习率是困难的; 学习率太小会导致收敛的速度很慢, 学习率太大会妨碍收敛, 导致损失函数在最小值附近波动甚至偏离最小值</li>
@@ -553,7 +430,7 @@
 </ul>
 <h2 id="梯度下降优化算法"><a href="#梯度下降优化算法" class="headerlink" title="梯度下降优化算法"></a>梯度下降优化算法</h2><p>下面, 我们将列举一些算法, 这些算法被深度学习社区广泛用来处理前面提到的挑战; 我们不会讨论在实际中不适合在高维数据集中计算的算法, 例如二阶方法中的牛顿法</p>
 <h3 id="动量法"><a href="#动量法" class="headerlink" title="动量法"></a>动量法</h3><p>SGD很难通过陡谷, 即在一个维度上的表面弯曲程度远大于其他维度的区域, 这种情况通常出现在局部最优点附近; 在这种情况下, SGD摇摆地通过陡谷的斜坡, 同时, 沿着底部到局部最优点的路径上只是缓慢地前进, 这个过程如下图中的(a)所示</p>
-<p><img alt="" data-src="https://img-blog.csdn.net/20170411141442576?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<p><img data-src="https://img-blog.csdn.net/20170411141442576?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ29vZ2xlMTk4OTAxMDI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p>如上图(b)所示, 动量法是一种帮助SGD在相关方向上加速并抑制摇摆的一种方法; 动量法将历史步长的更新向量的一个分量\(\gamma\)增加到当前的更新向量中(部分实现中交换了公式中的符号)</p>
 <p>$$ v_t = \gamma v_{t-1} + \eta\nabla_\theta J(\theta) $$</p>
 <p>$$ \theta = \theta - v_t $$</p>
@@ -575,21 +452,17 @@
     
     
     
-        
-      
         <div class="reward-container">
   <div>Thank you for your reward !</div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
   <div id="qr" style="display: none;">
-        
       
       <div style="display: inline-block;">
         <img src="/images/wechatpay.png" alt="DiDong WeChat Pay">
         <p>WeChat Pay</p>
       </div>
-        
       
       <div style="display: inline-block;">
         <img src="/images/alipay.png" alt="DiDong Alipay">
@@ -599,7 +472,6 @@
   </div>
 </div>
 
-      
         
 
 <div>
@@ -609,7 +481,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/" title="水下机器人视觉_5_深度学习算法调优">https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/</a>
+    <a href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/" title="水下机器人视觉_5_深度学习算法调优">https://didongdongdi.github.io/2019/09/28/水下机器人视觉-5-深度学习算法调优/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -617,41 +489,27 @@
 </ul>
 </div>
 
-      
 
       <footer class="post-footer">
           
-            
-          
           <div class="post-tags">
-            
               <a href="/tags/Notes/" rel="tag"><i class="fa fa-tag"></i> Notes</a>
-            
           </div>
-        
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/09/27/机器人操作系统ROS-2-ROS通信机制与编程基础/" rel="next" title="机器人操作系统ROS_2_ROS通信机制与编程基础">
-                  <i class="fa fa-chevron-left"></i> 机器人操作系统ROS_2_ROS通信机制与编程基础
-                </a>
-              
-            </div>
 
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/29/水下机器人视觉-6-张量/" rel="prev" title="水下机器人视觉_6_张量">
-                  水下机器人视觉_6_张量 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
         
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" rel="prev" title="机器人操作系统ROS_2_ROS通信机制与编程基础">
+      <i class="fa fa-chevron-left"></i> 机器人操作系统ROS_2_ROS通信机制与编程基础
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="next" title="水下机器人视觉_7_卷积神经网络">
+      水下机器人视觉_7_卷积神经网络 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -665,12 +523,32 @@
           </div>
           
     
-    
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
   </div>
   
-  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -683,11 +561,6 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -701,89 +574,48 @@
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
           <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#学习率"><span class="nav-number">1.</span> <span class="nav-text">学习率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#训练集-验证集-测试集"><span class="nav-number">2.</span> <span class="nav-text">训练集 验证集 测试集</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过拟合与欠拟合"><span class="nav-number">3.</span> <span class="nav-text">过拟合与欠拟合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Early-Stopping"><span class="nav-number">4.</span> <span class="nav-text">Early Stopping</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正则化"><span class="nav-number">5.</span> <span class="nav-text">正则化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dropout"><span class="nav-number">6.</span> <span class="nav-text">Dropout</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ReLU激活函数"><span class="nav-number">7.</span> <span class="nav-text">ReLU激活函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Random-Restart"><span class="nav-number">8.</span> <span class="nav-text">Random Restart</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#梯度下降优化"><span class="nav-number">9.</span> <span class="nav-text">梯度下降优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度下降法的变形形式"><span class="nav-number">9.1.</span> <span class="nav-text">梯度下降法的变形形式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#批梯度下降法"><span class="nav-number">9.1.1.</span> <span class="nav-text">批梯度下降法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#随机梯度下降法"><span class="nav-number">9.1.2.</span> <span class="nav-text">随机梯度下降法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小批量梯度下降法"><span class="nav-number">9.1.3.</span> <span class="nav-text">小批量梯度下降法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挑战"><span class="nav-number">9.2.</span> <span class="nav-text">挑战</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度下降优化算法"><span class="nav-number">9.3.</span> <span class="nav-text">梯度下降优化算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#动量法"><span class="nav-number">9.3.1.</span> <span class="nav-text">动量法</span></a></li></ol></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="/images/avatar.gif"
-      alt="DiDong">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">DiDong</p>
   <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-categories">
-        
-          
             <a href="/categories/">
           
-        
-        <span class="site-state-item-count">23</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
-        
-          
             <a href="/tags/">
           
-        
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span>
-        </a>
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
-    
   </nav>
 </div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/DiDongDongDi" title="GitHub &rarr; https://github.com/DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
-    
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:wangqy101@gmail.com" title="E-Mail &rarr; mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:wangqy101@gmail.com" title="E-Mail → mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
-    
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    
-  
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
@@ -804,8 +636,9 @@
         
 
 <div class="copyright">
+  
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -815,15 +648,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">215k</span>
+    <span title="Symbols count total">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">3:15</span>
+    <span title="Reading time total">2:55</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
@@ -840,9 +671,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-  
     <span class="post-meta-divider">|</span>
-  
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -851,7 +680,6 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-  
 </div>
 
 
@@ -861,28 +689,33 @@
 
 
 
-
-
-
-
-        
       </div>
     </footer>
   </div>
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
-<script src="/js/schemes/muse.js?v=7.4.1"></script>
-<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -902,9 +735,6 @@ var pjax = new Pjax({
 
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    if (element.type !== 'text/javascript') {
-      return;
-    }
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -915,13 +745,16 @@ window.addEventListener('pjax:success', () => {
     if (element.className) {
       script.className = element.className;
     }
+    if (element.type) {
+      script.type = element.type;
+    }
     if (element.src) {
       script.src = element.src;
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -933,6 +766,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
@@ -957,11 +791,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
-
-
-
-  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -1006,13 +838,10 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
-
     <div id="pjax">
-
   
 
   
-    
       
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
@@ -1063,13 +892,21 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
     
-  
 
   
-
-  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/',]
+      });
+      });
+  </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -1081,6 +918,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
     </div>

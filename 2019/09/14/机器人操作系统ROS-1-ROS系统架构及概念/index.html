@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
   <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
   <meta name="baidu-site-verification" content="mBrz0gqBDR">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+<link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
     root: '/',
     scheme: 'Muse',
-    version: '7.4.1',
+    version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":false,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -43,6 +38,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
       appID: '',
       apiKey: '',
@@ -52,29 +48,38 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
   <meta name="description" content="初识ROSROS介绍  ros的设计目标: 提高机器人研发中的软件复用率 ros集成了大量的工具, 库, 协议, 提供了类似操作系统的功能, 把原本松散的零部件耦合在了一起">
-<meta name="keywords" content="Notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器人操作系统ROS_1_ROS系统架构及概念">
-<meta property="og:url" content="https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/index.html">
+<meta property="og:url" content="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="DIDA LAB">
 <meta property="og:description" content="初识ROSROS介绍  ros的设计目标: 提高机器人研发中的软件复用率 ros集成了大量的工具, 库, 协议, 提供了类似操作系统的功能, 把原本松散的零部件耦合在了一起">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-21T08:15:56.702Z">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-8.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-12.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-5.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-4.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-2.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-11.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-7.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-6.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-9.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-0.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-3.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-10.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/ros-1.png">
+<meta property="article:published_time" content="2019-09-14T02:47:00.000Z">
+<meta property="article:modified_time" content="2019-10-21T08:15:56.702Z">
+<meta property="article:author" content="DiDong">
+<meta property="article:tag" content="Notes">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器人操作系统ROS_1_ROS系统架构及概念">
-<meta name="twitter:description" content="初识ROSROS介绍  ros的设计目标: 提高机器人研发中的软件复用率 ros集成了大量的工具, 库, 协议, 提供了类似操作系统的功能, 把原本松散的零部件耦合在了一起">
-  <link rel="canonical" href="https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/">
+<meta name="twitter:image" content="http://qiniu.wangqy.top/didong/images/ros-8.png">
+
+<link rel="canonical" href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/">
 
 
 <script id="page-configurations">
@@ -82,9 +87,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -92,15 +95,13 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
     <script pjax>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
+      if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-120518210-1');
       }
     </script>
-  
 
 
   <script pjax>
@@ -112,8 +113,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
-
 
 
 
@@ -130,7 +129,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -142,6 +140,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -176,134 +175,36 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-        
-        
         <li class="menu-item menu-item-home">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-tags">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-          
-        
-      
-    
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">29</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">27</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-categories">
-      
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-      
-    
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">21</span></a>
 
   </li>
-      
-    
-      
-      
-        
-        
         <li class="menu-item menu-item-archives">
-      
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">86</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">87</span></a>
 
   </li>
-      
-    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">
-        
-          <i class="fa fa-search fa-fw"></i>
-        
-        Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
       </li>
-    
   </ul>
-
-    
 
 </nav>
   <div class="site-search">
@@ -344,6 +245,8 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+
           <div class="content">
             
 
@@ -352,12 +255,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DiDong">
       <meta itemprop="description" content="As a young man, prepare and rule.">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -365,11 +268,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            机器人操作系统ROS_1_ROS系统架构及概念
-            
-
-          
+          机器人操作系统ROS_1_ROS系统架构及概念
         </h2>
 
         <div class="post-meta">
@@ -379,16 +278,8 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
               <time title="Created: 2019-09-14 10:47:00" itemprop="dateCreated datePublished" datetime="2019-09-14T10:47:00+08:00">2019-09-14</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
@@ -396,25 +287,17 @@
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-10-21 16:15:56" itemprop="dateModified" datetime="2019-10-21T16:15:56+08:00">2019-10-21</time>
               </span>
-            
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/ROS/" itemprop="url" rel="index">
                     <span itemprop="name">ROS</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -423,29 +306,21 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-          <br>
+            </span><br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>7.2k</span>
+              <span>6.1k</span>
             </span>
-          
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              
-              <span>7 mins.</span>
+              <span>6 mins.</span>
             </span>
-          
 
         </div>
       </header>
@@ -463,6 +338,7 @@
 </ul>
 </blockquote>
 <a id="more"></a>
+
 <p>解耦: 分成模块</p>
 <blockquote>
 <ul>
@@ -470,7 +346,7 @@
 <li>在这个环境上, 机器人的感知, 决策, 控制算法可以更好的组织和运行</li>
 </ul>
 </blockquote>
-<h3 id="通信机制"><a href="#通信机制" class="headerlink" title="通信机制"></a>通信机制</h3><p>ros提供了松耦合的分布式的通信方法<br><img alt="ros的通信机制" data-src="http://qiniu.wangqy.top/didong/images/ros-8.png"></p>
+<h3 id="通信机制"><a href="#通信机制" class="headerlink" title="通信机制"></a>通信机制</h3><p>ros提供了松耦合的分布式的通信方法<br><img data-src="http://qiniu.wangqy.top/didong/images/ros-8.png" alt="ros的通信机制"></p>
 <h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><blockquote>
 <p>配置 启动 自检 调试 可视化 登录 测试 终止</p>
 </blockquote>
@@ -478,8 +354,8 @@
 <p>聚焦于移动性, 操作性和感知性, ros提供了实现机器人功能的广泛的库</p>
 </blockquote>
 <h3 id="生态系统"><a href="#生态系统" class="headerlink" title="生态系统"></a>生态系统</h3><p>ros的支持和发展依托着一个强大的社区    </p>
-<p><img alt="有关ros的github仓库" data-src="http://qiniu.wangqy.top/didong/images/ros-12.png"></p>
-<p><img alt="ros社区构成" data-src="http://qiniu.wangqy.top/didong/images/ros-5.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-12.png" alt="有关ros的github仓库"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-5.png" alt="ros社区构成"></p>
 <blockquote>
 <ul>
 <li>发行版</li>
@@ -490,11 +366,11 @@
 <li>博客</li>
 </ul>
 </blockquote>
-<h2 id="ROS的起源与发展"><a href="#ROS的起源与发展" class="headerlink" title="ROS的起源与发展"></a>ROS的起源与发展</h2><p><img alt="ros的起源与发展" data-src="http://qiniu.wangqy.top/didong/images/ros-4.png"></p>
+<h2 id="ROS的起源与发展"><a href="#ROS的起源与发展" class="headerlink" title="ROS的起源与发展"></a>ROS的起源与发展</h2><p><img data-src="http://qiniu.wangqy.top/didong/images/ros-4.png" alt="ros的起源与发展"></p>
 <h2 id="ROS的特点"><a href="#ROS的特点" class="headerlink" title="ROS的特点"></a>ROS的特点</h2><h3 id="点对点设计"><a href="#点对点设计" class="headerlink" title="点对点设计"></a>点对点设计</h3><blockquote>
 <p>ros通过点对点设计以及服务和节点管理器等机制可以分散由于计算机视觉和语音识别等功能带来的实时计算压力, 这种设计能适应服务机器人遇到的挑战</p>
 </blockquote>
-<p><img alt="点对点的设计" data-src="http://qiniu.wangqy.top/didong/images/ros-2.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-2.png" alt="点对点的设计"></p>
 <h3 id="不依赖编程语言"><a href="#不依赖编程语言" class="headerlink" title="不依赖编程语言"></a>不依赖编程语言</h3><blockquote>
 <p>为了支持多语言编程, ros采用了一种语言中立的接口定义语言(IDL)来实现各模块之间的消息传送</p>
 </blockquote>
@@ -515,7 +391,7 @@
 <li>ros另外提供了一种简单的方法可以<em>在调试过程中记录传感器数据及其他类型的消息数据, 并在试验后按时间戳回访(rosbag)</em>, 通过这种方式, 每次运行机器人可以获得更多的测试机会, 例如, 可以记录传感器的数据, 并通过多次回放测试不同的数据处理算法</li>
 </ul>
 </blockquote>
-<h3 id="组件化工具包丰富"><a href="#组件化工具包丰富" class="headerlink" title="组件化工具包丰富"></a>组件化工具包丰富</h3><p>为了管理复杂的ros软件框架, ros利用了<em>大量的小工具</em>去编译和运行多种多样的ros组件, 从而设计成了内核, 而不是构建一个庞大的开发和运行环境, <em>(组件化的方式)</em>, 例如3d可视化工具rviz, rqt工具箱, gazebo仿真等等</p>
+<h3 id="组件化工具包丰富"><a href="#组件化工具包丰富" class="headerlink" title="组件化工具包丰富"></a>组件化工具包丰富</h3><p>为了管理复杂的ros软件框架, ros利用了<em>大量的小工具*去编译和运行多种多样的ros组件, 从而设计成了内核, 而不是构建一个庞大的开发和运行环境, *(组件化的方式)</em>, 例如3d可视化工具rviz, rqt工具箱, gazebo仿真等等</p>
 <h3 id="免费且开源"><a href="#免费且开源" class="headerlink" title="免费且开源"></a>免费且开源</h3><p>遵从BSD协议</p>
 <h3 id="存在的缺点"><a href="#存在的缺点" class="headerlink" title="存在的缺点"></a>存在的缺点</h3><blockquote>
 <ul>
@@ -545,7 +421,7 @@
 </li>
 </ul>
 </blockquote>
-<p><img alt="ros架构的三个层次" data-src="http://qiniu.wangqy.top/didong/images/ros-11.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-11.png" alt="ros架构的三个层次"></p>
 <h3 id="ros系统的架构设计"><a href="#ros系统的架构设计" class="headerlink" title="ros系统的架构设计"></a>ros系统的架构设计</h3><blockquote>
 <p>ros系统的架构主要被设计和划分成了三个部分, 每一个部分是一个层级:</p>
 <ul>
@@ -555,7 +431,7 @@
 </ul>
 </blockquote>
 <h2 id="ros的文件系统"><a href="#ros的文件系统" class="headerlink" title="ros的文件系统"></a>ros的文件系统</h2><h3 id="理解ros文件系统"><a href="#理解ros文件系统" class="headerlink" title="理解ros文件系统"></a>理解ros文件系统</h3><p>ros程序的不同组件要被放在不同的文件夹下</p>
-<p><img alt="ros文件系统" data-src="http://qiniu.wangqy.top/didong/images/ros-7.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-7.png" alt="ros文件系统"></p>
 <h3 id="catkin编译系统"><a href="#catkin编译系统" class="headerlink" title="catkin编译系统"></a>catkin编译系统</h3><blockquote>
 <ul>
 <li>gcc/g++</li>
@@ -564,7 +440,7 @@
 <li>catkin: ros对cmake的拓展</li>
 </ul>
 </blockquote>
-<p><img alt="catkin编译系统" data-src="http://qiniu.wangqy.top/didong/images/ros-6.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-6.png" alt="catkin编译系统"></p>
 <blockquote>
 <p>catkin编译的工作流程:</p>
 <ul>
@@ -574,8 +450,8 @@
 </ul>
 </blockquote>
 <h3 id="catkin工作空间"><a href="#catkin工作空间" class="headerlink" title="catkin工作空间"></a>catkin工作空间</h3><p><code>catkin_make</code>, 编译src中所有的软件包</p>
-<p><img alt="catkin工作空间(1)" data-src="http://qiniu.wangqy.top/didong/images/ros-9.png"></p>
-<p><img alt="catkin工作空间(2)" data-src="http://qiniu.wangqy.top/didong/images/ros-0.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-9.png" alt="catkin工作空间(1)"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-0.png" alt="catkin工作空间(2)"></p>
 <blockquote>
 <p>创建package:</p>
 <ul>
@@ -609,8 +485,7 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>rosdep check [package]</td>
 <td>检查package的依赖是否满足</td>
 </tr>
@@ -634,8 +509,7 @@
 <td>rosdep update</td>
 <td>更新本地的rosdep数据库</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <ol start="2">
 <li>rosls</li>
 </ol>
@@ -664,8 +538,7 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>rospack help</td>
 <td>显示rospack的用法</td>
 </tr>
@@ -685,8 +558,7 @@
 <td>rospack profile</td>
 <td>刷新所有package的位置记录</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="其他常见文件类型"><a href="#其他常见文件类型" class="headerlink" title="其他常见文件类型"></a>其他常见文件类型</h3><blockquote>
 <ul>
 <li>launch文件<blockquote>
@@ -733,7 +605,7 @@
 <li>在这一层中最基本的概念包括: 节点, 节点管理器, 参数服务器, 消息, 服务, 话题和消息记录包</li>
 </ul>
 </blockquote>
-<p><img alt="ROS计算图" data-src="http://qiniu.wangqy.top/didong/images/ros-3.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-3.png" alt="ROS计算图"></p>
 <h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><blockquote>
 <ul>
 <li>节点是主要的计算执行进程(可执行文件运行时的进程)</li>
@@ -750,7 +622,7 @@
 <li>两个roscore(master)不能在两个终端中同时运行</li>
 </ul>
 </blockquote>
-<p><img alt="节点管理器" data-src="http://qiniu.wangqy.top/didong/images/ros-10.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-10.png" alt="节点管理器"></p>
 <blockquote>
 <p>rosout节点:<br>因为这个节点用于收集和记录节点调试输出信息, 所以它总是在运行</p>
 </blockquote>
@@ -775,7 +647,7 @@
 <li>topic保证了消息的发布者与订阅者的相互解耦, 彼此不需要知晓对方的存在</li>
 </ul>
 </blockquote>
-<p><img alt="话题" data-src="http://qiniu.wangqy.top/didong/images/ros-1.png"></p>
+<p><img data-src="http://qiniu.wangqy.top/didong/images/ros-1.png" alt="话题"></p>
 <blockquote>
 <p>话题的缺点:</p>
 <ul>
@@ -817,8 +689,7 @@
 <th>service</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>通信方式</td>
 <td>异步通信</td>
 <td>同步通信</td>
@@ -853,8 +724,7 @@
 <td>激光雷达, 里程计发布数据</td>
 <td>开关传感器, 拍照, 逆解计算</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>rosservice 用法:</p>
 <table>
 <thead>
@@ -863,8 +733,7 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>rosservice args</td>
 <td>打印服务的参数</td>
 </tr>
@@ -892,8 +761,7 @@
 <td>rosservice uri</td>
 <td>打印服务的 ROSRPC uri</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>rossrv 用法(该命令针对的是静态的服务文件*.srv):</p>
 <table>
 <thead>
@@ -902,9 +770,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>rossrv show &lt;pkg_name&gt;/srv_name</td>
+<tbody><tr>
+<td>rossrv show <pkg_name>/srv_name</td>
 <td>显示服务类型的所有信息</td>
 </tr>
 <tr>
@@ -912,19 +779,18 @@
 <td>显示所有服务类型信息</td>
 </tr>
 <tr>
-<td>rossrv md5 &lt;pkg_name&gt;/srv_name</td>
+<td>rossrv md5 <pkg_name>/srv_name</td>
 <td>显示服务类型的md5sum信息(校验)</td>
 </tr>
 <tr>
-<td>rossrv package &lt;pkg_name&gt;</td>
+<td>rossrv package <pkg_name></td>
 <td>列出一个程序包中的所有服务类型</td>
 </tr>
 <tr>
-<td>rossrv packages &lt;srv_name&gt;</td>
+<td>rossrv packages <srv_name></td>
 <td>列出包含服务的所有程序包</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="案例与应用-1"><a href="#案例与应用-1" class="headerlink" title="案例与应用"></a>案例与应用</h4><blockquote>
 <ul>
 <li><code>rosservice list</code>, 显示提供的服务</li>
@@ -947,7 +813,7 @@
 </li>
 <li><code>rosservice call kill &quot;name: &#39;turtle2&#39;&quot;</code><blockquote>
 <ul>
-<li>(或 <code>rosservice call kill &quot;turtle2&quot;`</code>)</li>
+<li>(或 `rosservice call kill “turtle2”``)</li>
 </ul>
 </blockquote>
 </li>
@@ -967,16 +833,14 @@
 <th>…</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Value</td>
 <td>‘kinetic’</td>
 <td>‘1.12.7’</td>
 <td>true</td>
 <td>…</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><code>rosservice call clear</code>, 清空参数, 设置生效</p>
 <p>rospara 命令:</p>
 <table>
@@ -986,8 +850,7 @@
 <th>功能</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>rosparam set</td>
 <td>设置参数</td>
 </tr>
@@ -1011,8 +874,7 @@
 <td>rosparam list</td>
 <td>列出参数名</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="消息记录包"><a href="#消息记录包" class="headerlink" title="消息记录包"></a>消息记录包</h3><blockquote>
 <ul>
 <li>消息记录包是一种用于保存和回放ROS消息数据的文件格式</li>
@@ -1028,8 +890,7 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>check</td>
 <td>确定一个包是否可以在当前系统中进行, 或者是否可以迁移</td>
 </tr>
@@ -1065,8 +926,7 @@
 <td>reindex</td>
 <td>重新索引一个或多个包文件</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <blockquote>
 <p>rosbag受制于其本身的性能无法完全复制录制时的系统运行行为,    rosplay也一样<br>用户不应该期望能够完美的模仿系统行为</p>
 </blockquote>
@@ -1076,21 +936,17 @@
     
     
     
-        
-      
         <div class="reward-container">
   <div>Thank you for your reward !</div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
   <div id="qr" style="display: none;">
-        
       
       <div style="display: inline-block;">
         <img src="/images/wechatpay.png" alt="DiDong WeChat Pay">
         <p>WeChat Pay</p>
       </div>
-        
       
       <div style="display: inline-block;">
         <img src="/images/alipay.png" alt="DiDong Alipay">
@@ -1100,7 +956,6 @@
   </div>
 </div>
 
-      
         
 
 <div>
@@ -1110,7 +965,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/" title="机器人操作系统ROS_1_ROS系统架构及概念">https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/</a>
+    <a href="https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/" title="机器人操作系统ROS_1_ROS系统架构及概念">https://didongdongdi.github.io/2019/09/14/机器人操作系统ROS-1-ROS系统架构及概念/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -1118,41 +973,27 @@
 </ul>
 </div>
 
-      
 
       <footer class="post-footer">
           
-            
-          
           <div class="post-tags">
-            
               <a href="/tags/Notes/" rel="tag"><i class="fa fa-tag"></i> Notes</a>
-            
           </div>
-        
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/09/08/水下机器人视觉-2-感知机/" rel="next" title="水下机器人视觉_2_感知机">
-                  <i class="fa fa-chevron-left"></i> 水下机器人视觉_2_感知机
-                </a>
-              
-            </div>
 
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/15/水下机器人视觉-3-深度神经网络/" rel="prev" title="水下机器人视觉_3_深度神经网络">
-                  水下机器人视觉_3_深度神经网络 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
         
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/09/08/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-2-%E6%84%9F%E7%9F%A5%E6%9C%BA/" rel="prev" title="水下机器人视觉_2_感知机">
+      <i class="fa fa-chevron-left"></i> 水下机器人视觉_2_感知机
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/09/15/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-3-%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="next" title="水下机器人视觉_3_深度神经网络">
+      水下机器人视觉_3_深度神经网络 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -1166,12 +1007,32 @@
           </div>
           
     
-    
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
   </div>
   
-  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -1184,11 +1045,6 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -1202,89 +1058,48 @@
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
           <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初识ROS"><span class="nav-number">1.</span> <span class="nav-text">初识ROS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ROS介绍"><span class="nav-number">1.1.</span> <span class="nav-text">ROS介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通信机制"><span class="nav-number">1.1.1.</span> <span class="nav-text">通信机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发工具"><span class="nav-number">1.1.2.</span> <span class="nav-text">开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用功能"><span class="nav-number">1.1.3.</span> <span class="nav-text">应用功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生态系统"><span class="nav-number">1.1.4.</span> <span class="nav-text">生态系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ROS的起源与发展"><span class="nav-number">1.2.</span> <span class="nav-text">ROS的起源与发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ROS的特点"><span class="nav-number">1.3.</span> <span class="nav-text">ROS的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#点对点设计"><span class="nav-number">1.3.1.</span> <span class="nav-text">点对点设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不依赖编程语言"><span class="nav-number">1.3.2.</span> <span class="nav-text">不依赖编程语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精简与集成"><span class="nav-number">1.3.3.</span> <span class="nav-text">精简与集成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#便于测试"><span class="nav-number">1.3.4.</span> <span class="nav-text">便于测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件化工具包丰富"><span class="nav-number">1.3.5.</span> <span class="nav-text">组件化工具包丰富</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#免费且开源"><span class="nav-number">1.3.6.</span> <span class="nav-text">免费且开源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存在的缺点"><span class="nav-number">1.3.7.</span> <span class="nav-text">存在的缺点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ros系统架构及概念-ros文件系统"><span class="nav-number">2.</span> <span class="nav-text">ros系统架构及概念_ros文件系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ros的架构"><span class="nav-number">2.1.</span> <span class="nav-text">ros的架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ros架构的三个层次"><span class="nav-number">2.1.1.</span> <span class="nav-text">ros架构的三个层次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ros系统的架构设计"><span class="nav-number">2.1.2.</span> <span class="nav-text">ros系统的架构设计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ros的文件系统"><span class="nav-number">2.2.</span> <span class="nav-text">ros的文件系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解ros文件系统"><span class="nav-number">2.2.1.</span> <span class="nav-text">理解ros文件系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#catkin编译系统"><span class="nav-number">2.2.2.</span> <span class="nav-text">catkin编译系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#catkin工作空间"><span class="nav-number">2.2.3.</span> <span class="nav-text">catkin工作空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件包相关命令"><span class="nav-number">2.2.4.</span> <span class="nav-text">软件包相关命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他常见文件类型"><span class="nav-number">2.2.5.</span> <span class="nav-text">其他常见文件类型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ROS系统架构及概念-ROS计算图"><span class="nav-number">3.</span> <span class="nav-text">ROS系统架构及概念_ROS计算图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ROS计算图"><span class="nav-number">3.1.</span> <span class="nav-text">ROS计算图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ROS计算图内容"><span class="nav-number">3.1.1.</span> <span class="nav-text">ROS计算图内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#节点"><span class="nav-number">3.1.2.</span> <span class="nav-text">节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#节点管理器-master"><span class="nav-number">3.1.3.</span> <span class="nav-text">节点管理器(master)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息-message"><span class="nav-number">3.1.4.</span> <span class="nav-text">消息(message)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#话题-topic"><span class="nav-number">3.1.5.</span> <span class="nav-text">话题(topic)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#案例与应用"><span class="nav-number">3.1.5.1.</span> <span class="nav-text">案例与应用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务-service"><span class="nav-number">3.1.6.</span> <span class="nav-text">服务(service)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#案例与应用-1"><span class="nav-number">3.1.6.1.</span> <span class="nav-text">案例与应用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数服务器"><span class="nav-number">3.1.7.</span> <span class="nav-text">参数服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息记录包"><span class="nav-number">3.1.8.</span> <span class="nav-text">消息记录包</span></a></li></ol></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="/images/avatar.gif"
-      alt="DiDong">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">DiDong</p>
   <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-categories">
-        
-          
             <a href="/categories/">
           
-        
-        <span class="site-state-item-count">23</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
-        
-          
             <a href="/tags/">
           
-        
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span>
-        </a>
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
-    
   </nav>
 </div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/DiDongDongDi" title="GitHub &rarr; https://github.com/DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
-    
       <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:wangqy101@gmail.com" title="E-Mail &rarr; mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:wangqy101@gmail.com" title="E-Mail → mailto:wangqy101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
-    
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    
-  
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
@@ -1305,8 +1120,9 @@
         
 
 <div class="copyright">
+  
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1316,15 +1132,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">215k</span>
+    <span title="Symbols count total">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">3:15</span>
+    <span title="Reading time total">2:55</span>
 </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
@@ -1341,9 +1155,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-  
     <span class="post-meta-divider">|</span>
-  
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1352,7 +1164,6 @@
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-  
 </div>
 
 
@@ -1362,28 +1173,33 @@
 
 
 
-
-
-
-
-        
       </div>
     </footer>
   </div>
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
-<script src="/js/schemes/muse.js?v=7.4.1"></script>
-<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -1403,9 +1219,6 @@ var pjax = new Pjax({
 
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    if (element.type !== 'text/javascript') {
-      return;
-    }
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -1416,13 +1229,16 @@ window.addEventListener('pjax:success', () => {
     if (element.className) {
       script.className = element.className;
     }
+    if (element.type) {
+      script.type = element.type;
+    }
     if (element.src) {
       script.src = element.src;
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1434,6 +1250,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
@@ -1458,11 +1275,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
-
-
-
-  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -1507,13 +1322,10 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
-
     <div id="pjax">
-
   
 
   
-    
       
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
@@ -1564,13 +1376,21 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
     
-  
 
   
-
-  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/2019/09/14/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-1-ROS%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%8F%8A%E6%A6%82%E5%BF%B5/',]
+      });
+      });
+  </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -1582,6 +1402,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
     </div>
