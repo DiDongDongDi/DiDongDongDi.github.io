@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-03-09T04:38:25.381Z</updated>
+  <updated>2020-03-22T06:45:22.150Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,104 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo模版渲染错误</title>
+    <link href="https://didongdongdi.github.io/2020/03/22/hexo%E6%A8%A1%E7%89%88%E6%B8%B2%E6%9F%93%E9%94%99%E8%AF%AF/"/>
+    <id>https://didongdongdi.github.io/2020/03/22/hexo%E6%A8%A1%E7%89%88%E6%B8%B2%E6%9F%93%E9%94%99%E8%AF%AF/</id>
+    <published>2020-03-22T06:33:41.000Z</published>
+    <updated>2020-03-22T06:45:22.150Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在写完一篇关于shell语法的笔记后, &lt;code&gt;hexo g&lt;/code&gt;生成网页时报错, 错误如下:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+      <category term="Hexo" scheme="https://didongdongdi.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flipped (Week 5)</title>
+    <link href="https://didongdongdi.github.io/2020/03/22/Flipped%20(Week%205)/"/>
+    <id>https://didongdongdi.github.io/2020/03/22/Flipped%20(Week%205)/</id>
+    <published>2020-03-22T05:52:25.000Z</published>
+    <updated>2020-03-22T06:54:42.374Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018-08-08-p18&quot;&gt;&lt;a href=&quot;#2018-08-08-p18&quot; class=&quot;headerlink&quot; title=&quot;2018-08-08-p18&quot;&gt;&lt;/a&gt;2018-08-08-p18&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;notion [‘nəʊʃ(ə)n]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;n. 概念; 见解; 打算&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;humble [‘hʌmbl]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;adj. 谦逊的; 简陋的; (级别或地位)低下的; 不大的&lt;/p&gt;
+&lt;p&gt;vt. 使谦恭; 轻松打败(尤指强大的对手); 低声下气&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+      <category term="English" scheme="https://didongdongdi.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell笔记-1</title>
+    <link href="https://didongdongdi.github.io/2020/03/19/shell%E7%AC%94%E8%AE%B0-1/"/>
+    <id>https://didongdongdi.github.io/2020/03/19/shell%E7%AC%94%E8%AE%B0-1/</id>
+    <published>2020-03-19T10:23:05.000Z</published>
+    <updated>2020-03-22T06:31:41.600Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;参考自&lt;em&gt;Linux命令行与shell脚本编程大全第三版&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;输出特殊字符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;比如需要输出换行符时&lt;br&gt;使用&lt;code&gt;echo $&amp;#39;\n&amp;#39;&lt;/code&gt;&lt;br&gt;双引号是没用的, 只会输出普通字符串&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;UNIX哲学&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考&lt;a href=&quot;https://yuguo.us/weblog/linux-philosophy/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://yuguo.us/weblog/linux-philosophy/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;shell哲学&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考&lt;a href=&quot;https://www.cnblogs.com/youxia/p/linux010.html#_label3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/youxia/p/linux010.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://didongdongdi.github.io/categories/Notes/"/>
+    
+    
+      <category term="Shell" scheme="https://didongdongdi.github.io/tags/Shell/"/>
+    
+  </entry>
   
   <entry>
     <title>华硕路由器AC66U配置</title>
@@ -73,6 +171,47 @@
     
     
       <category term="PS" scheme="https://didongdongdi.github.io/tags/PS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>牛客网刷题笔记(C/C++)篇</title>
+    <link href="https://didongdongdi.github.io/2020/02/07/%E7%89%9B%E5%AE%A2%E7%BD%91%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-C-C-%E7%AF%87/"/>
+    <id>https://didongdongdi.github.io/2020/02/07/%E7%89%9B%E5%AE%A2%E7%BD%91%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-C-C-%E7%AF%87/</id>
+    <published>2020-02-07T11:30:00.000Z</published>
+    <updated>2020-03-22T06:55:22.389Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下是在牛客网上刷&lt;code&gt;C/C++专项练习&lt;/code&gt;时的知识点记录:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://ascii.911cha.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ASCII码对照表&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘0’十进制是&lt;code&gt;48&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;‘A’十进制是&lt;code&gt;65&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;‘a’十进制是&lt;code&gt;97&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个派生类继承了所有的基类方法, 但下列情况除外:(参考自&lt;a href=&quot;https://www.runoob.com/cplusplus/cpp-inheritance.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.runoob.com/cplusplus/cpp-inheritance.html&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基类的构造函数, 析构函数和拷贝构造函数&lt;/li&gt;
+&lt;li&gt;基类的重载运算符&lt;/li&gt;
+&lt;li&gt;基类的友元函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="工作" scheme="https://didongdongdi.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+      <category term="工作" scheme="https://didongdongdi.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="C/C++" scheme="https://didongdongdi.github.io/tags/C-C/"/>
+    
+      <category term="牛客网" scheme="https://didongdongdi.github.io/tags/%E7%89%9B%E5%AE%A2%E7%BD%91/"/>
     
   </entry>
   
@@ -420,101 +559,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;Feedforward&quot;&gt;&lt;a href=&quot;#Feedforward&quot; class=&quot;headerlink&quot; title=&quot;Feedforward&quot;&gt;&lt;/a&gt;Feedforward&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-42.png&quot; alt=&quot;前向传播&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_7_卷积神经网络</title>
-    <link href="https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    <id>https://didongdongdi.github.io/2019/09/29/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-7-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
-    <published>2019-09-28T23:55:00.000Z</published>
-    <updated>2019-10-20T14:11:16.941Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;深度神经网络识别手写字&quot;&gt;&lt;a href=&quot;#深度神经网络识别手写字&quot; class=&quot;headerlink&quot; title=&quot;深度神经网络识别手写字&quot;&gt;&lt;/a&gt;深度神经网络识别手写字&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://wangqy.cc/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-mnist%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mnist手写数字识别&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;独热编码-One-Hot-Encoding&quot;&gt;&lt;a href=&quot;#独热编码-One-Hot-Encoding&quot; class=&quot;headerlink&quot; title=&quot;独热编码(One-Hot Encoding)&quot;&gt;&lt;/a&gt;独热编码(One-Hot Encoding)&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_5_深度学习算法调优</title>
-    <link href="https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/"/>
-    <id>https://didongdongdi.github.io/2019/09/28/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-5-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E8%B0%83%E4%BC%98/</id>
-    <published>2019-09-28T09:30:00.000Z</published>
-    <updated>2019-10-19T23:59:28.874Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;学习率&quot;&gt;&lt;a href=&quot;#学习率&quot; class=&quot;headerlink&quot; title=&quot;学习率&quot;&gt;&lt;/a&gt;学习率&lt;/h1&gt;&lt;p&gt;学习率太大或太小的问题:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-39.png&quot; alt=&quot;学习率太大或太小&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人操作系统ROS_2_ROS通信机制与编程基础</title>
-    <link href="https://didongdongdi.github.io/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
-    <id>https://didongdongdi.github.io/2019/09/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-2-ROS%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/</id>
-    <published>2019-09-27T12:28:00.000Z</published>
-    <updated>2019-10-21T08:14:35.637Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;ROS的通信机制&quot;&gt;&lt;a href=&quot;#ROS的通信机制&quot; class=&quot;headerlink&quot; title=&quot;ROS的通信机制&quot;&gt;&lt;/a&gt;ROS的通信机制&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;ROS通信架构:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;各种数据的处理&lt;/li&gt;
-&lt;li&gt;进程的运行&lt;/li&gt;
-&lt;li&gt;消息的传递&lt;/li&gt;
-&lt;li&gt;等等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_4_反向传播</title>
-    <link href="https://didongdongdi.github.io/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/"/>
-    <id>https://didongdongdi.github.io/2019/09/21/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-4-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</id>
-    <published>2019-09-21T11:37:00.000Z</published>
-    <updated>2019-09-21T14:23:36.953Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;sigmoid函数的导数计算:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://qiniu.wangqy.top/didong/images/vision-35.png&quot; alt=&quot;sigmoid函数的导数&quot;&gt;&lt;/p&gt;
     
     </summary>
     
