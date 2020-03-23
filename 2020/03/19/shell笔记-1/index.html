@@ -60,7 +60,7 @@
 <meta property="og:description" content="参考自Linux命令行与shell脚本编程大全第三版   输出特殊字符   比如需要输出换行符时使用echo $&#39;\n&#39;双引号是没用的, 只会输出普通字符串   UNIX哲学   参考https:&#x2F;&#x2F;yuguo.us&#x2F;weblog&#x2F;linux-philosophy&#x2F;   shell哲学   参考https:&#x2F;&#x2F;www.cnblogs.com&#x2F;youxia&#x2F;p&#x2F;linux010.h">
 <meta property="og:locale" content="zh">
 <meta property="article:published_time" content="2020-03-19T10:23:05.000Z">
-<meta property="article:modified_time" content="2020-03-22T06:31:41.600Z">
+<meta property="article:modified_time" content="2020-03-23T02:24:01.808Z">
 <meta property="article:author" content="DiDong">
 <meta property="article:tag" content="Shell">
 <meta name="twitter:card" content="summary">
@@ -271,7 +271,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-22 14:31:41" itemprop="dateModified" datetime="2020-03-22T14:31:41+08:00">2020-03-22</time>
+                <time title="Modified: 2020-03-23 10:24:01" itemprop="dateModified" datetime="2020-03-23T10:24:01+08:00">2020-03-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -373,8 +373,8 @@
 <blockquote>
 <ul>
 <li>(pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls)<br>进程列表, 会生成子shell</li>
-<li>{ pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls } 或 pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls<br>不会生成子shell, 注意<code>{  }</code>前后有空格</li>
-<li>coproc sleep 10 或 coproc my_job { sleep 10; }<br>协程, 在后台生成一个子shell, 并在这个子shell中执行命令</li>
+<li><code>{ pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls }</code> 或 pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls<br>不会生成子shell, 注意<code>{  }</code>前后有空格</li>
+<li>coproc sleep 10 或 <code>coproc my_job { sleep 10; }</code><br>协程, 在后台生成一个子shell, 并在这个子shell中执行命令</li>
 </ul>
 </blockquote>
 <blockquote>
@@ -399,7 +399,7 @@
 <blockquote>
 <ul>
 <li>my_var=hello 或 my_var=’hello world’ 或 my_var=”hello world”<br>定义用户变量, 变量名用小写字母</li>
-<li>export my_var<br>到处局部变量</li>
+<li>export my_var<br>导出局部变量</li>
 <li>unset my_var<br>删除环境变量<br>注意, 在子shell中对全局变量的任何操作都无法影响父shell中的全局变量</li>
 </ul>
 </blockquote>
@@ -415,7 +415,7 @@
 </blockquote>
 <blockquote>
 <ul>
-<li>chpasswd &lt; users.txt<br>为系统中的大量用户修改密码, 格式<code>userid:passwd</code></li>
+<li>chpasswd &lt; users.txt<br>为系统中的大量用户修改密码, 格式 userid:passwd</li>
 <li>chsh -s /bin/csh test<br>修改默认的用户登录shell</li>
 <li>chfn test<br>在/etc/passwd文件的备注字段中存储信息</li>
 <li>chage test<br>管理用户账户的有效期</li>
@@ -425,14 +425,14 @@
 <ul>
 <li>groupadd shared<br>创建新组</li>
 <li>usermod -G shared test<br>添加用户到组</li>
-<li>groupmod -n sharing shared<br>修改组名, <code>-g</code>选项可以修改GID</li>
+<li>groupmod -n sharing shared<br>修改组名, -g 选项可以修改GID</li>
 </ul>
 </blockquote>
 <blockquote>
 <ul>
 <li>fdisk /dev/sdb<br>管理磁盘分区</li>
 <li>mkfs.ext4 /dev/sdb1<br>创建文件系统, 不同的文件系统的创建有不同的命令</li>
-<li>mount -t ext4 /dev/sdb1 /mnt/my_partition<br>挂载文件系统, <code>-t</code>选项指定了文件系统</li>
+<li>mount -t ext4 /dev/sdb1 /mnt/my_partition<br>挂载文件系统, -t 选项指定了文件系统</li>
 <li>fsck -a /dev/sdb1 或 fsck -y /dev/sdb1<br>自动修复文件系统, 文件系统可以通过设备名, 在虚拟目录中的挂载点以及分配给文件系统的唯一UUID来引用</li>
 </ul>
 </blockquote>
@@ -480,7 +480,7 @@
 <blockquote>
 <ul>
 <li>expr 5 \* 2<br>expr执行数学运算, 有些特殊的符号需要转义</li>
-<li>var=$[5 * 2]<br>方括号执行数学运算, bash shell只支持整数运算</li>
+<li>var=$[5*2]<br>方括号执行数学运算, bash shell只支持整数运算</li>
 <li>var=$(echo “scale=4; 3.44 / 5” | bc) 或</li>
 </ul>
 </blockquote>
@@ -502,7 +502,7 @@
 </blockquote>
 <blockquote>
 <ul>
-<li>test condition 或 [ condition ]<br>测试条件表达式, 用在判断关键字后面, 注意<code>[  ]</code>前后有空格<br>数值比较使用<code>-eq -ge -gt -le -lt -ne</code><br>字符串比较使用<code>= != &lt; &gt; -n -z</code>, <code>&lt;</code>和<code>&gt;</code>必须转义<br>test命令中使用标准的ASCII顺序, 根据每个字符的ASCII数值来决定排序结果; sort命令使用系统本地化语言设置中定义的排序顺序, 对于英语, 本地化设置指定了在排序顺序中小写字母出现在大写字母前<br>文件比较使用<code>-d -e -f -r -s -w -x -O -G -nt -ot</code><br>复合条件测试使用<code>&amp;&amp;</code>和<code>||</code></li>
+<li>test condition 或 <code>[ condition ]</code><br>测试条件表达式, 用在判断关键字后面, 注意<code>[  ]</code>前后有空格<br>数值比较使用<code>-eq -ge -gt -le -lt -ne</code><br>字符串比较使用<code>= != &lt; &gt; -n -z</code>, <code>&lt;</code>和<code>&gt;</code>必须转义<br>test命令中使用标准的ASCII顺序, 根据每个字符的ASCII数值来决定排序结果; sort命令使用系统本地化语言设置中定义的排序顺序, 对于英语, 本地化设置指定了在排序顺序中小写字母出现在大写字母前<br>文件比较使用<code>-d -e -f -r -s -w -x -O -G -nt -ot</code><br>复合条件测试使用<code>&amp;&amp;</code>和<code>||</code></li>
 <li>((expression)) 或 ((val2=$val1**2))<br>允许在比较过程中使用高级数学表达式, test命令只能在比较中使用简单的算术操作, 双括号命令提供了更多的数学符号<br>其他运算符: <code>val++ val-- ++val --val ! ~ ** &lt;&lt; &gt;&gt; &amp; | &amp;&amp; ||</code><br>可以在脚本中的普通命令里使用来赋值</li>
 <li>[[ $USER == r* ]]<br>双方括号和test命令差不多, 但提供了模式匹配的特性<br>不是所有的shell都支持双方括号, bash shell支持</li>
 </ul>
