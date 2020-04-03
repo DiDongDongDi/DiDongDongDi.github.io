@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8">
+  <meta name="msvalidate.01" content="40EF0D801C91BDF6EB5FE55861B4F8AA">
+  <meta name="baidu-site-verification" content="mBrz0gqBDR">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://didongdongdi.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":false,"style":"flat"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Keras简单的神经网络首先使用Keras来搭建一个简单的神经网络">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Numpy手撸神经网络和Keras">
+<meta property="og:url" content="https://didongdongdi.github.io/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/index.html">
+<meta property="og:site_name" content="DIDA LAB">
+<meta property="og:description" content="Keras简单的神经网络首先使用Keras来搭建一个简单的神经网络">
+<meta property="og:locale" content="zh">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/numpy_keras_0.png">
+<meta property="og:image" content="http://qiniu.wangqy.top/didong/images/numpy_keras_1.png">
+<meta property="article:published_time" content="2020-04-02T12:49:00.000Z">
+<meta property="article:modified_time" content="2020-04-03T03:22:26.727Z">
+<meta property="article:author" content="DiDong">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="神经网络">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://qiniu.wangqy.top/didong/images/numpy_keras_0.png">
+
+<link rel="canonical" href="https://didongdongdi.github.io/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Numpy手撸神经网络和Keras | DIDA LAB</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120518210-1"></script>
+    <script pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120518210-1');
+      }
+    </script>
+
+
+  <script pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5c2fd77db34c77c44215b94264d80aa8";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="DIDA LAB" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DIDA LAB</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">DiDong's Blog</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">36</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">23</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">96</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/DiDongDongDi" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
+    <link itemprop="mainEntityOfPage" href="https://didongdongdi.github.io/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="DiDong">
+      <meta itemprop="description" content="As a young man, prepare and rule.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DIDA LAB">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Numpy手撸神经网络和Keras
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-04-02 20:49:00" itemprop="dateCreated datePublished" datetime="2020-04-02T20:49:00+08:00">2020-04-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-03 11:22:26" itemprop="dateModified" datetime="2020-04-03T11:22:26+08:00">2020-04-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>14k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>12 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Keras简单的神经网络"><a href="#Keras简单的神经网络" class="headerlink" title="Keras简单的神经网络"></a>Keras简单的神经网络</h1><p>首先使用Keras来搭建一个简单的神经网络</p>
+<a id="more"></a>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Package imports</span></span><br><span class="line"><span class="comment"># Matplotlib is a matlab like plotting library</span></span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="comment"># Numpy handles matrix operations</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># SciKitLearn is a useful machine learning utilities library</span></span><br><span class="line"><span class="keyword">import</span> sklearn</span><br><span class="line"><span class="comment"># The sklearn dataset module helps generating datasets</span></span><br><span class="line"><span class="keyword">import</span> sklearn.datasets</span><br><span class="line"><span class="keyword">import</span> sklearn.linear_model</span><br><span class="line"></span><br><span class="line"><span class="comment"># Display plots inline and change default figure size</span></span><br><span class="line">%matplotlib inline</span><br><span class="line">matplotlib.rcParams[<span class="string">'figure.figsize'</span>] = (<span class="number">16.0</span>, <span class="number">9.0</span>)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Generate a dataset and plot it</span></span><br><span class="line">np.random.seed(<span class="number">0</span>)</span><br><span class="line"><span class="comment"># 这是两个卫星的数据集, 但是现在有一些噪音, 需要将它们分开</span></span><br><span class="line">X, y = sklearn.datasets.make_moons(<span class="number">200</span>, noise=<span class="number">0.15</span>)</span><br><span class="line">y = y.reshape(<span class="number">200</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> keras.layers <span class="keyword">import</span> Dense, Activation</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> keras.models <span class="keyword">import</span> Sequential</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model = Sequential()</span><br></pre></td></tr></table></figure>
+
+<pre><code>WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.add(Dense(<span class="number">3</span>,input_dim=<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
+<pre><code>WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.add(Activation(<span class="string">'tanh'</span>))</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">model.add(Dense(<span class="number">1</span>))</span><br><span class="line">model.add(Activation(<span class="string">'sigmoid'</span>))</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.summary()</span><br></pre></td></tr></table></figure>
+
+<pre><code>_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 3)                 9         
+_________________________________________________________________
+activation_1 (Activation)    (None, 3)                 0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 4         
+_________________________________________________________________
+activation_2 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 13
+Trainable params: 13
+Non-trainable params: 0
+_________________________________________________________________</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.compile(optimizer=<span class="string">'sgd'</span>,loss=<span class="string">'binary_crossentropy'</span>,metrics=[<span class="string">'acc'</span>])</span><br></pre></td></tr></table></figure>
+
+<pre><code>WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3376: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.&lt;locals&gt;.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">history = model.fit(X,y,epochs=<span class="number">50</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>WARNING:tensorflow:From /home/didong/anaconda/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+Epoch 1/50
+200/200 [==============================] - 1s 3ms/step - loss: 0.7140 - acc: 0.3950
+Epoch 2/50
+200/200 [==============================] - 0s 44us/step - loss: 0.7082 - acc: 0.4100
+Epoch 3/50
+200/200 [==============================] - 0s 43us/step - loss: 0.7028 - acc: 0.4350
+Epoch 4/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6974 - acc: 0.4700
+Epoch 5/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6921 - acc: 0.4950
+Epoch 6/50
+200/200 [==============================] - 0s 44us/step - loss: 0.6871 - acc: 0.5300
+Epoch 7/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6820 - acc: 0.5650
+Epoch 8/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6777 - acc: 0.5900
+Epoch 9/50
+200/200 [==============================] - 0s 44us/step - loss: 0.6729 - acc: 0.6400
+Epoch 10/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6685 - acc: 0.6650
+Epoch 11/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6640 - acc: 0.7050
+Epoch 12/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6596 - acc: 0.7350
+Epoch 13/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6554 - acc: 0.7550
+Epoch 14/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6514 - acc: 0.7750
+Epoch 15/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6473 - acc: 0.8500
+Epoch 16/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6434 - acc: 0.8600
+Epoch 17/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6397 - acc: 0.8450
+Epoch 18/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6362 - acc: 0.8400
+Epoch 19/50
+200/200 [==============================] - 0s 41us/step - loss: 0.6323 - acc: 0.8250
+Epoch 20/50
+200/200 [==============================] - 0s 48us/step - loss: 0.6290 - acc: 0.8150
+Epoch 21/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6254 - acc: 0.8150
+Epoch 22/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6222 - acc: 0.8100
+Epoch 23/50
+200/200 [==============================] - 0s 42us/step - loss: 0.6187 - acc: 0.8100
+Epoch 24/50
+200/200 [==============================] - 0s 44us/step - loss: 0.6158 - acc: 0.8100
+Epoch 25/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6126 - acc: 0.8100
+Epoch 26/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6094 - acc: 0.8050
+Epoch 27/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6064 - acc: 0.8050
+Epoch 28/50
+200/200 [==============================] - 0s 43us/step - loss: 0.6031 - acc: 0.8050
+Epoch 29/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5997 - acc: 0.8050
+Epoch 30/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5968 - acc: 0.8050
+Epoch 31/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5939 - acc: 0.8000
+Epoch 32/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5906 - acc: 0.7900
+Epoch 33/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5876 - acc: 0.7850
+Epoch 34/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5846 - acc: 0.7850
+Epoch 35/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5818 - acc: 0.7850
+Epoch 36/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5789 - acc: 0.7850
+Epoch 37/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5760 - acc: 0.7850
+Epoch 38/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5731 - acc: 0.7800
+Epoch 39/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5706 - acc: 0.7800
+Epoch 40/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5680 - acc: 0.7850
+Epoch 41/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5653 - acc: 0.7850
+Epoch 42/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5625 - acc: 0.7850
+Epoch 43/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5597 - acc: 0.7850
+Epoch 44/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5573 - acc: 0.7850
+Epoch 45/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5548 - acc: 0.7850
+Epoch 46/50
+200/200 [==============================] - 0s 43us/step - loss: 0.5523 - acc: 0.7800
+Epoch 47/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5497 - acc: 0.7750
+Epoch 48/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5475 - acc: 0.7850
+Epoch 49/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5450 - acc: 0.7850
+Epoch 50/50
+200/200 [==============================] - 0s 42us/step - loss: 0.5424 - acc: 0.7900</code></pre><h1 id="使用Numpy手撸的简单的神经网络"><a href="#使用Numpy手撸的简单的神经网络" class="headerlink" title="使用Numpy手撸的简单的神经网络"></a>使用Numpy手撸的简单的神经网络</h1><p>然后使用numpy对上面的神经网络做一个简单的重复</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Package imports</span></span><br><span class="line"><span class="comment"># Matplotlib is a matlab like plotting library</span></span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Numpy handles matrix operations</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># SciKitLearn is a useful machine learning utilities library</span></span><br><span class="line"><span class="keyword">import</span> sklearn</span><br><span class="line"><span class="comment"># The sklearn dataset module helps generating datasets</span></span><br><span class="line"><span class="keyword">import</span> sklearn.datasets</span><br><span class="line"><span class="keyword">import</span> sklearn.linear_model</span><br><span class="line"></span><br><span class="line"><span class="comment"># Display plots inline and change default figure size</span></span><br><span class="line">%matplotlib inline</span><br><span class="line">matplotlib.rcParams[<span class="string">'figure.figsize'</span>] = (<span class="number">10.0</span>, <span class="number">8.0</span>)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>/(<span class="number">1</span>+np.exp(-x))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bce_loss</span><span class="params">(y, y_hat)</span>:</span></span><br><span class="line">    <span class="comment"># minval的目的是为了防止计算出来的值太接近零, 导致计算机将其作为0来计算</span></span><br><span class="line">    minval = <span class="number">0.000000000001</span></span><br><span class="line">    N = y.shape[<span class="number">0</span>]</span><br><span class="line">    l = <span class="number">-1</span>/N * np.sum(y * np.log(y_hat.clip(min=minval)) + (<span class="number">1</span>-y) * np.log((<span class="number">1</span>-y_hat).clip(min=minval)))</span><br><span class="line">    <span class="keyword">return</span> l</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bce_loss_derivative</span><span class="params">(y,y_hat)</span>:</span></span><br><span class="line">    <span class="comment"># 至于为什么是这个值, 可以参考https://stats.stackexchange.com/questions/219241/gradient-for-logistic-loss-function</span></span><br><span class="line">    <span class="comment"># 注意, 这里的y_hat是经过sigmoid函数得到的结果, 事实上就是链接当中的p, 而链接中的y_hat指的是线性计算后的结果</span></span><br><span class="line">    <span class="comment"># 这里的求导是对sigmoid函数的输入求导, 即对线性的结果进行求导</span></span><br><span class="line">    <span class="keyword">return</span> (y_hat-y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 前向传播函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">forward_prop</span><span class="params">(model,a0)</span>:</span></span><br><span class="line">    <span class="comment"># Load parameters from model</span></span><br><span class="line">    W1, b1, W2, b2 = model[<span class="string">'W1'</span>], model[<span class="string">'b1'</span>], model[<span class="string">'W2'</span>], model[<span class="string">'b2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Linear step</span></span><br><span class="line">    z1 = a0.dot(W1) + b1</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># First activation function</span></span><br><span class="line">    a1 = np.tanh(z1)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Second linear step</span></span><br><span class="line">    z2 = a1.dot(W2) + b2</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Second activation function</span></span><br><span class="line">    a2 = sigmoid(z2)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 前向传播得到的中间值</span></span><br><span class="line">    cache = &#123;<span class="string">'a0'</span>:a0,<span class="string">'z1'</span>:z1,<span class="string">'a1'</span>:a1,<span class="string">'z1'</span>:z1,<span class="string">'a2'</span>:a2&#125;</span><br><span class="line">    <span class="keyword">return</span> cache</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tanh_derivative</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="comment"># 原因参考https://socratic.org/questions/what-is-the-derivative-of-tanh-x</span></span><br><span class="line">    <span class="keyword">return</span> (<span class="number">1</span> - np.power(x, <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 反向传播函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">backward_prop</span><span class="params">(model,cache,y)</span>:</span></span><br><span class="line">    <span class="comment"># Load parameters from model</span></span><br><span class="line">    W1, b1, W2, b2 = model[<span class="string">'W1'</span>], model[<span class="string">'b1'</span>], model[<span class="string">'W2'</span>], model[<span class="string">'b2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Load forward propagation results</span></span><br><span class="line">    a0,a1, a2 = cache[<span class="string">'a0'</span>],cache[<span class="string">'a1'</span>],cache[<span class="string">'a2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Backpropagation</span></span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to output</span></span><br><span class="line">    <span class="comment"># 这里本来就是对dz2进行求导</span></span><br><span class="line">    dz2 = bce_loss_derivative(y=y,y_hat=a2)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to second layer weights</span></span><br><span class="line">    dW2 = (a1.T).dot(dz2)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to second layer bias</span></span><br><span class="line">    <span class="comment"># 考虑到db2并不是一列值, 而是一个单独的值, 所以求和叠加</span></span><br><span class="line">    db2 = np.sum(dz2, axis=<span class="number">0</span>, keepdims=<span class="literal">True</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to first layer</span></span><br><span class="line">    dz1 = dz2.dot(W2.T) * tanh_derivative(a1)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to first layer weights</span></span><br><span class="line">    dW1 = np.dot(a0.T, dz1)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Calculate loss derivative with respect to first layer bias</span></span><br><span class="line">    db1 = np.sum(dz1, axis=<span class="number">0</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Store gradients</span></span><br><span class="line">    grads = &#123;<span class="string">'dW2'</span>:dW2,<span class="string">'db2'</span>:db2,<span class="string">'dW1'</span>:dW1,<span class="string">'db1'</span>:db1&#125;</span><br><span class="line">    <span class="keyword">return</span> grads</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以上计算都可以通过算式反推得出</span></span><br><span class="line"><span class="comment"># a0 --W1--b1--&gt; z1 --tanh--&gt; a1 --W2--b2--&gt; z2 --sigmoid--&gt; a2</span></span><br><span class="line"><span class="comment"># 上面是正向传播的过程, 反推就可以得出反向传播的过程</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Helper function to plot a decision boundary.</span></span><br><span class="line"><span class="comment"># If you don't fully understand this function don't worry, it just generates the contour plot below.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">plot_decision_boundary</span><span class="params">(pred_func)</span>:</span></span><br><span class="line">    <span class="comment"># Set min and max values and give it some padding</span></span><br><span class="line">    x_min, x_max = X[:, <span class="number">0</span>].min() - <span class="number">.5</span>, X[:, <span class="number">0</span>].max() + <span class="number">.5</span></span><br><span class="line">    y_min, y_max = X[:, <span class="number">1</span>].min() - <span class="number">.5</span>, X[:, <span class="number">1</span>].max() + <span class="number">.5</span></span><br><span class="line">    h = <span class="number">0.01</span></span><br><span class="line">    <span class="comment"># Generate a grid of points with distance h between them</span></span><br><span class="line">    xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))</span><br><span class="line">    <span class="comment"># Predict the function value for the whole gid</span></span><br><span class="line">    Z = pred_func(np.c_[xx.ravel(), yy.ravel()])</span><br><span class="line">    Z = Z.reshape(xx.shape)</span><br><span class="line">    <span class="comment"># Plot the contour and training examples</span></span><br><span class="line">    plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)</span><br><span class="line">    plt.scatter(X[:, <span class="number">0</span>], X[:, <span class="number">1</span>], c=y.flatten(), cmap=plt.cm.Spectral)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Generate a dataset and plot it</span></span><br><span class="line">np.random.seed(<span class="number">0</span>)</span><br><span class="line">X, y = sklearn.datasets.make_moons(<span class="number">200</span>, noise=<span class="number">0.15</span>)</span><br><span class="line">y = y.reshape(<span class="number">200</span>,<span class="number">1</span>)</span><br><span class="line">plt.scatter(X[:,<span class="number">0</span>], X[:,<span class="number">1</span>], s=<span class="number">40</span>, c=y.flatten(), cmap=plt.cm.Spectral)</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x7fb08a5e0240&gt;</code></pre><p><img data-src="http://qiniu.wangqy.top/didong/images/numpy_keras_0.png" alt="png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">predict</span><span class="params">(model, x)</span>:</span></span><br><span class="line">    <span class="comment"># Do forward pass</span></span><br><span class="line">    c = forward_prop(model,x)</span><br><span class="line">    <span class="comment">#get y_hat</span></span><br><span class="line">    y_hat = c[<span class="string">'a2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Turn values to either 1 or 0</span></span><br><span class="line">    y_hat[y_hat &gt; <span class="number">0.5</span>] = <span class="number">1</span></span><br><span class="line">    y_hat[y_hat &lt; <span class="number">0.5</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">return</span> y_hat</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calc_accuracy</span><span class="params">(model,x,y)</span>:</span></span><br><span class="line">    <span class="comment"># Get total number of examples</span></span><br><span class="line">    m = y.shape[<span class="number">0</span>]</span><br><span class="line">    <span class="comment"># Do a prediction with the model</span></span><br><span class="line">    pred = predict(model,x)</span><br><span class="line">    <span class="comment"># Ensure prediction and truth vector y have the same shape</span></span><br><span class="line">    pred = pred.reshape(y.shape)</span><br><span class="line">    <span class="comment"># Calculate the number of wrong examples</span></span><br><span class="line">    error = np.sum(np.abs(pred-y))</span><br><span class="line">    <span class="comment"># Calculate accuracy</span></span><br><span class="line">    <span class="keyword">return</span> (m - error)/m * <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">initialize_parameters</span><span class="params">(nn_input_dim,nn_hdim,nn_output_dim)</span>:</span></span><br><span class="line">    <span class="comment"># First layer weights</span></span><br><span class="line">    W1 = <span class="number">2</span> *np.random.randn(nn_input_dim, nn_hdim) - <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># First layer bias</span></span><br><span class="line">    b1 = np.zeros((<span class="number">1</span>, nn_hdim))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Second layer weights</span></span><br><span class="line">    W2 = <span class="number">2</span> * np.random.randn(nn_hdim, nn_output_dim) - <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Second layer bias</span></span><br><span class="line">    b2 = np.zeros((<span class="number">1</span>, nn_output_dim))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Package and return model</span></span><br><span class="line">    model = &#123; <span class="string">'W1'</span>: W1, <span class="string">'b1'</span>: b1, <span class="string">'W2'</span>: W2, <span class="string">'b2'</span>: b2&#125;</span><br><span class="line">    <span class="keyword">return</span> model</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_parameters</span><span class="params">(model,grads,learning_rate)</span>:</span></span><br><span class="line">    <span class="comment"># Load parameters</span></span><br><span class="line">    W1, b1, W2, b2 = model[<span class="string">'W1'</span>], model[<span class="string">'b1'</span>], model[<span class="string">'W2'</span>], model[<span class="string">'b2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Update parameters</span></span><br><span class="line">    W1 -= learning_rate * grads[<span class="string">'dW1'</span>]</span><br><span class="line">    b1 -= learning_rate * grads[<span class="string">'db1'</span>]</span><br><span class="line">    W2 -= learning_rate * grads[<span class="string">'dW2'</span>]</span><br><span class="line">    b2 -= learning_rate * grads[<span class="string">'db2'</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Store and return parameters</span></span><br><span class="line">    model = &#123; <span class="string">'W1'</span>: W1, <span class="string">'b1'</span>: b1, <span class="string">'W2'</span>: W2, <span class="string">'b2'</span>: b2&#125;</span><br><span class="line">    <span class="keyword">return</span> model</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">train</span><span class="params">(model,X_,y_,learning_rate, num_passes=<span class="number">20000</span>, print_loss=False)</span>:</span></span><br><span class="line">    <span class="comment"># Gradient descent. For each batch...</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num_passes):</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Forward propagation</span></span><br><span class="line">        cache = forward_prop(model,X_)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Backpropagation</span></span><br><span class="line">        grads = backward_prop(model,cache,y)</span><br><span class="line">        <span class="comment"># Gradient descent parameter update</span></span><br><span class="line">        <span class="comment"># Assign new parameters to the model</span></span><br><span class="line">        model = update_parameters(model=model,grads=grads,learning_rate=learning_rate)</span><br><span class="line">    </span><br><span class="line">        <span class="comment"># Pring loss &amp; accuracy every 100 iterations</span></span><br><span class="line">        <span class="keyword">if</span> print_loss <span class="keyword">and</span> i % <span class="number">100</span> == <span class="number">0</span>:</span><br><span class="line">            y_hat = cache[<span class="string">'a2'</span>]</span><br><span class="line">            print(<span class="string">'Loss after iteration'</span>,i,<span class="string">':'</span>,bce_loss(y,y_hat))</span><br><span class="line">            print(<span class="string">'Accuracy after iteration'</span>,i,<span class="string">':'</span>,calc_accuracy(model,X_,y_),<span class="string">'%'</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> model</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hyper parameters</span></span><br><span class="line">hiden_layer_size = <span class="number">3</span></span><br><span class="line"><span class="comment"># I picked this value because it showed good results in my experiments</span></span><br><span class="line">learning_rate = <span class="number">0.01</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Initialize the parameters to random values. We need to learn these.</span></span><br><span class="line">np.random.seed(<span class="number">0</span>)</span><br><span class="line"><span class="comment"># This is what we return at the end</span></span><br><span class="line">model = initialize_parameters(nn_input_dim=<span class="number">2</span>, nn_hdim= hiden_layer_size, nn_output_dim= <span class="number">1</span>)</span><br><span class="line">model = train(model,X,y,learning_rate=learning_rate,num_passes=<span class="number">1000</span>,print_loss=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Loss after iteration 0 : 0.7590872634269914
+Accuracy after iteration 0 : 86.5 %
+Loss after iteration 100 : 0.2574839032266012
+Accuracy after iteration 100 : 87.5 %
+Loss after iteration 200 : 0.23296065120486092
+Accuracy after iteration 200 : 91.0 %
+Loss after iteration 300 : 0.06607469435615165
+Accuracy after iteration 300 : 98.5 %
+Loss after iteration 400 : 0.039048891767398106
+Accuracy after iteration 400 : 99.0 %
+Loss after iteration 500 : 0.03162355657934422
+Accuracy after iteration 500 : 99.5 %
+Loss after iteration 600 : 0.02808346934457852
+Accuracy after iteration 600 : 99.5 %
+Loss after iteration 700 : 0.02596724219386473
+Accuracy after iteration 700 : 99.5 %
+Loss after iteration 800 : 0.02453302540660454
+Accuracy after iteration 800 : 99.5 %
+Loss after iteration 900 : 0.023480001190425943
+Accuracy after iteration 900 : 99.5 %</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Plot the decision boundary</span></span><br><span class="line">plot_decision_boundary(<span class="keyword">lambda</span> x: predict(model,x))</span><br><span class="line">plt.title(<span class="string">"Decision Boundary for hidden layer size 3"</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>Text(0.5, 1.0, &apos;Decision Boundary for hidden layer size 3&apos;)</code></pre><p><img data-src="http://qiniu.wangqy.top/didong/images/numpy_keras_1.png" alt="png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>Thank you for your reward !</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="DiDong WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="DiDong Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>DiDong
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://didongdongdi.github.io/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/" title="Numpy手撸神经网络和Keras">https://didongdongdi.github.io/2020/04/02/Numpy手撸神经网络和Keras/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="tag"><i class="fa fa-tag"></i> 神经网络</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/23/nginx%E5%AD%A6%E4%B9%A0/" rel="prev" title="nginx学习">
+      <i class="fa fa-chevron-left"></i> nginx学习
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA2MS8xNTU4OA=="></div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Keras简单的神经网络"><span class="nav-number">1.</span> <span class="nav-text">Keras简单的神经网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Numpy手撸的简单的神经网络"><span class="nav-number">2.</span> <span class="nav-text">使用Numpy手撸的简单的神经网络</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="DiDong"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">DiDong</p>
+  <div class="site-description" itemprop="description">As a young man, prepare and rule.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">96</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DiDongDongDi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DiDongDongDi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:i@wangqy.top" title="E-Mail → mailto:i@wangqy.top" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DiDong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">Symbols count total: </span>
+    <span title="Symbols count total">231k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    <span title="Reading time total">3:30</span>
+</div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cea955695cec786" async="async"></script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.getAttribute('pjax') !== null) {
+      script.setAttribute('pjax', '');
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script pjax>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script pjax>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
+
+
+<script pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        extensions: ['[mhchem]/mhchem.js'],
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://didongdongdi.github.io/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/',]
+      });
+      });
+  </script>
+
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
+    </div>
+</body>
+</html>
