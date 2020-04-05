@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>u盘分区和win7的usb3.0</title>
+      <link href="/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/"/>
+      <url>/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="U盘分区"><a href="#U盘分区" class="headerlink" title="U盘分区"></a>U盘分区</h1><p>win10 1703 之前的版本都不支持识别u盘的多个分区, 即只能识别第一个分区.</p><blockquote><p>原因参考<a href="https://www.zhihu.com/question/43475099" target="_blank" rel="noopener">知乎问答-为什么Windows不支持U盘多分区</a></p></blockquote><a id="more"></a><p>所以对于一个u盘来说, 只能把存储分区放在第一个, boot分区放在后面.</p><p>archlinux的live系统的启动分区(u盘多分区)的制作方法可以在官方文档中找到, 参考<a href="https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2" target="_blank" rel="noopener">https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2</a>. 需要注意的一点是卷标或UUID的修改, 可以在放入启动文件之前就修改号卷标, 也可以后面修改启动文件中的卷标或使用UUID, 否则会导致启动失败.</p><h1 id="WIN7的USB3-0"><a href="#WIN7的USB3-0" class="headerlink" title="WIN7的USB3.0"></a>WIN7的USB3.0</h1><p>由于WIN7并不集成USB3.0的驱动, 所以需要手动安装插件. 建议直接安装驱动精灵的自动安装驱动的软件, 装完驱动马上卸载.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> usb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Numpy手撸神经网络和Keras</title>
       <link href="/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/"/>
       <url>/2020/04/02/Numpy%E6%89%8B%E6%92%B8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8CKeras/</url>
