@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-04-05T06:50:51.823Z</updated>
+  <updated>2020-04-21T05:21:25.370Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>避免碎片化时间</title>
+    <link href="https://didongdongdi.github.io/2020/04/21/%E9%81%BF%E5%85%8D%E7%A2%8E%E7%89%87%E5%8C%96%E6%97%B6%E9%97%B4/"/>
+    <id>https://didongdongdi.github.io/2020/04/21/%E9%81%BF%E5%85%8D%E7%A2%8E%E7%89%87%E5%8C%96%E6%97%B6%E9%97%B4/</id>
+    <published>2020-04-21T04:26:09.000Z</published>
+    <updated>2020-04-21T05:21:25.370Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;吃完午饭, 躺在沙发上, 吃饭时的综艺节目还没有结束, 但是却变得无聊起来, 然后在节目声中我无意识地拿起手机打开了B站/知乎, 开始刷一个个视频/回答, 等回过头来发现时间已经过去好一段了. &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感悟" scheme="https://didongdongdi.github.io/categories/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="生活" scheme="https://didongdongdi.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>u盘分区和win7的usb3.0</title>
@@ -545,29 +566,6 @@
     
     
       <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_8_CNN应用</title>
-    <link href="https://didongdongdi.github.io/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-8-CNN%E5%BA%94%E7%94%A8/"/>
-    <id>https://didongdongdi.github.io/2019/10/20/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-8-CNN%E5%BA%94%E7%94%A8/</id>
-    <published>2019-10-20T14:12:00.000Z</published>
-    <updated>2019-10-27T02:03:42.236Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;卷积神经网络应用&quot;&gt;&lt;a href=&quot;#卷积神经网络应用&quot; class=&quot;headerlink&quot; title=&quot;卷积神经网络应用&quot;&gt;&lt;/a&gt;卷积神经网络应用&lt;/h1&gt;&lt;h2 id=&quot;CNNs用于图像分类&quot;&gt;&lt;a href=&quot;#CNNs用于图像分类&quot; class=&quot;headerlink&quot; title=&quot;CNNs用于图像分类&quot;&gt;&lt;/a&gt;CNNs用于图像分类&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;卷积层: 检测局部图片的局部特征&lt;br&gt;池化层: 降低维度&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
