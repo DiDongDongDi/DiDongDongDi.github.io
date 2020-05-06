@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-04-21T05:21:25.370Z</updated>
+  <updated>2020-05-06T11:02:53.279Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,74 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>error GLSL 3.30 is not supported 解决</title>
+    <link href="https://didongdongdi.github.io/2020/05/02/error_GLSL_3-30_is_not_supported_%E8%A7%A3%E5%86%B3/"/>
+    <id>https://didongdongdi.github.io/2020/05/02/error_GLSL_3-30_is_not_supported_%E8%A7%A3%E5%86%B3/</id>
+    <published>2020-05-02T08:15:53.000Z</published>
+    <updated>2020-05-06T11:02:53.279Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考自&lt;a href=&quot;https://stackoverflow.com/questions/52592309/0110-error-glsl-3-30-is-not-supported-ubuntu-18-04-c&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://stackoverflow.com/questions/52592309/0110-error-glsl-3-30-is-not-supported-ubuntu-18-04-c&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;投票最高的回答我不太懂, 但是第二个回答在我这是可行的, 修改环境变量就可以了, 然后在那个环境下启动qtcreator&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export MESA_GL_VERSION_OVERRIDE=3.3&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/tags/Problem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win7网络问题</title>
+    <link href="https://didongdongdi.github.io/2020/04/30/Win7%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98/"/>
+    <id>https://didongdongdi.github.io/2020/04/30/Win7%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98/</id>
+    <published>2020-04-30T07:06:13.000Z</published>
+    <updated>2020-04-30T07:14:07.942Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;可以ping通-但是无法打开网页&quot;&gt;&lt;a href=&quot;#可以ping通-但是无法打开网页&quot; class=&quot;headerlink&quot; title=&quot;可以ping通, 但是无法打开网页&quot;&gt;&lt;/a&gt;可以ping通, 但是无法打开网页&lt;/h1&gt;&lt;p&gt;代理的问题, 在第一次开启ssr后, http协议的代理被设定为&lt;code&gt;localhost:1080&lt;/code&gt;, 但是此时ssr软件并没有启动, 所以网页访问错误.&lt;/p&gt;
+&lt;p&gt;参考&lt;a href=&quot;https://blog.csdn.net/qq_39208536/article/details/81558520&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_39208536/article/details/81558520&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Problem" scheme="https://didongdongdi.github.io/categories/Problem/"/>
+    
+    
+      <category term="网络" scheme="https://didongdongdi.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="Windows" scheme="https://didongdongdi.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chromebook配置</title>
+    <link href="https://didongdongdi.github.io/2020/04/30/chromebook%E9%85%8D%E7%BD%AE/"/>
+    <id>https://didongdongdi.github.io/2020/04/30/chromebook%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-04-30T02:43:30.000Z</published>
+    <updated>2020-04-30T03:20:36.226Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;恢复chromebook&quot;&gt;&lt;a href=&quot;#恢复chromebook&quot; class=&quot;headerlink&quot; title=&quot;恢复chromebook&quot;&gt;&lt;/a&gt;恢复chromebook&lt;/h1&gt;&lt;p&gt;刚到手的chromebook一不小心就卡在恢复界面, 最后只好通过U盘来恢复. 这是&lt;a href=&quot;https://support.google.com/chromebook/answer/1080595&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;恢复盘的制作教程&lt;/a&gt;. 但是插入恢复盘后, 一直没有响应, 最后换成了内存卡加读卡器才成功响应, 貌似某些U盘和SD卡无法正常运行恢复.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://didongdongdi.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="chromebook" scheme="https://didongdongdi.github.io/tags/chromebook/"/>
+    
+  </entry>
   
   <entry>
     <title>避免碎片化时间</title>
@@ -42,7 +110,7 @@
     <link href="https://didongdongdi.github.io/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/"/>
     <id>https://didongdongdi.github.io/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/</id>
     <published>2020-04-05T06:35:34.000Z</published>
-    <updated>2020-04-05T06:50:51.823Z</updated>
+    <updated>2020-04-30T08:44:53.388Z</updated>
     
     <summary type="html">
     
@@ -494,78 +562,6 @@
     
     
       <category term="编译原理" scheme="https://didongdongdi.github.io/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人操作系统ROS_5_机器人导航</title>
-    <link href="https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-5-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AF%BC%E8%88%AA/"/>
-    <id>https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-5-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AF%BC%E8%88%AA/</id>
-    <published>2019-10-21T14:49:00.000Z</published>
-    <updated>2019-10-27T06:49:34.090Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;机器人SLAM&quot;&gt;&lt;a href=&quot;#机器人SLAM&quot; class=&quot;headerlink&quot; title=&quot;机器人SLAM&quot;&gt;&lt;/a&gt;机器人SLAM&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;SLAM(simultaneous localization and mapping), 也称为CML(Concurrent Mapping and Localization), &lt;em&gt;即时定位与地图构建&lt;/em&gt;, &lt;em&gt;或并发建图与定位&lt;/em&gt;&lt;br&gt;问题可以描述为:&lt;br&gt;将一个机器人放入未知的环境中的未知位置, 是否有办法让机器人一边移动一边逐步描绘出此环境完全的地图&lt;br&gt;(所谓完全的地图 – &lt;code&gt;a consistent map&lt;/code&gt;: &lt;em&gt;是指不受障碍行进到房间可进入的每个角落&lt;/em&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人操作系统ROS_4_机器人视觉</title>
-    <link href="https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-4-%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89/"/>
-    <id>https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-4-%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89/</id>
-    <published>2019-10-21T12:00:00.000Z</published>
-    <updated>2019-10-27T07:18:15.966Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;usb-cam功能包及ROS中的图像数据类型&quot;&gt;&lt;a href=&quot;#usb-cam功能包及ROS中的图像数据类型&quot; class=&quot;headerlink&quot; title=&quot;usb_cam功能包及ROS中的图像数据类型&quot;&gt;&lt;/a&gt;usb_cam功能包及ROS中的图像数据类型&lt;/h1&gt;&lt;h2 id=&quot;usb-cam功能包&quot;&gt;&lt;a href=&quot;#usb-cam功能包&quot; class=&quot;headerlink&quot; title=&quot;usb_cam功能包&quot;&gt;&lt;/a&gt;usb_cam功能包&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;usb_cam是针对V4L协议USB摄像头的ROS驱动包, 核心及诶但是usb_cam_node&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人操作系统ROS_3_机器人建模与仿真</title>
-    <link href="https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/"/>
-    <id>https://didongdongdi.github.io/2019/10/21/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/</id>
-    <published>2019-10-21T08:09:00.000Z</published>
-    <updated>2019-11-11T01:53:16.197Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;机器人统一描述格式urdf&quot;&gt;&lt;a href=&quot;#机器人统一描述格式urdf&quot; class=&quot;headerlink&quot; title=&quot;机器人统一描述格式urdf&quot;&gt;&lt;/a&gt;机器人统一描述格式urdf&lt;/h1&gt;&lt;h2 id=&quot;urdf介绍&quot;&gt;&lt;a href=&quot;#urdf介绍&quot; class=&quot;headerlink&quot; title=&quot;urdf介绍&quot;&gt;&lt;/a&gt;urdf介绍&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Unified Robot Description Format, 统一机器人描述(URDF)是种用于描述机器人机器结构, 关节, 自由度等的xml格式文件&lt;br&gt;ROS中的urdf功能包包含一个URDF的C++解析器, URDF文件使用XML格式描述机器人模型&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;URDF语法规范见:&lt;br&gt;&lt;a href=&quot;http://wiki.ros.org/urdf/XML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://wiki.ros.org/urdf/XML&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
     
     
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>

@@ -4,6 +4,83 @@
   
     
     <entry>
+      <title>error GLSL 3.30 is not supported 解决</title>
+      <link href="/2020/05/02/error_GLSL_3-30_is_not_supported_%E8%A7%A3%E5%86%B3/"/>
+      <url>/2020/05/02/error_GLSL_3-30_is_not_supported_%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<p>参考自<a href="https://stackoverflow.com/questions/52592309/0110-error-glsl-3-30-is-not-supported-ubuntu-18-04-c" target="_blank" rel="noopener">https://stackoverflow.com/questions/52592309/0110-error-glsl-3-30-is-not-supported-ubuntu-18-04-c</a></p><p>投票最高的回答我不太懂, 但是第二个回答在我这是可行的, 修改环境变量就可以了, 然后在那个环境下启动qtcreator</p><p><code>export MESA_GL_VERSION_OVERRIDE=3.3</code></p><a id="more"></a><p>然后我就出现了没有报错但是依然显示不出来对应图像的问题, 最后发现是有一个地方的代码和示例代码不对</p><p><code>GLuint vPosition = program-&gt;attributeLocation(&quot;vPosition&quot;);</code></p><p>后面的<code>vPosition</code>写错了, 导致整个<code>paintGL()</code>函数没有执行一样, 估计是将对应的变量解析到GLSL语言中失败了, 但是这样的错误并不会报错</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Problem </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win7网络问题</title>
+      <link href="/2020/04/30/Win7%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98/"/>
+      <url>/2020/04/30/Win7%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="可以ping通-但是无法打开网页"><a href="#可以ping通-但是无法打开网页" class="headerlink" title="可以ping通, 但是无法打开网页"></a>可以ping通, 但是无法打开网页</h1><p>代理的问题, 在第一次开启ssr后, http协议的代理被设定为<code>localhost:1080</code>, 但是此时ssr软件并没有启动, 所以网页访问错误.</p><p>参考<a href="https://blog.csdn.net/qq_39208536/article/details/81558520" target="_blank" rel="noopener">https://blog.csdn.net/qq_39208536/article/details/81558520</a></p><a id="more"></a><h1 id="dns解析失败"><a href="#dns解析失败" class="headerlink" title="dns解析失败"></a>dns解析失败</h1><p>在解决上一个问题时, 采用了<a href="https://blog.csdn.net/aa_moon/article/details/53435434" target="_blank" rel="noopener">https://blog.csdn.net/aa_moon/article/details/53435434</a>的方法, 原有的问题并没有解决, 反而造成了dns解析失败. </p><p>解决办法是: 在第二步中要把所有的协议都安装一遍.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>chromebook配置</title>
+      <link href="/2020/04/30/chromebook%E9%85%8D%E7%BD%AE/"/>
+      <url>/2020/04/30/chromebook%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="恢复chromebook"><a href="#恢复chromebook" class="headerlink" title="恢复chromebook"></a>恢复chromebook</h1><p>刚到手的chromebook一不小心就卡在恢复界面, 最后只好通过U盘来恢复. 这是<a href="https://support.google.com/chromebook/answer/1080595" target="_blank" rel="noopener">恢复盘的制作教程</a>. 但是插入恢复盘后, 一直没有响应, 最后换成了内存卡加读卡器才成功响应, 貌似某些U盘和SD卡无法正常运行恢复.</p><a id="more"></a><h1 id="充电"><a href="#充电" class="headerlink" title="充电"></a>充电</h1><p>一般的充电头很有可能会导致低功率充电, 速度会很慢, 最好去买一个和原装充电器对应的充电头.</p><h1 id="联网"><a href="#联网" class="headerlink" title="联网"></a>联网</h1><p>启用代理的局域网共享功能就可以了, 第一次进入chromeOS时, 可以设置对应WIFI的代理, 然后就可以登录了. 输入邮箱和密码登录后, 会一直卡在<code>请稍后</code>的界面, 这个时候直接关机重启就可以了.</p><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>我这台200多买的chromebook, 型号是HP 11 G1, 既不支持安装APK或者从PLAY商店安装, 也不支持<a href="https://support.google.com/chromebook/answer/9145439?hl=zh-Hans" target="_blank" rel="noopener">linux(Beta)</a>, 可以<a href="https://frapples.github.io/articles/2017-05-10-c95f.html" target="_blank" rel="noopener">在开发者模式下通过crouton安装其他linux版本</a>, 但是由于我的主力机就是linux个人觉得没必要, 而且使用chromebook的一个主要目的就是希望完全使用云端, 所以就放弃了. 平时的联网就靠代理局域网共享来解决, 主要是通过SwitchyOmega来进行自动配置.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> chromebook </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>避免碎片化时间</title>
       <link href="/2020/04/21/%E9%81%BF%E5%85%8D%E7%A2%8E%E7%89%87%E5%8C%96%E6%97%B6%E9%97%B4/"/>
       <url>/2020/04/21/%E9%81%BF%E5%85%8D%E7%A2%8E%E7%89%87%E5%8C%96%E6%97%B6%E9%97%B4/</url>
@@ -33,7 +110,7 @@
       <link href="/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/"/>
       <url>/2020/04/05/U%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8CWIN7%E7%9A%84USB3.0/</url>
       
-        <content type="html"><![CDATA[<h1 id="U盘分区"><a href="#U盘分区" class="headerlink" title="U盘分区"></a>U盘分区</h1><p>win10 1703 之前的版本都不支持识别u盘的多个分区, 即只能识别第一个分区.</p><blockquote><p>原因参考<a href="https://www.zhihu.com/question/43475099" target="_blank" rel="noopener">知乎问答-为什么Windows不支持U盘多分区</a></p></blockquote><a id="more"></a><p>所以对于一个u盘来说, 只能把存储分区放在第一个, boot分区放在后面.</p><p>archlinux的live系统的启动分区(u盘多分区)的制作方法可以在官方文档中找到, 参考<a href="https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2" target="_blank" rel="noopener">https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2</a>. 需要注意的一点是卷标或UUID的修改, 可以在放入启动文件之前就修改号卷标, 也可以后面修改启动文件中的卷标或使用UUID, 否则会导致启动失败.</p><h1 id="WIN7的USB3-0"><a href="#WIN7的USB3-0" class="headerlink" title="WIN7的USB3.0"></a>WIN7的USB3.0</h1><p>由于WIN7并不集成USB3.0的驱动, 所以需要手动安装插件. 建议直接安装驱动精灵的自动安装驱动的软件, 装完驱动马上卸载.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="U盘分区"><a href="#U盘分区" class="headerlink" title="U盘分区"></a>U盘分区</h1><p>win10 1703 之前的版本都不支持识别u盘的多个分区, 即只能识别第一个分区.</p><blockquote><p>原因参考<a href="https://www.zhihu.com/question/43475099" target="_blank" rel="noopener">知乎问答-为什么Windows不支持U盘多分区</a></p></blockquote><a id="more"></a><p>所以对于一个u盘来说, 只能把存储分区放在第一个, boot分区放在后面.</p><p>archlinux的live系统的启动分区(u盘多分区)的制作方法可以在官方文档中找到, 参考<a href="https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2" target="_blank" rel="noopener">https://wiki.archlinux.org/index.php/USB_flash_installation_media_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#GNU/Linux_2</a>. 需要注意的一点是卷标或UUID的修改, 可以在放入启动文件之前就修改好卷标, 也可以后面修改启动文件中的卷标或使用UUID, 否则会导致启动失败.</p><h1 id="WIN7的USB3-0"><a href="#WIN7的USB3-0" class="headerlink" title="WIN7的USB3.0"></a>WIN7的USB3.0</h1><p>由于WIN7并不集成USB3.0的驱动, 所以需要手动安装插件. 建议直接安装驱动精灵的自动安装驱动的软件, 装完驱动马上卸载.</p>]]></content>
       
       
       <categories>
