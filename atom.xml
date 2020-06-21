@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-05-19T10:16:33.407Z</updated>
+  <updated>2020-06-21T06:19:49.127Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>看书还是看视频</title>
+    <link href="https://didongdongdi.github.io/2020/06/21/%E7%9C%8B%E4%B9%A6%E8%BF%98%E6%98%AF%E7%9C%8B%E8%A7%86%E9%A2%91/"/>
+    <id>https://didongdongdi.github.io/2020/06/21/%E7%9C%8B%E4%B9%A6%E8%BF%98%E6%98%AF%E7%9C%8B%E8%A7%86%E9%A2%91/</id>
+    <published>2020-06-21T05:52:21.000Z</published>
+    <updated>2020-06-21T06:19:49.127Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;看书还是看视频&quot;&gt;&lt;a href=&quot;#看书还是看视频&quot; class=&quot;headerlink&quot; title=&quot;看书还是看视频&quot;&gt;&lt;/a&gt;看书还是看视频&lt;/h1&gt;&lt;p&gt;以前的理解一直是, 看书是一种高效的主动的学习手段, 所以一直对看视频学习嗤之以鼻. 当然, 这里的看书不单单指完整的一本书, 也包括各种文本类的, 比如博客等等短篇的. 但是后来经历过看书的困难后, 才会体会到视频的好处.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="方法" scheme="https://didongdongdi.github.io/categories/%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="书" scheme="https://didongdongdi.github.io/tags/%E4%B9%A6/"/>
+    
+      <category term="视频" scheme="https://didongdongdi.github.io/tags/%E8%A7%86%E9%A2%91/"/>
+    
+      <category term="学习" scheme="https://didongdongdi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于理财与投资</title>
+    <link href="https://didongdongdi.github.io/2020/06/21/%E5%85%B3%E4%BA%8E%E7%90%86%E8%B4%A2%E4%B8%8E%E6%8A%95%E8%B5%84/"/>
+    <id>https://didongdongdi.github.io/2020/06/21/%E5%85%B3%E4%BA%8E%E7%90%86%E8%B4%A2%E4%B8%8E%E6%8A%95%E8%B5%84/</id>
+    <published>2020-06-21T00:56:36.000Z</published>
+    <updated>2020-06-21T06:52:48.508Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;理财, 指的是对财务（财产和债务）进行管理，以实现财务的保值、增值为目的。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="投资理财" scheme="https://didongdongdi.github.io/categories/%E6%8A%95%E8%B5%84%E7%90%86%E8%B4%A2/"/>
+    
+    
+      <category term="理财" scheme="https://didongdongdi.github.io/tags/%E7%90%86%E8%B4%A2/"/>
+    
+      <category term="投资" scheme="https://didongdongdi.github.io/tags/%E6%8A%95%E8%B5%84/"/>
+    
+  </entry>
   
   <entry>
     <title>犬种识别网页开发</title>
@@ -491,81 +541,6 @@
     
     
       <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人操作系统ROS_6_MoveIt!机械臂控制</title>
-    <link href="https://didongdongdi.github.io/2019/10/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-6-MoveIt-%E6%9C%BA%E6%A2%B0%E8%87%82%E6%8E%A7%E5%88%B6/"/>
-    <id>https://didongdongdi.github.io/2019/10/27/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FROS-6-MoveIt-%E6%9C%BA%E6%A2%B0%E8%87%82%E6%8E%A7%E5%88%B6/</id>
-    <published>2019-10-27T06:54:00.000Z</published>
-    <updated>2019-10-27T07:17:40.509Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;MoveIt-系统架构&quot;&gt;&lt;a href=&quot;#MoveIt-系统架构&quot; class=&quot;headerlink&quot; title=&quot;MoveIt!系统架构&quot;&gt;&lt;/a&gt;MoveIt!系统架构&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;MoveIt! 由ROS中一系列移动操作的功能包组成, 包含运动规划, 操作控制, 3D感知, 运动学, 碰撞检测等等, 而且提供友好的GUI&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;官方网站&lt;a href=&quot;http://moveit.ros.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://moveit.ros.org/&lt;/a&gt;, 上边有MoveIt!的教程和API说明&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="ROS" scheme="https://didongdongdi.github.io/categories/ROS/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人视觉_9_补充</title>
-    <link href="https://didongdongdi.github.io/2019/10/27/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-9-%E8%A1%A5%E5%85%85/"/>
-    <id>https://didongdongdi.github.io/2019/10/27/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89-9-%E8%A1%A5%E5%85%85/</id>
-    <published>2019-10-27T01:24:00.000Z</published>
-    <updated>2019-10-27T06:33:33.458Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;最后一层的激活函数和误差函数&quot;&gt;&lt;a href=&quot;#最后一层的激活函数和误差函数&quot; class=&quot;headerlink&quot; title=&quot;最后一层的激活函数和误差函数&quot;&gt;&lt;/a&gt;最后一层的激活函数和误差函数&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;问题类型&lt;/th&gt;
-&lt;th&gt;最后一层的激活函数&lt;/th&gt;
-&lt;th&gt;误差函数&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;二分类&lt;/td&gt;
-&lt;td&gt;sigmoid&lt;/td&gt;
-&lt;td&gt;binary_crossentropy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;多分类&lt;/td&gt;
-&lt;td&gt;softmax&lt;/td&gt;
-&lt;td&gt;categorical_crossentropy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;回归到任意值&lt;/td&gt;
-&lt;td&gt;没有&lt;/td&gt;
-&lt;td&gt;mse&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;回归到0到1之间的值&lt;/td&gt;
-&lt;td&gt;sigmoid&lt;/td&gt;
-&lt;td&gt;mse or binary_crossentropy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://didongdongdi.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
