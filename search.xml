@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>对于学习能力的思考</title>
+      <link href="/2020/06/23/%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B%E7%9A%84%E6%80%9D%E8%80%83/"/>
+      <url>/2020/06/23/%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B%E7%9A%84%E6%80%9D%E8%80%83/</url>
+      
+        <content type="html"><![CDATA[<p>在面试的时候, 最喜欢提的一句话就是 <code>我的学习能力很强</code> , 除此之外, 便没有其他的说明, 言外之意其实就是 <code>我现在没什么成绩, 但是我学得又快又好, 将来一定会出成绩</code> . 但是, 这样的说法, 无疑是给别人画了一个大饼.</p><a id="more"></a><p>究竟怎样才算学习能力强?</p><p>不否认, 有人天生比别人的学习能力强, 碰到新问题的时候能够很快地解决. 同时, 人随着年龄的增长, 脑袋也会越来越不灵光, 解决新问题的能力也会下降. 但是, 大多数人的学习能力还是应该从自己的阅历中汲取的. 同样的问题, 或者相关的问题, 碰到一次以后, 或者提前了解过有关的知识后, 下一次再碰到类似的问题, 解决起来就会更快.</p><p>所以说, 多学习, 才是提高学习能力的方法, 这是一种正反馈. 当然, 学习应该是理论和实践的融合.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 思考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>看书还是看视频</title>
       <link href="/2020/06/21/%E7%9C%8B%E4%B9%A6%E8%BF%98%E6%98%AF%E7%9C%8B%E8%A7%86%E9%A2%91/"/>
       <url>/2020/06/21/%E7%9C%8B%E4%B9%A6%E8%BF%98%E6%98%AF%E7%9C%8B%E8%A7%86%E9%A2%91/</url>
@@ -1885,7 +1910,7 @@
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
         </tags>
       
@@ -2010,7 +2035,7 @@
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
         </tags>
       
@@ -2352,7 +2377,7 @@
       
       <categories>
           
-          <category> Qt5 </category>
+          <category> Qt </category>
           
       </categories>
       
@@ -2521,7 +2546,7 @@
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
         </tags>
       

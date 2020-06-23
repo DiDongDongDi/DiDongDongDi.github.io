@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://didongdongdi.github.io/"/>
-  <updated>2020-06-21T06:19:49.127Z</updated>
+  <updated>2020-06-23T14:50:36.510Z</updated>
   <id>https://didongdongdi.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对于学习能力的思考</title>
+    <link href="https://didongdongdi.github.io/2020/06/23/%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>https://didongdongdi.github.io/2020/06/23/%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B%E7%9A%84%E6%80%9D%E8%80%83/</id>
+    <published>2020-06-23T14:33:40.000Z</published>
+    <updated>2020-06-23T14:50:36.510Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在面试的时候, 最喜欢提的一句话就是 &lt;code&gt;我的学习能力很强&lt;/code&gt; , 除此之外, 便没有其他的说明, 言外之意其实就是 &lt;code&gt;我现在没什么成绩, 但是我学得又快又好, 将来一定会出成绩&lt;/code&gt; . 但是, 这样的说法, 无疑是给别人画了一个大饼.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="思考" scheme="https://didongdongdi.github.io/categories/%E6%80%9D%E8%80%83/"/>
+    
+    
+      <category term="学习" scheme="https://didongdongdi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>看书还是看视频</title>
@@ -515,35 +536,6 @@
     
     
       <category term="Python" scheme="https://didongdongdi.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水下机器人传感技术_1</title>
-    <link href="https://didongdongdi.github.io/2019/11/02/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%8A%80%E6%9C%AF-1/"/>
-    <id>https://didongdongdi.github.io/2019/11/02/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%8A%80%E6%9C%AF-1/</id>
-    <published>2019-11-02T14:37:00.000Z</published>
-    <updated>2019-11-03T00:49:15.681Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;机器人行业介绍&quot;&gt;&lt;a href=&quot;#机器人行业介绍&quot; class=&quot;headerlink&quot; title=&quot;机器人行业介绍&quot;&gt;&lt;/a&gt;机器人行业介绍&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;现实中机器人的主要特点:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基于目前的科技与制造水平&lt;/li&gt;
-&lt;li&gt;外形各异, 大部分并不与人相像&lt;/li&gt;
-&lt;li&gt;与人交流的方式不局限于语言&lt;/li&gt;
-&lt;li&gt;为完成某一种特定的场景与工作目标而设计&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="嵌入式" scheme="https://didongdongdi.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-    
-    
-      <category term="Notes" scheme="https://didongdongdi.github.io/tags/Notes/"/>
     
   </entry>
   
